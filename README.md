@@ -16,15 +16,14 @@ A comprehensive knowledge base for event management, volunteer systems, technolo
 
 ```
 tapnex-wiki/
-├── index.html                    # Entry point (redirects to home.html)
-├── home.html                     # Main landing page
+├── index.html                    # Main landing page
 ├── home.css                      # Main page styles
 ├── home.js                       # Main page functionality
 ├── earth3d.js                    # 3D Earth animation
 ├── images/
 │   ├── TAPNEX_LOGO.png          # Company logo
 │   └── EARTH.png                # Earth texture
-└── Volunteer Systems A Comprehensive Guide to Streamlining Team Coordination/
+└── volunteer-systems/
     ├── index.html               # Volunteer systems article
     ├── styles.css               # Article-specific styles
     └── scripts.js               # Article-specific functionality

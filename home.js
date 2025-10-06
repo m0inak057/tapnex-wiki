@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (query) {
                 // For now, just redirect to the volunteer systems page if they search for it
                 if (query.toLowerCase().includes('volunteer')) {
-                    window.location.href = 'Volunteer Systems A Comprehensive Guide to Streamlining Team Coordination/index.html';
+                    window.location.href = 'volunteer-systems/index.html';
                 } else {
                     alert('Search functionality coming soon! You searched for: "' + query + '"');
                 }
