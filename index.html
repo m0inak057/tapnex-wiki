@@ -47,7 +47,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="volunteer-systems/index.html">Volunteer Systems</a></li>
-                        <li><a href="#">Ticketing Platform</a></li>
+                        <li><a href="ticketing-platform/index.html">Ticketing Platform</a></li>
                         <li><a href="#">Logistics Planning</a></li>
                     </ul>
                 </li>
@@ -89,7 +89,12 @@
             </div>
 
             <form class="search-form" role="search" aria-label="Search the wiki">
-                <input type="search" placeholder="Search topics, e.g. volunteer systems" aria-label="Search input">
+                <div class="search-container">
+                    <input type="search" placeholder="Search topics, e.g. volunteer systems" aria-label="Search input" id="search-input" autocomplete="off">
+                    <div class="search-suggestions" id="search-suggestions" role="listbox" aria-hidden="true">
+                        <!-- Suggestions will be populated dynamically -->
+                    </div>
+                </div>
                 <button type="submit">Search</button>
             </form>
 
