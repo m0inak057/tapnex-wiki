@@ -245,6 +245,62 @@ document.addEventListener('DOMContentLoaded', function() {
             statsObserver.observe(statsGrid);
         }
 
+        // --- Modal functionality for Privacy and Terms ---
+        const privacyBtn = document.getElementById('privacy-btn');
+        const termsBtn = document.getElementById('terms-btn');
+        const privacyModal = document.getElementById('privacy-modal');
+        const termsModal = document.getElementById('terms-modal');
+        const modalCloses = document.querySelectorAll('.modal-close');
+
+        // Open Privacy modal
+        if (privacyBtn && privacyModal) {
+            privacyBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                privacyModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        // Open Terms modal
+        if (termsBtn && termsModal) {
+            termsBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                termsModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        // Close modals
+        modalCloses.forEach(closeBtn => {
+            closeBtn.addEventListener('click', () => {
+                closeModal();
+            });
+        });
+
+        // Close modal when clicking outside
+        [privacyModal, termsModal].forEach(modal => {
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeModal();
+                    }
+                });
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            if (privacyModal) privacyModal.classList.remove('active');
+            if (termsModal) termsModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
         console.log('Ticketing platform page functionality initialized successfully');
         
     } catch (error) {
