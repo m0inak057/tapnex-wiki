@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /admin/
 
+# Crawl-delay for search engines
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://wiki.tapnex.tech/sitemap.xml
+
+# Additional information
+# Host: https://wiki.tapnex.tech

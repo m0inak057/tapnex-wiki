@@ -40,6 +40,62 @@
             color: #cbd5e1;
         }
 
+        /* Dark mode for technology highlights */
+        [data-theme="dark"] .technology-highlight {
+            background-color: var(--dark-content-bg);
+            border-color: var(--dark-border);
+        }
+
+        /* Dark mode for analytics showcase */
+        [data-theme="dark"] .analytics-showcase {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            border-color: #fbbf24;
+        }
+
+        [data-theme="dark"] .analytics-showcase h4 {
+            color: #fbbf24;
+        }
+
+        /* Dark mode for light green analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightgreen {
+            background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+            border-color: #22c55e;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightgreen h4 {
+            color: #4ade80;
+        }
+
+        /* Dark mode for light purple analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightpurple {
+            background: linear-gradient(135deg, #581c87 0%, #7c3aed 100%);
+            border-color: #a855f7;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightpurple h4 {
+            color: #c084fc;
+        }
+
+        /* Dark mode for light orange analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightorange {
+            background: linear-gradient(135deg, #431407 0%, #9a3412 100%);
+            border-color: #fb923c;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightorange h4 {
+            color: #fdba74;
+        }
+
+        /* Dark mode for light blue analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightblue {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            border-color: #0ea5e9;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightblue h4 {
+            color: #38bdf8;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -357,6 +413,120 @@
             font-size: 1.4rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
+        }
+
+        /* Technology Highlights */
+        .technology-highlight {
+            background: #f1f5f9;
+            border-left: 4px solid var(--sidebar-highlight);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .technology-highlight h4 {
+            color: var(--sidebar-highlight);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .technology-highlight ul {
+            margin: 0;
+        }
+
+        /* Analytics Showcase */
+        .analytics-showcase {
+            background: linear-gradient(135deg, #fef7cd 0%, #fde68a 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #f59e0b;
+        }
+
+        .analytics-showcase h4 {
+            color: #92400e;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .analytics-showcase ul {
+            margin: 0;
+        }
+
+        /* Light Green Analytics Showcase - for Live Status and Zone Management */
+        .analytics-showcase-lightgreen {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #22c55e;
+        }
+
+        .analytics-showcase-lightgreen h4 {
+            color: #16a34a;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .analytics-showcase-lightgreen ul {
+            margin: 0;
+        }
+
+        /* Light Purple Analytics Showcase - for Feedback and Future Planning */
+        .analytics-showcase-lightpurple {
+            background: linear-gradient(135deg, #faf5ff 0%, #e9d5ff 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #a855f7;
+        }
+
+        .analytics-showcase-lightpurple h4 {
+            color: #9333ea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .analytics-showcase-lightpurple ul {
+            margin: 0;
+        }
+
+        /* Light Orange Analytics Showcase - for Market Insights and Impact */
+        .analytics-showcase-lightorange {
+            background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #fb923c;
+        }
+
+        .analytics-showcase-lightorange h4 {
+            color: #ea580c;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .analytics-showcase-lightorange ul {
+            margin: 0;
+        }
+
+        /* Light Blue Analytics Showcase - for Best Practices */
+        .analytics-showcase-lightblue {
+            background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #0ea5e9;
+        }
+
+        .analytics-showcase-lightblue h4 {
+            color: #0284c7;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .analytics-showcase-lightblue ul {
+            margin: 0;
         }
 
         /* --- Table of Contents (Right Sidebar) --- */
