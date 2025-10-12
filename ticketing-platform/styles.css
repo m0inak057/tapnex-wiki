@@ -723,6 +723,7 @@
         @media (max-width: 768px) {
             .main-content {
                 padding: 2rem 1.5rem;
+                padding-top: 4rem; /* Add extra top padding to avoid hamburger menu overlap */
                 min-height: calc(100vh - 150px);
             }
             
@@ -731,11 +732,7 @@
             }
             
             .breadcrumbs {
-                font-size: 0.8rem;
-                margin-bottom: 1rem;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                display: none;
             }
             
             .stats-grid {
@@ -768,6 +765,7 @@
             
             .main-content {
                 padding: 1.5rem 1rem;
+                padding-top: 4rem; /* Maintain top padding for hamburger menu clearance */
                 padding-left: 4rem; /* Ensure enough space for hamburger menu on mobile */
             }
 
@@ -1442,5 +1440,246 @@
                 margin: 1rem 0;
                 padding: 0.8rem;
                 border-radius: 8px;
+            }
+        }
+
+        /* === STAGGERING ANIMATIONS === */
+        
+        /* Keyframes for staggered animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Base animation class */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered animations for grid items */
+        .stats-grid .stat-card {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .stats-grid .stat-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .stats-grid .stat-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .stats-grid .stat-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .stats-grid .stat-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .stats-grid .stat-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        .stats-grid .stat-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        
+        /* Staggered animations for feature grid */
+        .feature-grid .feature-card {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .feature-grid .feature-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .feature-grid .feature-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .feature-grid .feature-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .feature-grid .feature-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .feature-grid .feature-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        .feature-grid .feature-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        
+        /* Staggered animations for experience benefits */
+        .experience-benefits .benefit-item {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        .experience-benefits .benefit-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        
+        /* Staggered animations for list items in technology highlights */
+        .technology-highlight ul li {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: fadeInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .technology-highlight ul li:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .technology-highlight ul li:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .technology-highlight ul li:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .technology-highlight ul li:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .technology-highlight ul li:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        .technology-highlight ul li:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        
+        /* Staggered animations for analytics showcase items */
+        .analytics-showcase ul li {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: fadeInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .analytics-showcase ul li:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .analytics-showcase ul li:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .analytics-showcase ul li:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .analytics-showcase ul li:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .analytics-showcase ul li:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        /* Special animations for showcases */
+        .analytics-showcase,
+        .blockchain-benefits,
+        .hybrid-features,
+        .future-vision,
+        .ai-benefits,
+        .payment-methods {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        /* Pause animations for users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .stats-grid .stat-card,
+            .feature-grid .feature-card,
+            .experience-benefits .benefit-item,
+            .technology-highlight ul li,
+            .analytics-showcase ul li,
+            .analytics-showcase,
+            .blockchain-benefits,
+            .hybrid-features,
+            .future-vision,
+            .ai-benefits,
+            .payment-methods {
+                animation: none;
+                opacity: 1;
+                transform: none;
             }
         }
