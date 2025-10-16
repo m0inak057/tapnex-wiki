@@ -29,6 +29,58 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set dark theme permanently (no toggle functionality)
     document.documentElement.setAttribute('data-theme', 'dark');
 
+    // Handle URL hash fragments for dropdown navigation when arriving from other pages
+    function handleHashNavigation() {
+        const hash = window.location.hash;
+        if (hash && hash.length > 1) {
+            const targetId = hash.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement && targetElement.classList.contains('dropdown')) {
+                // Small delay to ensure DOM is fully ready
+                setTimeout(() => {
+                    // Scroll to the dropdown navigation area
+                    const dropdownNav = document.querySelector('.dropdown-nav');
+                    if (dropdownNav) {
+                        dropdownNav.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                        
+                        // Wait for scroll to complete, then open the dropdown
+                        setTimeout(() => {
+                            // Close all other dropdowns first
+                            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                                if (dropdown !== targetElement) {
+                                    dropdown.classList.remove('open');
+                                    dropdown.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+                                }
+                            });
+                            
+                            // Open the target dropdown
+                            targetElement.classList.add('open');
+                            targetElement.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'true');
+                            
+                            // On mobile, also open the navigation menu if it's closed
+                            if (window.innerWidth <= 768 && !dropdownNav.classList.contains('open')) {
+                                dropdownNav.classList.add('open');
+                                if (mobileToggle) {
+                                    mobileToggle.setAttribute('aria-expanded', 'true');
+                                }
+                            }
+                        }, 500);
+                    }
+                }, 100);
+            }
+        }
+    }
+
+    // Handle hash navigation on page load
+    handleHashNavigation();
+
+    // Handle hash navigation when hash changes (browser back/forward)
+    window.addEventListener('hashchange', handleHashNavigation);
+
     // Search database with all available topics
     const searchDatabase = [
         {
@@ -51,6 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Marketing",
             url: "social-media-strategy/index.html",
             keywords: ["social media", "marketing", "social media strategy", "influencer", "facebook", "instagram", "linkedin", "tiktok", "social campaigns", "digital marketing"]
+        },
+        {
+            title: "Content Marketing",
+            description: "Complete expert guide to content marketing strategy, creation, distribution, analytics, and future trends",
+            category: "Marketing",
+            url: "content-marketing/index.html",
+            keywords: ["content marketing", "content strategy", "inbound marketing", "brand publishing", "thought leadership", "seo", "digital marketing", "content creation", "marketing content", "content"]
         },
         {
             title: "Event Management",
