@@ -46,6 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: ["volunteer", "volunteers", "team coordination", "volunteer management", "vms", "volunteer systems", "event volunteers"]
         },
         {
+            title: "Social Media Strategy",
+            description: "Complete guide to social media marketing, influencer campaigns, and digital event promotion",
+            category: "Marketing",
+            url: "social-media-strategy/index.html",
+            keywords: ["social media", "marketing", "social media strategy", "influencer", "facebook", "instagram", "linkedin", "tiktok", "social campaigns", "digital marketing"]
+        },
+        {
             title: "Event Management",
             description: "Overview of event management tools and strategies",
             category: "Event Management",
