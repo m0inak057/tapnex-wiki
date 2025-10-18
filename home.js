@@ -87,28 +87,28 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Digital Ticketing Systems",
             description: "Complete guide to digital ticketing platforms, QR codes, NFC, and modern event ticketing solutions",
             category: "Event Management",
-            url: "ticketing-platform/index.html",
+            url: "EVENT MANAGEMENT/ticketing-platform/index.html",
             keywords: ["ticketing", "digital tickets", "qr code", "nfc", "event management", "tickets", "ticket platform", "digital ticketing"]
         },
         {
             title: "Volunteer Management Systems",
             description: "Comprehensive guide to streamlining team coordination and volunteer management",
             category: "Event Management", 
-            url: "volunteer-systems/index.html",
+            url: "EVENT MANAGEMENT/volunteer-systems/index.html",
             keywords: ["volunteer", "volunteers", "team coordination", "volunteer management", "vms", "volunteer systems", "event volunteers"]
         },
         {
             title: "Social Media Strategy",
             description: "Complete guide to social media marketing, influencer campaigns, and digital event promotion",
             category: "Marketing",
-            url: "social-media-strategy/index.html",
+            url: "MARKETING/social-media-strategy/index.html",
             keywords: ["social media", "marketing", "social media strategy", "influencer", "facebook", "instagram", "linkedin", "tiktok", "social campaigns", "digital marketing"]
         },
         {
             title: "Content Marketing",
             description: "Complete expert guide to content marketing strategy, creation, distribution, analytics, and future trends",
             category: "Marketing",
-            url: "content-marketing/index.html",
+            url: "MARKETING/content-marketing/index.html",
             keywords: ["content marketing", "content strategy", "inbound marketing", "brand publishing", "thought leadership", "seo", "digital marketing", "content creation", "marketing content", "content"]
         },
         {
