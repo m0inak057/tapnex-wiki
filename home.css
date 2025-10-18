@@ -916,10 +916,30 @@ html, body {
     z-index: 1000;
     display: none;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    -webkit-overflow-scrolling: touch;
 }
 
 .search-suggestions.show {
     display: block;
+}
+
+/* Custom scrollbar for search suggestions */
+.search-suggestions::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-suggestions::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb {
+    background: var(--sidebar-highlight);
+    border-radius: 3px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
 }
 
 .search-suggestion {
@@ -930,6 +950,8 @@ html, body {
     align-items: center;
     gap: 0.75rem;
     transition: background-color 0.15s ease;
+    min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .search-suggestion:last-child {
@@ -938,7 +960,39 @@ html, body {
 
 .search-suggestion:hover,
 .search-suggestion.highlighted {
-    background-color: var(--bg-secondary);
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.search-suggestion:active {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Mobile search suggestions optimizations */
+@media (max-width: 768px) {
+    .search-suggestions {
+        max-height: 60vh;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .search-suggestion {
+        padding: 1rem;
+        min-height: 60px;
+    }
+    
+    .search-suggestion-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-suggestions {
+        max-height: 50vh;
+    }
+    
+    .search-suggestion {
+        padding: 0.875rem;
+    }
 }
 
 .search-suggestion-icon {
@@ -994,11 +1048,25 @@ html, body {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
     min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search-form button svg {
+    width: 20px;
+    height: 20px;
 }
 
 .search-form button:hover {
     background: #2563eb;
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.search-form button:active {
+    transform: translateY(0);
 }
 
 /* Features Section */

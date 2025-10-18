@@ -110,26 +110,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Search database with all available topics
     const searchDatabase = [
+        // Event Management
         {
             title: "Digital Ticketing Systems",
             description: "Complete guide to digital ticketing platforms, QR codes, NFC, and modern event ticketing solutions",
             category: "Event Management",
-            url: "EVENT MANAGEMENT/ticketing-platform/index.html",
-            keywords: ["ticketing", "digital tickets", "qr code", "nfc", "event management", "tickets", "ticket platform", "digital ticketing"]
+            url: "EVENT-MANAGEMENT/ticketing-platform/index.html",
+            keywords: ["ticketing", "digital tickets", "qr code", "nfc", "event management", "tickets", "ticket platform", "digital ticketing", "event tickets"]
         },
         {
             title: "Volunteer Management Systems",
             description: "Comprehensive guide to streamlining team coordination and volunteer management",
             category: "Event Management", 
-            url: "EVENT MANAGEMENT/volunteer-systems/index.html",
-            keywords: ["volunteer", "volunteers", "team coordination", "volunteer management", "vms", "volunteer systems", "event volunteers"]
+            url: "EVENT-MANAGEMENT/volunteer-systems/index.html",
+            keywords: ["volunteer", "volunteers", "team coordination", "volunteer management", "vms", "volunteer systems", "event volunteers", "volunteering"]
         },
+        {
+            title: "Event Management",
+            description: "Overview of event management tools and strategies",
+            category: "Event Management",
+            url: "#event-management",
+            keywords: ["event management", "events", "event planning", "event coordination", "event organization"]
+        },
+        
+        // Technology
+        {
+            title: "NFC Technology",
+            description: "Near Field Communication technology guide for events and ticketing",
+            category: "Technology",
+            url: "TECHNOLOGY/NFC/index.html",
+            keywords: ["nfc", "near field communication", "contactless", "technology", "smart cards", "tap", "rfid"]
+        },
+        {
+            title: "Technology Solutions",
+            description: "Web development, APIs, databases, and technical solutions",
+            category: "Technology",
+            url: "#technology", 
+            keywords: ["technology", "web development", "api", "database", "devops", "technical", "software"]
+        },
+        
+        // Marketing - Core
         {
             title: "Social Media Strategy",
             description: "Complete guide to social media marketing, influencer campaigns, and digital event promotion",
             category: "Marketing",
             url: "MARKETING/social-media-strategy/index.html",
-            keywords: ["social media", "marketing", "social media strategy", "influencer", "facebook", "instagram", "linkedin", "tiktok", "social campaigns", "digital marketing"]
+            keywords: ["social media", "marketing", "social media strategy", "influencer", "facebook", "instagram", "linkedin", "tiktok", "social campaigns", "digital marketing", "social"]
         },
         {
             title: "Content Marketing",
@@ -139,25 +165,106 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: ["content marketing", "content strategy", "inbound marketing", "brand publishing", "thought leadership", "seo", "digital marketing", "content creation", "marketing content", "content"]
         },
         {
-            title: "Event Management",
-            description: "Overview of event management tools and strategies",
-            category: "Event Management",
-            url: "#event-management",
-            keywords: ["event management", "events", "event planning", "event coordination"]
+            title: "Analytics & Insights",
+            description: "Data-driven marketing analytics, metrics tracking, and actionable insights for campaigns",
+            category: "Marketing",
+            url: "MARKETING/analytics-&-insigths/index.html",
+            keywords: ["analytics", "insights", "data", "metrics", "tracking", "kpi", "roi", "measurement", "analysis", "marketing analytics"]
         },
         {
-            title: "Technology Solutions",
-            description: "Web development, APIs, databases, and technical solutions",
-            category: "Technology",
-            url: "#technology", 
-            keywords: ["technology", "web development", "api", "database", "devops", "technical"]
+            title: "Email Campaigns",
+            description: "Email marketing strategies, automation, and campaign optimization",
+            category: "Marketing",
+            url: "MARKETING/email-campaigns/index.html",
+            keywords: ["email", "email marketing", "campaigns", "newsletter", "email automation", "email strategy", "drip campaigns", "mailing"]
         },
+        
+        // Marketing - Advanced Content
+        {
+            title: "Short Form Video Content",
+            description: "Creating engaging short-form videos for TikTok, Reels, and Shorts",
+            category: "Marketing",
+            url: "MARKETING/short-form-video-content/index.html",
+            keywords: ["short form", "video", "tiktok", "reels", "shorts", "video content", "short video", "vertical video", "video marketing"]
+        },
+        {
+            title: "Personalization & Data-Driven Content",
+            description: "Leveraging data and AI to personalize content and improve engagement",
+            category: "Marketing",
+            url: "MARKETING/Personalization-&-Data-Driven-Content/index.html",
+            keywords: ["personalization", "data driven", "ai", "targeting", "customization", "personalized content", "data", "audience segmentation"]
+        },
+        {
+            title: "Compliance & Ethical Content Marketing",
+            description: "Legal compliance, ethical practices, and responsible content marketing",
+            category: "Marketing",
+            url: "MARKETING/compliance-&-ethical-content-marketing/index.html",
+            keywords: ["compliance", "ethics", "legal", "gdpr", "privacy", "ethical marketing", "responsible marketing", "regulations"]
+        },
+        {
+            title: "AI-Powered Content Creation",
+            description: "Using artificial intelligence for content creation and marketing automation",
+            category: "Marketing",
+            url: "MARKETING/AI-Powered-Content-Creation-&-Exhaustive-Marketing/index.html",
+            keywords: ["ai", "artificial intelligence", "automation", "ai content", "machine learning", "chatgpt", "ai marketing", "content automation"]
+        },
+        {
+            title: "Humanizing Content & Authentic Storytelling",
+            description: "Creating authentic, human-centered content that resonates with audiences",
+            category: "Marketing",
+            url: "MARKETING/Humanizing-content-&-authentic-storytelling/index.html",
+            keywords: ["storytelling", "authentic", "human", "brand story", "narrative", "humanizing", "authenticity", "emotional content"]
+        },
+        {
+            title: "User Generated Content (UGC)",
+            description: "Leveraging user-generated content for authentic marketing and engagement",
+            category: "Marketing",
+            url: "MARKETING/UGC/index.html",
+            keywords: ["ugc", "user generated", "user content", "reviews", "testimonials", "community content", "social proof", "customer content"]
+        },
+        {
+            title: "Content Format Innovations",
+            description: "Exploring new content formats including interactive media and emerging technologies",
+            category: "Marketing",
+            url: "MARKETING/content-format-innovations/index.html",
+            keywords: ["innovation", "content formats", "interactive", "new media", "emerging tech", "content innovation", "formats"]
+        },
+        {
+            title: "Augmented Reality & Virtual Reality Marketing",
+            description: "Immersive AR/VR experiences for innovative content marketing",
+            category: "Marketing",
+            url: "MARKETING/augmented-reality-&-virtual-reality-for-content-marketing/index.html",
+            keywords: ["ar", "vr", "augmented reality", "virtual reality", "immersive", "metaverse", "3d", "xr", "mixed reality"]
+        },
+        {
+            title: "Co-Marketing & Brand Partnership",
+            description: "Strategic partnerships and collaborative marketing initiatives",
+            category: "Marketing",
+            url: "MARKETING/Co-Marketing-&-brand-partnership/index.html",
+            keywords: ["partnership", "co-marketing", "collaboration", "brand partnership", "joint venture", "alliance", "strategic partnership"]
+        },
+        {
+            title: "Newsletter & Community-Driven Growth",
+            description: "Building engaged communities and growing through newsletter marketing",
+            category: "Marketing",
+            url: "MARKETING/newsletter-&-community-driven-growth/index.html",
+            keywords: ["newsletter", "community", "growth", "community building", "engagement", "subscriber", "community driven", "audience building"]
+        },
+        {
+            title: "Content Marketing Measurement & ROI Analytics",
+            description: "Measuring content performance and calculating marketing ROI",
+            category: "Marketing",
+            url: "MARKETING/content-marketing-measurement-&-ROI-analytics/index.html",
+            keywords: ["roi", "measurement", "analytics", "performance", "metrics", "content roi", "marketing measurement", "attribution"]
+        },
+        
+        // Main Categories
         {
             title: "Marketing Strategies",
             description: "Social media, content marketing, and analytics insights",
             category: "Marketing",
             url: "#marketing",
-            keywords: ["marketing", "social media", "content", "analytics", "campaigns", "email marketing"]
+            keywords: ["marketing", "strategy", "campaigns", "digital marketing", "marketing strategies"]
         }
     ];
 

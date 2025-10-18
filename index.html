@@ -210,12 +210,18 @@
 
             <form class="search-form" role="search" aria-label="Search the wiki">
                 <div class="search-container">
-                    <input type="search" placeholder="Search topics, e.g. volunteer systems" aria-label="Search input" id="search-input" autocomplete="off">
+                    <input type="search" placeholder="Search: ticketing, volunteers, marketing..." aria-label="Search input" id="search-input" autocomplete="off">
                     <div class="search-suggestions" id="search-suggestions" role="listbox" aria-hidden="true">
                         <!-- Suggestions will be populated dynamically -->
                     </div>
                 </div>
-                <button type="submit">Search</button>
+                <button type="submit" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Search</span>
+                </button>
             </form>
 
             <!-- Quick Access Section -->
