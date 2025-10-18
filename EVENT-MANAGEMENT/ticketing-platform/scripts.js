@@ -303,6 +303,124 @@ document.addEventListener('DOMContentLoaded', function() {
 
         console.log('Ticketing platform page functionality initialized successfully');
         
+        // === STAGGERING ANIMATIONS ===
+        
+        // Intersection Observer for scroll-triggered animations
+        const createScrollObserver = () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        
+                        // Add staggered animation class to grids
+                        if (target.classList.contains('stats-grid')) {
+                            const cards = target.querySelectorAll('.stat-card');
+                            cards.forEach((card, index) => {
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, index * 100);
+                            });
+                        }
+                        
+                        if (target.classList.contains('feature-grid')) {
+                            const cards = target.querySelectorAll('.feature-card');
+                            cards.forEach((card, index) => {
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, index * 100);
+                            });
+                        }
+                        
+                        if (target.classList.contains('experience-benefits')) {
+                            const items = target.querySelectorAll('.benefit-item');
+                            items.forEach((item, index) => {
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateY(0)';
+                                }, index * 100);
+                            });
+                        }
+                        
+                        // Animate list items in highlights
+                        if (target.classList.contains('technology-highlight') || 
+                            target.classList.contains('analytics-showcase')) {
+                            const listItems = target.querySelectorAll('ul li');
+                            listItems.forEach((item, index) => {
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateX(0)';
+                                }, index * 100);
+                            });
+                        }
+                        
+                        // Animate showcase containers
+                        if (target.classList.contains('analytics-showcase') ||
+                            target.classList.contains('blockchain-benefits') ||
+                            target.classList.contains('hybrid-features') ||
+                            target.classList.contains('future-vision') ||
+                            target.classList.contains('ai-benefits') ||
+                            target.classList.contains('payment-methods')) {
+                            target.style.opacity = '1';
+                            target.style.transform = 'translateY(0)';
+                        }
+                        
+                        // Add animate class for general scroll animations
+                        if (target.classList.contains('animate-on-scroll')) {
+                            target.classList.add('animate');
+                        }
+                        
+                        // Stop observing this element
+                        observer.unobserve(target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all elements that should animate
+            const elementsToAnimate = document.querySelectorAll(`
+                .stats-grid,
+                .feature-grid,
+                .experience-benefits,
+                .technology-highlight,
+                .analytics-showcase,
+                .blockchain-benefits,
+                .hybrid-features,
+                .future-vision,
+                .ai-benefits,
+                .payment-methods,
+                .animate-on-scroll
+            `);
+            
+            elementsToAnimate.forEach(element => {
+                observer.observe(element);
+            });
+        };
+        
+        // Initialize scroll animations
+        createScrollObserver();
+        
+        // Add smooth entrance animation for page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainContent = document.querySelector('.main-content');
+            if (mainContent) {
+                mainContent.style.opacity = '0';
+                mainContent.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    mainContent.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                    mainContent.style.opacity = '1';
+                    mainContent.style.transform = 'translateY(0)';
+                }, 100);
+            }
+        });
+        
     } catch (error) {
         console.error('Error initializing page functionality:', error);
     }
