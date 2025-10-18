@@ -29,6 +29,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set dark theme permanently (no toggle functionality)
     document.documentElement.setAttribute('data-theme', 'dark');
 
+    // Add scroll indicators to dropdown menus with more than 6 items
+    function initDropdownScrollIndicators() {
+        const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+        
+        dropdownMenus.forEach(menu => {
+            const itemCount = menu.querySelectorAll('li').length;
+            
+            // Add scroll indicator class if more than 6 items
+            if (itemCount > 6) {
+                menu.classList.add('has-scroll');
+                
+                // Update scroll indicator visibility based on scroll position
+                menu.addEventListener('scroll', function() {
+                    const atBottom = this.scrollHeight - this.scrollTop <= this.clientHeight + 5;
+                    if (atBottom) {
+                        this.classList.add('scrolled-to-bottom');
+                    } else {
+                        this.classList.remove('scrolled-to-bottom');
+                    }
+                });
+            }
+        });
+    }
+
+    // Initialize scroll indicators
+    initDropdownScrollIndicators();
+
     // Handle URL hash fragments for dropdown navigation when arriving from other pages
     function handleHashNavigation() {
         const hash = window.location.hash;
