@@ -64,35 +64,5 @@
       "source": "/ticketing-platform",
       "destination": "/EVENT-MANAGEMENT/ticketing-platform/index.html"
     }
-  ],
-  "routes": [
-    {
-      "src": "/home.css",
-      "dest": "/home.css",
-      "headers": {
-        "Content-Type": "text/css"
-      }
-    },
-    {
-      "src": "/home.js",
-      "dest": "/home.js",
-      "headers": {
-        "Content-Type": "application/javascript"
-      }
-    },
-    {
-      "src": "/earth3d.js",
-      "dest": "/earth3d.js",
-      "headers": {
-        "Content-Type": "application/javascript"
-      }
-    },
-    {
-      "src": "/additional-ad-styles.css",
-      "dest": "/additional-ad-styles.css",
-      "headers": {
-        "Content-Type": "text/css"
-      }
-    }
   ]
 }
