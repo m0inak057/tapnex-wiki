@@ -185,66 +185,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // --- Enhanced Features for Ticketing Platform ---
-        
-        // Add hover effects for stat cards
-        const statCards = document.querySelectorAll('.stat-card');
-        statCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(-2px) scale(1.0)';
-            });
-        });
-
-        // Add animated counter effect for statistics
-        const animateCounters = () => {
-            const counters = document.querySelectorAll('.stat-card h3');
-            
-            counters.forEach(counter => {
-                const target = counter.textContent;
-                const numericTarget = parseFloat(target.replace(/[^\d.]/g, ''));
-                
-                if (!isNaN(numericTarget) && numericTarget > 0) {
-                    let current = 0;
-                    const increment = numericTarget / 100;
-                    const timer = setInterval(() => {
-                        current += increment;
-                        if (current >= numericTarget) {
-                            current = numericTarget;
-                            clearInterval(timer);
-                        }
-                        
-                        // Format the number based on original text
-                        if (target.includes('M+')) {
-                            counter.textContent = Math.floor(current) + 'M+';
-                        } else if (target.includes('%')) {
-                            counter.textContent = Math.floor(current) + '%';
-                        } else {
-                            counter.textContent = Math.floor(current);
-                        }
-                    }, 20);
-                }
-            });
-        };
-
-        // Trigger counter animation when stats come into view
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    statsObserver.disconnect(); // Only animate once
-                }
-            });
-        });
-
-        const statsGrid = document.querySelector('.stats-grid');
-        if (statsGrid) {
-            statsObserver.observe(statsGrid);
-        }
-
         // --- Modal functionality for Privacy and Terms ---
         const privacyBtn = document.getElementById('privacy-btn');
         const termsBtn = document.getElementById('terms-btn');
@@ -301,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = '';
         }
 
-        console.log('Ticketing platform page functionality initialized successfully');
+        console.log('Page functionality initialized successfully');
         
         // === STAGGERING ANIMATIONS ===
         
@@ -318,37 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (entry.isIntersecting) {
                         const target = entry.target;
                         
-                        // Add staggered animation class to grids
-                        if (target.classList.contains('stats-grid')) {
-                            const cards = target.querySelectorAll('.stat-card');
-                            cards.forEach((card, index) => {
-                                setTimeout(() => {
-                                    card.style.opacity = '1';
-                                    card.style.transform = 'translateY(0)';
-                                }, index * 100);
-                            });
-                        }
-                        
-                        if (target.classList.contains('feature-grid')) {
-                            const cards = target.querySelectorAll('.feature-card');
-                            cards.forEach((card, index) => {
-                                setTimeout(() => {
-                                    card.style.opacity = '1';
-                                    card.style.transform = 'translateY(0)';
-                                }, index * 100);
-                            });
-                        }
-                        
-                        if (target.classList.contains('experience-benefits')) {
-                            const items = target.querySelectorAll('.benefit-item');
-                            items.forEach((item, index) => {
-                                setTimeout(() => {
-                                    item.style.opacity = '1';
-                                    item.style.transform = 'translateY(0)';
-                                }, index * 100);
-                            });
-                        }
-                        
                         // Animate list items in highlights
                         if (target.classList.contains('technology-highlight') || 
                             target.classList.contains('analytics-showcase')) {
@@ -362,12 +271,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                         
                         // Animate showcase containers
-                        if (target.classList.contains('analytics-showcase') ||
-                            target.classList.contains('blockchain-benefits') ||
-                            target.classList.contains('hybrid-features') ||
-                            target.classList.contains('future-vision') ||
-                            target.classList.contains('ai-benefits') ||
-                            target.classList.contains('payment-methods')) {
+                        if (target.classList.contains('technology-highlight') ||
+                            target.classList.contains('analytics-showcase')) {
                             target.style.opacity = '1';
                             target.style.transform = 'translateY(0)';
                         }
@@ -385,16 +290,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Observe all elements that should animate
             const elementsToAnimate = document.querySelectorAll(`
-                .stats-grid,
-                .feature-grid,
-                .experience-benefits,
                 .technology-highlight,
                 .analytics-showcase,
-                .blockchain-benefits,
-                .hybrid-features,
-                .future-vision,
-                .ai-benefits,
-                .payment-methods,
                 .animate-on-scroll
             `);
             
@@ -407,19 +304,17 @@ document.addEventListener('DOMContentLoaded', function() {
         createScrollObserver();
         
         // Add smooth entrance animation for page load
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainContent = document.querySelector('.main-content');
-            if (mainContent) {
-                mainContent.style.opacity = '0';
-                mainContent.style.transform = 'translateY(20px)';
-                
-                setTimeout(() => {
-                    mainContent.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-                    mainContent.style.opacity = '1';
-                    mainContent.style.transform = 'translateY(0)';
-                }, 100);
-            }
-        });
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+            mainContent.style.opacity = '0';
+            mainContent.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                mainContent.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                mainContent.style.opacity = '1';
+                mainContent.style.transform = 'translateY(0)';
+            }, 100);
+        }
         
     } catch (error) {
         console.error('Error initializing page functionality:', error);

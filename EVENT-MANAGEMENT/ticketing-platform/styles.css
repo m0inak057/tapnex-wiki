@@ -1,0 +1,108 @@
+:root {
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #e2e8f0;
+            --sidebar-highlight: #3b82f6;
+            --content-bg: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --header-font-weight: 600;
+            
+            /* Dark mode variables */
+            --dark-bg: #0f172a;
+            --dark-content-bg: #1e293b;
+            --dark-text: #e2e8f0;
+            --dark-border: #334155;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dark mode styles */
+        [data-theme="dark"] {
+            --content-bg: var(--dark-bg);
+            --text-primary: var(--dark-text);
+            --border-color: var(--dark-border);
+        }
+
+        [data-theme="dark"] body {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        [data-theme="dark"] .main-content {
+            background-color: var(--dark-bg);
+        }
+
+        [data-theme="dark"] p {
+            color: #cbd5e1;
+        }
+
+        /* Dark mode for new components */
+        [data-theme="dark"] .stats-grid .stat-card,
+        [data-theme="dark"] .technology-highlight,
+        [data-theme="dark"] .feature-card,
+        [data-theme="dark"] .analytics-showcase,
+        [data-theme="dark"] .experience-benefits .benefit-item,
+        [data-theme="dark"] .payment-methods,
+        [data-theme="dark"] .blockchain-benefits,
+        [data-theme="dark"] .hybrid-features,
+        [data-theme="dark"] .future-vision {
+            background-color: var(--dark-content-bg);
+            border-color: var(--dark-border);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--content-bg);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: padding-left 0.3s ease;
+        }
+
+        /* Screen reader only class */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Main wrapper for sidebar and content */
+        .page-wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--sidebar-highlight);
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1001;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        /* truncated styles for brevity */

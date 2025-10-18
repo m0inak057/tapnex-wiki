@@ -1,0 +1,206 @@
+:root {
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #e2e8f0;
+            --sidebar-highlight: #3b82f6;
+            --content-bg: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --header-font-weight: 600;
+            
+            /* Dark mode variables */
+            --dark-bg: #0f172a;
+            --dark-content-bg: #1e293b;
+            --dark-text: #e2e8f0;
+            --dark-border: #334155;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dark mode styles */
+        [data-theme="dark"] {
+            --content-bg: var(--dark-bg);
+            --text-primary: var(--dark-text);
+            --border-color: var(--dark-border);
+        }
+
+        [data-theme="dark"] body {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        [data-theme="dark"] .main-content {
+            background-color: var(--dark-bg);
+        }
+
+        [data-theme="dark"] p {
+            color: #cbd5e1;
+        }
+
+        /* Dark mode for technology highlights */
+        [data-theme="dark"] .technology-highlight {
+            background-color: var(--dark-content-bg);
+            border-color: var(--dark-border);
+        }
+
+        /* Dark mode for analytics showcase */
+        [data-theme="dark"] .analytics-showcase {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            border-color: #fbbf24;
+        }
+
+        [data-theme="dark"] .analytics-showcase h4 {
+            color: #fbbf24;
+        }
+
+        /* Dark mode for light green analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightgreen {
+            background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+            border-color: #22c55e;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightgreen h4 {
+            color: #4ade80;
+        }
+
+        /* Dark mode for light purple analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightpurple {
+            background: linear-gradient(135deg, #581c87 0%, #7c3aed 100%);
+            border-color: #a855f7;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightpurple h4 {
+            color: #c084fc;
+        }
+
+        /* Dark mode for light orange analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightorange {
+            background: linear-gradient(135deg, #431407 0%, #9a3412 100%);
+            border-color: #fb923c;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightorange h4 {
+            color: #fdba74;
+        }
+
+        /* Dark mode for light blue analytics showcase */
+        [data-theme="dark"] .analytics-showcase-lightblue {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            border-color: #0ea5e9;
+        }
+
+        [data-theme="dark"] .analytics-showcase-lightblue h4 {
+            color: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--content-bg);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: padding-left 0.3s ease;
+        }
+
+        /* Screen reader only class */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Main wrapper for sidebar and content */
+        .page-wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--sidebar-highlight);
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1001;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .theme-toggle:hover {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: #fbbf24;
+            color: #0f172a;
+        }
+
+        [data-theme="dark"] .theme-toggle:hover {
+            background: #f59e0b;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: var(--header-font-weight);
+            line-height: 1.3;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            color: #334155;
+        }
+
+        a {
+            color: var(--sidebar-highlight);
+            text-decoration: none;
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        li {
+           margin-bottom: 0.5rem;
+        }
+        
+        /* --- Sidebar --- */
+        .sidebar {
+            width: 280px;
+            background-color: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+            transform: translateX(-100%); /* Hide sidebar by default on all screens */
+        }
+
+        /* content truncated for brevity */
