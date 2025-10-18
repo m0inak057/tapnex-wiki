@@ -5,13 +5,14 @@
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
+  "$comment": "Cache-Control strategy: HTML files use s-maxage=60 (CDN cache for 60s) with stale-while-revalidate=300 for better performance while ensuring content freshness. Static assets (.css, .js, .png) use max-age=31536000, immutable for optimal caching.",
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "public, s-maxage=60, stale-while-revalidate=300"
         }
       ]
     },
