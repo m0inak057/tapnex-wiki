@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
@@ -51,7 +51,7 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/analytics-&-insigths/</loc>
+        <loc>https://wiki.tapnex.tech/analytics-%26-insigths/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -69,25 +69,25 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/Personalization-&-Data-Driven-Content/</loc>
+        <loc>https://wiki.tapnex.tech/Personalization-%26-Data-Driven-Content/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/compliance-&-ethical-content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/compliance-%26-ethical-content-marketing/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/AI-Powered-Content-Creation-&-Exhaustive-Marketing/</loc>
+        <loc>https://wiki.tapnex.tech/AI-Powered-Content-Creation-%26-Exhaustive-Marketing/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/Humanizing-content-&-authentic-storytelling/</loc>
+        <loc>https://wiki.tapnex.tech/Humanizing-content-%26-authentic-storytelling/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
