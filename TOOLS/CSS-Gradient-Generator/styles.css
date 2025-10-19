@@ -1,3 +1,39 @@
+/* Tools Navigation Styles */
+.nav-link-header {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+.nav-link-header:hover {
+    background: var(--border-color);
+}
+
+.nav-link-header.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-link-header {
+        display: none;
+    }
+}
+
+/* Main content spacing for tools */
+.main-content {
+    margin-top: 2rem;
+}
+
 /* Root Variables - Light Theme */
 :root {
     --bg-color: #ffffff;
