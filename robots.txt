@@ -1,15 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /private/
-# TODO: Verify if ALL PDFs should be disallowed, or only specific ones.
-Disallow: /*.pdf$
-Disallow: /admin/
 
-# Crawl-delay for search engines
-# Crawl-delay: 1 (Note: Not supported by Googlebot)
+# Block private areas only
+Disallow: /admin/
+Disallow: /private/
 
 # Sitemap location
 Sitemap: https://wiki.tapnex.tech/sitemap.xml
-
-# Additional information
-# Host: https://wiki.tapnex.tech
