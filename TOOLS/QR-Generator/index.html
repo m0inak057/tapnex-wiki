@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - TapNex Tools</title>
+    <meta name="description" content="Generate QR codes instantly from any URL or text. Free and easy to use.">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">QR Code Generator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Create QR codes instantly from any URL or text
+                </p>
+                
+                <div class="qr-container">
+                    <div class="input-section">
+                        <label for="qr-text-input">Enter URL or Text</label>
+                        <input 
+                            type="text" 
+                            id="qr-text-input" 
+                            placeholder="Enter URL or text to encode"
+                            autocomplete="off"
+                        >
+                        <button id="generate-btn" class="generate-button">Generate QR Code</button>
+                    </div>
+
+                    <div class="output-section">
+                        <div id="qrcode-display" class="qrcode-display"></div>
+                        <a id="download-btn" class="download-button button-style" download="qrcode.png" style="display: none;">
+                            Download QR Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Instant Generation:</strong> Create QR codes in seconds</li>
+                        <li><strong>Universal Compatibility:</strong> Works with URLs, text, phone numbers, and more</li>
+                        <li><strong>High Quality:</strong> Generate crisp, scannable QR codes</li>
+                        <li><strong>Easy Download:</strong> Save your QR code as a PNG image</li>
+                        <li><strong>No Registration:</strong> Free to use, no account needed</li>
+                        <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 Common Uses</h4>
+                    <ul>
+                        <li><strong>Website Links:</strong> Share URLs quickly and easily</li>
+                        <li><strong>Contact Information:</strong> Create vCards for business cards</li>
+                        <li><strong>Wi-Fi Access:</strong> Share Wi-Fi credentials securely</li>
+                        <li><strong>Event Tickets:</strong> Generate tickets and passes</li>
+                        <li><strong>Product Information:</strong> Link to product details and manuals</li>
+                        <li><strong>Social Media:</strong> Direct people to your social profiles</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase" style="margin-top: 2rem;">
+                    <h4>📱 How to Use</h4>
+                    <ol>
+                        <li><strong>Enter Your Content:</strong> Type or paste the URL or text you want to encode</li>
+                        <li><strong>Generate:</strong> Click the "Generate QR Code" button</li>
+                        <li><strong>Download:</strong> Click "Download QR Code" to save it as an image</li>
+                        <li><strong>Share:</strong> Use the QR code in your marketing materials, business cards, or websites</li>
+                    </ol>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="../shared/footer.js"></script>
+</body>
+</html>

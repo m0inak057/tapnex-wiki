@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tools — TapNex Wiki</title>
+    <meta name="description" content="Comprehensive collection of free online tools including calculators, converters, generators and more. All tools are available for free on TapNex Wiki.">
+    <meta name="keywords" content="tools, online tools, calculator, converter, generator, free tools, tapnex tools">
+    <meta name="author" content="TapNex">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tools — TapNex Wiki">
+    <meta property="og:description" content="Free online tools including calculators, converters, generators and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wiki.tapnex.tech/tools.html">
+    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wiki.tapnex.tech/tools.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/TAPNEX_LOGO.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="additional-ad-styles.css">
+    
+    <style>
+        .tools-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .tools-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .tools-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .tools-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .tool-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .tool-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .tool-card p {
+            color: #718096;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .tool-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .tool-link:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .tool-link svg {
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+        }
+        
+        .tools-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        
+        .category-filter {
+            padding: 10px 20px;
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 25px;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .category-filter.active,
+        .category-filter:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto 3rem auto;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #a0aec0;
+        }
+        
+        .nav-link-header {
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
+        }
+        
+        .nav-link-header:hover {
+            background: var(--border-color);
+        }
+        
+        .nav-link-header.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-link-header {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .tools-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .tool-card {
+                padding: 1.5rem;
+            }
+            
+            .tools-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo" title="Go to Tapnex Wiki Home">
+                    <img src="images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+                </a>
+            </div>
+            
+            <div class="header-actions">
+                <a href="index.html" class="nav-link-header">Home</a>
+                <a href="tools.html" class="nav-link-header active">Tools</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown Navigation Bar -->
+    <nav class="dropdown-nav" aria-label="Tools navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tools.html" class="nav-link active">Tools</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tools-hero">
+        <div class="tools-container">
+            <h1>Free Online Tools</h1>
+            <p>Discover our comprehensive collection of 23 free online tools including calculators, converters, generators, and utilities to boost your productivity.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="tools-container">
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search tools..." id="toolSearch">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="tools-categories">
+            <button class="category-filter active" data-category="all">All Tools</button>
+            <button class="category-filter" data-category="calculator">Calculators</button>
+            <button class="category-filter" data-category="converter">Converters</button>
+            <button class="category-filter" data-category="generator">Generators</button>
+            <button class="category-filter" data-category="formatter">Formatters</button>
+            <button class="category-filter" data-category="utility">Utilities</button>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-grid" id="toolsGrid">
+            <!-- Calculator Tools -->
+            <div class="tool-card" data-category="calculator" data-name="calculator basic math arithmetic">
+                <div class="tool-icon">🧮</div>
+                <h3>Calculator</h3>
+                <p>A comprehensive calculator for basic arithmetic operations, scientific calculations, and mathematical functions.</p>
+                <a href="TOOLS/Calculator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="calculator" data-name="bmi calculator body mass index health fitness">
+                <div class="tool-icon">⚖️</div>
+                <h3>BMI Calculator</h3>
+                <p>Calculate your Body Mass Index (BMI) to assess whether your weight is in a healthy range for your height.</p>
+                <a href="TOOLS/BMI-Calculator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="calculator" data-name="percentage calculator percent math">
+                <div class="tool-icon">%</div>
+                <h3>Percentage Calculator</h3>
+                <p>Calculate percentages, percentage increase/decrease, and solve various percentage-related problems.</p>
+                <a href="TOOLS/Percentage-Calculator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Converter Tools -->
+            <div class="tool-card" data-category="converter" data-name="case converter text uppercase lowercase title camel">
+                <div class="tool-icon">🔤</div>
+                <h3>Case Converter</h3>
+                <p>Convert text between different cases: uppercase, lowercase, title case, camel case, and more.</p>
+                <a href="TOOLS/Case-Converter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="base64 encoder decoder encode decode">
+                <div class="tool-icon">🔐</div>
+                <h3>Base64 Encoder/Decoder</h3>
+                <p>Encode and decode text or files to/from Base64 format for data transmission and storage.</p>
+                <a href="TOOLS/Base64-Encoder-Decoder/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="url encoder decoder encode decode uri">
+                <div class="tool-icon">🔗</div>
+                <h3>URL Encoder/Decoder</h3>
+                <p>Encode and decode URLs for safe transmission over the internet and handle special characters.</p>
+                <a href="TOOLS/URL-Encoder-Decoder/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="unit converter measurement length weight temperature">
+                <div class="tool-icon">📏</div>
+                <h3>Unit Converter</h3>
+                <p>Convert between different units of measurement including length, weight, temperature, and more.</p>
+                <a href="TOOLS/Unit-Converter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="timestamp converter unix epoch time date">
+                <div class="tool-icon">⏰</div>
+                <h3>Timestamp Converter</h3>
+                <p>Convert between Unix timestamps and human-readable dates and times in various formats.</p>
+                <a href="TOOLS/Timestamp-Converter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="timezone converter time zone world clock">
+                <div class="tool-icon">🌍</div>
+                <h3>Timezone Converter</h3>
+                <p>Convert time between different timezones and find meeting times across multiple locations.</p>
+                <a href="TOOLS/Timezone-Converter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="converter" data-name="color code converter hex rgb hsl cmyk">
+                <div class="tool-icon">🎨</div>
+                <h3>Color Code Converter</h3>
+                <p>Convert colors between different formats: HEX, RGB, HSL, CMYK, and more color systems.</p>
+                <a href="TOOLS/Color-Code-Converter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Generator Tools -->
+            <div class="tool-card" data-category="generator" data-name="password generator secure random strong">
+                <div class="tool-icon">🔑</div>
+                <h3>Password Generator</h3>
+                <p>Generate secure, random passwords with customizable length and character sets for enhanced security.</p>
+                <a href="TOOLS/Password-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="generator" data-name="qr generator qr code create">
+                <div class="tool-icon">📱</div>
+                <h3>QR Code Generator</h3>
+                <p>Generate QR codes for URLs, text, contact information, and other data types with customization options.</p>
+                <a href="TOOLS/QR-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="generator" data-name="lorem ipsum generator placeholder text dummy">
+                <div class="tool-icon">📝</div>
+                <h3>Lorem Ipsum Generator</h3>
+                <p>Generate placeholder text in various formats: paragraphs, words, lists, and custom lengths.</p>
+                <a href="TOOLS/Lorem-Ipsum-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="generator" data-name="color palette generator colors scheme">
+                <div class="tool-icon">🎭</div>
+                <h3>Color Palette Generator</h3>
+                <p>Create harmonious color palettes and schemes for design projects with various color harmony rules.</p>
+                <a href="TOOLS/Color-Palette-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="generator" data-name="css gradient generator background linear radial">
+                <div class="tool-icon">🌈</div>
+                <h3>CSS Gradient Generator</h3>
+                <p>Create beautiful CSS gradients with live preview and copy-ready code for web development.</p>
+                <a href="TOOLS/CSS-Gradient-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="generator" data-name="favicon generator icon website favicon">
+                <div class="tool-icon">🔖</div>
+                <h3>Favicon Generator</h3>
+                <p>Create favicons and app icons from images or text in multiple sizes and formats for websites and apps.</p>
+                <a href="TOOLS/Favicon-Generator/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Formatter Tools -->
+            <div class="tool-card" data-category="formatter" data-name="json formatter beautify minify validate">
+                <div class="tool-icon">{ }</div>
+                <h3>JSON Formatter</h3>
+                <p>Format, beautify, minify, and validate JSON data with syntax highlighting and error detection.</p>
+                <a href="TOOLS/JSON-Formatter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="formatter" data-name="markdown previewer md preview html">
+                <div class="tool-icon">📄</div>
+                <h3>Markdown Previewer</h3>
+                <p>Preview Markdown text in real-time with live HTML rendering and syntax highlighting.</p>
+                <a href="TOOLS/Markdown-Previewer/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Utility Tools -->
+            <div class="tool-card" data-category="utility" data-name="regex tester regular expression pattern match">
+                <div class="tool-icon">🔍</div>
+                <h3>Regex Tester</h3>
+                <p>Test and debug regular expressions with real-time matching, groups, and detailed explanations.</p>
+                <a href="TOOLS/Regex-Tester/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="utility" data-name="word counter text analysis character count">
+                <div class="tool-icon">📊</div>
+                <h3>Word Counter</h3>
+                <p>Count words, characters, sentences, and paragraphs in text with detailed statistics and analysis.</p>
+                <a href="TOOLS/Word-Counter/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="utility" data-name="text reverser reverse string backwards">
+                <div class="tool-icon">↩️</div>
+                <h3>Text Reverser</h3>
+                <p>Reverse text, words, or sentences with various reversal options and formatting controls.</p>
+                <a href="TOOLS/Text-Reverser/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="utility" data-name="image compressor compress optimize resize">
+                <div class="tool-icon">🖼️</div>
+                <h3>Image Compressor</h3>
+                <p>Compress and optimize images to reduce file size while maintaining quality for web and storage.</p>
+                <a href="TOOLS/Image-Compressor/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="tool-card" data-category="utility" data-name="image resizer resize dimensions scale">
+                <div class="tool-icon">📐</div>
+                <h3>Image Resizer</h3>
+                <p>Resize images to specific dimensions or scale them by percentage while maintaining aspect ratio.</p>
+                <a href="TOOLS/Image-Resizer/" class="tool-link">
+                    Use Tool
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="images/TAPNEX_LOGO.png" alt="Tapnex Wiki Logo" class="logo-image">
+                    <h3>Tapnex Wiki</h3>
+                </div>
+                <p class="footer-description">
+                    Tapnex Wiki is the comprehensive knowledge base empowering organizations with expert documentation for event management, volunteer systems, technology solutions, and marketing excellence.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tapnex.fc/?hl=en" aria-label="Follow us on Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/tapnexfc/?" aria-label="Follow us on LinkedIn" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="https://www.tapnex.tech/">TapNex</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.tapnex.tech/">TapNex</a></li>
+                    <li><a href="https://www.tapnex.tech/about">About</a></li>
+                    <li><a href="https://www.tapnex.tech/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@tapnex.tech">info@tapnex.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 TapNex Wiki. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html#privacy-btn">Privacy</a>
+                    <a href="index.html#terms-btn">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('toolSearch');
+        const toolsGrid = document.getElementById('toolsGrid');
+        const toolCards = document.querySelectorAll('.tool-card');
+        const categoryFilters = document.querySelectorAll('.category-filter');
+
+        // Search function
+        function searchTools() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            toolCards.forEach(card => {
+                const searchData = card.getAttribute('data-name').toLowerCase();
+                const titleText = card.querySelector('h3').textContent.toLowerCase();
+                const descriptionText = card.querySelector('p').textContent.toLowerCase();
+                
+                if (searchData.includes(searchTerm) || 
+                    titleText.includes(searchTerm) || 
+                    descriptionText.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Category filter function
+        function filterByCategory(category) {
+            toolCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', searchTools);
+
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Remove active class from all filters
+                categoryFilters.forEach(f => f.classList.remove('active'));
+                
+                // Add active class to clicked filter
+                filter.classList.add('active');
+                
+                // Filter tools
+                const category = filter.getAttribute('data-category');
+                filterByCategory(category);
+                
+                // Clear search when switching categories
+                searchInput.value = '';
+            });
+        });
+
+        // Intersection Observer for animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animation
+        toolCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Add keyboard navigation for accessibility
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+    </script>
+    
+    <!-- Additional Scripts -->
+    <script src="home.js" defer></script>
+</body>
+</html>

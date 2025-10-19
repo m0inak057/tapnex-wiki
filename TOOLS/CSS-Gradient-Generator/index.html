@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator - TapNex Tools</title>
+    <meta name="description" content="Create beautiful CSS linear gradients with live preview. Generate gradient code instantly with angle and color controls.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">CSS Gradient Generator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Create beautiful linear gradients with live preview and instant CSS code generation
+                </p>
+                
+                <div class="generator-container">
+                    <!-- Live Gradient Preview -->
+                    <div id="gradient-preview" class="gradient-preview">
+                        <div class="preview-overlay">
+                            <span class="preview-text">Live Preview</span>
+                        </div>
+                    </div>
+
+                    <!-- Controls Section -->
+                    <div class="controls">
+                        <!-- Color Controls -->
+                        <div class="control-group">
+                            <h3>🎨 Colors</h3>
+                            <div class="color-controls">
+                                <div class="color-input-group">
+                                    <label for="color-1">Color 1:</label>
+                                    <div class="color-picker-wrapper">
+                                        <input type="color" id="color-1" value="#667eea">
+                                        <span id="color-1-value" class="color-hex">#667eea</span>
+                                    </div>
+                                </div>
+                                <div class="color-input-group">
+                                    <label for="color-2">Color 2:</label>
+                                    <div class="color-picker-wrapper">
+                                        <input type="color" id="color-2" value="#764ba2">
+                                        <span id="color-2-value" class="color-hex">#764ba2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="swap-colors-btn" class="secondary-btn">
+                                🔄 Swap Colors
+                            </button>
+                        </div>
+
+                        <!-- Angle Control -->
+                        <div class="control-group">
+                            <h3>📐 Gradient Angle</h3>
+                            <div class="angle-control">
+                                <label for="angle-slider">
+                                    Angle: <span id="angle-value">90</span>°
+                                </label>
+                                <input type="range" id="angle-slider" min="0" max="360" value="90">
+                                <div class="angle-presets">
+                                    <button class="preset-btn" data-angle="0">↑ 0°</button>
+                                    <button class="preset-btn" data-angle="45">↗ 45°</button>
+                                    <button class="preset-btn" data-angle="90">→ 90°</button>
+                                    <button class="preset-btn" data-angle="135">↘ 135°</button>
+                                    <button class="preset-btn" data-angle="180">↓ 180°</button>
+                                    <button class="preset-btn" data-angle="225">↙ 225°</button>
+                                    <button class="preset-btn" data-angle="270">← 270°</button>
+                                    <button class="preset-btn" data-angle="315">↖ 315°</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gradient Type -->
+                        <div class="control-group">
+                            <h3>🔧 Gradient Type</h3>
+                            <div class="gradient-type-controls">
+                                <label class="radio-label">
+                                    <input type="radio" name="gradient-type" value="linear" checked>
+                                    <span>Linear</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gradient-type" value="radial">
+                                    <span>Radial</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS Output -->
+                    <div class="output-container">
+                        <h3>💻 Generated CSS Code</h3>
+                        <textarea id="css-output" readonly></textarea>
+                        <div class="output-actions">
+                            <button id="copy-btn">
+                                📋 Copy CSS
+                            </button>
+                            <button id="copy-full-btn" class="secondary-btn">
+                                📄 Copy with Prefixes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gradient Presets -->
+                    <div class="presets-container">
+                        <h3>✨ Popular Gradients</h3>
+                        <div class="presets-grid">
+                            <div class="preset-card" data-color1="#667eea" data-color2="#764ba2" data-angle="135">
+                                <div class="preset-preview" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                                <span>Purple Bliss</span>
+                            </div>
+                            <div class="preset-card" data-color1="#f093fb" data-color2="#f5576c" data-angle="90">
+                                <div class="preset-preview" style="background: linear-gradient(90deg, #f093fb, #f5576c);"></div>
+                                <span>Pink Sunset</span>
+                            </div>
+                            <div class="preset-card" data-color1="#4facfe" data-color2="#00f2fe" data-angle="135">
+                                <div class="preset-preview" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                                <span>Ocean Blue</span>
+                            </div>
+                            <div class="preset-card" data-color1="#43e97b" data-color2="#38f9d7" data-angle="90">
+                                <div class="preset-preview" style="background: linear-gradient(90deg, #43e97b, #38f9d7);"></div>
+                                <span>Fresh Mint</span>
+                            </div>
+                            <div class="preset-card" data-color1="#fa709a" data-color2="#fee140" data-angle="135">
+                                <div class="preset-preview" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+                                <span>Sunrise</span>
+                            </div>
+                            <div class="preset-card" data-color1="#30cfd0" data-color2="#330867" data-angle="90">
+                                <div class="preset-preview" style="background: linear-gradient(90deg, #30cfd0, #330867);"></div>
+                                <span>Deep Space</span>
+                            </div>
+                            <div class="preset-card" data-color1="#a8edea" data-color2="#fed6e3" data-angle="135">
+                                <div class="preset-preview" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"></div>
+                                <span>Cotton Candy</span>
+                            </div>
+                            <div class="preset-card" data-color1="#ff9a56" data-color2="#ff6a88" data-angle="90">
+                                <div class="preset-preview" style="background: linear-gradient(90deg, #ff9a56, #ff6a88);"></div>
+                                <span>Warm Flame</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Live Preview:</strong> See your gradient in real-time as you adjust colors and angles</li>
+                        <li><strong>Interactive Controls:</strong> Easy-to-use color pickers and angle slider</li>
+                        <li><strong>Instant Copy:</strong> One-click copy of CSS code to clipboard</li>
+                        <li><strong>Angle Presets:</strong> Quick access to common gradient directions (0°, 45°, 90°, etc.)</li>
+                        <li><strong>Popular Gradients:</strong> Pre-made beautiful gradient presets to get started quickly</li>
+                        <li><strong>Vendor Prefixes:</strong> Option to copy code with browser compatibility prefixes</li>
+                        <li><strong>Gradient Types:</strong> Support for both linear and radial gradients</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>🎨 Understanding CSS Gradients</h4>
+                    <p><strong>Linear Gradients:</strong></p>
+                    <ul>
+                        <li><strong>Direction:</strong> Gradients flow in a straight line at a specified angle</li>
+                        <li><strong>0°:</strong> Bottom to top (↑)</li>
+                        <li><strong>90°:</strong> Left to right (→)</li>
+                        <li><strong>180°:</strong> Top to bottom (↓)</li>
+                        <li><strong>270°:</strong> Right to left (←)</li>
+                    </ul>
+                    <p><strong>Radial Gradients:</strong></p>
+                    <ul>
+                        <li>Gradients radiate outward from a central point</li>
+                        <li>Perfect for spotlight effects and circular designs</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>🎯 Use Cases</h4>
+                    <ul>
+                        <li><strong>Website Backgrounds:</strong> Create eye-catching hero sections and page backgrounds</li>
+                        <li><strong>Button Styles:</strong> Design modern gradient buttons with hover effects</li>
+                        <li><strong>Card Elements:</strong> Add depth to UI cards and containers</li>
+                        <li><strong>Text Effects:</strong> Apply gradients to text using background-clip</li>
+                        <li><strong>Loading Screens:</strong> Create animated gradient backgrounds</li>
+                        <li><strong>Mobile Apps:</strong> Design app interfaces with gradient headers</li>
+                        <li><strong>Brand Identity:</strong> Develop unique gradient color schemes for brands</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 Gradient Design Tips</h4>
+                    <ul>
+                        <li><strong>Color Harmony:</strong> Use colors that are close on the color wheel for smooth transitions</li>
+                        <li><strong>Contrast:</strong> Ensure sufficient contrast for text readability on gradients</li>
+                        <li><strong>Subtle is Better:</strong> Subtle gradients often look more professional than bold ones</li>
+                        <li><strong>Test on Different Screens:</strong> Gradients can look different on various displays</li>
+                        <li><strong>Consider Accessibility:</strong> Ensure text remains readable on gradient backgrounds</li>
+                        <li><strong>Multiple Color Stops:</strong> Add intermediate colors for more complex gradients</li>
+                        <li><strong>Animation:</strong> Gradients can be animated using CSS transitions or keyframes</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>📋 How to Use</h4>
+                    <ol style="padding-left: 2rem;">
+                        <li><strong>Choose Colors:</strong> Click the color pickers to select your gradient colors</li>
+                        <li><strong>Adjust Angle:</strong> Use the slider or preset buttons to set the gradient direction</li>
+                        <li><strong>Select Type:</strong> Choose between linear or radial gradient</li>
+                        <li><strong>Preview:</strong> Watch the live preview update in real-time</li>
+                        <li><strong>Copy Code:</strong> Click "Copy CSS" to get the generated code</li>
+                        <li><strong>Try Presets:</strong> Click any preset gradient to load it instantly</li>
+                    </ol>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💻 CSS Gradient Syntax</h4>
+                    <p><strong>Basic Linear Gradient:</strong></p>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+background: linear-gradient(90deg, #667eea, #764ba2);
+                    </pre>
+                    <p><strong>With Multiple Colors:</strong></p>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+                    </pre>
+                    <p><strong>Radial Gradient:</strong></p>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+background: radial-gradient(circle, #667eea, #764ba2);
+                    </pre>
+                    <p><strong>Gradient on Text:</strong></p>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+background: linear-gradient(90deg, #667eea, #764ba2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+                    </pre>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>🌐 Browser Support</h4>
+                    <ul>
+                        <li><strong>Modern Browsers:</strong> Full support in Chrome, Firefox, Safari, Edge</li>
+                        <li><strong>Vendor Prefixes:</strong> Use prefixes for older browser versions</li>
+                        <li><strong>Fallback Colors:</strong> Always provide a solid color fallback</li>
+                    </ul>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+/* Fallback for older browsers */
+background: #667eea;
+/* Modern gradient */
+background: linear-gradient(90deg, #667eea, #764ba2);
+                    </pre>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="../shared/footer.js"></script>
+</body>
+</html>

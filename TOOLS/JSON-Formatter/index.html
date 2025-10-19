@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator - TapNex Tools</title>
+    <meta name="description" content="Format, validate, and beautify JSON data with syntax highlighting.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">JSON Formatter & Validator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Format, validate, and beautify JSON data with syntax highlighting
+                </p>
+                
+                <div class="formatter-container">
+                    <div class="formatter-controls">
+                        <button id="format-btn" class="format-button">Format / Validate</button>
+                        <button id="copy-btn" class="copy-button">Copy</button>
+                        <button id="clear-btn" class="clear-button">Clear</button>
+                    </div>
+
+                    <div id="status-message" class="status-message"></div>
+
+                    <div class="formatter-io">
+                        <div class="input-panel">
+                            <label for="json-input">Raw JSON Input</label>
+                            <textarea 
+                                id="json-input" 
+                                placeholder="Paste your raw JSON here..."
+                                spellcheck="false"
+                            ></textarea>
+                        </div>
+
+                        <div class="output-panel">
+                            <label for="json-output">Formatted Output</label>
+                            <pre id="json-output-container"><code id="json-output"></code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Format & Beautify:</strong> Instantly format minified JSON with proper indentation</li>
+                        <li><strong>Validation:</strong> Detect and display JSON syntax errors</li>
+                        <li><strong>Syntax Highlighting:</strong> Color-coded keys, values, and data types</li>
+                        <li><strong>One-Click Copy:</strong> Copy formatted JSON to clipboard</li>
+                        <li><strong>Error Messages:</strong> Clear error descriptions with line numbers</li>
+                        <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 Use Cases</h4>
+                    <ul>
+                        <li><strong>API Development:</strong> Validate and format API responses</li>
+                        <li><strong>Debugging:</strong> Quickly spot errors in JSON data</li>
+                        <li><strong>Configuration Files:</strong> Format config files for better readability</li>
+                        <li><strong>Data Analysis:</strong> Review and understand complex JSON structures</li>
+                        <li><strong>Documentation:</strong> Create readable JSON examples</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase" style="margin-top: 2rem;">
+                    <h4>⌨️ Quick Tips</h4>
+                    <ul>
+                        <li><strong>Paste & Format:</strong> Paste minified JSON and click "Format / Validate"</li>
+                        <li><strong>Check Errors:</strong> Red status message shows exactly what's wrong</li>
+                        <li><strong>Copy Result:</strong> Use the "Copy" button to grab formatted JSON</li>
+                        <li><strong>Start Fresh:</strong> Click "Clear" to reset both input and output</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="../shared/footer.js"></script>
+</body>
+</html>

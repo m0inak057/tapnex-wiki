@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Code Converter - TapNex Tools</title>
+    <meta name="description" content="Convert between HEX, RGB, and HSL color formats instantly. Free and easy to use color code converter.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">Color Code Converter</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Convert between HEX, RGB, and HSL color formats instantly
+                </p>
+                
+                <div class="converter-container">
+                    <div id="color-preview" class="color-preview"></div>
+                    
+                    <div class="color-inputs">
+                        <div class="input-group">
+                            <label for="hex-input">HEX</label>
+                            <input 
+                                type="text" 
+                                id="hex-input" 
+                                placeholder="#ffffff"
+                                autocomplete="off"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="rgb-input">RGB</label>
+                            <input 
+                                type="text" 
+                                id="rgb-input" 
+                                placeholder="rgb(255, 255, 255)"
+                                autocomplete="off"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="hsl-input">HSL</label>
+                            <input 
+                                type="text" 
+                                id="hsl-input" 
+                                placeholder="hsl(0, 0%, 100%)"
+                                autocomplete="off"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Real-Time Conversion:</strong> Instantly converts between HEX, RGB, and HSL formats</li>
+                        <li><strong>Live Preview:</strong> Visual color preview updates as you type</li>
+                        <li><strong>Smart Validation:</strong> Automatic error detection with visual feedback</li>
+                        <li><strong>Multiple Formats:</strong> Supports all standard color code formats</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                        <li><strong>Copy-Paste Friendly:</strong> Easily copy and paste color codes</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>🎨 How to Use</h4>
+                    <ul>
+                        <li><strong>HEX Format:</strong> Enter colors like #ffffff, #000, or #ff5733</li>
+                        <li><strong>RGB Format:</strong> Use rgb(255, 255, 255) or 255, 255, 255</li>
+                        <li><strong>HSL Format:</strong> Enter hsl(0, 0%, 100%) or 0, 0%, 100%</li>
+                        <li><strong>Auto-Convert:</strong> Type in any field and other formats update automatically</li>
+                        <li><strong>Visual Feedback:</strong> Invalid inputs show a red border</li>
+                        <li><strong>Color Preview:</strong> See your color in real-time as you type</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="../shared/footer.js"></script>
+</body>
+</html>

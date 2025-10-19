@@ -124,4 +124,160 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+    
+    <!-- Tools Pages -->
+    <url>
+        <loc>https://wiki.tapnex.tech/tools.html</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Calculator Tools -->
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Calculator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/BMI-Calculator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Percentage-Calculator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Converter Tools -->
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Case-Converter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Base64-Encoder-Decoder/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/URL-Encoder-Decoder/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Unit-Converter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Timestamp-Converter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Timezone-Converter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Color-Code-Converter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Generator Tools -->
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Password-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/QR-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Lorem-Ipsum-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Color-Palette-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/CSS-Gradient-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Favicon-Generator/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Formatter Tools -->
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/JSON-Formatter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Markdown-Previewer/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Utility Tools -->
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Regex-Tester/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Word-Counter/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Text-Reverser/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Image-Compressor/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Image-Resizer/</loc>
+        <lastmod>2025-10-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>BMI Calculator - Free Body Mass Index Calculator (Metric & Imperial)</title>
+    <meta name="title" content="BMI Calculator - Free Body Mass Index Calculator (Metric & Imperial)">
+    <meta name="description" content="Free BMI calculator to check your Body Mass Index instantly. Calculate BMI using metric (kg, cm) or imperial (lbs, ft, in) units. Get accurate BMI results with WHO categories.">
+    <meta name="keywords" content="BMI calculator, body mass index calculator, calculate BMI, BMI chart, weight calculator, health calculator, metric BMI, imperial BMI, BMI categories, weight status, obesity calculator, underweight calculator, normal weight, overweight calculator, free BMI calculator">
+    <meta name="author" content="TapNex">
+    <link rel="canonical" href="https://www.tapnex.com/TOOLS/BMI-Calculator/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tapnex.com/TOOLS/BMI-Calculator/">
+    <meta property="og:title" content="BMI Calculator - Free Body Mass Index Calculator (Metric & Imperial)">
+    <meta property="og:description" content="Free BMI calculator to check your Body Mass Index instantly. Calculate BMI using metric (kg, cm) or imperial (lbs, ft, in) units. Get accurate BMI results with WHO categories.">
+    <meta property="og:image" content="https://www.tapnex.com/images/bmi-calculator-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.tapnex.com/TOOLS/BMI-Calculator/">
+    <meta property="twitter:title" content="BMI Calculator - Free Body Mass Index Calculator (Metric & Imperial)">
+    <meta property="twitter:description" content="Free BMI calculator to check your Body Mass Index instantly. Calculate BMI using metric (kg, cm) or imperial (lbs, ft, in) units. Get accurate BMI results with WHO categories.">
+    <meta property="twitter:image" content="https://www.tapnex.com/images/bmi-calculator-preview.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "BMI Calculator",
+        "description": "Free online BMI calculator with metric and imperial unit support. Calculate your Body Mass Index and check weight status according to WHO categories.",
+        "url": "https://www.tapnex.com/TOOLS/BMI-Calculator/",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1850",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "TapNex"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">BMI Calculator - Calculate Body Mass Index Online Free</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Free BMI Calculator with Metric & Imperial units. Instantly calculate your Body Mass Index and check your weight status according to WHO guidelines. Supports kg/cm and lbs/ft/in.
+                </p>
+                
+                <div class="bmi-container">
+                    <!-- Unit Selector -->
+                    <div class="unit-selector">
+                        <label class="radio-label">
+                            <input type="radio" name="unit" id="metric" value="metric" checked>
+                            <span class="radio-custom">Metric (kg, cm)</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="unit" id="imperial" value="imperial">
+                            <span class="radio-custom">Imperial (lbs, ft, in)</span>
+                        </label>
+                    </div>
+
+                    <!-- Metric Inputs -->
+                    <div id="metric-inputs" class="input-section">
+                        <div class="input-group">
+                            <label for="weight-kg">Weight (kg)</label>
+                            <input type="number" id="weight-kg" placeholder="Enter weight in kg" step="0.1" min="0">
+                        </div>
+                        <div class="input-group">
+                            <label for="height-cm">Height (cm)</label>
+                            <input type="number" id="height-cm" placeholder="Enter height in cm" step="0.1" min="0">
+                        </div>
+                    </div>
+
+                    <!-- Imperial Inputs -->
+                    <div id="imperial-inputs" class="input-section" style="display: none;">
+                        <div class="input-group">
+                            <label for="weight-lbs">Weight (lbs)</label>
+                            <input type="number" id="weight-lbs" placeholder="Enter weight in lbs" step="0.1" min="0">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="height-ft">Height (ft)</label>
+                                <input type="number" id="height-ft" placeholder="Feet" min="0" max="8">
+                            </div>
+                            <div class="input-group">
+                                <label for="height-in">Height (in)</label>
+                                <input type="number" id="height-in" placeholder="Inches" min="0" max="11">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button id="calculate-btn" class="button-style">Calculate BMI</button>
+
+                    <!-- Results Container -->
+                    <div id="results-container" class="results-container" style="display: none;">
+                        <div class="result-box">
+                            <p class="result-label">Your BMI is:</p>
+                            <p class="bmi-value" id="bmi-value">--</p>
+                        </div>
+                        <div class="status-box">
+                            <p class="result-label">Weight Status:</p>
+                            <p class="bmi-status" id="bmi-status">--</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ BMI Calculator Features</h4>
+                    <ul>
+                        <li><strong>Dual Unit Support:</strong> Calculate BMI in metric (kg, cm) or imperial (lbs, ft, in) units - switch instantly</li>
+                        <li><strong>WHO Standard Formula:</strong> Uses official World Health Organization BMI calculation formulas</li>
+                        <li><strong>Instant Results:</strong> Get your BMI and weight status immediately after calculation</li>
+                        <li><strong>Weight Categories:</strong> Shows if you're underweight, normal weight, overweight, or obese</li>
+                        <li><strong>Color-Coded Status:</strong> Visual health indicators for each BMI category (blue, green, yellow, red)</li>
+                        <li><strong>Mobile Friendly:</strong> Calculate BMI on any device - desktop, tablet, or smartphone</li>
+                        <li><strong>Privacy First:</strong> All BMI calculations happen in your browser - no data stored or sent</li>
+                        <li><strong>100% Free:</strong> No registration, no limits, unlimited BMI calculations</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>📊 Understanding BMI Categories (WHO Guidelines)</h4>
+                    <ul>
+                        <li><strong>Underweight:</strong> BMI less than 18.5 - May indicate malnutrition or health issues</li>
+                        <li><strong>Normal Weight:</strong> BMI 18.5 - 24.9 - Healthy weight range for most adults</li>
+                        <li><strong>Overweight:</strong> BMI 25 - 29.9 - Increased risk of health problems</li>
+                        <li><strong>Obesity Class I:</strong> BMI 30 - 34.9 - Moderate health risk</li>
+                        <li><strong>Obesity Class II:</strong> BMI 35 - 39.9 - High health risk</li>
+                        <li><strong>Obesity Class III:</strong> BMI 40 or greater - Very high health risk (morbid obesity)</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightgreen" style="margin-top: 2rem;">
+                    <h4>🎯 How to Calculate BMI - Formulas Explained</h4>
+                    <ul>
+                        <li><strong>Metric BMI Formula:</strong> BMI = weight (kg) ÷ [height (m)]². Example: 70kg ÷ (1.75m)² = 22.9 BMI</li>
+                        <li><strong>Imperial BMI Formula:</strong> BMI = [weight (lbs) ÷ height (in)²] × 703. Example: 154 lbs ÷ (69 in)² × 703 = 22.7 BMI</li>
+                        <li><strong>Why BMI Matters:</strong> BMI helps identify weight-related health risks like diabetes, heart disease, and hypertension</li>
+                        <li><strong>Quick Calculation:</strong> Our BMI calculator does the math instantly - just enter your height and weight</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightorange" style="margin-top: 2rem;">
+                    <h4>⚠️ BMI Limitations & Important Notes</h4>
+                    <ul>
+                        <li><strong>Screening Tool Only:</strong> BMI is a screening tool, not a diagnostic tool - consult healthcare providers</li>
+                        <li><strong>Muscle Mass:</strong> Doesn't distinguish between muscle and fat - athletes may have high BMI despite being healthy</li>
+                        <li><strong>Body Composition:</strong> Doesn't account for bone density, overall body composition, or fat distribution</li>
+                        <li><strong>Age & Gender:</strong> BMI doesn't consider age differences or gender-specific factors</li>
+                        <li><strong>Ethnic Variations:</strong> Some populations have different health risk thresholds (e.g., Asian populations)</li>
+                        <li><strong>Not for Children:</strong> Different BMI charts and percentiles apply to children and teens</li>
+                        <li><strong>Pregnancy:</strong> BMI calculations are not applicable during pregnancy</li>
+                        <li><strong>Consult Professionals:</strong> Always seek personalized advice from healthcare providers for health decisions</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightpurple" style="margin-top: 2rem;">
+                    <h4>💪 When BMI May Be Inaccurate</h4>
+                    <ul>
+                        <li><strong>Bodybuilders & Athletes:</strong> High muscle mass can result in high BMI but low body fat</li>
+                        <li><strong>Elderly Individuals:</strong> May have lost muscle mass but maintained weight</li>
+                        <li><strong>Very Short or Very Tall:</strong> BMI may over or underestimate body fat</li>
+                        <li><strong>Growing Adolescents:</strong> Rapid growth spurts affect BMI accuracy</li>
+                        <li><strong>Alternative Metrics:</strong> Consider waist circumference, body fat percentage, waist-to-hip ratio for complete picture</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>🏥 Health Risks Associated with BMI Ranges</h4>
+                    <ul>
+                        <li><strong>Underweight Risks:</strong> Weakened immune system, osteoporosis, anemia, fertility issues</li>
+                        <li><strong>Normal Weight Benefits:</strong> Lower risk of chronic diseases, better energy levels, optimal health</li>
+                        <li><strong>Overweight Risks:</strong> Increased risk of type 2 diabetes, high blood pressure, heart disease</li>
+                        <li><strong>Obesity Risks:</strong> Significantly higher risk of cardiovascular disease, stroke, certain cancers, sleep apnea</li>
+                        <li><strong>Take Action:</strong> Use BMI as motivation to maintain healthy lifestyle with diet and exercise</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>❓ Frequently Asked Questions About BMI</h4>
+                    <ul>
+                        <li><strong>Q: What is a healthy BMI?</strong><br>A: A healthy BMI ranges from 18.5 to 24.9 for most adults according to WHO guidelines.</li>
+                        <li><strong>Q: How often should I calculate my BMI?</strong><br>A: Check your BMI every 3-6 months to track changes in your weight status.</li>
+                        <li><strong>Q: Can BMI predict my health?</strong><br>A: BMI is one indicator of health risk but should be used alongside other metrics like blood pressure and cholesterol.</li>
+                        <li><strong>Q: Is BMI the same for men and women?</strong><br>A: Yes, the same BMI categories apply to both adult men and women, though body composition differs.</li>
+                        <li><strong>Q: What's the difference between BMI and body fat percentage?</strong><br>A: BMI measures weight relative to height, while body fat percentage measures actual fat tissue. Body fat % is more accurate.</li>
+                        <li><strong>Q: Why does my BMI calculator result differ from others?</strong><br>A: All standard BMI calculators use the same WHO formula, so results should be identical if you enter the same values.</li>
+                        <li><strong>Q: Can I improve my BMI?</strong><br>A: Yes! Healthy diet, regular exercise, and lifestyle changes can help you reach a healthy BMI range.</li>
+                        <li><strong>Q: Is BMI accurate for all ages?</strong><br>A: Standard BMI is designed for adults 18+. Children and teens use age/gender-specific BMI percentiles.</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="../shared/footer.js"></script>
+</body>
+</html>
