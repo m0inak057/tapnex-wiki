@@ -1,6 +1,6 @@
 // Load shared footer
 function loadFooter() {
-    fetch('../shared/footer.html')
+    fetch('/TOOLS/shared/footer.html')
         .then(response => response.text())
         .then(data => {
             // Find the footer placeholder or insert before closing body tag
