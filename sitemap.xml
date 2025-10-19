@@ -13,13 +13,13 @@
         </image:image>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/volunteer-systems/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems/</loc>
         <lastmod>2025-10-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/ticketing-platform/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/ticketing-platform/</loc>
         <lastmod>2025-10-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -27,91 +27,91 @@
     
     <!-- Marketing Pages -->
     <url>
-        <loc>https://wiki.tapnex.tech/social-media-strategy/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/social-media-strategy/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/analytics-%26-insigths/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/analytics-%26-insigths/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/email-campaigns/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/email-campaigns/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/short-form-video-content/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/short-form-video-content/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/Personalization-%26-Data-Driven-Content/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Personalization-%26-Data-Driven-Content/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/compliance-%26-ethical-content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/compliance-%26-ethical-content-marketing/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/AI-Powered-Content-Creation-%26-Exhaustive-Marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/AI-Powered-Content-Creation-%26-Exhaustive-Marketing/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/Humanizing-content-%26-authentic-storytelling/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Humanizing-content-%26-authentic-storytelling/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/UGC/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/UGC/</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/content-format-innovations/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-format-innovations/</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/augmented-reality-%26-virtual-reality-for-content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/augmented-reality-%26-virtual-reality-for-content-marketing/</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/Co-Marketing-%26-brand-partnership/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Co-Marketing-%26-brand-partnership/</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/newsletter-%26-community-driven-growth/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/newsletter-%26-community-driven-growth/</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/content-marketing-measurement-%26-ROI-analytics/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing-measurement-%26-ROI-analytics/</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -119,8 +119,44 @@
     
     <!-- Technology Pages -->
     <url>
-        <loc>https://wiki.tapnex.tech/NFC/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/5G-Technology/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Agentic-AI/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Database-Management/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Devops/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Generative-AI/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/NFC/</loc>
         <lastmod>2025-10-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Quantun-Computing/</loc>
+        <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>

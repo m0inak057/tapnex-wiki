@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>5G Technology: A Comprehensive Expert Report | Tapnex Wiki</title>
+    <meta name="description" content="An expert-level guide to 5G technology, delivering ultra-low latency, multi-Gbps peak rates, and massive device connectivity for transformative applications.">
+    <meta name="keywords" content="5G, 5G Technology, IMT-2020, 5G NR, eMBB, URLLC, mMTC, network slicing, MEC, Tapnex, 5G-Advanced">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://wiki.tapnex.tech/technology/5g">
+    <meta property="og:title" content="5G Technology: A Comprehensive Expert Report | Tapnex Wiki">
+    <meta property="og:description" content="An expert-level guide to 5G technology, delivering ultra-low latency, multi-Gbps peak rates, and massive device connectivity for transformative applications.">
+    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wiki.tapnex.tech/technology/5g">
+    <meta property="twitter:title" content="5G Technology: A Comprehensive Expert Report | Tapnex Wiki">
+    <meta property="twitter:description" content="An expert-level guide to 5G technology, delivering ultra-low latency, multi-Gbps peak rates, and massive device connectivity for transformative applications.">
+    <meta property="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <link rel="canonical" href="https://wiki.tapnex.tech/technology/5g">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/TAPNEX_LOGO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/TAPNEX_LOGO.png">
+    <link rel="apple-touch-icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="shortcut icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/additional-ad-styles.css">
+    <link rel="stylesheet" href="/styles/article-styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script src="/home.js" defer></script>
+    <script src="/earth3d.js" type="module" defer></script>
+    <script src="/scripts/article-scripts.js" defer></script>
+</head>
+<body data-theme="dark">
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <div class="page-wrapper">
+        <aside class="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="/index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;" title="Go to Tapnex Wiki Home">
+                        <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="sidebar-logo-image">
+                        <h1>Wiki</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <label for="search-input" class="sr-only">Search topics</label>
+                <input type="text" id="search-input" placeholder="Search topics..." aria-label="Search topics">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#"> Getting Started</a>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Event Management</span>
+                        <ul class="submenu">
+                            <li><a href="/EVENT-MANAGEMENT/volunteer-systems/">Volunteer Systems</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/ticketing-platform/">Ticketing Platforms</a></li>
+                            <li><a href="#"> Logistics Planning</a></li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <span class="nav-toggle">Technology</span>
+                        <ul class="submenu">
+                           <li><a href="#"> Web Development</a></li>
+                           <li><a href="#"> Database Management</a></li>
+                           <li><a href="#"> API Integration</a></li>
+                           <li><a href="/TECHNOLOGY/DevOps/">DevOps & Deployment</a></li>
+                           <li><a href="/TECHNOLOGY/Generative-AI/">Generative AI</a></li>
+                           <li><a href="/TECHNOLOGY/Agentic-AI/">Agentic AI</a></li>
+                           <li class="active"><a href="#"> 5G Technology</a></li>
+                           <li><a href="/TECHNOLOGY/NFC/">NFC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Marketing</span>
+                        <ul class="submenu">
+                            <li><a href="/MARKETING/social-media-strategy/">Social Media Strategy</a></li>
+                            <li><a href="/MARKETING/content-marketing/">Content Marketing</a></li>
+                            <li><a href="/MARKETING/analytics-&-insigths/">Analytics & Insights</a></li>
+                            <li><a href="/MARKETING/email-campaigns/">Email Campaigns</a></li>
+                            <li><a href="/MARKETING/short-form-video-content/">Short Form Video Content</a></li>
+                            <li><a href="/MARKETING/Personalization-&-Data-Driven-Content/">Personalization & Data-Driven Content</a></li>
+                            <li><a href="/MARKETING/compliance-&-ethical-content-marketing/">Compliance & Ethical Content Marketing</a></li>
+                            <li><a href="/MARKETING/AI-Powered-Content-Creation-&-Exhaustive-Marketing/">AI-Powered Content Creation & Exhaustive Marketing</a></li>
+                            <li><a href="/MARKETING/Humanizing-content-&-authentic-storytelling/">Humanizing Content & Authentic Storytelling</a></li>
+                            <li><a href="/MARKETING/UGC/">User Generated Content (UGC)</a></li>
+                            <li><a href="/MARKETING/content-format-innovations/">Content Format Innovations</a></li>
+                            <li><a href="/MARKETING/augmented-reality-&-virtual-reality-for-content-marketing/">Augmented Reality & Virtual Reality for Content Marketing</a></li>
+                            <li><a href="/MARKETING/Co-Marketing-&-brand-partnership/">Co-Marketing & Brand Partnership</a></li>
+                            <li><a href="/MARKETING/newsletter-&-community-driven-growth/">Newsletter & Community-Driven Growth</a></li>
+                            <li><a href="/MARKETING/content-marketing-measurement-&-ROI-analytics/">Content Marketing Measurement & ROI Analytics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="/index.html">← Back to Home</a>
+            </div>
+        </aside>
+
+        <main class="main-content" role="main">
+            <div class="content-wrapper">
+                <article>
+                    <nav class="breadcrumbs">
+                        <a href="/index.html">Home</a> &gt; <a href="/index.html#technology">Technology</a> &gt; 5G Technology
+                    </nav>
+
+                    <h1>Comprehensive Expert Report on 5G Technology</h1>
+                    <div class="meta-data">
+                        Published: October 19, 2025 | 12 min read
+                    </div>
+
+                    <p><strong>Main Takeaway:</strong> 5G is the fifth generation of mobile networks, delivering ultra-low latency, multi-Gbps peak rates, massive device connectivity, and improved reliability. It enables transformative applications across industries—from autonomous vehicles to smart manufacturing—while introducing new architectural paradigms and compliance challenges.</p>
+
+                    <div class="ad-container article-top-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block; text-align:center;"
+                             data-ad-layout="in-article"
+                             data-ad-format="fluid"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="9288642827"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <h2 id="definition">1. Definition and Terminology</h2>
+                    <p>5G (also known as IMT-2020) refers to the next-generation cellular network standard defined by 3GPP Releases 15–18, supporting three service categories: enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency Communications (URLLC), and massive Machine-Type Communications (mMTC).</p>
+                    <h3>Alternative names and synonyms:</h3>
+                    <ul>
+                        <li>IMT-2020</li>
+                        <li>5G NR (New Radio)</li>
+                        <li>3GPP 5G System (5GS)</li>
+                    </ul>
+
+                    <h2 id="history">2. Historical Origin and Evolution</h2>
+                    <p>5G evolution began with research initiatives in the early 2010s, formalized by ITU-R in the IMT-2020 vision. Release 15 (2018) introduced non-standalone (NSA) 5G leveraging existing 4G cores; Release 16 (2020) added URLLC and network slicing; Release 17 (2022) expanded massive MIMO and RedCap for IoT; Release 18 (2024–25) defines 5G-Advanced with AI-native features and integrated satellite links.</p>
+
+                    <h2 id="use-cases">3. Use Cases Across Industries</h2>
+                    <ul>
+                        <li><strong>Telecom:</strong> Fixed Wireless Access for rural broadband and network densification.</li>
+                        <li><strong>Manufacturing:</strong> Private 5G campuses with low-latency robotics and augmented reality quality control.</li>
+                        <li><strong>Healthcare:</strong> Remote surgery and tele-ICU requiring sub-millisecond latency.</li>
+                        <li><strong>Automotive:</strong> V2X (Vehicle-to-Everything) communications for autonomous driving.</li>
+                        <li><strong>Smart Cities:</strong> Real-time traffic management, public safety monitoring, and energy metering.</li>
+                        <li><strong>IoT & Consumer:</strong> Wearables, AR/VR streaming, and smart home networks.</li>
+                    </ul>
+
+                    <div class="ad-container article-mid-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block; text-align:center;"
+                             data-ad-layout="in-article"
+                             data-ad-format="fluid"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="9288642827"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <h2 id="core-concepts">4. Core Concepts and Best Practices</h2>
+                    
+                    <h3>4.1 Radio Access</h3>
+                    <div class="technology-highlight">
+                        <ul>
+                            <li><strong>Massive MIMO:</strong> Hundreds of antenna elements for spatial multiplexing and beamforming gain.</li>
+                            <li><strong>mmWave, mid-band, low-band:</strong> Trade-offs between capacity and coverage; mmWave (24–52 GHz) offers highest throughput but limited range.</li>
+                        </ul>
+                    </div>
+
+                    <h3>4.2 Architecture</h3>
+                    <div class="technology-highlight">
+                        <ul>
+                            <li><strong>NSA vs. SA:</strong> NSA (Non-Standalone) uses 4G EPC anchor for control plane; SA (Standalone) deploys a new 5G core (5GC) for the full feature set.</li>
+                            <li><strong>Network Slicing:</strong> Logical partitions of physical infrastructure tailored to specific service requirements (e.g., one slice for eMBB, one for URLLC).</li>
+                            <li><strong>Multi-Access Edge Computing (MEC):</strong> Distributed compute at the network edge for URLLC applications and bandwidth efficiency.</li>
+                        </ul>
+                    </div>
+
+                    <h3>4.3 Security and Best Practices</h3>
+                    <div class="technology-highlight">
+                        <ul>
+                            <li>End-to-end encryption and authentication using 5G-AKA (Authentication and Key Agreement).</li>
+                            <li>Zero-trust segmentation of network slices and continuous threat monitoring.</li>
+                            <li>Regular software upgrades to address vulnerabilities.</li>
+                        </ul>
+                    </div>
+
+                    <h2 id="tools">5. Technologies and Tools</h2>
+                    <ul>
+                        <li><strong>5G NR radios</strong> from vendors (Ericsson, Nokia, Huawei) supporting Releases 15–18.</li>
+                        <li><strong>Core network platforms:</strong> Open 5G Core (Open RAN compliant), private MEC stacks (Cisco, AWS Wavelength).</li>
+                        <li><strong>Testing tools:</strong> Keysight’s protocol testers, TMV KPI measurement suite for latency and throughput benchmarking.</li>
+                    </ul>
+
+                    <h2 id="case-studies">6. Case Studies and Real-World Examples</h2>
+                    <div class="analytics-showcase-lightblue">
+                        <h4>Case Studies</h4>
+                        <ul>
+                            <li><strong>Verizon Fixed Wireless Access:</strong> Delivering 1 Gbps to rural homes, reducing copper infrastructure costs and enabling remote education.</li>
+                            <li><strong>BMW Private Campus:</strong> Autonomous guided vehicles in production line using URLLC for sub-1 ms control.</li>
+                            <li><strong>Barcelona Smart City:</strong> Real-time fleet tracking and adaptive street lighting via network slicing for municipal services.</li>
+                            <li><strong>Sodexo NFC Payments:</strong> Campus meal payment integration over private 5G network for improved transaction speed and security (pilot phase).</li>
+                        </ul>
+                    </div>
+
+                    <h2 id="advantages-limitations">7. Advantages, Limitations, and Pitfalls</h2>
+                    <h3>Advantages</h3>
+                    <ul>
+                        <li>Peak data rates up to 20 Gbps and user-plane latency < 1 ms.</li>
+                        <li>Massive IoT connectivity (up to 1 million devices/km²).</li>
+                        <li>Dynamic network slicing optimizes resource utilization.</li>
+                    </ul>
+                    <h3>Limitations and Pitfalls</h3>
+                    <ul>
+                        <li>High deployment cost for dense mmWave small cells.</li>
+                        <li>Complex orchestration of slices and legacy (4G) interoperability.</li>
+                        <li>Coverage gaps in high-band spectrum and challenges in indoor penetration.</li>
+                        <li>Security risks from open interfaces and supply-chain considerations.</li>
+                    </ul>
+
+                    <h2 id="kpis-metrics">8. Key Metrics and Benchmarks</h2>
+                    <div class="analytics-showcase-lightgreen">
+                        <h4>Performance Targets</h4>
+                        <ul>
+                            <li><strong>Throughput:</strong> Peak 20 Gbps (DL), 10 Gbps (UL).</li>
+                            <li><strong>Latency:</strong> Target < 4 ms (eMBB), < 1 ms (URLLC).</li>
+                            <li><strong>Connection Density:</strong> 1 million devices/km².</li>
+                            <li><strong>Reliability:</strong> 99.999% availability for critical slices.</li>
+                            <li><strong>Mobility:</strong> Support up to 500 km/h.</li>
+                        </ul>
+                    </div>
+
+                    <h2 id="compliance">9. Compliance, Legal, and Ethical Considerations</h2>
+                    <ul>
+                        <li><strong>GDPR and Privacy:</strong> Compliance required for location and usage data in the EU.</li>
+                        <li><strong>Export Controls:</strong> Restrictions on encryption modules and vendor equipment.</li>
+                        <li><strong>Health:</strong> Adherence to EMF exposure limits defined by ICNIRP and WHO guidelines.</li>
+                        <li><strong>Regulation:</strong> National spectrum licensing and local regulatory approvals for cell towers.</li>
+                    </ul>
+
+                    <h2 id="faq">10. Frequently Asked Questions and Expert Tips</h2>
+                    <p><strong>Q: How does 5G differ from 4G?</strong><br>
+                    A: 5G delivers 10× higher speeds, 10× lower latency, and 100× device density, enabled by mmWave spectrum and advanced Massive MIMO antennas.</p>
+                    <p><strong>Q: Which spectrum band is best?</strong><br>
+                    A: Mid-band (1–6 GHz) offers the best balance of coverage and capacity. mmWave offers peak performance but requires dense deployment.</p>
+                    
+                    <h3>Expert Tips:</h3>
+                    <ul>
+                        <li>Start with NSA (Non-Standalone) mid-band rollout to leverage existing 4G core infrastructure.</li>
+                        <li>Use MEC (Multi-Access Edge Computing) for latency-sensitive enterprise applications.</li>
+                        <li>Implement security by design in slice orchestration, not as an afterthought.</li>
+                    </ul>
+
+                    <h2 id="templates">11. Practical Templates and Frameworks</h2>
+                    <div class="technology-highlight">
+                        <h4>5G Deployment Checklist:</h4>
+                        <ol>
+                            <li>Site acquisition and zoning permits</li>
+                            <li>Spectrum licensing and frequency plan</li>
+                            <li>Radio and antenna design (link budget analysis)</li>
+                            <li>Core network integration (EPC vs. 5GC)</li>
+                            <li>End-to-end security audit</li>
+                        </ol>
+                        <h4>Network Slicing Framework:</h4>
+                        <p>Define SLA parameters, slice templates, orchestration policies, and monitoring KPIs.</p>
+                        <h4>MEC Integration Diagram:</h4>
+                        <p>Illustrate data flows between RAN, edge compute, and central core with API interfaces.</p>
+                    </div>
+
+                    <h2 id="trends-innovations">12. Latest Trends and Innovations (2023–2025)</h2>
+                    <ul>
+                        <li><strong>5G Advanced (Release 18):</strong> Introducing RedCap (Reduced Capability) for simpler IoT devices, AI-native network automation, and integrated NTN (non-terrestrial networks) via LEO satellites.</li>
+                        <li><strong>Open RAN Adoption:</strong> Disaggregated RAN (Radio Access Network) for multi-vendor integration and cost reduction.</li>
+                        <li><strong>Energy-Efficient 5G:</strong> Dynamic sleep modes in base stations (gNBs) and AI-driven energy management for sustainability.</li>
+                        <li><strong>Private 5G as a Service:</strong> Cloud-hosted campus networks with turnkey orchestration and SLA guarantees for enterprises.</li>
+                        <li><strong>6G Research Foundations:</strong> Active research into Terahertz (THz) communications, cell-free massive MIMO, and integrated sensing and communication (ISAC) prototypes.</li>
+                    </ul>
+
+                    <div class="ad-container article-bottom-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block; text-align:center;"
+                             data-ad-layout="in-article"
+                             data-ad-format="fluid"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="9288642827"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                </article>
+
+                <aside class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol id="toc-list">
+                        <li><a href="#definition">1. Definition & Terminology</a></li>
+                        <li><a href="#history">2. Historical Evolution</a></li>
+                        <li><a href="#use-cases">3. Use Cases</a></li>
+                        <li><a href="#core-concepts">4. Core Concepts & Practices</a></li>
+                        <li><a href="#tools">5. Technologies & Tools</a></li>
+                        <li><a href="#case-studies">6. Case Studies</a></li>
+                        <li><a href="#advantages-limitations">7. Advantages & Limitations</a></li>
+                        <li><a href="#kpis-metrics">8. KPIs & Benchmarks</a></li>
+                        <li><a href="#compliance">9. Compliance & Ethics</a></li>
+                        <li><a href="#faq">10. FAQs & Expert Tips</a></li>
+                        <li><a href="#templates">11. Templates & Frameworks</a></li>
+                        <li><a href="#trends-innovations">12. Latest Trends</a></li>
+                    </ol>
+
+                    <div class="ad-container sidebar-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="1734728076"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="logo-image">
+                    <h3>Tapnex</h3>
+                </div>
+                <p class="footer-description">
+                    Empowering organizations with comprehensive knowledge and innovative solutions from a leading <a href="https://www.tapnex.tech/">technology company</a>.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tapnex.fc/?hl=en" aria-label="Follow us on Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/tapnexfc/?" aria-label="Follow us on LinkedIn" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Knowledge Base</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#event-management">Event Management</a></li>
+                    <li><a href="/index.html#technology">Technology</a></li>
+                    <li><a href="/index.html#marketing">Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.tapnex.tech/">Tapnex</a></li>
+                    <li><a href="https://www.tapnex.tech/about">About</a></li>
+                    <li><a href="https://www.tapnex.tech/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@tapnex.tech">info@tapnex.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Tapnex. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" id="privacy-btn"> Privacy</a>
+                    <a href="#" id="terms-btn"> Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to Tapnex ("we," "our," "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong>wiki.tapnex.tech</strong> (the "Site"). By using the Site, you agree to this policy.</p>
+
+                <h3>1. Information We Collect</h3>
+                <ul>
+                    <li><strong>Personal Information</strong>: When you voluntarily provide it — e.g. name, email address, contact number, etc.</li>
+                    <li><strong>Automatically Collected Information</strong>: When you interact with the Site, we may collect usage data (IP address, browser type, pages visited, timestamps, referring/exit pages).</li>
+                    <li><strong>Cookies and Tracking Technologies</strong>: See our Cookie Policy below for details.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <ul>
+                    <li>To provide, maintain, and improve our Site and services.</li>
+                    <li>To respond to your inquiries or requests.</li>
+                    <li>To send you updates, newsletters, or other communications (if you opt in).</li>
+                    <li>To monitor and analyze usage and trends.</li>
+                    <li>To detect, prevent, and address technical issues or abuse.</li>
+                </ul>
+
+                <h3>3. Disclosure of Your Information</h3>
+                <p>We do not sell your personal data. We may share information with:</p>
+                <ul>
+                    <li><strong>Service Providers</strong> who assist in operating the Site (hosting, analytics, email services).</li>
+                    <li><strong>Legal or regulatory authorities</strong>, when required by law or to protect our rights.</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement reasonable technical and organizational measures to protect your data. However, no method is 100% secure.</p>
+                
+                <div class="cookie-policy-section">
+                    <h3>Cookie Policy</h3>
+                    <p>This Cookie Policy explains how <strong>wiki.tapnex.tech</strong> uses cookies. Cookies are small data files placed on your device to help the site remember your preferences and improve your experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Terms of Service</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to <strong>wiki.tapnex.tech</strong>. These Terms of Service ("Terms") govern your access to and use of our Site. By accessing or using the Site, you agree to be bound by these Terms.</p>
+
+                <h3>1. Use of the Site</h3>
+                <ul>
+                    <li>You must follow all applicable laws and not use the Site for unlawful activities.</li>
+                    <li>You agree not to misuse the Site or interfere with its operation.</li>
+                </ul>
+
+                <h3>2. Content</h3>
+                <ul>
+                    <li>The content on the Site is for general informational purposes only. We do not guarantee its accuracy or completeness.</li>
+                    <li>The content is owned by us or our licensors and may not be reproduced without permission.</li>
+                </ul>
+
+                <h3>3. Disclaimers & Limitation of Liability</h3>
+                <ul>
+                    <li>The site and content are provided "as is" without warranties of any kind.</li>
+                    <li>We disclaim liability for damages arising from your use of the Site.</li>
+                </ul>
+
+                <h3>4. Governing Law</h3>
+                <p>These Terms shall be governed by the laws of <strong>Karnataka, India</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
