@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://wiki.tapnex.tech/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -13,117 +13,117 @@
         </image:image>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Event-budgeting/</loc>
-        <lastmod>2025-10-20</lastmod>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Event-budgeting</loc>
+        <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Logistic-Planning/</loc>
-        <lastmod>2025-10-20</lastmod>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Logistic-Planning</loc>
+        <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/ticketing-platform/</loc>
-        <lastmod>2025-10-20</lastmod>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/ticketing-platform</loc>
+        <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems/</loc>
-        <lastmod>2025-10-20</lastmod>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems</loc>
+        <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <!-- Marketing Pages -->
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/social-media-strategy/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/social-media-strategy</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/analytics-%26-insigths/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/analytics-%26-insigths</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/email-campaigns/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/email-campaigns</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/short-form-video-content/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/short-form-video-content</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/Personalization-%26-Data-Driven-Content/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Personalization-%26-Data-Driven-Content</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/compliance-%26-ethical-content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/compliance-%26-ethical-content-marketing</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/AI-Powered-Content-Creation-%26-Exhaustive-Marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/AI-Powered-Content-Creation-%26-Exhaustive-Marketing</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/Humanizing-content-%26-authentic-storytelling/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Humanizing-content-%26-authentic-storytelling</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/UGC/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/UGC</loc>
         <lastmod>2025-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/content-format-innovations/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-format-innovations</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/augmented-reality-%26-virtual-reality-for-content-marketing/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/augmented-reality-%26-virtual-reality-for-content-marketing</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/Co-Marketing-%26-brand-partnership/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/Co-Marketing-%26-brand-partnership</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/newsletter-%26-community-driven-growth/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/newsletter-%26-community-driven-growth</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing-measurement-%26-ROI-analytics/</loc>
+        <loc>https://wiki.tapnex.tech/MARKETING/content-marketing-measurement-%26-ROI-analytics</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -131,91 +131,91 @@
     
     <!-- Technology Pages -->
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/5G-Technology/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/5G-Technology</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Agentic-AI/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Agentic-AI</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/APIs/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/APIs</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Biotech-%26-Engineered-Living-Therapeutics/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Biotech-%26-Engineered-Living-Therapeutics</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Collaborative-Sensing-%26-Autonomous-Biochemical-Sensors/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Collaborative-Sensing-%26-Autonomous-Biochemical-Sensors</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Database-Management/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Database-Management</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Devops/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Devops</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Edge-Computing/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Edge-Computing</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Generative-AI/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Generative-AI</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Green-Nitrogen-Fixation-%26-Advanced-Clean-Energy/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Green-Nitrogen-Fixation-%26-Advanced-Clean-Energy</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/NFC/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/NFC</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Quantun-Computing/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Quantun-Computing</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Synthetic-Media-%26-Generative-Watermarking/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Synthetic-Media-%26-Generative-Watermarking</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/VR-Virtual-Reality/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/VR-Virtual-Reality</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Web-Development/</loc>
+        <loc>https://wiki.tapnex.tech/TECHNOLOGY/Web-Development</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -231,19 +231,19 @@
     
     <!-- Calculator Tools -->
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Calculator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Calculator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/BMI-Calculator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/BMI-Calculator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Percentage-Calculator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Percentage-Calculator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -251,43 +251,43 @@
     
     <!-- Converter Tools -->
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Case-Converter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Case-Converter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Base64-Encoder-Decoder/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Base64-Encoder-Decoder</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/URL-Encoder-Decoder/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/URL-Encoder-Decoder</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Unit-Converter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Unit-Converter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Timestamp-Converter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Timestamp-Converter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Timezone-Converter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Timezone-Converter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Color-Code-Converter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Color-Code-Converter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -295,37 +295,37 @@
     
     <!-- Generator Tools -->
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Password-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Password-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/QR-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/QR-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Lorem-Ipsum-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Lorem-Ipsum-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Color-Palette-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Color-Palette-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/CSS-Gradient-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/CSS-Gradient-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Favicon-Generator/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Favicon-Generator</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -333,13 +333,13 @@
     
     <!-- Formatter Tools -->
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/JSON-Formatter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/JSON-Formatter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Markdown-Previewer/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Markdown-Previewer</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -347,31 +347,31 @@
     
     <!-- Utility Tools -->
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Regex-Tester/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Regex-Tester</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Word-Counter/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Word-Counter</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Text-Reverser/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Text-Reverser</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Image-Compressor/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Image-Compressor</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/TOOLS/Image-Resizer/</loc>
+        <loc>https://wiki.tapnex.tech/TOOLS/Image-Resizer</loc>
         <lastmod>2025-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
