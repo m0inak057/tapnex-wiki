@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started | Tapnex Wiki</title>
-    <meta name="description" content="Learn how to navigate and use Tapnex Wiki effectively">
+    <meta name="description" content="Explore all topics and resources available on Tapnex Wiki - your gateway to event management, technology, and marketing knowledge">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://wiki.tapnex.tech/getting-started">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles/getting-started.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,25 +25,544 @@
         </nav>
     </header>
 
-    <main style="padding: 80px 20px 40px; max-width: 800px; margin: 0 auto;">
-        <h1>Getting Started with Tapnex Wiki</h1>
-        
-        <h2>Welcome!</h2>
-        <p>Tapnex Wiki is your comprehensive resource for event management, technology solutions, and marketing strategies.</p>
-        
-        <h2>Navigation</h2>
-        <p>Use the main navigation to explore different categories:</p>
-        <ul>
-            <li><strong>Event Management:</strong> Volunteer systems, ticketing, budgeting, and logistics</li>
-            <li><strong>Technology:</strong> Web development, APIs, and NFC solutions</li>
-            <li><strong>Marketing:</strong> Content strategies, social media, and growth tactics</li>
-        </ul>
-        
-        <h2>Search</h2>
-        <p>Use the search feature on the homepage to quickly find specific topics.</p>
-        
-        <h2>Tools</h2>
-        <p>Check out our <a href="/tools.html">useful tools</a> for developers and marketers.</p>
+    <main class="getting-started-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Welcome to</span>
+                </div>
+                <h1 class="hero-title">Tapnex Wiki</h1>
+                <p class="hero-description">
+                    Your comprehensive knowledge hub for event management, cutting-edge technology, and innovative marketing strategies. 
+                    Discover everything you need to succeed in the digital world.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Topics</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Tools</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="quick-nav-section">
+            <div class="section-header">
+                <h2>Quick Start Guide</h2>
+                <p>Jump directly to what interests you most</p>
+            </div>
+            <div class="quick-nav-cards">
+                <a href="#event-management" class="quick-nav-card event-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Event Management</h3>
+                    <p>Plan, organize, and execute successful events</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#technology" class="quick-nav-card tech-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Technology</h3>
+                    <p>Explore cutting-edge tech solutions</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#marketing" class="quick-nav-card marketing-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Marketing</h3>
+                    <p>Master digital marketing strategies</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#tools" class="quick-nav-card tools-card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Developer Tools</h3>
+                    <p>Useful utilities for developers</p>
+                    <span class="card-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Event Management Section -->
+        <section id="event-management" class="topic-section">
+            <div class="section-header">
+                <div class="section-icon">🎯</div>
+                <div>
+                    <h2>Event Management</h2>
+                    <p>Complete solutions for planning and executing memorable events</p>
+                </div>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card" data-category="event">
+                    <div class="topic-header">
+                        <h3>Event Budgeting</h3>
+                        <span class="topic-badge">Planning</span>
+                    </div>
+                    <p>Master the art of event budget planning and financial management for successful events.</p>
+                    <a href="/EVENT-MANAGEMENT/Event-budgeting/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="event">
+                    <div class="topic-header">
+                        <h3>Logistic Planning</h3>
+                        <span class="topic-badge">Operations</span>
+                    </div>
+                    <p>Streamline your event logistics with proven planning strategies and operational excellence.</p>
+                    <a href="/EVENT-MANAGEMENT/Logistic-Planning/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="event">
+                    <div class="topic-header">
+                        <h3>Ticketing Platform</h3>
+                        <span class="topic-badge">Technology</span>
+                    </div>
+                    <p>Build and manage robust ticketing systems for events of any scale.</p>
+                    <a href="/EVENT-MANAGEMENT/ticketing-platform/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="event">
+                    <div class="topic-header">
+                        <h3>Volunteer Systems</h3>
+                        <span class="topic-badge">Management</span>
+                    </div>
+                    <p>Organize and coordinate volunteer teams effectively for seamless event execution.</p>
+                    <a href="/EVENT-MANAGEMENT/volunteer-systems/" class="topic-link">Explore →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="topic-section">
+            <div class="section-header">
+                <div class="section-icon">⚡</div>
+                <div>
+                    <h2>Technology</h2>
+                    <p>Cutting-edge technologies shaping the future of digital innovation</p>
+                </div>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>5G Technology</h3>
+                        <span class="topic-badge">Network</span>
+                    </div>
+                    <p>Explore the revolutionary capabilities and applications of 5G networks.</p>
+                    <a href="/TECHNOLOGY/5G-Technology/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Agentic AI</h3>
+                        <span class="topic-badge">AI</span>
+                    </div>
+                    <p>Discover autonomous AI systems that can act independently and make decisions.</p>
+                    <a href="/TECHNOLOGY/Agentic-AI/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>APIs</h3>
+                        <span class="topic-badge">Development</span>
+                    </div>
+                    <p>Master API design, development, and integration best practices.</p>
+                    <a href="/TECHNOLOGY/APIs/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Biotech & Therapeutics</h3>
+                        <span class="topic-badge">Healthcare</span>
+                    </div>
+                    <p>Breakthrough biotechnology solutions and engineered living therapeutics.</p>
+                    <a href="/TECHNOLOGY/Biotech-&-Engineered-Living-Therapeutics/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Collaborative Sensing</h3>
+                        <span class="topic-badge">IoT</span>
+                    </div>
+                    <p>Advanced sensing technologies and autonomous biochemical sensors.</p>
+                    <a href="/TECHNOLOGY/Collaborative-Sensing-&-Autonomous-Biochemical-Sensors/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Database Management</h3>
+                        <span class="topic-badge">Data</span>
+                    </div>
+                    <p>Comprehensive database design, optimization, and management strategies.</p>
+                    <a href="/TECHNOLOGY/Database-Management/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>DevOps</h3>
+                        <span class="topic-badge">Operations</span>
+                    </div>
+                    <p>Modern DevOps practices for efficient software development and deployment.</p>
+                    <a href="/TECHNOLOGY/Devops/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Edge Computing</h3>
+                        <span class="topic-badge">Infrastructure</span>
+                    </div>
+                    <p>Distributed computing at the network edge for reduced latency and improved performance.</p>
+                    <a href="/TECHNOLOGY/Edge-Computing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Generative AI</h3>
+                        <span class="topic-badge">AI</span>
+                    </div>
+                    <p>Creative AI technologies that generate content, images, and innovative solutions.</p>
+                    <a href="/TECHNOLOGY/Generative-AI/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Green Energy Solutions</h3>
+                        <span class="topic-badge">Sustainability</span>
+                    </div>
+                    <p>Sustainable nitrogen fixation and advanced clean energy technologies.</p>
+                    <a href="/TECHNOLOGY/Green-Nitrogen-Fixation-&-Advanced-Clean-Energy/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>NFC Technology</h3>
+                        <span class="topic-badge">Connectivity</span>
+                    </div>
+                    <p>Near Field Communication applications and implementation strategies.</p>
+                    <a href="/TECHNOLOGY/NFC/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Quantum Computing</h3>
+                        <span class="topic-badge">Computing</span>
+                    </div>
+                    <p>Revolutionary quantum computing principles and real-world applications.</p>
+                    <a href="/TECHNOLOGY/Quantun-Computing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Synthetic Media</h3>
+                        <span class="topic-badge">Media</span>
+                    </div>
+                    <p>Advanced synthetic media generation and digital watermarking techniques.</p>
+                    <a href="/TECHNOLOGY/Synthetic-Media-&-Generative-Watermarking/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Virtual Reality</h3>
+                        <span class="topic-badge">Immersive</span>
+                    </div>
+                    <p>Immersive VR technologies and their applications across industries.</p>
+                    <a href="/TECHNOLOGY/VR-Virtual-Reality/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-header">
+                        <h3>Web Development</h3>
+                        <span class="topic-badge">Development</span>
+                    </div>
+                    <p>Modern web development frameworks, tools, and best practices.</p>
+                    <a href="/TECHNOLOGY/Web-Development/" class="topic-link">Explore →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Section -->
+        <section id="marketing" class="topic-section">
+            <div class="section-header">
+                <div class="section-icon">📈</div>
+                <div>
+                    <h2>Marketing</h2>
+                    <p>Innovative marketing strategies for the digital age</p>
+                </div>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>AI-Powered Content Creation</h3>
+                        <span class="topic-badge">AI</span>
+                    </div>
+                    <p>Leverage artificial intelligence for scalable and effective content marketing.</p>
+                    <a href="/MARKETING/AI-Powered-Content-Creation-&-Exhaustive-Marketing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Analytics & Insights</h3>
+                        <span class="topic-badge">Data</span>
+                    </div>
+                    <p>Data-driven marketing analytics for informed decision making.</p>
+                    <a href="/MARKETING/analytics-&-insigths/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>AR/VR Content Marketing</h3>
+                        <span class="topic-badge">Immersive</span>
+                    </div>
+                    <p>Create engaging experiences with augmented and virtual reality marketing.</p>
+                    <a href="/MARKETING/augmented-reality-&-virtual-reality-for-content-marketing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Co-Marketing & Partnerships</h3>
+                        <span class="topic-badge">Strategy</span>
+                    </div>
+                    <p>Build powerful brand partnerships and collaborative marketing campaigns.</p>
+                    <a href="/MARKETING/Co-Marketing-&-brand-partnership/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Compliance & Ethics</h3>
+                        <span class="topic-badge">Legal</span>
+                    </div>
+                    <p>Navigate legal compliance and ethical considerations in content marketing.</p>
+                    <a href="/MARKETING/compliance-&-ethical-content-marketing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Content Format Innovation</h3>
+                        <span class="topic-badge">Creative</span>
+                    </div>
+                    <p>Explore innovative content formats and creative marketing approaches.</p>
+                    <a href="/MARKETING/content-format-innovations/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Content Marketing</h3>
+                        <span class="topic-badge">Core</span>
+                    </div>
+                    <p>Master fundamental content marketing strategies and best practices.</p>
+                    <a href="/MARKETING/content-marketing/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>ROI Analytics</h3>
+                        <span class="topic-badge">Measurement</span>
+                    </div>
+                    <p>Measure and optimize your content marketing return on investment.</p>
+                    <a href="/MARKETING/content-marketing-measurement-&-ROI-analytics/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Email Campaigns</h3>
+                        <span class="topic-badge">Direct</span>
+                    </div>
+                    <p>Create effective email marketing campaigns that drive engagement and conversions.</p>
+                    <a href="/MARKETING/email-campaigns/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Authentic Storytelling</h3>
+                        <span class="topic-badge">Brand</span>
+                    </div>
+                    <p>Humanize your brand through authentic storytelling and emotional connections.</p>
+                    <a href="/MARKETING/Humanizing-content-&-authentic-storytelling/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Community Growth</h3>
+                        <span class="topic-badge">Engagement</span>
+                    </div>
+                    <p>Build thriving communities through newsletters and engagement strategies.</p>
+                    <a href="/MARKETING/newsletter-&-community-driven-growth/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Personalization</h3>
+                        <span class="topic-badge">Targeting</span>
+                    </div>
+                    <p>Implement data-driven personalization for targeted marketing success.</p>
+                    <a href="/MARKETING/Personalization-&-Data-Driven-Content/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Short-Form Video</h3>
+                        <span class="topic-badge">Video</span>
+                    </div>
+                    <p>Master short-form video content for social media and digital platforms.</p>
+                    <a href="/MARKETING/short-form-video-content/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>Social Media Strategy</h3>
+                        <span class="topic-badge">Social</span>
+                    </div>
+                    <p>Develop comprehensive social media strategies for brand growth.</p>
+                    <a href="/MARKETING/social-media-strategy/" class="topic-link">Explore →</a>
+                </div>
+                <div class="topic-card" data-category="marketing">
+                    <div class="topic-header">
+                        <h3>User-Generated Content</h3>
+                        <span class="topic-badge">Community</span>
+                    </div>
+                    <p>Harness the power of user-generated content for authentic marketing.</p>
+                    <a href="/MARKETING/UGC/" class="topic-link">Explore →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="topic-section">
+            <div class="section-header">
+                <div class="section-icon">🛠️</div>
+                <div>
+                    <h2>Developer Tools</h2>
+                    <p>Essential utilities and converters for developers and content creators</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔐</div>
+                    <h3>Base64 Encoder/Decoder</h3>
+                    <p>Encode and decode Base64 strings</p>
+                    <a href="/TOOLS/Base64-Encoder-Decoder/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">⚖️</div>
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate Body Mass Index</p>
+                    <a href="/TOOLS/BMI-Calculator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🧮</div>
+                    <h3>Calculator</h3>
+                    <p>Basic mathematical calculator</p>
+                    <a href="/TOOLS/Calculator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔤</div>
+                    <h3>Case Converter</h3>
+                    <p>Convert text between different cases</p>
+                    <a href="/TOOLS/Case-Converter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎨</div>
+                    <h3>Color Code Converter</h3>
+                    <p>Convert between color formats</p>
+                    <a href="/TOOLS/Color-Code-Converter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🌈</div>
+                    <h3>Color Palette Generator</h3>
+                    <p>Generate beautiful color palettes</p>
+                    <a href="/TOOLS/Color-Palette-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📐</div>
+                    <h3>CSS Gradient Generator</h3>
+                    <p>Create CSS gradients visually</p>
+                    <a href="/TOOLS/CSS-Gradient-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🚀</div>
+                    <h3>Favicon Generator</h3>
+                    <p>Generate favicons for websites</p>
+                    <a href="/TOOLS/Favicon-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🗜️</div>
+                    <h3>Image Compressor</h3>
+                    <p>Compress images for web</p>
+                    <a href="/TOOLS/Image-Compressor/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📏</div>
+                    <h3>Image Resizer</h3>
+                    <p>Resize images to custom dimensions</p>
+                    <a href="/TOOLS/Image-Resizer/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📄</div>
+                    <h3>JSON Formatter</h3>
+                    <p>Format and validate JSON data</p>
+                    <a href="/TOOLS/JSON-Formatter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3>Lorem Ipsum Generator</h3>
+                    <p>Generate placeholder text</p>
+                    <a href="/TOOLS/Lorem-Ipsum-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📋</div>
+                    <h3>Markdown Previewer</h3>
+                    <p>Preview Markdown in real-time</p>
+                    <a href="/TOOLS/Markdown-Previewer/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔑</div>
+                    <h3>Password Generator</h3>
+                    <p>Generate secure passwords</p>
+                    <a href="/TOOLS/Password-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>Percentage Calculator</h3>
+                    <p>Calculate percentages easily</p>
+                    <a href="/TOOLS/Percentage-Calculator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📱</div>
+                    <h3>QR Generator</h3>
+                    <p>Generate QR codes</p>
+                    <a href="/TOOLS/QR-Generator/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔍</div>
+                    <h3>Regex Tester</h3>
+                    <p>Test regular expressions</p>
+                    <a href="/TOOLS/Regex-Tester/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3>Text Reverser</h3>
+                    <p>Reverse text strings</p>
+                    <a href="/TOOLS/Text-Reverser/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">⏰</div>
+                    <h3>Timestamp Converter</h3>
+                    <p>Convert between timestamp formats</p>
+                    <a href="/TOOLS/Timestamp-Converter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🌍</div>
+                    <h3>Timezone Converter</h3>
+                    <p>Convert between timezones</p>
+                    <a href="/TOOLS/Timezone-Converter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📐</div>
+                    <h3>Unit Converter</h3>
+                    <p>Convert between different units</p>
+                    <a href="/TOOLS/Unit-Converter/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔗</div>
+                    <h3>URL Encoder/Decoder</h3>
+                    <p>Encode and decode URLs</p>
+                    <a href="/TOOLS/URL-Encoder-Decoder/" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>Word Counter</h3>
+                    <p>Count words, characters, and paragraphs</p>
+                    <a href="/TOOLS/Word-Counter/" class="tool-link">Use Tool</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Explore?</h2>
+                <p>Start your journey with Tapnex Wiki and unlock the knowledge you need to succeed.</p>
+                <div class="cta-buttons">
+                    <a href="/" class="cta-button primary">Go to Homepage</a>
+                    <a href="/tools.html" class="cta-button secondary">Explore Tools</a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="scripts/getting-started.js"></script>
 </body>
 </html>
