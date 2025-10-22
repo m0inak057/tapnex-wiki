@@ -1,0 +1,145 @@
+/* Legal Pages Styling */
+
+/* Logo sizing fix for legal pages - using same structure as main site */
+.brand .header-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.legal-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.legal-page-content h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.legal-page-content h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.legal-page-content h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.8rem 0;
+    font-weight: 600;
+}
+
+.legal-page-content p {
+    margin-bottom: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.legal-page-content ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    color: var(--text-secondary);
+}
+
+.legal-page-content li {
+    margin-bottom: 0.8rem;
+}
+
+.legal-page-content a {
+    color: var(--sidebar-highlight);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-page-content a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.legal-meta {
+    background: var(--content-white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text-muted);
+}
+
+.cookie-policy-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb a {
+    color: var(--sidebar-highlight);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-links a.active {
+    color: var(--sidebar-highlight);
+    font-weight: 600;
+}
+
+/* Dark theme adjustments for legal pages */
+[data-theme="dark"] .legal-page-content h1,
+[data-theme="dark"] .legal-page-content h3,
+[data-theme="dark"] .legal-page-content h4 {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .legal-page-content p,
+[data-theme="dark"] .legal-page-content ul,
+[data-theme="dark"] .legal-page-content li {
+    color: var(--dark-text-secondary);
+}
+
+[data-theme="dark"] .legal-meta {
+    background: var(--dark-card-bg);
+    border-color: var(--dark-border);
+    color: var(--dark-text-secondary);
+}
+
+[data-theme="dark"] .cookie-policy-section {
+    border-top-color: var(--dark-border);
+}
+
+/* Content wrapper for legal pages */
+.content-wrapper {
+    min-height: calc(100vh - 160px);
+    padding-top: 80px;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .legal-page-content {
+        padding: 1rem;
+    }
+    
+    .legal-page-content h1 {
+        font-size: 2rem;
+    }
+    
+    .legal-page-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .content-wrapper {
+        padding-top: 70px;
+    }
+}

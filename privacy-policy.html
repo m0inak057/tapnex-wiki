@@ -7,34 +7,187 @@
     <meta name="description" content="Privacy Policy for Tapnex Wiki - How we collect, use, and protect your information">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://wiki.tapnex.tech/privacy-policy">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/TAPNEX_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="legal-pages.css">
+    <script src="home.js" defer></script>
 </head>
-<body>
+<body data-theme="dark">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="/">
-                        <img src="images/TAPNEX_LOGO.png" alt="TAPNEX Logo" class="logo">
-                        <span>WIKI</span>
+                <div class="brand">
+                    <a href="/" class="logo" title="Go to Tapnex Wiki Home">
+                        <img src="images/TAPNEX_LOGO.png" alt="TAPNEX Logo" class="header-logo">
+                        <span class="logo-text">WIKI</span>
                     </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/#event-management" class="nav-link">Event Management</a>
+                    <a href="/#technology" class="nav-link">Technology</a>
+                    <a href="/#marketing" class="nav-link">Marketing</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main style="padding: 80px 20px 40px; max-width: 800px; margin: 0 auto;">
-        <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> October 22, 2025</p>
-        
-        <h2>Information We Collect</h2>
-        <p>Tapnex Wiki is a public knowledge base. We collect minimal information to provide our services.</p>
-        
-        <h2>How We Use Information</h2>
-        <p>We use Google Analytics to understand how visitors use our site to improve content and user experience.</p>
-        
-        <h2>Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact us at privacy@tapnex.tech</p>
+    <main class="content-wrapper">
+        <div class="container">
+            <div class="legal-page-content">
+                <div class="breadcrumb">
+                    <a href="/">Home</a> > Privacy Policy
+                </div>
+                
+                <h1>Privacy Policy</h1>
+                <div class="legal-meta">
+                    <p><strong>Last updated: October 10, 2025</strong></p>
+                </div>
+                
+                <p>Welcome to Tapnex ("we," "our," "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong>wiki.tapnex.tech</strong> (the "Site"). By using the Site, you agree to this policy.</p>
+
+                <h3>1. Information We Collect</h3>
+                <p>We may collect information in the following ways:</p>
+                <ul>
+                    <li><strong>Personal Information</strong>: When you voluntarily provide it — e.g. name, email address, contact number, etc.</li>
+                    <li><strong>Automatically Collected Information</strong>: When you interact with the Site, we may collect usage data (IP address, browser type, pages visited, timestamps, referring/exit pages).</li>
+                    <li><strong>Cookies and Tracking Technologies</strong>: See our Cookie Policy below for details.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>We may use the collected information for purposes including but not limited to:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our Site and services.</li>
+                    <li>To respond to your inquiries or requests.</li>
+                    <li>To send you updates, newsletters, or other communications (if you opt in).</li>
+                    <li>To monitor and analyze usage and trends.</li>
+                    <li>To detect, prevent, and address technical issues or abuse.</li>
+                </ul>
+
+                <h3>3. Disclosure of Your Information</h3>
+                <p>We do not sell your personal data. We may share information with:</p>
+                <ul>
+                    <li><strong>Service Providers</strong> who assist in operating the Site (hosting, analytics, email services).</li>
+                    <li><strong>Legal or regulatory authorities</strong>, when required by law or to protect our rights.</li>
+                    <li><strong>Business transfers</strong>: If we merge, are acquired, or sell assets, your information may be part of the transferred assets.</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement reasonable technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction. However, no method is 100% secure, so we cannot guarantee absolute security.</p>
+
+                <h3>5. Retention Period</h3>
+                <p>We retain personal data for as long as necessary to fulfill the purposes outlined in this Policy, unless a longer retention is required by law.</p>
+
+                <h3>6. Your Rights</h3>
+                <p>Depending on your location, you may have rights including:</p>
+                <ul>
+                    <li>Accessing the personal data we hold about you.</li>
+                    <li>Requesting correction or deletion.</li>
+                    <li>Withdrawing consent (where processing is based on consent).</li>
+                    <li>Objecting to certain processing or requesting restriction.</li>
+                </ul>
+                <p>To exercise any of these rights, contact us at <strong><a href="mailto:info@tapnex.tech">info@tapnex.tech</a></strong>.</p>
+
+                <h3>7. Third-Party Links & Services</h3>
+                <p>Our Site may contain links to external sites or use third-party services (e.g. analytics, embeds). Those external entities may have their own privacy policies, and we encourage you to review them.</p>
+
+                <h3>8. Changes to This Policy</h3>
+                <p>We may update this Privacy Policy periodically. We will post the updated version here with a "Last updated" date. Your continued use after changes constitutes acceptance.</p>
+
+                <div class="cookie-policy-section">
+                    <h3>Cookie Policy / Cookies</h3>
+                    <p><strong>Last updated: October 10, 2025</strong></p>
+                    
+                    <p>This Cookie Policy explains how <strong>wiki.tapnex.tech</strong> ("we," "us") uses cookies and similar tracking technologies when you visit our Site.</p>
+
+                    <h4>1. What Are Cookies?</h4>
+                    <p>Cookies are small data files placed on your device (computer, mobile device) when you visit a website. They help the site remember your actions or preferences over time.</p>
+
+                    <h4>2. Types of Cookies We Use</h4>
+                    <ul>
+                        <li><strong>Essential / Strictly Necessary Cookies</strong>: These are required for basic site functionality (e.g. session management, security).</li>
+                        <li><strong>Performance / Analytics Cookies</strong>: To collect information about how visitors use the site (e.g. which pages are visited, how long). This helps us improve the site.</li>
+                        <li><strong>Functional Cookies</strong>: To remember your preferences or settings (e.g. language preference).</li>
+                        <li><strong>Advertising / Targeting Cookies</strong>: (If used) To deliver relevant ads or measure effectiveness of marketing campaigns.</li>
+                    </ul>
+
+                    <h4>3. Managing Cookies</h4>
+                    <p>You can control cookies through your browser settings. Most browsers allow you to:</p>
+                    <ul>
+                        <li>View what cookies are stored</li>
+                        <li>Delete specific cookies or all cookies</li>
+                        <li>Block cookies from specific sites</li>
+                        <li>Block all third-party cookies</li>
+                        <li>Set automatic deletion when you close your browser</li>
+                    </ul>
+                    <p>Please note that disabling certain cookies may impact your experience on our site.</p>
+
+                    <h4>4. Contact Us About Cookies</h4>
+                    <p>If you have questions about our use of cookies, please contact us at <strong><a href="mailto:info@tapnex.tech">info@tapnex.tech</a></strong>.</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Knowledge Base</h4>
+                <ul class="footer-links">
+                    <li><a href="/#event-management">Event Management</a></li>
+                    <li><a href="/#technology">Technology</a></li>
+                    <li><a href="/#marketing">Marketing</a></li>
+                    <li><a href="/tools.html">Tools</a></li>
+                    <li><a href="/getting-started">Getting Started</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.tapnex.tech/">TapNex</a></li>
+                    <li><a href="https://www.tapnex.tech/about">About</a></li>
+                    <li><a href="https://www.tapnex.tech/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@tapnex.tech">info@tapnex.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 TapNex Wiki. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy" class="active">Privacy</a>
+                    <a href="/terms-of-service">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
