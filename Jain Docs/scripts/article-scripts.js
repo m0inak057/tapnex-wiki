@@ -32,22 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // --- Dark Mode Toggle ---
-        const themeToggle = document.getElementById('theme-toggle');
-        
-        // Initialize theme - default to light for Jain Docs, unless user has explicitly saved a preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-            });
-        }
+        // Always use light theme for Jain Docs
+        document.documentElement.setAttribute('data-theme', 'light');
 
         // --- Sidebar Submenu Toggle ---
         const navToggles = document.querySelectorAll('.nav-toggle');
