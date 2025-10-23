@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Near Field Communication (NFC): A Comprehensive Guide | Tapnex Wiki</title>
+    <meta name="description" content="An expert-level guide to Near Field Communication (NFC) technology, covering technical specifications, use cases, security, and future trends.">
+    <meta name="keywords" content="NFC, Near Field Communication, RFID, contactless payment, mobile payments, NFC tags, IoT, wireless technology">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://wiki.tapnex.tech/nfc-technology">
+    <meta property="og:title" content="Near Field Communication (NFC): A Comprehensive Guide | Tapnex Wiki">
+    <meta property="og:description" content="Explore the complete guide to NFC technology, from its core concepts and applications in payments and IoT to the latest industry trends.">
+    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wiki.tapnex.tech/nfc-technology">
+    <meta property="twitter:title" content="Near Field Communication (NFC): A Comprehensive Guide | Tapnex Wiki">
+    <meta property="twitter:description" content="Explore the complete guide to NFC technology, from its core concepts and applications in payments and IoT to the latest industry trends.">
+    <meta property="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <link rel="canonical" href="https://wiki.tapnex.tech/nfc-technology">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/TAPNEX_LOGO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/TAPNEX_LOGO.png">
+    <link rel="apple-touch-icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="shortcut icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/additional-ad-styles.css">
+    <link rel="stylesheet" href="/styles/article-styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script src="/home.js" defer></script>
+    <script src="/earth3d.js" type="module" defer></script>
+    <script src="/scripts/article-scripts.js" defer></script>
+</head>
+<body data-theme="dark">
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <div class="page-wrapper">
+        <aside class="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="/index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;" title="Go to Tapnex Wiki Home">
+                        <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="sidebar-logo-image">
+                        <h1>Wiki</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <label for="search-input" class="sr-only">Search topics</label>
+                <input type="text" id="search-input" placeholder="Search topics..." aria-label="Search topics">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="/getting-started">Getting Started</a>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Event Management</span>
+                        <ul class="submenu">
+                            <li><a href="/EVENT-MANAGEMENT/Event-budgeting/">Event Budgeting</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/Logistic-Planning/">Logistics Planning</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/ticketing-platform/">Ticketing Platforms</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/volunteer-systems/">Volunteer Systems</a></li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <span class="nav-toggle">Technology</span>
+                        <ul class="submenu">
+                           <li><a href="/TECHNOLOGY/5G-Technology/">5G Technology</a></li>
+                           <li><a href="/TECHNOLOGY/Agentic-AI/">Agentic AI</a></li>
+                           <li><a href="/TECHNOLOGY/APIs/">API Integration</a></li>
+                           <li><a href="/TECHNOLOGY/Biotech-&-Engineered-Living-Therapeutics/">Biotech & Engineered Living Therapeutics</a></li>
+                           <li><a href="/TECHNOLOGY/Collaborative-Sensing-&-Autonomous-Biochemical-Sensors/">Collaborative Sensing & Autonomous Biochemical Sensors</a></li>
+                           <li><a href="/TECHNOLOGY/Database-Management/">Database Management</a></li>
+                           <li><a href="/TECHNOLOGY/Devops/">DevOps & Deployment</a></li>
+                           <li><a href="/TECHNOLOGY/Edge-Computing/">Edge Computing</a></li>
+                           <li><a href="/TECHNOLOGY/Generative-AI/">Generative AI</a></li>
+                           <li><a href="/TECHNOLOGY/Green-Nitrogen-Fixation-&-Advanced-Clean-Energy/">Green Nitrogen Fixation & Advanced Clean Energy</a></li>
+                           <li class="active"><a href="/TECHNOLOGY/NFC/">NFC (Near Field Communication)</a></li>
+                           <li><a href="/TECHNOLOGY/Quantun-Computing/">Quantum Computing</a></li>
+                           <li><a href="/TECHNOLOGY/Synthetic-Media-&-Generative-Watermarking/">Synthetic Media & Generative Watermarking</a></li>
+                           <li><a href="/TECHNOLOGY/VR-Virtual-Reality/">Virtual Reality (VR)</a></li>
+                           <li><a href="/TECHNOLOGY/Web-Development/">Web Development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Marketing</span>
+                        <ul class="submenu">
+                            <li><a href="/MARKETING/social-media-strategy/">Social Media Strategy</a></li>
+                            <li><a href="/MARKETING/content-marketing/">Content Marketing</a></li>
+                            <li><a href="/MARKETING/analytics-&-insigths/">Analytics & Insights</a></li>
+                            <li><a href="/MARKETING/email-campaigns/">Email Campaigns</a></li>
+                            <li><a href="/MARKETING/short-form-video-content/">Short Form Video Content</a></li>
+                            <li><a href="/MARKETING/Personalization-&-Data-Driven-Content/">Personalization & Data-Driven Content</a></li>
+                            <li><a href="/MARKETING/compliance-&-ethical-content-marketing/">Compliance & Ethical Content Marketing</a></li>
+                            <li><a href="/MARKETING/AI-Powered-Content-Creation-&-Exhaustive-Marketing/">AI-Powered Content Creation & Exhaustive Marketing</a></li>
+                            <li><a href="/MARKETING/Humanizing-content-&-authentic-storytelling/">Humanizing Content & Authentic Storytelling</a></li>
+                            <li><a href="/MARKETING/UGC/">User Generated Content (UGC)</a></li>
+                            <li><a href="/MARKETING/content-format-innovations/">Content Format Innovations</a></li>
+                            <li><a href="/MARKETING/augmented-reality-&-virtual-reality-for-content-marketing/">Augmented Reality & Virtual Reality for Content Marketing</a></li>
+                            <li><a href="/MARKETING/Co-Marketing-&-brand-partnership/">Co-Marketing & Brand Partnership</a></li>
+                            <li><a href="/MARKETING/newsletter-&-community-driven-growth/">Newsletter & Community-Driven Growth</a></li>
+                            <li><a href="/MARKETING/content-marketing-measurement-&-ROI-analytics/">Content Marketing Measurement & ROI Analytics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="/index.html">← Back to Home</a>
+            </div>
+        </aside>
+
+        <main class="main-content" role="main">
+            <div class="content-wrapper">
+                <article>
+                    <nav class="breadcrumbs">
+                        <a href="/index.html">Home</a> &gt; <a href="/index.html#technology">Technology</a> &gt; NFC Technology
+                    </nav>
+
+                    <h1>Near Field Communication (NFC): A Comprehensive Technology Guide</h1>
+                    <div class="meta-data">
+                        Published: October 23, 2025 | 15 min read
+                    </div>
+
+                    <p>Near Field Communication (NFC) has evolved from a specialized communication protocol into a ubiquitous technology that powers countless daily interactions, from mobile payments to smart home automation. This comprehensive guide provides detailed information about NFC technology, covering its technical specifications, applications, market dynamics, security considerations, and future prospects. Many modern solutions, like those offered by <a href="https://www.tapnex.tech/">Tapnex</a>, leverage NFC to create seamless user experiences.</p>
+
+                    <h2 id="what-is-nfc">What is Near Field Communication (NFC)?</h2>
+                    <p>Near Field Communication (NFC) is a set of communication protocols that enables secure, short-range wireless data exchange between electronic devices positioned within 4 centimeters (1.6 inches) of each other. Operating at a frequency of 13.56 MHz, NFC is a specialized subset of Radio Frequency Identification (RFID) technology designed for intentional, close-proximity interactions. Its low power consumption and inherent security make it a cornerstone of modern contactless technology.</p>
+                    <h3>Key Technical Specifications:</h3>
+                    <ul>
+                        <li><strong>Operating Frequency:</strong> 13.56 MHz</li>
+                        <li><strong>Data Transfer Rates:</strong> 106 kbit/s to 848 kbit/s</li>
+                        <li><strong>Maximum Range:</strong> Up to 20 cm theoretically, but typically under 10 cm in practice for security.</li>
+                        <li><strong>Communication Modes:</strong> Active and passive device communication</li>
+                        <li><strong>Power Consumption:</strong> Less than 15 mA for read operations, making it highly efficient.</li>
+                    </ul>
+
+                    <h2 id="architecture">Technical Architecture and Design</h2>
+                    <p>NFC technology utilizes <strong>inductive coupling</strong> between two loop antennas, effectively forming an air-core transformer. This elegant design allows for communication between a powered (active) device and an unpowered (passive) tag, which draws its operational power directly from the active device's magnetic field. This is fundamental to how simple NFC tags operate without needing a battery.</p>
+                    <h3>NFC Communication Modes</h3>
+                    <p>NFC devices can operate in three distinct modes, making the technology incredibly versatile:</p>
+                    <ol>
+                        <li><strong>Reader/Writer Mode:</strong> This mode allows an NFC-enabled device, such as a smartphone, to read data from or write data to a passive NFC tag. These tags can be embedded in posters, product packaging, or business cards to launch a website or share contact information with a simple tap.</li>
+                        <li><strong>Peer-to-Peer Mode:</strong> This enables two powered NFC devices to establish a direct, two-way communication channel to exchange data. It's commonly used for sharing contacts, photos, or files by simply tapping two phones together.</li>
+                        <li><strong>Card Emulation Mode:</strong> This powerful mode permits an NFC device to act as a secure, contactless smart card. It's the technology behind mobile payment systems like Apple Pay and Google Pay, as well as modern transit passes and building access cards. For more information about our company's solutions, you can visit our <a href="https://www.tapnex.tech/about">about page</a>.</li>
+                    </ol>
+
+                    <h2 id="market-growth">Market Size and Growth Projections</h2>
+                    <p>The global NFC market is experiencing remarkable growth. In 2024, the market size was valued between USD 25-30 billion and is projected to reach as high as USD 94 billion by 2033, with a compound annual growth rate (CAGR) of up to 13.9%. The Asia Pacific region currently leads with a 35% market share, but North America is expected to reach USD 30 billion by 2032. This expansion is primarily driven by the accelerated adoption of contactless payments, the integration of NFC with Internet of Things (IoT) devices, and the growing demand for seamless and secure user experiences.</p>
+
+                    <h2 id="use-cases">Comprehensive Use Cases and Applications</h2>
+                    <h3>1. Mobile Payments and Digital Wallets</h3>
+                    <p>NFC has revolutionized the payment industry. By enabling secure, tokenized transactions where sensitive card data is never transmitted, it has become the backbone of platforms like Apple Pay, Google Pay, and Samsung Pay. This offers a fast and secure alternative to traditional credit cards.</p>
+                    <h3>2. Transportation and Access Control</h3>
+                    <p>From public transit systems using smart ticketing to corporate environments deploying secure building access, NFC provides a robust solution. It is also increasingly used in the hospitality industry for NFC-enabled hotel room keys, offering more convenience and security than magnetic stripe cards.</p>
+                    <h3>3. Automotive Applications</h3>
+                    <p>The automotive NFC market is booming. Valued at USD 4.5 billion in 2023, its applications include secure keyless entry systems, automatic personalization of driver preferences (seats, climate control), and convenient in-car payments for tolls, parking, and fuel.</p>
+                    <h3>4. Healthcare and Medical Applications</h3>
+                    <p>In healthcare, NFC enables secure patient identification via wristbands, which can link to electronic health records. It also plays a crucial role in medication management by helping to prevent counterfeiting and allowing patients to access treatment information directly on their smartphones.</p>
+                    <h3>5. Smart Home and IoT Integration</h3>
+                    <p>NFC simplifies the smart home experience. It can be used for automated setup of Wi-Fi networks, quick pairing of Bluetooth devices, and easy control of appliances, lighting, and security systems with a simple tap, making IoT technology more accessible for everyone.</p>
+
+                    <h2 id="nfc-vs-rfid">NFC vs. RFID: A Detailed Technical Comparison</h2>
+                    <p>While NFC is a subset of RFID, there are crucial differences that define their use cases:</p>
+                    <ul>
+                        <li><strong>Range and Interaction:</strong> NFC has a very short range (under 10 cm) and requires an intentional, user-driven "tap." This makes it highly secure for transactions. RFID, in contrast, can operate up to 100 meters and is used for automatic, background scanning, such as tracking inventory in a warehouse.</li>
+                        <li><strong>Communication Protocol:</strong> NFC is bi-directional, allowing two-way communication between devices. RFID is typically a one-way system where a reader retrieves data from a tag.</li>
+                        <li><strong>Data Handling:</strong> An NFC reader communicates with one tag at a time, ensuring a focused and secure interaction. An RFID reader is designed to scan hundreds of tags simultaneously, making it ideal for logistics.</li>
+                    </ul>
+
+                    <h2 id="security">Security Considerations and Vulnerabilities</h2>
+                    <p>NFC's short operational range is its greatest security strength, as it makes remote hacking (eavesdropping) extremely difficult. Furthermore, modern NFC systems employ strong end-to-end encryption and tokenization to protect sensitive data during transactions. While theoretical vulnerabilities like relay attacks exist, they are difficult to execute in practice and can be mitigated with proper authentication protocols and time-sensitive transaction codes.</p>
+
+                    <h2 id="wireless-charging">NFC Wireless Charging (WLC) Technology</h2>
+                    <p>A newer and exciting development is NFC Wireless Charging (WLC). This specification allows for wireless power transfer of up to 1W (or 3W in some proprietary solutions) over a distance of up to 2 cm. This technology is perfectly suited for small, battery-powered devices like wearables, smart cards, and digital styluses, where larger Qi charging coils are impractical. The NFC wireless charging market is projected to grow rapidly, driven by the demand for smaller and more efficient charging solutions.</p>
+
+                    <h2 id="future-trends">Future Trends and Technological Developments</h2>
+                    <p>The future of NFC is bright, with its role expanding deeper into the Internet of Things (IoT) for seamless device commissioning and management. It is also being explored for autonomous vehicle communication (V2X) and in advanced healthcare solutions, such as powering implantable medical devices. As the technology advances, we can expect improved power efficiency, potentially extended range capabilities (while maintaining security), and even more seamless integration with other wireless technologies like 5G and edge computing. For inquiries about how this technology can be integrated into your business, feel free to <a href="https://www.tapnex.tech/contact">contact us</a>.</p>
+                </article>
+
+                <aside class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol id="toc-list">
+                        <li><a href="#what-is-nfc">What is NFC?</a></li>
+                        <li><a href="#architecture">Technical Architecture</a></li>
+                        <li><a href="#market-growth">Market Size & Growth</a></li>
+                        <li><a href="#use-cases">Use Cases & Applications</a></li>
+                        <li><a href="#nfc-vs-rfid">NFC vs. RFID</a></li>
+                        <li><a href="#security">Security Considerations</a></li>
+                        <li><a href="#wireless-charging">Wireless Charging</a></li>
+                        <li><a href="#future-trends">Future Trends</a></li>
+                    </ol>
+
+                    <div class="ad-container sidebar-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="1734728076"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="logo-image">
+                    <h3>Tapnex</h3>
+                </div>
+                <p class="footer-description">
+                    Empowering organizations with comprehensive knowledge and innovative solutions from a leading <a href="https://www.tapnex.tech/">technology company</a>.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tapnex.fc/?hl=en" aria-label="Follow us on Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/tapnexfc/?" aria-label="Follow us on LinkedIn" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Knowledge Base</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#event-management">Event Management</a></li>
+                    <li><a href="/index.html#technology">Technology</a></li>
+                    <li><a href="/index.html#marketing">Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.tapnex.tech/">Tapnex</a></li>
+                    <li><a href="https://www.tapnex.tech/about">About</a></li>
+                    <li><a href="https://www.tapnex.tech/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@tapnex.tech">info@tapnex.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Tapnex. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy">Privacy</a>
+                    <a href="/terms-of-service">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to Tapnex ("we," "our," "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong>wiki.tapnex.tech</strong> (the "Site"). By using the Site, you agree to this policy.</p>
+
+                <h3>1. Information We Collect</h3>
+                <ul>
+                    <li><strong>Personal Information</strong>: When you voluntarily provide it — e.g. name, email address, contact number, etc.</li>
+                    <li><strong>Automatically Collected Information</strong>: When you interact with the Site, we may collect usage data (IP address, browser type, pages visited, timestamps, referring/exit pages).</li>
+                    <li><strong>Cookies and Tracking Technologies</strong>: See our Cookie Policy below for details.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <ul>
+                    <li>To provide, maintain, and improve our Site and services.</li>
+                    <li>To respond to your inquiries or requests.</li>
+                    <li>To send you updates, newsletters, or other communications (if you opt in).</li>
+                    <li>To monitor and analyze usage and trends.</li>
+                    <li>To detect, prevent, and address technical issues or abuse.</li>
+                </ul>
+
+                <h3>3. Disclosure of Your Information</h3>
+                <p>We do not sell your personal data. We may share information with:</p>
+                <ul>
+                    <li><strong>Service Providers</strong> who assist in operating the Site (hosting, analytics, email services).</li>
+                    <li><strong>Legal or regulatory authorities</strong>, when required by law or to protect our rights.</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement reasonable technical and organizational measures to protect your data. However, no method is 100% secure.</p>
+                
+                <div class="cookie-policy-section">
+                    <h3>Cookie Policy</h3>
+                    <p>This Cookie Policy explains how <strong>wiki.tapnex.tech</strong> uses cookies. Cookies are small data files placed on your device to help the site remember your preferences and improve your experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Terms of Service</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to <strong>wiki.tapnex.tech</strong>. These Terms of Service ("Terms") govern your access to and use of our Site. By accessing or using the Site, you agree to be bound by these Terms.</p>
+
+                <h3>1. Use of the Site</h3>
+                <ul>
+                    <li>You must follow all applicable laws and not use the Site for unlawful activities.</li>
+                    <li>You agree not to misuse the Site or interfere with its operation.</li>
+                </ul>
+
+                <h3>2. Content</h3>
+                <ul>
+                    <li>The content on the Site is for general informational purposes only. We do not guarantee its accuracy or completeness.</li>
+                    <li>The content is owned by us or our licensors and may not be reproduced without permission.</li>
+                </ul>
+
+                <h3>3. Disclaimers & Limitation of Liability</h3>
+                <ul>
+                    <li>The site and content are provided "as is" without warranties of any kind.</li>
+                    <li>We disclaim liability for damages arising from your use of the Site.</li>
+                </ul>
+
+                <h3>4. Governing Law</h3>
+                <p>These Terms shall be governed by the laws of <strong>Karnataka, India</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

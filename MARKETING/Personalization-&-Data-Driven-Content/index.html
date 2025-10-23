@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personalization & Data-Driven Content: A Comprehensive Guide | Tapnex Wiki</title>
+    <meta name="description" content="An expert-level guide to personalization and data-driven content in marketing, covering strategy, AI, best practices, and more.">
+    <meta name="keywords" content="personalization, data-driven content, marketing strategy, customer data platform, hyper-personalization, AI marketing">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://wiki.tapnex.tech/personalization-data-driven-content">
+    <meta property="og:title" content="Personalization & Data-Driven Content: A Comprehensive Guide | Tapnex Wiki">
+    <meta property="og:description" content="Explore the full spectrum of personalization in marketing, from core concepts and technologies to the latest trends for 2025.">
+    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wiki.tapnex.tech/personalization-data-driven-content">
+    <meta property="twitter:title" content="Personalization & Data-Driven Content: A Comprehensive Guide | Tapnex Wiki">
+    <meta property="twitter:description" content="Explore the full spectrum of personalization in marketing, from core concepts and technologies to the latest trends for 2025.">
+    <meta property="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+
+    <link rel="canonical" href="https://wiki.tapnex.tech/personalization-data-driven-content">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/TAPNEX_LOGO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/TAPNEX_LOGO.png">
+    <link rel="apple-touch-icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="shortcut icon" href="/images/TAPNEX_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/additional-ad-styles.css">
+    <link rel="stylesheet" href="/styles/article-styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script src="/home.js" defer></script>
+    <script src="/earth3d.js" type="module" defer></script>
+    <script src="/scripts/article-scripts.js" defer></script>
+</head>
+<body data-theme="dark">
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <div class="page-wrapper">
+        <aside class="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="/index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;" title="Go to Tapnex Wiki Home">
+                        <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="sidebar-logo-image">
+                        <h1>Wiki</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <label for="search-input" class="sr-only">Search topics</label>
+                <input type="text" id="search-input" placeholder="Search topics..." aria-label="Search topics">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="/getting-started">Getting Started</a>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Event Management</span>
+                        <ul class="submenu">
+                            <li><a href="/EVENT-MANAGEMENT/Event-budgeting/">Event Budgeting</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/Logistic-Planning/">Logistics Planning</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/ticketing-platform/">Ticketing Platforms</a></li>
+                            <li><a href="/EVENT-MANAGEMENT/volunteer-systems/">Volunteer Systems</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-toggle">Technology</span>
+                        <ul class="submenu">
+                           <li><a href="/TECHNOLOGY/5G-Technology/">5G Technology</a></li>
+                           <li><a href="/TECHNOLOGY/Agentic-AI/">Agentic AI</a></li>
+                           <li><a href="/TECHNOLOGY/APIs/">API Integration</a></li>
+                           <li><a href="/TECHNOLOGY/Biotech-&-Engineered-Living-Therapeutics/">Biotech & Engineered Living Therapeutics</a></li>
+                           <li><a href="/TECHNOLOGY/Collaborative-Sensing-&-Autonomous-Biochemical-Sensors/">Collaborative Sensing & Autonomous Biochemical Sensors</a></li>
+                           <li><a href="/TECHNOLOGY/Database-Management/">Database Management</a></li>
+                           <li><a href="/TECHNOLOGY/Devops/">DevOps & Deployment</a></li>
+                           <li><a href="/TECHNOLOGY/Edge-Computing/">Edge Computing</a></li>
+                           <li><a href="/TECHNOLOGY/Generative-AI/">Generative AI</a></li>
+                           <li><a href="/TECHNOLOGY/Green-Nitrogen-Fixation-&-Advanced-Clean-Energy/">Green Nitrogen Fixation & Advanced Clean Energy</a></li>
+                           <li><a href="/TECHNOLOGY/NFC/">NFC (Near Field Communication)</a></li>
+                           <li><a href="/TECHNOLOGY/Quantun-Computing/">Quantum Computing</a></li>
+                           <li><a href="/TECHNOLOGY/Synthetic-Media-&-Generative-Watermarking/">Synthetic Media & Generative Watermarking</a></li>
+                           <li><a href="/TECHNOLOGY/VR-Virtual-Reality/">Virtual Reality (VR)</a></li>
+                           <li><a href="/TECHNOLOGY/Web-Development/">Web Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <span class="nav-toggle">Marketing</span>
+                        <ul class="submenu">
+                            <li><a href="/MARKETING/social-media-strategy/">Social Media Strategy</a></li>
+                            <li><a href="/MARKETING/content-marketing/">Content Marketing</a></li>
+                            <li><a href="/MARKETING/analytics-&-insigths/">Analytics & Insights</a></li>
+                            <li><a href="/MARKETING/email-campaigns/">Email Campaigns</a></li>
+                            <li><a href="/MARKETING/short-form-video-content/">Short Form Video Content</a></li>
+                            <li class="active"><a href="#"> <!-- TODO: Update placeholder link -->Personalization & Data-Driven Content</a></li>
+                            <li><a href="/MARKETING/compliance-&-ethical-content-marketing/">Compliance & Ethical Content Marketing</a></li>
+                            <li><a href="/MARKETING/AI-Powered-Content-Creation-&-Exhaustive-Marketing/">AI-Powered Content Creation & Exhaustive Marketing</a></li>
+                            <li><a href="/MARKETING/Humanizing-content-&-authentic-storytelling/">Humanizing Content & Authentic Storytelling</a></li>
+                            <li><a href="/MARKETING/UGC/">User Generated Content (UGC)</a></li>
+                            <li><a href="/MARKETING/content-format-innovations/">Content Format Innovations</a></li>
+                            <li><a href="/MARKETING/augmented-reality-&-virtual-reality-for-content-marketing/">Augmented Reality & Virtual Reality for Content Marketing</a></li>
+                            <li><a href="/MARKETING/Co-Marketing-&-brand-partnership/">Co-Marketing & Brand Partnership</a></li>
+                            <li><a href="/MARKETING/newsletter-&-community-driven-growth/">Newsletter & Community-Driven Growth</a></li>
+                            <li><a href="/MARKETING/content-marketing-measurement-&-ROI-analytics/">Content Marketing Measurement & ROI Analytics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="/index.html">← Back to Home</a>
+            </div>
+        </aside>
+
+        <main class="main-content" role="main">
+            <div class="content-wrapper">
+                <article>
+                    <nav class="breadcrumbs">
+                        <a href="/index.html">Home</a> &gt; <a href="/index.html#marketing">Marketing</a> &gt; Personalization & Data-Driven Content
+                    </nav>
+
+                    <h1>Personalization & Data-Driven Content in Marketing</h1>
+                    <div class="meta-data">
+                        Published: October 21, 2025 | 25 min read
+                    </div>
+
+                    <p>Personalization and data-driven content have become critical business imperatives, with 71% of consumers now expecting personalized interactions. Companies that excel at personalization generate 40% more revenue than competitors, demonstrating the immense value of this strategic approach.</p>
+
+                    <h2 id="definition">Definition and Meaning</h2>
+                    <p>Personalization and data-driven content marketing is a strategic approach that uses customer data, behavioral insights, and advanced analytics to create tailored experiences for individual users or specific audience segments. Instead of one-size-fits-all campaigns, this methodology delivers relevant content that resonates with each customer's unique preferences, behaviors, and needs.</p>
+
+                    <h3 id="terminology">Alternative Names and Industry Terminology</h3>
+                    <p>This field is known by various names, including <strong>One-to-One Marketing</strong>, <strong>Hyper-Personalization</strong> (the most advanced form using real-time data and AI), <strong>Behavioral Targeting</strong>, and <strong>Predictive Personalization</strong>. In B2B contexts, terms like <strong>Account-Based Personalization</strong> are common.</p>
+
+                    <h2 id="history">Historical Origin and Evolution</h2>
+                    <h3>From Local Retail to AI</h3>
+                    <p>The concept of personalization began informally with local retailers who knew their customers personally. The mass marketing era of the early 20th century made this difficult, but the rise of digital technology, particularly email marketing in the 1990s, brought personalization back to the forefront. Today, the AI and Real-Time Personalization Era (2000s-Present) allows for true one-to-one personalization at a massive scale, with generative AI poised to create unique content for each individual in real-time.</p>
+
+                    <h2 id="use-cases">Use Cases and Industry Applications</h2>
+                    <p>Personalization has applications across virtually every industry:</p>
+                    <ul>
+                        <li><strong>Retail & E-Commerce:</strong> Amazon's recommendation engine, which drives 35% of its total revenue, is a prime example.</li>
+                        <li><strong>Media & Entertainment:</strong> Netflix's system, which influences 80% of content viewed, uses deep learning to suggest shows and even personalizes thumbnails.</li>
+                        <li><strong>Travel & Hospitality:</strong> The Hilton Honors app uses predictive analytics to offer features like a digital room key and personalized in-app controls.</li>
+                        <li><strong>Financial Services:</strong> Banks segment customers to provide relevant product offers, such as retirement investment advice versus student loan promotions.</li>
+                        <li><strong>B2B & Enterprise:</strong> Companies personalize content based on the viewer's role, showing technical specifications to an engineer and ROI calculations to a CFO.</li>
+                    </ul>
+
+                    <h2 id="core-concepts">Core Concepts, Methods, and Best Practices</h2>
+                    <h3>Core Personalization Methods</h3>
+                    <p>Personalization can be implemented through various methods:</p>
+                    <ul>
+                        <li><strong>Demographic:</strong> Based on age, gender, location.</li>
+                        <li><strong>Behavioral:</strong> Based on purchase history, website activity.</li>
+                        <li><strong>Contextual:</strong> Based on real-time factors like device, time of day, or weather.</li>
+                        <li><strong>Predictive:</strong> Using machine learning to anticipate future needs.</li>
+                    </ul>
+                    <h3>Implementation Best Practices</h3>
+                    <p>To succeed, start with clear goals, prioritize data quality, and build unified customer profiles. Use real-time personalization but balance automation with a human touch. Always respect privacy, obtain consent, and give customers control over their data.</p>
+
+                    <h2 id="tools">Technologies, Tools, and Systems</h2>
+                    <p>The personalization ecosystem is vast and includes:</p>
+                    <ul>
+                        <li><strong>Cross-Channel Personalization Platforms:</strong> Tools like <strong>Insider</strong>, <strong>Salesforce Marketing Cloud</strong>, and <strong>Adobe Experience Cloud</strong> orchestrate experiences across web, mobile, and email.</li>
+                        <li><strong>AI Personalization Tools:</strong> Platforms such as <strong>Adobe Target</strong> and <strong>Braze</strong> use AI for predictive targeting and A/B testing.</li>
+                        <li><strong>Customer Data Platforms (CDPs):</strong> <strong>Segment</strong> and <strong>Adobe Real-Time CDP</strong> unify customer data from multiple sources to create a single view.</li>
+                        <li><strong>Website Personalization Tools:</strong> <strong>VWO Personalize</strong> and <strong>OptiMonk</strong> allow for creating dynamic website experiences.</li>
+                    </ul>
+
+                    <h2 id="case-studies">Real-World Case Studies</h2>
+                    <ul>
+                        <li><strong>Netflix:</strong> Uses a multi-stage ranking process with dozens of models to power its recommendation system, which is responsible for 80% of content viewed.</li>
+                        <li><strong>Amazon:</strong> Its legendary recommendation engine, built on collaborative filtering, drives an estimated 35% of the company's total revenue.</li>
+                        <li><strong>Spotify:</strong> The "Discover Weekly" playlist uses AI to create tailored music experiences, resulting in a 25% increase in retention rates for users who engage with it.</li>
+                        <li><strong>TSB Bank:</strong> After implementing a Real-Time CDP, the bank saw a 400% increase in loan applications within one year by delivering consistent, moment-based communications.</li>
+                    </ul>
+
+                    <h2 id="advantages-limitations">Advantages, Limitations, and Common Pitfalls</h2>
+                    <h3>Advantages of Personalization</h3>
+                    <p>The benefits are significant: companies excelling at personalization generate <strong>40% more revenue</strong>. It leads to enhanced customer experiences, increased conversion rates (personalized CTAs outperform generic ones by 202%), and improved customer loyalty.</p>
+                    <h3>Disadvantages and Limitations</h3>
+                    <p>Challenges include data privacy concerns (86% of consumers are worried about how companies use their data), the need for significant investment in technology and specialized talent, and the risk of "creepy" over-personalization that can alienate customers.</p>
+                    <h3>Common Pitfalls</h3>
+                    <p>Avoid data silos, over-reliance on basic demographic segmentation, inconsistent omnichannel experiences, and failing to test and optimize your strategies continuously.</p>
+
+                    <h2 id="kpis-metrics">Essential Metrics, KPIs, and Benchmarks</h2>
+                    <p>Measure success by tracking metrics that reflect business impact:</p>
+                    <ul>
+                        <li><strong>Conversion Rate Optimization (CRO):</strong> Personalization can increase conversion rates by 15-20%.</li>
+                        <li><strong>Customer Lifetime Value (CLV):</strong> Reflects the long-term impact on loyalty and repeat purchases.</li>
+                        <li><strong>Average Order Value (AOV):</strong> Measures the effectiveness of cross-selling and upselling.</li>
+                        <li><strong>Engagement Metrics:</strong> Such as Click-Through Rate (CTR) and Time on Page.</li>
+                        <li><strong>Return on Investment (ROI):</strong> 89% of marketers report a positive ROI from personalization.</li>
+                    </ul>
+
+                    <h2 id="legal-ethical">Compliance, Legal, and Ethical Considerations</h2>
+                    <p>Personalization is governed by strict privacy regulations:</p>
+                    <ul>
+                        <li><strong>GDPR (General Data Protection Regulation):</strong> Requires explicit, informed consent for data collection and gives EU residents rights over their data, with fines up to 4% of global annual revenue for violations.</li>
+                        <li><strong>CCPA/CPRA (California Privacy Rights Act):</strong> Provides similar rights for California residents, focusing on transparency and the right to opt-out of data sales.</li>
+                    </ul>
+                    <p>Ethical personalization requires transparency, user control, data minimization, and auditing algorithms for bias to ensure fairness.</p>
+
+                    <h2 id="faq">Frequently Asked Questions</h2>
+                    <p><strong>Q: What is the difference between personalization and customization?</strong><br>A: Personalization is done *for* the user by the company (e.g., Netflix recommendations). Customization is done *by* the user (e.g., changing a website's theme).</p>
+                    <p><strong>Q: Can personalization work without cookies?</strong><br>A: Yes. With the phase-out of third-party cookies, the focus is shifting to first-party data (collected directly from customers) and zero-party data (voluntarily shared by customers).</p>
+                    <p><strong>Q: How do I avoid being "creepy"?</strong><br>A: Be transparent about data collection, focus on providing genuine value, and give users control over their preferences. Use data to be helpful, not invasive.</p>
+
+                </article>
+
+                <aside class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol id="toc-list">
+                        <li><a href="#definition">Definition & Meaning</a></li>
+                        <li><a href="#history">Historical Evolution</a></li>
+                        <li><a href="#use-cases">Use Cases & Applications</a></li>
+                        <li><a href="#core-concepts">Core Concepts & Best Practices</a></li>
+                        <li><a href="#tools">Technologies & Tools</a></li>
+                        <li><a href="#case-studies">Case Studies & Examples</a></li>
+                        <li><a href="#advantages-limitations">Advantages & Limitations</a></li>
+                        <li><a href="#kpis-metrics">KPIs & Benchmarks</a></li>
+                        <li><a href="#legal-ethical">Compliance & Ethics</a></li>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                    </ol>
+
+                    <div class="ad-container sidebar-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-4315586112110103"
+                             data-ad-slot="1734728076"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="logo-image">
+                    <h3>Tapnex</h3>
+                </div>
+                <p class="footer-description">
+                    Empowering organizations with comprehensive knowledge and innovative solutions for event management, technology, and marketing excellence.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tapnex.fc/?hl=en" aria-label="Follow us on Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/tapnexfc/?" aria-label="Follow us on LinkedIn" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Knowledge Base</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#event-management">Event Management</a></li>
+                    <li><a href="/index.html#technology">Technology</a></li>
+                    <li><a href="/index.html#marketing">Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.tapnex.tech/">Tapnex</a></li>
+                    <li><a href="https://www.tapnex.tech/about">About</a></li>
+                    <li><a href="https://www.tapnex.tech/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@tapnex.tech">info@tapnex.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Tapnex. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy">Privacy</a>
+                    <a href="/terms-of-service">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to Tapnex ("we," "our," "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong>wiki.tapnex.tech</strong> (the "Site"). By using the Site, you agree to this policy.</p>
+
+                <h3>1. Information We Collect</h3>
+                <ul>
+                    <li><strong>Personal Information</strong>: When you voluntarily provide it — e.g. name, email address, contact number, etc.</li>
+                    <li><strong>Automatically Collected Information</strong>: When you interact with the Site, we may collect usage data (IP address, browser type, pages visited, timestamps, referring/exit pages).</li>
+                    <li><strong>Cookies and Tracking Technologies</strong>: See our Cookie Policy below for details.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <ul>
+                    <li>To provide, maintain, and improve our Site and services.</li>
+                    <li>To respond to your inquiries or requests.</li>
+                    <li>To send you updates, newsletters, or other communications (if you opt in).</li>
+                    <li>To monitor and analyze usage and trends.</li>
+                    <li>To detect, prevent, and address technical issues or abuse.</li>
+                </ul>
+
+                <h3>3. Disclosure of Your Information</h3>
+                <p>We do not sell your personal data. We may share information with:</p>
+                <ul>
+                    <li><strong>Service Providers</strong> who assist in operating the Site (hosting, analytics, email services).</li>
+                    <li><strong>Legal or regulatory authorities</strong>, when required by law or to protect our rights.</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement reasonable technical and organizational measures to protect your data. However, no method is 100% secure.</p>
+                
+                <div class="cookie-policy-section">
+                    <h3>Cookie Policy</h3>
+                    <p>This Cookie Policy explains how <strong>wiki.tapnex.tech</strong> uses cookies. Cookies are small data files placed on your device to help the site remember your preferences and improve your experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="legal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Terms of Service</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-meta">
+                    <p><strong>Last updated: 10/10/2025</strong></p>
+                </div>
+                
+                <p>Welcome to <strong>wiki.tapnex.tech</strong>. These Terms of Service ("Terms") govern your access to and use of our Site. By accessing or using the Site, you agree to be bound by these Terms.</p>
+
+                <h3>1. Use of the Site</h3>
+                <ul>
+                    <li>You must follow all applicable laws and not use the Site for unlawful activities.</li>
+                    <li>You agree not to misuse the Site or interfere with its operation.</li>
+                </ul>
+
+                <h3>2. Content</h3>
+                <ul>
+                    <li>The content on the Site is for general informational purposes only. We do not guarantee its accuracy or completeness.</li>
+                    <li>The content is owned by us or our licensors and may not be reproduced without permission.</li>
+                </ul>
+
+                <h3>3. Disclaimers & Limitation of Liability</h3>
+                <ul>
+                    <li>The site and content are provided "as is" without warranties of any kind.</li>
+                    <li>We disclaim liability for damages arising from your use of the Site.</li>
+                </ul>
+
+                <h3>4. Governing Law</h3>
+                <p>These Terms shall be governed by the laws of <strong>Karnataka, India</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

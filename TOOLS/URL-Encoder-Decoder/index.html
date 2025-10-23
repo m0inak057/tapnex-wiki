@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Encoder / Decoder - TapNex Tools</title>
+    <meta name="description" content="Encode and decode URL components instantly. Free and easy to use URL encoder and decoder tool.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Site Styles -->
+    
+    <!-- Tool-specific Styles -->
+    <link rel="stylesheet" href="/TOOLS/URL-Encoder-Decoder/styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+                </a>
+            </div>
+            
+            <div class="header-actions">
+                <a href="/index.html" class="nav-link-header">Home</a>
+                <a href="/tools.html" class="nav-link-header">Tools</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown Navigation Bar -->
+    <nav class="dropdown-nav" aria-label="Tools navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tools.html" class="nav-link">All Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Url Encoder Decoder</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">URL Encoder / Decoder</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Encode and decode URL components with a single click
+                </p>
+                
+                <div class="encoder-container">
+                    <div class="textarea-group">
+                        <label for="text-input">Input Text</label>
+                        <textarea 
+                            id="text-input" 
+                            placeholder="Paste text or URL component..."
+                            rows="8"
+                        ></textarea>
+                    </div>
+
+                    <div class="controls">
+                        <button id="encode-btn" class="btn btn-primary">
+                            <span>🔒</span> Encode
+                        </button>
+                        <button id="decode-btn" class="btn btn-primary">
+                            <span>🔓</span> Decode
+                        </button>
+                    </div>
+
+                    <div class="textarea-group">
+                        <label for="text-output">Output Result</label>
+                        <textarea 
+                            id="text-output" 
+                            placeholder="Result will appear here..."
+                            rows="8"
+                            readonly
+                        ></textarea>
+                    </div>
+
+                    <div class="controls secondary-controls">
+                        <button id="copy-btn" class="btn btn-copy">
+                            <span>📋</span> Copy Output
+                        </button>
+                        <button id="clear-btn" class="btn btn-clear">
+                            <span>🗑️</span> Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>URL Encoding:</strong> Convert special characters to URL-safe format</li>
+                        <li><strong>URL Decoding:</strong> Convert encoded URLs back to readable text</li>
+                        <li><strong>Error Handling:</strong> Gracefully handles invalid encoded strings</li>
+                        <li><strong>One-Click Copy:</strong> Copy results to clipboard instantly</li>
+                        <li><strong>Clear Function:</strong> Reset both input and output with one click</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>🔧 How to Use</h4>
+                    <ul>
+                        <li><strong>Encoding:</strong> Paste your text or URL component in the input field and click "Encode"</li>
+                        <li><strong>Decoding:</strong> Paste an encoded URL string in the input field and click "Decode"</li>
+                        <li><strong>Copy Results:</strong> Click "Copy Output" to copy the result to your clipboard</li>
+                        <li><strong>Start Fresh:</strong> Click "Clear" to reset both input and output fields</li>
+                        <li><strong>Example Encode:</strong> "Hello World!" becomes "Hello%20World%21"</li>
+                        <li><strong>Example Decode:</strong> "Hello%20World%21" becomes "Hello World!"</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>📚 What is URL Encoding?</h4>
+                    <p>URL encoding, also known as percent-encoding, is a mechanism for encoding information in a Uniform Resource Identifier (URI). URLs can only be sent over the Internet using the ASCII character set. Characters that are not allowed in a URL must be converted to a valid ASCII format.</p>
+                    <p><strong>Common encoded characters:</strong></p>
+                    <ul>
+                        <li>Space → %20</li>
+                        <li>! → %21</li>
+                        <li># → %23</li>
+                        <li>$ → %24</li>
+                        <li>& → %26</li>
+                        <li>+ → %2B</li>
+                        <li>= → %3D</li>
+                        <li>? → %3F</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="/TOOLS/URL-Encoder-Decoder/scripts.js" defer></script>
+    <script src="/TOOLS/shared/footer.js"></script>
+    
+    <!-- Main Site Scripts -->
+    <script src="../../home.js" defer></script>
+</body>
+</html>

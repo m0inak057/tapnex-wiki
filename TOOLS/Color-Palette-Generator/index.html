@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator - TapNex Tools</title>
+    <meta name="description" content="Generate beautiful harmonious color palettes instantly. Get 5-color schemes with HEX codes for your design projects.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Site Styles -->
+    
+    <!-- Tool-specific Styles -->
+    <link rel="stylesheet" href="/TOOLS/Color-Palette-Generator/styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+                </a>
+            </div>
+            
+            <div class="header-actions">
+                <a href="/index.html" class="nav-link-header">Home</a>
+                <a href="/tools.html" class="nav-link-header">Tools</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown Navigation Bar -->
+    <nav class="dropdown-nav" aria-label="Tools navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tools.html" class="nav-link">All Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Color Palette Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">Color Palette Generator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Generate beautiful harmonious 5-color palettes for your design projects
+                </p>
+                
+                <div class="palette-container">
+                    <!-- Controls -->
+                    <div class="controls">
+                        <button id="generate-btn">
+                            🎨 Generate New Palette
+                        </button>
+                        <p class="hint">Click any color code to copy to clipboard</p>
+                    </div>
+
+                    <!-- Palette Display -->
+                    <div class="palette-display">
+                        <div class="color-swatch">
+                            <div class="color-box"></div>
+                            <p class="color-code">#000000</p>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box"></div>
+                            <p class="color-code">#000000</p>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box"></div>
+                            <p class="color-code">#000000</p>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box"></div>
+                            <p class="color-code">#000000</p>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box"></div>
+                            <p class="color-code">#000000</p>
+                        </div>
+                    </div>
+
+                    <!-- Palette Actions -->
+                    <div class="palette-actions">
+                        <button id="export-css-btn" class="secondary-btn">
+                            📄 Export as CSS
+                        </button>
+                        <button id="save-palette-btn" class="secondary-btn">
+                            💾 Save Palette
+                        </button>
+                    </div>
+
+                    <!-- Saved Palettes -->
+                    <div id="saved-palettes-container" style="display: none;">
+                        <h3>💾 Saved Palettes</h3>
+                        <div id="saved-palettes-list"></div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Harmonious Colors:</strong> Automatically generates perfectly balanced 5-color palettes</li>
+                        <li><strong>One-Click Copy:</strong> Click any HEX code to copy to clipboard</li>
+                        <li><strong>Instant Generation:</strong> Generate unlimited unique palettes with one click</li>
+                        <li><strong>Export to CSS:</strong> Get CSS variables code for your projects</li>
+                        <li><strong>Save Favorites:</strong> Save palettes you love for later use</li>
+                        <li><strong>Responsive Design:</strong> Works perfectly on desktop, tablet, and mobile</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>🎨 Color Harmony Types</h4>
+                    <p>Our generator creates palettes using proven color theory principles:</p>
+                    <ul>
+                        <li><strong>Analogous:</strong> Colors that are adjacent on the color wheel, creating harmonious and cohesive palettes</li>
+                        <li><strong>Complementary:</strong> Colors opposite each other on the wheel for bold, high-contrast designs</li>
+                        <li><strong>Triadic:</strong> Three colors evenly spaced around the wheel for vibrant, balanced palettes</li>
+                        <li><strong>Monochromatic:</strong> Variations of a single hue with different saturations and lightness</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>🎯 Use Cases</h4>
+                    <ul>
+                        <li><strong>Web Design:</strong> Create color schemes for websites and landing pages</li>
+                        <li><strong>Branding:</strong> Develop consistent brand color palettes</li>
+                        <li><strong>UI/UX Design:</strong> Design app interfaces with harmonious colors</li>
+                        <li><strong>Graphic Design:</strong> Create posters, flyers, and marketing materials</li>
+                        <li><strong>Illustration:</strong> Choose color schemes for digital art and illustrations</li>
+                        <li><strong>Interior Design:</strong> Plan color schemes for rooms and spaces</li>
+                        <li><strong>Fashion:</strong> Coordinate clothing and accessory colors</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 Color Theory Tips</h4>
+                    <ul>
+                        <li><strong>60-30-10 Rule:</strong> Use dominant (60%), secondary (30%), and accent (10%) colors</li>
+                        <li><strong>Contrast is Key:</strong> Ensure sufficient contrast for readability and accessibility</li>
+                        <li><strong>Test Before Use:</strong> Preview colors on different backgrounds and contexts</li>
+                        <li><strong>Consider Psychology:</strong> Colors evoke emotions - blue for trust, red for energy, green for growth</li>
+                        <li><strong>Accessibility:</strong> Check WCAG contrast ratios for text and background combinations</li>
+                        <li><strong>Cultural Context:</strong> Colors have different meanings across cultures</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>📋 How to Use</h4>
+                    <ol style="padding-left: 2rem;">
+                        <li><strong>Generate:</strong> Click "Generate New Palette" to create a new 5-color scheme</li>
+                        <li><strong>Copy Colors:</strong> Click any HEX code to copy it to your clipboard</li>
+                        <li><strong>Export CSS:</strong> Get CSS variable code to use directly in your stylesheets</li>
+                        <li><strong>Save Favorites:</strong> Click "Save Palette" to store palettes you like</li>
+                        <li><strong>Regenerate:</strong> Keep clicking generate until you find the perfect palette</li>
+                    </ol>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>🎨 Color Format Examples</h4>
+                    <p><strong>HEX Codes:</strong></p>
+                    <ul>
+                        <li><code>#FF5733</code> - Vibrant orange-red</li>
+                        <li><code>#3498DB</code> - Ocean blue</li>
+                        <li><code>#2ECC71</code> - Emerald green</li>
+                        <li><code>#F39C12</code> - Sunflower yellow</li>
+                        <li><code>#9B59B6</code> - Amethyst purple</li>
+                    </ul>
+                    <p><strong>Using in CSS:</strong></p>
+                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+:root {
+  --color-1: #FF5733;
+  --color-2: #3498DB;
+  --color-3: #2ECC71;
+  --color-4: #F39C12;
+  --color-5: #9B59B6;
+}
+
+.button {
+  background: var(--color-1);
+  color: white;
+}
+                    </pre>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>⚡ Keyboard Shortcuts</h4>
+                    <ul>
+                        <li><strong>Spacebar:</strong> Generate a new palette</li>
+                        <li><strong>1-5 Keys:</strong> Copy the corresponding color code</li>
+                        <li><strong>E Key:</strong> Export palette as CSS</li>
+                        <li><strong>S Key:</strong> Save current palette</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="/TOOLS/Color-Palette-Generator/scripts.js" defer></script>
+    <script src="/TOOLS/shared/footer.js"></script>
+    
+    <!-- Main Site Scripts -->
+    <script src="../../home.js" defer></script>
+</body>
+</html>

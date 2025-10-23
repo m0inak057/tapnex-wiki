@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator - TapNex Tools</title>
+    <meta name="description" content="Generate placeholder Lorem Ipsum text for your designs and mockups. Free and easy to use Lorem Ipsum generator tool.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Site Styles -->
+    
+    <!-- Tool-specific Styles -->
+    <link rel="stylesheet" href="/TOOLS/Lorem-Ipsum-Generator/styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+                </a>
+            </div>
+            
+            <div class="header-actions">
+                <a href="/index.html" class="nav-link-header">Home</a>
+                <a href="/tools.html" class="nav-link-header">Tools</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown Navigation Bar -->
+    <nav class="dropdown-nav" aria-label="Tools navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tools.html" class="nav-link">All Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Lorem Ipsum Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">Lorem Ipsum Generator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Generate placeholder text for your designs and mockups
+                </p>
+                
+                <div class="generator-container">
+                    <!-- Settings Section -->
+                    <div class="settings">
+                        <div class="setting-group">
+                            <label for="paragraph-count">Number of Paragraphs:</label>
+                            <input 
+                                type="number" 
+                                id="paragraph-count" 
+                                min="1" 
+                                max="50" 
+                                value="5"
+                            >
+                        </div>
+                        <button id="generate-btn">📝 Generate Text</button>
+                    </div>
+
+                    <!-- Output Container -->
+                    <div id="output-container">
+                        <button id="copy-btn" style="display: none;">📋 Copy to Clipboard</button>
+                        <div id="lorem-ipsum-output"></div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>✨ Features</h4>
+                    <ul>
+                        <li><strong>Custom Paragraphs:</strong> Generate 1 to 50 paragraphs of Lorem Ipsum text</li>
+                        <li><strong>Instant Generation:</strong> Get placeholder text with a single click</li>
+                        <li><strong>Copy to Clipboard:</strong> Easy one-click copy functionality</li>
+                        <li><strong>Random Variation:</strong> Each paragraph has a different number of sentences</li>
+                        <li><strong>Professional Text:</strong> Uses classic Lorem Ipsum text from Cicero's work</li>
+                        <li><strong>Clean Output:</strong> Well-formatted paragraphs ready for use</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>📚 What is Lorem Ipsum?</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p><strong>Why Use Lorem Ipsum?</strong></p>
+                    <ul>
+                        <li><strong>Focus on Design:</strong> Helps focus on visual design without distraction from readable content</li>
+                        <li><strong>Universal Placeholder:</strong> Industry standard for placeholder text since the 1500s</li>
+                        <li><strong>Realistic Length:</strong> Provides realistic text distribution for layout testing</li>
+                        <li><strong>Professional Standard:</strong> Widely recognized and accepted in design and development</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>🎯 Common Use Cases</h4>
+                    <ul>
+                        <li><strong>Web Design:</strong> Fill website mockups and prototypes with placeholder content</li>
+                        <li><strong>Graphic Design:</strong> Test layouts for brochures, posters, and print materials</li>
+                        <li><strong>UI/UX Testing:</strong> Evaluate how text flows in different interface designs</li>
+                        <li><strong>Content Management:</strong> Test CMS layouts before actual content is available</li>
+                        <li><strong>Typography:</strong> Demonstrate font styles and text formatting</li>
+                        <li><strong>Client Presentations:</strong> Show design concepts without final copy</li>
+                        <li><strong>Template Development:</strong> Build page templates with realistic text samples</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 Tips for Using Lorem Ipsum</h4>
+                    <ul>
+                        <li><strong>Match Real Content Length:</strong> Generate similar amounts of text as your final content</li>
+                        <li><strong>Test Responsiveness:</strong> Use different paragraph counts to test layout flexibility</li>
+                        <li><strong>Replace Before Launch:</strong> Always replace Lorem Ipsum with real content before going live</li>
+                        <li><strong>Use for Testing Only:</strong> Not suitable for production content or SEO purposes</li>
+                        <li><strong>Consider Readability:</strong> While meaningless, Lorem Ipsum maintains readable text structure</li>
+                    </ul>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 2rem;">
+                    <h4>📖 History of Lorem Ipsum</h4>
+                    <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                    <p><strong>Translation:</strong> "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Tools Navigation Footer -->
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="/TOOLS/Lorem-Ipsum-Generator/scripts.js" defer></script>
+    <script src="/TOOLS/shared/footer.js"></script>
+    
+    <!-- Main Site Scripts -->
+    <script src="../../home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Additional styling for in-article ads */
+.article-bottom-ad {
+    margin: 3rem 0 2rem 0;
+    border-radius: 16px;
+}
+
+/* In-article ad specific styling for fluid layout */
+.ad-container ins.adsbygoogle[data-ad-layout="in-article"] {
+    min-height: 150px;
+    width: 100%;
+}
+
+/* Enhanced responsive styling for article bottom ads */
+@media (max-width: 768px) {
+    .article-bottom-ad {
+        margin: 2rem 0 1.5rem 0;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-bottom-ad {
+        margin: 1.5rem 0 1rem 0;
+        padding: 0.8rem;
+        border-radius: 8px;
+    }
+}
