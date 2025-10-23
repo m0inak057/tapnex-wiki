@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jain Docs | जिनवाणी संग्रह</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Using Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Modern light gray (slate-50) */
+            color: #1e293b; /* Modern dark text (slate-800) */
+        }
+
+        /* Sticky header for Search and Nav */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+            background-color: rgba(248, 250, 252, 0.9); /* Semi-transparent light gray */
+            z-index: 50;
+            border-bottom: 1px solid #e2e8f0; /* slate-200 */
+        }
+
+        /* Headings color */
+        h1 {
+            color: #1e293b; /* Deep slate (slate-800) */
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: #047857; /* Religious & calm green (emerald-700) */
+            font-weight: 600;
+            border-bottom: 2px solid #a7f3d0; /* emerald-200 */
+            padding-bottom: 8px;
+        }
+
+        /* Link Card styling */
+        .card-link {
+            background-color: white;
+            border: 1px solid #e2e8f0; /* slate-200 */
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            transition: all 0.2s ease-in-out;
+            font-weight: 500;
+            color: #334155; /* slate-700 */
+            display: block; /* Needed for JS filter */
+        }
+
+        .card-link:hover {
+            border-color: #f97316; /* Saffron/orange on hover (orange-500) */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+            color: #ea580c; /* Deeper orange on hover (orange-600) */
+        }
+
+        /* Search input styling */
+        #searchInput {
+            width: 100%;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid #cbd5e1; /* slate-300 */
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #searchInput:focus {
+            outline: none;
+            border-color: #10b981; /* emerald-500 */
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+        }
+
+        /* Category Navigation links */
+        .nav-link {
+            color: #059669; /* emerald-600 */
+            font-weight: 600;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s;
+        }
+        .nav-link:hover {
+            background-color: #ecfdf5; /* emerald-50 */
+            color: #065f46; /* emerald-800 */
+        }
+
+        /* Category icon styling */
+        .category-icon {
+            color: #f97316; /* Saffron/orange (orange-500) */
+            width: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="text-center py-12 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-3">Jain Docs | जिनवाणी संग्रह</h1>
+        <p class="text-lg text-gray-600">A complete digital collection of Jain stotras, chalisas, pujas, and more.</p>
+    </header>
+
+    <!-- Sticky Search and Navigation -->
+    <div class="sticky-nav shadow-sm mb-8">
+        <div class="container mx-auto px-4 py-4">
+            <!-- Search Bar -->
+            <div class="mb-4">
+                <input type="text" id="searchInput" placeholder="Search all 200+ topics (e.g., 'Mahaveer', 'Chalisa', 'Pooja')...">
+            </div>
+            
+            <!-- Category Navigation -->
+            <nav class="flex flex-wrap justify-center gap-x-2 gap-y-1 md:gap-x-4 text-sm">
+                <a href="#tirthankar" class="nav-link">Tirthankar</a>
+                <a href="#acharya" class="nav-link">Acharya</a>
+                <a href="#chalisa" class="nav-link">Chalisa</a>
+                <a href="#pooja" class="nav-link">Pooja</a>
+                <a href="#aarti" class="nav-link">Aarti</a>
+                <a href="#bhajan" class="nav-link">Bhajan</a>
+                <a href="#stotra" class="nav-link">Stotra</a>
+                <a href="#stuti" class="nav-link">Stuti</a>
+                <a href="#mantra" class="nav-link">Mantra</a>
+                <a href="#bhavna" class="nav-link">Bhavna</a>
+                <a href="#parva" class="nav-link">Parva</a>
+                <a href="#texts" class="nav-link">Texts</a>
+                <a href="#symbols" class="nav-link">Symbols</a>
+                <a href="#other" class="nav-link">Other</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Tirthankar Section -->
+        <section id="tirthankar" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-person-praying category-icon"></i>Tirthankar (तीर्थंकर)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Bhagwan Aadinath (ऋषभदेव) जैन धर्म के पहले तीर्थंकर.html" class="card-link">Bhagwan Aadinath (ऋषभदेव) जैन धर्म के पहले तीर्थंकर</a>
+                <a href="/Pages/Bhagwan Ajitnath(अजितनाथ).html" class="card-link">Bhagwan Ajitnath(अजितनाथ)</a>
+                <a href="/Pages/Bhagwan Sambhavnath(सम्भवनाथ).html" class="card-link">Bhagwan Sambhavnath(सम्भवनाथ)</a>
+                <a href="/Pages/भगवान अभिनन्दननाथ(Abhinandannath).html" class="card-link">भगवान अभिनन्दननाथ(Abhinandannath)</a>
+                <a href="/Pages/भगवान सुमतिनाथ(Sumatinath).html" class="card-link">भगवान सुमतिनाथ(Sumatinath)</a>
+                <a href="/Pages/भगवान पद्मप्रभ(Padamprabh).html" class="card-link">भगवान पद्मप्रभ(Padamprabh)</a>
+                <a href="/Pages/भगवान सुपार्श्वनाथ(Suparshvnath).html" class="card-link">भगवान सुपार्श्वनाथ(Suparshvnath)</a>
+                <a href="/Pages/भगवान चन्द्रप्रभु(Chandrapabhu).html" class="card-link">भगवान चन्द्रप्रभु(Chandrapabhu)</a>
+                <a href="/Pages/भगवान पुष्पदंतनाथ(Puphpdant).html" class="card-link">भगवान पुष्पदंतनाथ(Puphpdant)</a>
+                <a href="/Pages/भगवान शीतलनाथ(Sheetalnath).html" class="card-link">भगवान शीतलनाथ(Sheetalnath)</a>
+                <a href="/Pages/भगवान श्रेयांसनाथ(Shreyanshnath).html" class="card-link">भगवान श्रेयांसनाथ(Shreyanshnath)</a>
+                <a href="/Pages/भगवान वासुपूज्य(Vasupujya).html" class="card-link">भगवान वासुपूज्य(Vasupujya)</a>
+                <a href="/Pages/भगवान विमलनाथ(Vimalnath).html" class="card-link">भगवान विमलनाथ(Vimalnath)</a>
+                <a href="/Pages/भगवान अनन्तनाथ(Anantnath).html" class="card-link">भगवान अनन्तनाथ(Anantnath)</a>
+                <a href="/Pages/भगवान धर्मनाथ(Dharmnath).html" class="card-link">भगवान धर्मनाथ(Dharmnath)</a>
+                <a href="/Pages/भगवान शान्तिनाथ(Shantinath).html" class="card-link">भगवान शान्तिनाथ(Shantinath)</a>
+                <a href="/Pages/भगवान कुंथुनाथ(Kunthunath).html" class="card-link">भगवान कुंथुनाथ(Kunthunath)</a>
+                <a href="/Pages/भगवान अरनाथ(Arnath).html" class="card-link">भगवान अरनाथ(Arnath)</a>
+                <a href="/Pages/भगवान मल्लिनाथ(Mallinath).html" class="card-link">भगवान मल्लिनाथ(Mallinath)</a>
+                <a href="/Pages/भगवान मुनिसुव्रतनाथ(Munisubratnath).html" class="card-link">भगवान मुनिसुव्रतनाथ(Munisubratnath)</a>
+                <a href="/Pages/भगवान नमिनाथ(Naminath).html" class="card-link">भगवान नमिनाथ(Naminath)</a>
+                <a href="/Pages/तीर्थंकर भगवान नेमिनाथ(Neminath).html" class="card-link">तीर्थंकर भगवान नेमिनाथ(Neminath)</a>
+                <a href="/Pages/Bhagwan Parshvanath (पार्श्वनाथ).html" class="card-link">Bhagwan Parshvanath (पार्श्वनाथ)</a>
+                <a href="/Pages/Bhagwan Mahaveer Swami.html" class="card-link">Bhagwan Mahaveer Swami</a>
+            </div>
+        </section>
+
+        <!-- Acharya Section -->
+        <section id="acharya" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-user-graduate category-icon"></i>Acharya (आचार्य)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Acharya Shri 108 Samay Sagar Ji Maharaj.html" class="card-link">Acharya Shri 108 Samay Sagar Ji Maharaj</a>
+                <a href="/Pages/Acharya Shri Vidya Sagar Ji Maharaj.html" class="card-link">Acharya Shri Vidya Sagar Ji Maharaj</a>
+                <a href="/Pages/Muni Tarun Sagar Ji Maharaj.html" class="card-link">Muni Tarun Sagar Ji Maharaj</a>
+                <a href="/Pages/Shri Sudha Sagar Ji Maharaj ka Jivan Parichay.html" class="card-link">Shri Sudha Sagar Ji Maharaj ka Jivan Parichay</a>
+            </div>
+        </section>
+
+        <!-- Chalisa Section -->
+        <section id="chalisa" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-book-open category-icon"></i>Chalisa (चालीसा)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Shri Abhinandan Nath Chalisa.html" class="card-link">Shri Abhinandan Nath Chalisa</a>
+                <a href="/Pages/Shri Ajitnath Chalisa.html" class="card-link">Shri Ajitnath Chalisa</a>
+                <a href="/Pages/Shri Chandraprabhu Chalisa.html" class="card-link">Shri Chandraprabhu Chalisa</a>
+                <a href="/Pages/Shri Dharamnath Chalisa.html" class="card-link">Shri Dharamnath Chalisa</a>
+                <a href="/Pages/Shri Pushpdant Chalisa.html" class="card-link">Shri Pushpdant Chalisa</a>
+                <a href="/Pages/Shri Sambhavnath Chalisa.html" class="card-link">Shri Sambhavnath Chalisa</a>
+                <a href="/Pages/Shri Shantinath Chalisa.html" class="card-link">Shri Shantinath Chalisa</a>
+                <a href="/Pages/Shri Sumatinath Chalisa.html" class="card-link">Shri Sumatinath Chalisa</a>
+                <a href="/Pages/Shri Suparshvanath Chalisa.html" class="card-link">Shri Suparshvanath Chalisa</a>
+                <a href="/Pages/भगवान अरहनाथ चालीसा Shri Arahnath Chalisa.html" class="card-link">भगवान अरहनाथ चालीसा Shri Arahnath Chalisa</a>
+                <a href="/Pages/श्री आदिनाथ चालीसा.html" class="card-link">श्री आदिनाथ चालीसा</a>
+                <a href="/Pages/श्री अनन्तनाथ चलीसा.html" class="card-link">श्री अनन्तनाथ चलीसा</a>
+                <a href="/Pages/श्री कुन्थनाथ चालीसा.html" class="card-link">श्री कुन्थनाथ चालीसा</a>
+                <a href="/Pages/श्री नमिनाथ चालीसा.html" class="card-link">श्री नमिनाथ चालीसा</a>
+                <a href="/Pages/श्री नाकोड़ा भैरव चालीसा.html" class="card-link">श्री नाकोड़ा भैरव चालीसा</a>
+                <a href="/Pages/श्री नेमिनाथ चालीसा.html" class="card-link">श्री नेमिनाथ चालीसा</a>
+                <a href="/Pages/श्री पद्मप्रभु चालीसा.html" class="card-link">श्री पद्मप्रभु चालीसा</a>
+                <a href="/Pages/श्री पद्मावती माता चालीसा Padmavati Chalisa.html" class="card-link">श्री पद्मावती माता चालीसा Padmavati Chalisa</a>
+                <a href="/Pages/श्री पार्श्वनाथ चालीसा.html" class="card-link">श्री पार्श्वनाथ चालीसा</a>
+                <a href="/Pages/श्री बड़े बाबा कुण्डलपुर चालीसा.html" class="card-link">श्री बड़े बाबा कुण्डलपुर चालीसा</a>
+                <a href="/Pages/श्री मल्लिनाथ चालीसा.html" class="card-link">श्री मल्लिनाथ चालीसा</a>
+                <a href="/Pages/श्री महावीर चालीसा.html" class="card-link">श्री महावीर चालीसा</a>
+                <a href="/Pages/श्री मुनिसुव्रतनाथ चालीसा.html" class="card-link">श्री मुनिसुव्रतनाथ चालीसा</a>
+                <a href="/Pages/श्री वासुपूज्य चालीसा.html" class="card-link">श्री वासुपूज्य चालीसा</a>
+                <a href="/Pages/श्री विमलनाथ चालीसा.html" class="card-link">श्री विमलनाथ चालीसा</a>
+                <a href="/Pages/श्री शीतलनाथ चालीसा.html" class="card-link">श्री शीतलनाथ चालीसा</a>
+                <a href="/Pages/श्री श्रेयान्सनाथ चालीसा.html" class="card-link">श्री श्रेयान्सनाथ चालीसा</a>
+                <a href="/Pages/श्री सम्मेद शिखर चालीसा Shri Sammed Shikhar Chalisa.html" class="card-link">श्री सम्मेद शिखर चालीसा Shri Sammed Shikhar Chalisa</a>
+            </div>
+        </section>
+
+        <!-- Pooja Section -->
+        <section id="pooja" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-om category-icon"></i>Pooja (पूजा)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Diwali Poojan.html" class="card-link">Diwali Poojan</a>
+                <a href="/Pages/KSHAMAVANI POOJA.html" class="card-link">KSHAMAVANI POOJA</a>
+                <a href="/Pages/Nirvan Kshetra Pooja.html" class="card-link">Nirvan Kshetra Pooja</a>
+                <a href="/Pages/Saluna Parv Pooja.html" class="card-link">Saluna Parv Pooja</a>
+                <a href="/Pages/अर्ध्यावली पूजा.html" class="card-link">अर्ध्यावली पूजा</a>
+                <a href="/Pages/जैन चारित्र-शुद्धि व्रत पूजा Charitra Shuddhi Vrat Pooja.html" class="card-link">जैन चारित्र-शुद्धि व्रत पूजा Charitra Shuddhi Vrat Pooja</a>
+                <a href="/Pages/जैन तीर्थंकर पूजाएँ Tirthankar Pooja.html" class="card-link">जैन तीर्थंकर पूजाएँ Tirthankar Pooja</a>
+                <a href="/Pages/जैन पूजा करने के विधि.html" class="card-link">जैन पूजा करने के विधि</a>
+                <a href="/Pages/जैन भूगर्भ प्रकटित अतिशयकारी श्री मुनिसुव्रतनाथ पूजा.html" class="card-link">जैन भूगर्भ प्रकटित अतिशयकारी श्री मुनिसुव्रतनाथ पूजा</a>
+                <a href="/Pages/जैन श्रुतपञ्चमी पूजा Shrutpanchami Pooja.html" class="card-link">जैन श्रुतपञ्चमी पूजा Shrutpanchami Pooja</a>
+                <a href="/Pages/जैन सप्तर्षि पूजा.html" class="card-link">जैन सप्तर्षि पूजा</a>
+                <a href="/Pages/जैन सरस्वती पूजा.html" class="card-link">जैन सरस्वती पूजा</a>
+                <a href="/Pages/जैन सुगन्ध दशमी व्रत पूजा Sugandha Dashami Vrat Pooja.html" class="card-link">जैन सुगन्ध दशमी व्रत पूजा Sugandha Dashami Vrat Pooja</a>
+                <a href="/Pages/णामोकार महामंत्र पूजा Namokar MahaMantra Puja.html" class="card-link">णामोकार महामंत्र पूजा Namokar MahaMantra Puja</a>
+                <a href="/Pages/दस लक्षण पूजा.html" class="card-link">दस लक्षण पूजा</a>
+                <a href="/Pages/दीपावली-पूजन -विधि (Depawali Pujan Vidhi).html" class="card-link">दीपावली-पूजन -विधि (Depawali Pujan Vidhi)</a>
+                <a href="/Pages/देव शास्त्र गुरु पूजा.html" class="card-link">देव शास्त्र गुरु पूजा</a>
+                <a href="/Pages/देवशास्त्र गुरु पूजन(प्रथम अरहंत).html" class="card-link">देवशास्त्र गुरु पूजन(प्रथम अरहंत)</a>
+                <a href="/Pages/नन्दीश्वर द्वीप पूजा.html" class="card-link">नन्दीश्वर द्वीप पूजा</a>
+                <a href="/Pages/नवदेवता जिनपूजा Nav Devta JinPuja.html" class="card-link">नवदेवता जिनपूजा Nav Devta JinPuja</a>
+                <a href="/Pages/नित्य पूजा पीठिका.html" class="card-link">नित्य पूजा पीठिका</a>
+                <a href="/Pages/पंच बालयति तीर्थंकर पूजा.html" class="card-link">पंच बालयति तीर्थंकर पूजा</a>
+                <a href="/Pages/पंच मेरु पूजा Panch Meru Pooja.html" class="card-link">पंच मेरु पूजा Panch Meru Pooja</a>
+                <a href="/Pages/पूजा विधि प्रारम्भ.html" class="card-link">पूजा विधि प्रारम्भ</a>
+                <a href="/Pages/बीस तीर्थंकर पूजा (दीप अढ़ाई मेरु) Jinvani जिनवाणी संग्रह.html" class="card-link">बीस तीर्थंकर पूजा (दीप अढ़ाई मेरु) Jinvani जिनवाणी संग्रह</a>
+                <a href="/Pages/रत्नत्रय पूजा.html" class="card-link">रत्नत्रय पूजा</a>
+                <a href="/Pages/सलूना पूजा.html" class="card-link">सलूना पूजा</a>
+                <a href="/Pages/समुच्चय पूजा । Samuchchay Puja.html" class="card-link">समुच्चय पूजा । Samuchchay Puja</a>
+                <a href="/Pages/सम्मेदशिखर पूजा.html" class="card-link">सम्मेदशिखर पूजा</a>
+                <a href="/Pages/सम्यकचारित्र पूजा.html" class="card-link">सम्यकचारित्र पूजा</a>
+                <a href="/Pages/सम्यग्ज्ञान पूजा.html" class="card-link">सम्यग्ज्ञान पूजा</a>
+                <a href="/Pages/सम्यग्दर्शन पूजा.html" class="card-link">सम्यग्दर्शन पूजा</a>
+                <a href="/Pages/सिद्ध पूजा (भाषा) द्यानतराय Siddha Puja.html" class="card-link">सिद्ध पूजा (भाषा) द्यानतराय Siddha Puja</a>
+                <a href="/Pages/सिद्धपूजा (द्रव्याष्टकम्) SiddhaPuja.html" class="card-link">सिद्धपूजा (द्रव्याष्टकम्) SiddhaPuja</a>
+                <a href="/Pages/सिद्धपूजा (भावाष्टक) हीराचंद जी.html" class="card-link">सिद्धपूजा (भावाष्टक) हीराचंद जी</a>
+                <a href="/Pages/सिद्धपूजा (भावाष्टकम्) SiddhaPuja.html" class="card-link">सिद्धपूजा (भावाष्टकम्) SiddhaPuja</a>
+                <a href="/Pages/सोलह कारण पूजा Solah Karan Pooja.html" class="card-link">सोलह कारण पूजा Solah Karan Pooja</a>
+                <a href="/Pages/श्री अजितनाथ जिन पूजा 2022 New Shri Ajitnath Jin Pooja.html" class="card-link">श्री अजितनाथ जिन पूजा 2022 New Shri Ajitnath Jin Pooja</a>
+                <a href="/Pages/श्री अजितनाथ जिन पूजा.html" class="card-link">श्री अजितनाथ जिन पूजा</a>
+                <a href="/Pages/श्री अनंतनाथ जी जिन पूजा.html" class="card-link">श्री अनंतनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री अनन्तनाथ जिन पूजा 2022 New Shri Anantnath Jin Pooja.html" class="card-link">श्री अनन्तनाथ जिन पूजा 2022 New Shri Anantnath Jin Pooja</a>
+                <a href="/Pages/श्री अभिनन्दन जिन पूजा 2022 New Shri Abhinandan Jin Pooja.html" class="card-link">श्री अभिनन्दन जिन पूजा 2022 New Shri Abhinandan Jin Pooja</a>
+                <a href="/Pages/श्री अभिनन्दननाथ जिन पूजा.html" class="card-link">श्री अभिनन्दननाथ जिन पूजा</a>
+                <a href="/Pages/श्री अरनाथ जिन पूजा 2022 New Shri Arnath Jin Pooja.html" class="card-link">श्री अरनाथ जिन पूजा 2022 New Shri Arnath Jin Pooja</a>
+                <a href="/Pages/श्री अरहनाथ जी जिन पूजा.html" class="card-link">श्री अरहनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री आदिनाथ जिन पूजा 2022 New Shri Aadinath Jin Pooja.html" class="card-link">श्री आदिनाथ जिन पूजा 2022 New Shri Aadinath Jin Pooja</a>
+                <a href="/Pages/श्री आदिनाथ जिन पूजा.html" class="card-link">श्री आदिनाथ जिन पूजा</a>
+                <a href="/Pages/श्री ऋषि मण्डल पूजा.html" class="card-link">श्री ऋषि मण्डल पूजा</a>
+                <a href="/Pages/श्री कलिकुंड पार्श्वनाथ जिन पूजा.html" class="card-link">श्री कलिकुंड पार्श्वनाथ जिन पूजा</a>
+                <a href="/Pages/श्री कुंथुनाथ जी जिन पूजा.html" class="card-link">श्री कुंथुनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री कुन्थुनाथ जिन पूजा 2022.html" class="card-link">श्री कुन्थुनाथ जिन पूजा 2022</a>
+                <a href="/Pages/श्री कैलासगिरि पूजा Shri Kailas Giri Pooja.html" class="card-link">श्री कैलासगिरि पूजा Shri Kailas Giri Pooja</a>
+                <a href="/Pages/श्री गौतम गणधर पूजा.html" class="card-link">श्री गौतम गणधर पूजा</a>
+                <a href="/Pages/श्री चंद्रप्रभु जिन पूजा.html" class="card-link">श्री चंद्रप्रभु जिन पूजा</a>
+                <a href="/Pages/श्री चन्द्रप्रभ जिन पूजा 2022 New Shri Chandra Prabha Jin Pooja.html" class="card-link">श्री चन्द्रप्रभ जिन पूजा 2022 New Shri Chandra Prabha Jin Pooja</a>
+                <a href="/Pages/श्री देव शास्त्र गुरु पूजा Dev Shastra Guru Pooja.html" class="card-link">श्री देव शास्त्र गुरु पूजा Dev Shastra Guru Pooja</a>
+                <a href="/Pages/श्री धर्मनाथ जिन पूजा 2022 New Shri Dharmnath Jin Pooja.html" class="card-link">श्री धर्मनाथ जिन पूजा 2022 New Shri Dharmnath Jin Pooja</a>
+                <a href="/Pages/श्री धर्मनाथ जी जिन पूजा.html" class="card-link">श्री धर्मनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री नमिनाथ जिनपूजा 2022 New Shri Naninath Jin Pooja.html" class="card-link">श्री नमिनाथ जिनपूजा 2022 New Shri Naninath Jin Pooja</a>
+                <a href="/Pages/श्री नमिनाथ जी जिन पूजा.html" class="card-link">श्री नमिनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री निर्वाण क्षेत्र लड्डू पूजा.html" class="card-link">श्री निर्वाण क्षेत्र लड्डू पूजा</a>
+                <a href="/Pages/श्री नेमिनाथ जिन पूजा 2022 New Neminath Jin Pooja.html" class="card-link">श्री नेमिनाथ जिन पूजा 2022 New Neminath Jin Pooja</a>
+                <a href="/Pages/श्री नेमिनाथ जी जिन पूजा.html" class="card-link">श्री नेमिनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री पंच परमेष्ठी पूजा.html" class="card-link">श्री पंच परमेष्ठी पूजा</a>
+                <a href="/Pages/श्री पद्मप्रभ जिन पूजा (बाड़ा).html" class="card-link">श्री पद्मप्रभ जिन पूजा (बाड़ा)</a>
+                <a href="/Pages/श्री पद्मप्रभ जिन पूजा 2022 New Shri Padmaprabh Jin Pooja.html" class="card-link">श्री पद्मप्रभ जिन पूजा 2022 New Shri Padmaprabh Jin Pooja</a>
+                <a href="/Pages/श्री पार्श्वनाथ जिन पूजा (बख्तावर सिंह)- SHRI PARSHWANATH JIN POOJA.html" class="card-link">श्री पार्श्वनाथ जिन पूजा (बख्तावर सिंह)- SHRI PARSHWANATH JIN POOJA</a>
+                <a href="/Pages/श्री पार्श्वनाथ जिन पूजा 2022 New Parasnath Jin Pooja.html" class="card-link">श्री पार्श्वनाथ जिन पूजा 2022 New Parasnath Jin Pooja</a>
+                <a href="/Pages/श्री पार्श्वनाथ-जिन पूजा (पुष्पेंदु).html" class="card-link">श्री पार्श्वनाथ-जिन पूजा (पुष्पेंदु)</a>
+                <a href="/Pages/श्री पुष्पदंत जिन पूजा.html" class="card-link">श्री पुष्पदंत जिन पूजा</a>
+                <a href="/Pages/श्री पुष्पदन्त जिन पूजा 2022 New Shri Pushpdant Jin Pooja.html" class="card-link">श्री पुष्पदन्त जिन पूजा 2022 New Shri Pushpdant Jin Pooja</a>
+                <a href="/Pages/श्री बाहुबली पूजा.html" class="card-link">श्री बाहुबली पूजा</a>
+                <a href="/Pages/श्री बड़े बाबा विधान.html" class="card-link">श्री बड़े बाबा विधान</a>
+                <a href="/Pages/श्री मल्लिनाथ जिन पूजा 2022 New Shri Mallinath Jin Pooja.html" class="card-link">श्री मल्लिनाथ जिन पूजा 2022 New Shri Mallinath Jin Pooja</a>
+                <a href="/Pages/श्री मल्लिनाथ जी जिन पूजा.html" class="card-link">श्री मल्लिनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री महावीर जिन पूजा 2022 New Shri Mahaveer Jin Pooja.html" class="card-link">श्री महावीर जिन पूजा 2022 New Shri Mahaveer Jin Pooja</a>
+                <a href="/Pages/श्री महावीर स्वामी जिन पूजा.html" class="card-link">श्री महावीर स्वामी जिन पूजा</a>
+                <a href="/Pages/श्री मुनिसुव्रतनाथ जी पूजा.html" class="card-link">श्री मुनिसुव्रतनाथ जी पूजा</a>
+                <a href="/Pages/श्री मुनिसुव्रतनाथ पूजा 2022 New Shri Muni Subratnath Jin Pooja.html" class="card-link">श्री मुनिसुव्रतनाथ पूजा 2022 New Shri Muni Subratnath Jin Pooja</a>
+                <a href="/Pages/श्री वासुपूज्य जिनपूजा 2022 New Shri Vasupujya Jin Pooja.html" class="card-link">श्री वासुपूज्य जिनपूजा 2022 New Shri Vasupujya Jin Pooja</a>
+                <a href="/Pages/श्री वासुपूज्य जी जिन पूजा.html" class="card-link">श्री वासुपूज्य जी जिन पूजा</a>
+                <a href="/Pages/श्री विमलनाथ जिन पूजा 2022 New Shri Vimalnath Jin Pooja.html" class="card-link">श्री विमलनाथ जिन पूजा 2022 New Shri Vimalnath Jin Pooja</a>
+                <a href="/Pages/श्री विमलनाथ जी जिन पूजा.html" class="card-link">श्री विमलनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री विष्णुकुमार महामुनि पूजा.html" class="card-link">श्री विष्णुकुमार महामुनि पूजा</a>
+                <a href="/Pages/श्री शंभवनाथ जिन पूजा 2022 New Shri Sambhavnath Jin Pooja.html" class="card-link">श्री शंभवनाथ जिन पूजा 2022 New Shri Sambhavnath Jin Pooja</a>
+                <a href="/Pages/श्री शांतिनाथ जिन पूजा.html" class="card-link">श्री शांतिनाथ जिन पूजा</a>
+                <a href="/Pages/श्री शान्तिनाथ जिन पूजा 2022.html" class="card-link">श्री शान्तिनाथ जिन पूजा 2022</a>
+                <a href="/Pages/श्री शीतलनाथ जिन पूजा 2022 New Shri SheetalNath Jin Pooja.html" class="card-link">श्री शीतलनाथ जिन पूजा 2022 New Shri SheetalNath Jin Pooja</a>
+                <a href="/Pages/श्री शीतलनाथ जी जिन पूजा.html" class="card-link">श्री शीतलनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री श्रेयांसनाथ जिन पूजा 2022 New Shri Shrayanshnath Jin Pooja.html" class="card-link">श्री श्रेयांसनाथ जिन पूजा 2022 New Shri Shrayanshnath Jin Pooja</a>
+                <a href="/Pages/श्री श्रेयांसनाथ जी जिन पूजा.html" class="card-link">श्री श्रेयांसनाथ जी जिन पूजा</a>
+                <a href="/Pages/श्री संभवनाथ जिन पूजा.html" class="card-link">श्री संभवनाथ जिन पूजा</a>
+                <a href="/Pages/श्री सुपार्श्वनाथ जिन पूजा 2022 New Shri Suparshwanath Jin Pooja.html" class="card-link">श्री सुपार्श्वनाथ जिन पूजा 2022 New Shri Suparshwanath Jin Pooja</a>
+                <a href="/Pages/श्री सुपार्श्वनाथ जिन पूजा.html" class="card-link">श्री सुपार्श्वनाथ जिन पूजा</a>
+                <a href="/Pages/श्री सुमतिनाथ जिन पूजा 2022 New Shri Sumatinath Jin Pooja.html" class="card-link">श्री सुमतिनाथ जिन पूजा 2022 New Shri Sumatinath Jin Pooja</a>
+                <a href="/Pages/श्री सुमतिनाथ जिन पूजा.html" class="card-link">श्री सुमतिनाथ जिन पूजा</a>
+            </div>
+        </section>
+
+        <!-- Aarti Section -->
+        <section id="aarti" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-fire category-icon"></i>Aarti (आरती)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Shri Shantinath Bhagwan ki Aarti.html" class="card-link">Shri Shantinath Bhagwan ki Aarti</a>
+                <a href="/Pages/आदिनाथ भगवान की आरती.html" class="card-link">आदिनाथ भगवान की आरती</a>
+                <a href="/Pages/आरती पंचपरमेष्ठी.html" class="card-link">आरती पंचपरमेष्ठी</a>
+                <a href="/Pages/आरती श्री आचार्य विद्यासागर जी- Aarti Shree Vidyasagar Maharaj Ji.html" class="card-link">आरती श्री आचार्य विद्यासागर जी- Aarti Shree Vidyasagar Maharaj Ji</a>
+                <a href="/Pages/आरती श्री शांतिनाथ भगवान की.html" class="card-link">आरती श्री शांतिनाथ भगवान की</a>
+                <a href="/Pages/चतुर्थकालीन सॉंगानेर वाले बाबा ऋषभदेव की आरती.html" class="card-link">चतुर्थकालीन सॉंगानेर वाले बाबा ऋषभदेव की आरती</a>
+                <a href="/Pages/चौबीसों भगवान की आरती.html" class="card-link">चौबीसों भगवान की आरती</a>
+                <a href="/Pages/भक्ति बेकरार है आनंद अपार है.html" class="card-link">भक्ति बेकरार है आनंद अपार है</a>
+                <a href="/Pages/भगवान आदिनाथ की आरती.html" class="card-link">भगवान आदिनाथ की आरती</a>
+                <a href="/Pages/श्री पारसनाथ जी की आरती Parasnath Bhagwan Aarti.html" class="card-link">श्री पारसनाथ जी की आरती Parasnath Bhagwan Aarti</a>
+                <a href="/Pages/श्री शांतिनाथ भगवान की आरती.html" class="card-link">श्री शांतिनाथ भगवान की आरती</a>
+                <a href="/Pages/श्री शांतिनाथजी भगवान् आरती - Shri Shantinath Ji Bhagwan ki Aarti.html" class="card-link">श्री शांतिनाथजी भगवान् आरती - Shri Shantinath Ji Bhagwan ki Aarti</a>
+            </div>
+        </section>
+
+        <!-- Bhajan Section -->
+        <section id="bhajan" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-music category-icon"></i>Bhajan (भजन)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Bhagwan Mahaveer (Bhajan).html" class="card-link">Bhagwan Mahaveer (Bhajan)</a>
+                <a href="/Pages/Jab Koi Nahi Aata Mere Dada Aate Hai Lyrics.html" class="card-link">Jab Koi Nahi Aata Mere Dada Aate Hai Lyrics</a>
+                <a href="/Pages/Tumse Lagi Lagan (Bhajan).html" class="card-link">Tumse Lagi Lagan (Bhajan)</a>
+                <a href="/Pages/Yeh Sach hai ki Navkar mai.html" class="card-link">Yeh Sach hai ki Navkar mai</a>
+                <a href="/Pages/अपना करना हो कल्याण, साँचे गुरुवर को पहिचान... Jain Bhajan.html" class="card-link">अपना करना हो कल्याण, साँचे गुरुवर को पहिचान... Jain Bhajan</a>
+                <a href="/Pages/अमृत से गगरी भरो, कि न्हवन प्रभु आज करेंगे.. Bhajan.html" class="card-link">अमृत से गगरी भरो, कि न्हवन प्रभु आज करेंगे.. Bhajan</a>
+                <a href="/Pages/आत्मा अनंत गुणों का धनी.html" class="card-link">आत्मा अनंत गुणों का धनी</a>
+                <a href="/Pages/एक नाम साँचा, एक नाम प्यारा...Jain Bhajan.html" class="card-link">एक नाम साँचा, एक नाम प्यारा...Jain Bhajan</a>
+                <a href="/Pages/ओ जगत के शांति दाता... Jain Bhajan.html" class="card-link">ओ जगत के शांति दाता... Jain Bhajan</a>
+                <a href="/Pages/कितना प्यारा तेरा द्वारा.html" class="card-link">कितना प्यारा तेरा द्वारा</a>
+                <a href="/Pages/कैसी सुन्दर जिन प्रतिमा.html" class="card-link">कैसी सुन्दर जिन प्रतिमा</a>
+                <a href="/Pages/गुरु ने जहां जहां भी ज्योति जलाई है...Jain Bhajan.html" class="card-link">गुरु ने जहां जहां भी ज्योति जलाई है...Jain Bhajan</a>
+                <a href="/Pages/चंदन के पलना में झूले मोरे वीरा...(पालना गीत).html" class="card-link">चंदन के पलना में झूले मोरे वीरा...(पालना गीत)</a>
+                <a href="/Pages/चैतन्य के दर्पण में, आनंद के आलय में...Jain Bhajan.html" class="card-link">चैतन्य के दर्पण में, आनंद के आलय में...Jain Bhajan</a>
+                <a href="/Pages/जहाँ नेमी के चरण पड़े, गिरनार वो धरती है... Jain Bhajan.html" class="card-link">जहाँ नेमी के चरण पड़े, गिरनार वो धरती है... Jain Bhajan</a>
+                <a href="/Pages/जीवन के किसी भी पल में वैराग्य उमड सकता है... Jain Bhajan.html" class="card-link">जीवन के किसी भी पल में वैराग्य उमड सकता है... Jain Bhajan</a>
+                <a href="/Pages/तुम से लागी लगन (Bhajan).html" class="card-link">तुम से लागी लगन (Bhajan)</a>
+                <a href="/Pages/तुम से लागी लगन Tum se Lagi Lagan.html" class="card-link">तुम से लागी लगन Tum se Lagi Lagan</a>
+                <a href="/Pages/दुनिया से में हारी, तो आयी तेरे द्वार... Jain Bhajan.html" class="card-link">दुनिया से में हारी, तो आयी तेरे द्वार... Jain Bhajan</a>
+                <a href="/Pages/धन्य धन्य वीतराग वाणी... Bhajan.html" class="card-link">धन्य धन्य वीतराग वाणी... Bhajan</a>
+                <a href="/Pages/निर्ग्रंथों का मार्ग हमको प्राणों से भी प्यारा है.html" class="card-link">निर्ग्रंथों का मार्ग हमको प्राणों से भी प्यारा है</a>
+                <a href="/Pages/प्रथमं मंगलम मंत्र नवकार.html" class="card-link">प्रथमं मंगलम मंत्र नवकार</a>
+                <a href="/Pages/भगवान आत्मा आनंद भंडार चेतन उस पर दृष्टि कर...Jain Bhajan.html" class="card-link">भगवान आत्मा आनंद भंडार चेतन उस पर दृष्टि कर...Jain Bhajan</a>
+                <a href="/Pages/भगवान मेरी नैया उस पार लगा देना.html" class="card-link">भगवान मेरी नैया उस पार लगा देना</a>
+                <a href="/Pages/भगवान मेरी नैया, उस पार लगा देना.html" class="card-link">भगवान मेरी नैया, उस पार लगा देना</a>
+                <a href="/Pages/मेरी झोपड़ी के भाग आज खुल जायेंगे... Jain Bhajan.html" class="card-link">मेरी झोपड़ी के भाग आज खुल जायेंगे... Jain Bhajan</a>
+                <a href="/Pages/मेरे महावीर झूले पलना... Bhajan.html" class="card-link">मेरे महावीर झूले पलना... Bhajan</a>
+                <a href="/Pages/मेरे सर पर रख दो भगवन (भजन).html" class="card-link">मेरे सर पर रख दो भगवन (भजन)</a>
+                <a href="/Pages/मैं क्या... मेरा अस्तित्व क्या.html" class="card-link">मैं क्या... मेरा अस्तित्व क्या</a>
+                <a href="/Pages/मैं ज्ञानानंद स्वभावी हूं.html" class="card-link">मैं ज्ञानानंद स्वभावी हूं</a>
+                <a href="/Pages/मोक्ष के प्रेमी हमने, कर्मों से लड़ते देखें... Jain Bhajan.html" class="card-link">मोक्ष के प्रेमी हमने, कर्मों से लड़ते देखें... Jain Bhajan</a>
+                <a href="/Pages/मोह जाल में फंसे हुए हैं, कर्मो ने आ घेरा... Jain Bhajan.html" class="card-link">मोह जाल में फंसे हुए हैं, कर्मो ने आ घेरा... Jain Bhajan</a>
+                <a href="/Pages/रोम-रोम पुलकित हो जाय, जब जिनवर के दर्शन पाय...Jain Bhajan.html" class="card-link">रोम-रोम पुलकित हो जाय, जब जिनवर के दर्शन पाय...Jain Bhajan</a>
+                <a href="/Pages/व्हाला आदिनाथ मे तो पकडयो तारो हाथ (Jain Bhajan).html" class="card-link">व्हाला आदिनाथ मे तो पकडयो तारो हाथ (Jain Bhajan)</a>
+                <a href="/Pages/साधना के रास्ते, आत्मा के वास्ते चल रे राही चल.html" class="card-link">साधना के रास्ते, आत्मा के वास्ते चल रे राही चल</a>
+                <a href="/Pages/सुख आते है दुःख आते है... Jain Bhajan.html" class="card-link">सुख आते है दुःख आते है... Jain Bhajan</a>
+                <a href="/Pages/स्वर्ग से सुंदर अनुपम है ये जिनवर का दरबार...Jain Bhajan.html" class="card-link">स्वर्ग से सुंदर अनुपम है ये जिनवर का दरबार...Jain Bhajan</a>
+                <a href="/Pages/है सीमंधर भगवान शरण ली तेरी... Jain Bhajan.html" class="card-link">है सीमंधर भगवान शरण ली तेरी... Jain Bhajan</a>
+            </div>
+        </section>
+
+        <!-- Stotra Section -->
+        <section id="stotra" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-book-tanakh category-icon"></i>Stotra (स्तोत्र)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Jain Parshvanath Ashtak पार्श्वनाथाष्टकम्.html" class="card-link">Jain Parshvanath Ashtak पार्श्वनाथाष्टकम्</a>
+                <a href="/Pages/MAHAVIRASHTAK STOTRA.html" class="card-link">MAHAVIRASHTAK STOTRA</a>
+                <a href="/Pages/Padmastakam Stotra (Padamprabhu Bhagwan).html" class="card-link">Padmastakam Stotra (Padamprabhu Bhagwan)</a>
+                <a href="/Pages/Shri Vardhman Stotra.html" class="card-link">Shri Vardhman Stotra</a>
+                <a href="/Pages/भक्तामर स्तोत्र (संस्कृत) BHAKTAMAR STOTRA.html" class="card-link">भक्तामर स्तोत्र (संस्कृत) BHAKTAMAR STOTRA</a>
+                <a href="/Pages/भक्तामर स्तोत्र (हिंदी भाषा) Bhaktamar Stotra Hindi.html" class="card-link">भक्तामर स्तोत्र (हिंदी भाषा) Bhaktamar Stotra Hindi</a>
+                <a href="/Pages/भक्तामर स्तोत्र की महिमा BHAKTAMAR MAHIMA.html" class="card-link">भक्तामर स्तोत्र की महिमा BHAKTAMAR MAHIMA</a>
+                <a href="/Pages/भक्तामर स्तोत्र संस्कृत Bhaktamar Stotra in Sanskrit.html" class="card-link">भक्तामर स्तोत्र संस्कृत Bhaktamar Stotra in Sanskrit</a>
+                <a href="/Pages/मंगलाष्टक मराठी.html" class="card-link">मंगलाष्टक मराठी</a>
+                <a href="/Pages/जैन स्तोत्र.html" class="card-link">जैन स्तोत्र</a>
+                <a href="/Pages/श्री पारसनाथ स्तोत्रं संस्कृत.html" class="card-link">श्री पारसनाथ स्तोत्रं संस्कृत</a>
+                <a href="/Pages/श्री मंगलाष्टक स्तोत्रं Shri Mangalashtak Stotram.html" class="card-link">श्री मंगलाष्टक स्तोत्रं Shri Mangalashtak Stotram</a>
+                <a href="/Pages/श्री मज्जिनसहस्रनाम स्तोत्र.html" class="card-link">श्री मज्जिनसहस्रनाम स्तोत्र</a>
+                <a href="/Pages/શ્રી ભક્તામર સ્तोત્રમ્.html" class="card-link">શ્રી ભક્તામર સ્तोત્રમ્</a>
+            </div>
+        </section>
+
+        <!-- Stuti Section -->
+        <section id="stuti" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-hands-praying category-icon"></i>Stuti (स्तुति)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Acharya Vandana.html" class="card-link">Acharya Vandana</a>
+                <a href="/Pages/Jinvani Stuti जिनवाणी स्तुति.html" class="card-link">Jinvani Stuti जिनवाणी स्तुति</a>
+                <a href="/Pages/Shri Parshvanath Stuti श्री पार्श्वनाथ स्तुति.html" class="card-link">Shri Parshvanath Stuti श्री पार्श्वनाथ स्तुति</a>
+                <a href="/Pages/जैन स्तुति पाठ.html" class="card-link">जैन स्तुति पाठ</a>
+                <a href="/Pages/दर्शन पच्चीसी(तुम निरखत) Darshan Pacchisi.html" class="card-link">दर्शन पच्चीसी(तुम निरखत) Darshan Pacchisi</a>
+                <a href="/Pages/दर्शन-स्तुति (प्रभु पतित-पावन) Darshan Stuti.html" class="card-link">दर्शन-स्तुति (प्रभु पतित-पावन) Darshan Stuti</a>
+                <a href="/Pages/दर्शन.html" class="card-link">दर्शन</a>
+                <a href="/Pages/देव-स्तुति (अहो जगत-गुरु) Dev Stuti.html" class="card-link">देव-स्तुति (अहो जगत-गुरु) Dev Stuti</a>
+                <a href="/Pages/प्रातः कालीन स्तुति Prat Kaleen Stuti.html" class="card-link">प्रातः कालीन स्तुति Prat Kaleen Stuti</a>
+            </div>
+        </section>
+
+        <!-- Mantra Section -->
+        <section id="mantra" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-peace category-icon"></i>Mantra (मंत्र)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Shri Namokar Mantra Chalisa णामोकार चालीसा.html" class="card-link">Shri Namokar Mantra Chalisa णामोकार चालीसा</a>
+                <a href="/Pages/णमोकार महामन्त्र Namokar Mantra in Hindi Meaning.html" class="card-link">णमोकार महामन्त्र Namokar Mantra in Hindi Meaning</a>
+                <a href="/Pages/चौसठ ऋद्धि अर्घ्य.html" class="card-link">चौसठ ऋद्धि अर्घ्य</a>
+                <a href="/Pages/श्री सम्मेद शिखर टोंको के अर्घ.html" class="card-link">श्री सम्मेद शिखर टोंको के अर्घ</a>
+                <a href="/Pages/प्रत्येक टोंक के अर्घ्य.html" class="card-link">प्रत्येक टोंक के अर्घ्य</a>
+            </div>
+        </section>
+
+        <!-- Bhavna Section -->
+        <section id="bhavna" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-brain category-icon"></i>Bhavna (भावना)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/BARAH BHAVNA.html" class="card-link">BARAH BHAVNA</a>
+                <a href="/Pages/VAIRAGYA BHAVNA.html" class="card-link">VAIRAGYA BHAVNA</a>
+                <a href="/Pages/भावना गीत.html" class="card-link">भावना गीत</a>
+                <a href="/Pages/भावना बत्तीसी.html" class="card-link">भावना बत्तीसी</a>
+                <a href="/Pages/मेरी भावना.html" class="card-link">मेरी भावना</a>
+                <a href="/Pages/समाधि भावना.html" class="card-link">समाधि भावना</a>
+            </div>
+        </section>
+
+        <!-- Parva (Festivals) Section -->
+        <section id="parva" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-calendar-days category-icon"></i>Parva (पर्व)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Daslakshan Parva दस लक्षण पर्व क्या है.html" class="card-link">Daslakshan Parva दस लक्षण पर्व क्या है</a>
+                <a href="/Pages/Dus Lakshan Parva दस लक्षण पर्व क्या है.html" class="card-link">Dus Lakshan Parva दस लक्षण पर्व क्या है</a>
+                <a href="/Pages/जैन धर्म में राखी क्यों मनाई जाती है (Jain Raksha Bandhan).html" class="card-link">जैन धर्म में राखी क्यों मनाई जाती है (Jain Raksha Bandhan)</a>
+                <a href="/Pages/दसलक्षण पर्व.html" class="card-link">दसलक्षण पर्व</a>
+                <a href="/Pages/Uttam Kshama Quotes in Hindi.html" class="card-link">Uttam Kshama Quotes in Hindi</a>
+                <a href="/Pages/Michhami Dukkadam Quotes, Wishes.html" class="card-link">Michhami Dukkadam Quotes, Wishes</a>
+            </div>
+        </section>
+
+        <!-- Sacred Texts & Philosophy Section -->
+        <section id="texts" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-scroll category-icon"></i>Sacred Texts & Philosophy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Jinvani Book Poojan Paath Pradeep Jinvani Sangrah.html" class="card-link">Jinvani Book Poojan Paath Pradeep Jinvani Sangrah</a>
+                <a href="/Pages/Samadhi Bhakti in Sanskrit.html" class="card-link">Samadhi Bhakti in Sanskrit</a>
+                <a href="/Pages/आत्म-कीर्तन.html" class="card-link">आत्म-कीर्तन</a>
+                <a href="/Pages/छह ढाला Chah Dhala.html" class="card-link">छह ढाला Chah Dhala</a>
+                <a href="/Pages/जलाभिषेक वा प्रक्षाल-पाठ Jalabhishek Path.html" class="card-link">जलाभिषेक वा प्रक्षाल-पाठ Jalabhishek Path</a>
+                <a href="/Pages/जिन शान्तिधारा Shantidhara.html" class="card-link">जिन शान्तिधारा Shantidhara</a>
+                <a href="/Pages/जैन आलोचना पाठ.html" class="card-link">जैन आलोचना पाठ</a>
+                <a href="/Pages/जैन धर्म ग्रंथ.html" class="card-link">जैन धर्म ग्रंथ</a>
+                <a href="/Pages/जैन शांतिपाठ.html" class="card-link">जैन शांतिपाठ</a>
+                <a href="/Pages/तत्त्वार्थ सूत्र अर्थ.html" class="card-link">तत्त्वार्थ सूत्र अर्थ</a>
+                <a href="/Pages/दर्शन पाठ(दर्शनं देवदेवस्य) Darshan Paath Sanskrit.html" class="card-link">दर्शन पाठ(दर्शनं देवदेवस्य) Darshan Paath Sanskrit</a>
+                <a href="/Pages/निर्वाण कांड.html" class="card-link">निर्वाण कांड</a>
+                <a href="/Pages/परमर्षि स्वस्ति मंगल पाठ.html" class="card-link">परमर्षि स्वस्ति मंगल पाठ</a>
+                <a href="/Pages/मंगलाचरण (चौबीस तीर्थंकर).html" class="card-link">मंगलाचरण (चौबीस तीर्थंकर)</a>
+                <a href="/Pages/माघनन्दिमुनिकृताभिषेक-पाठ.html" class="card-link">माघनन्दिमुनिकृताभिषेक-पाठ</a>
+                <a href="/Pages/लघु चैत्यभक्ति (वर्षेषु वर्षान्तरपर्वतेषु).html" class="card-link">लघु चैत्यभक्ति (वर्षेषु वर्षान्तरपर्वतेषु)</a>
+                <a href="/Pages/विनय पाठ Vinay Path.html" class="card-link">विनय पाठ Vinay Path</a>
+                <a href="/Pages/विसर्जन पाठ(हिन्दी).html" class="card-link">विसर्जन पाठ(हिन्दी)</a>
+                <a href="/Pages/शास्त्र स्वाध्याय का मंगलाचरण.html" class="card-link">शास्त्र स्वाध्याय का मंगलाचरण</a>
+                <a href="/Pages/श्रावक प्रतिक्रमण (लघु).html" class="card-link">श्रावक प्रतिक्रमण (लघु)</a>
+                <a href="/Pages/श्रावक प्रतिक्रमण.html" class="card-link">श्रावक प्रतिक्रमण</a>
+                <a href="/Pages/समाधि भक्ति पाठ (तेरी छत्र छाया).html" class="card-link">समाधि भक्ति पाठ (तेरी छत्र छाया)</a>
+                <a href="/Pages/समाधि मरण पाठ- Samadhi Maran Path.html" class="card-link">समाधि मरण पाठ- Samadhi Maran Path</a>
+                <a href="/Pages/समाधि-भक्ति (तेरी छत्रच्छाया).html" class="card-link">समाधि-भक्ति (तेरी छत्रच्छाया)</a>
+                <a href="/Pages/समाधीमरण पाठ (लघु).html" class="card-link">समाधीमरण पाठ (लघु)</a>
+                <a href="/Pages/सामायिक पाठ.html" class="card-link">सामायिक पाठ</a>
+            </div>
+        </section>
+
+        <!-- Symbols & Meanings Section -->
+        <section id="symbols" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-star-and-crescent category-icon"></i>Symbols & Meanings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Jain मंदिर मे चावल या अक्षत क्यों चढ़ाया जाता है.html" class="card-link">Jain मंदिर मे चावल या अक्षत क्यों चढ़ाया जाता है</a>
+                <a href="/Pages/Om Aum Meaning.html" class="card-link">Om Aum Meaning</a>
+                <a href="/Pages/Symbol Jainism जैन धर्म का प्रतीक.html" class="card-link">Symbol Jainism जैन धर्म का प्रतीक</a>
+            </div>
+        </section>
+
+        <!-- Other Topics Section -->
+        <section id="other" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-circle-info category-icon"></i>Other Topics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="/Pages/Gift Article Ideas for House Warming.html" class="card-link">Gift Article Ideas for House Warming</a>
+                <a href="/Pages/Mutual Fund Advisor म्युचुअल फंड्स में इन्वेस्ट कैसे करे.html" class="card-link">Mutual Fund Advisor म्युचुअल फंड्स में इन्वेस्ट कैसे करे</a>
+            </div>
+        </section>
+
+        <!-- Acharya Section -->
+        <section id="acharya" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-user-graduate category-icon"></i>Acharya (आचार्य)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Acharya Shri 108 Samay Sagar Ji Maharaj.html" class="card-link">Acharya Shri 108 Samay Sagar Ji Maharaj</a>
+                <a href="Pages/Acharya Shri Vidya Sagar Ji Maharaj.html" class="card-link">Acharya Shri Vidya Sagar Ji Maharaj</a>
+                <a href="Pages/Muni Tarun Sagar Ji Maharaj.html" class="card-link">Muni Tarun Sagar Ji Maharaj</a>
+                <a href="Pages/Shri Sudha Sagar Ji Maharaj ka Jivan Parichay.html" class="card-link">Shri Sudha Sagar Ji Maharaj ka Jivan Parichay</a>
+            </div>
+        </section>
+
+        <!-- Chalisa Section -->
+        <section id="chalisa" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-book-open category-icon"></i>Chalisa (चालीसा)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Shri Abhinandan Nath Chalisa.html" class="card-link">Shri Abhinandan Nath Chalisa</a>
+                <a href="Pages/Shri Ajitnath Chalisa.html" class="card-link">Shri Ajitnath Chalisa</a>
+                <a href="Pages/Shri Chandraprabhu Chalisa.html" class="card-link">Shri Chandraprabhu Chalisa</a>
+                <a href="Pages/Shri Dharamnath Chalisa.html" class="card-link">Shri Dharamnath Chalisa</a>
+                <a href="Pages/Shri Pushpdant Chalisa.html" class="card-link">Shri Pushpdant Chalisa</a>
+                <a href="Pages/Shri Sambhavnath Chalisa.html" class="card-link">Shri Sambhavnath Chalisa</a>
+                <a href="Pages/Shri Shantinath Chalisa.html" class="card-link">Shri Shantinath Chalisa</a>
+                <a href="Pages/Shri Sumatinath Chalisa.html" class="card-link">Shri Sumatinath Chalisa</a>
+                <a href="Pages/Shri Suparshvanath Chalisa.html" class="card-link">Shri Suparshvanath Chalisa</a>
+                <a href="Pages/भगवान अरहनाथ चालीसा Shri Arahnath Chalisa.html" class="card-link">भगवान अरहनाथ चालीसा Shri Arahnath Chalisa</a>
+                <a href="Pages/श्री आदिनाथ चालीसा.html" class="card-link">श्री आदिनाथ चालीसा</a>
+                <a href="Pages/श्री अनन्तनाथ चलीसा.html" class="card-link">श्री अनन्तनाथ चलीसा</a>
+                <a href="Pages/श्री कुन्थनाथ चालीसा.html" class="card-link">श्री कुन्थनाथ चालीसा</a>
+                <a href="Pages/श्री नमिनाथ चालीसा.html" class="card-link">श्री नमिनाथ चालीसा</a>
+                <a href="Pages/श्री नाकोड़ा भैरव चालीसा.html" class="card-link">श्री नाकोड़ा भैरव चालीसा</a>
+                <a href="Pages/श्री नेमिनाथ चालीसा.html" class="card-link">श्री नेमिनाथ चालीसा</a>
+                <a href="Pages/श्री पद्मप्रभु चालीसा.html" class="card-link">श्री पद्मप्रभु चालीसा</a>
+                <a href="Pages/श्री पद्मावती माता चालीसा Padmavati Chalisa.html" class="card-link">श्री पद्मावती माता चालीसा Padmavati Chalisa</a>
+                <a href="Pages/श्री पार्श्वनाथ चालीसा.html" class="card-link">श्री पार्श्वनाथ चालीसा</a>
+                <a href="Pages/श्री बड़े बाबा कुण्डलपुर चालीसा.html" class="card-link">श्री बड़े बाबा कुण्डलपुर चालीसा</a>
+                <a href="Pages/श्री मल्लिनाथ चालीसा.html" class="card-link">श्री मल्लिनाथ चालीसा</a>
+                <a href="Pages/श्री महावीर चालीसा.html" class="card-link">श्री महावीर चालीसा</a>
+                <a href="Pages/श्री मुनिसुव्रतनाथ चालीसा.html" class="card-link">श्री मुनिसुव्रतनाथ चालीसा</a>
+                <a href="Pages/श्री वासुपूज्य चालीसा.html" class="card-link">श्री वासुपूज्य चालीसा</a>
+                <a href="Pages/श्री विमलनाथ चालीसा.html" class="card-link">श्री विमलनाथ चालीसा</a>
+                <a href="Pages/श्री शीतलनाथ चालीसा.html" class="card-link">श्री शीतलनाथ चालीसा</a>
+                <a href="Pages/श्री श्रेयान्सनाथ चालीसा.html" class="card-link">श्री श्रेयान्सनाथ चालीसा</a>
+                <a href="Pages/श्री सम्मेद शिखर चालीसा Shri Sammed Shikhar Chalisa.html" class="card-link">श्री सम्मेद शिखर चालीसा Shri Sammed Shikhar Chalisa</a>
+            </div>
+        </section>
+
+        <!-- Pooja Section -->
+        <section id="pooja" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-om category-icon"></i>Pooja (पूजा)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Diwali Poojan.html" class="card-link">Diwali Poojan</a>
+                <a href="Pages/KSHAMAVANI POOJA.html" class="card-link">KSHAMAVANI POOJA</a>
+                <a href="Pages/Nirvan Kshetra Pooja.html" class="card-link">Nirvan Kshetra Pooja</a>
+                <a href="Pages/Saluna Parv Pooja.html" class="card-link">Saluna Parv Pooja</a>
+                <a href="Pages/अर्ध्यावली पूजा.html" class="card-link">अर्ध्यावली पूजा</a>
+                <a href="Pages/जैन चारित्र-शुद्धि व्रत पूजा Charitra Shuddhi Vrat Pooja.html" class="card-link">जैन चारित्र-शुद्धि व्रत पूजा Charitra Shuddhi Vrat Pooja</a>
+                <a href="Pages/जैन तीर्थंकर पूजाएँ Tirthankar Pooja.html" class="card-link">जैन तीर्थंकर पूजाएँ Tirthankar Pooja</a>
+                <a href="Pages/जैन पूजा करने के विधि.html" class="card-link">जैन पूजा करने के विधि</a>
+                <a href="Pages/जैन भूगर्भ प्रकटित अतिशयकारी श्री मुनिसुव्रतनाथ पूजा.html" class="card-link">जैन भूगर्भ प्रकटित अतिशयकारी श्री मुनिसुव्रतनाथ पूजा</a>
+                <a href="Pages/जैन श्रुतपञ्चमी पूजा Shrutpanchami Pooja.html" class="card-link">जैन श्रुतपञ्चमी पूजा Shrutpanchami Pooja</a>
+                <a href="Pages/जैन सप्तर्षि पूजा.html" class="card-link">जैन सप्तर्षि पूजा</a>
+                <a href="Pages/जैन सरस्वती पूजा.html" class="card-link">जैन सरस्वती पूजा</a>
+                <a href="Pages/जैन सुगन्ध दशमी व्रत पूजा Sugandha Dashami Vrat Pooja.html" class="card-link">जैन सुगन्ध दशमी व्रत पूजा Sugandha Dashami Vrat Pooja</a>
+                <a href="Pages/णामोकार महामंत्र पूजा Namokar MahaMantra Puja.html" class="card-link">णामोकार महामंत्र पूजा Namokar MahaMantra Puja</a>
+                <a href="Pages/दस लक्षण पूजा.html" class="card-link">दस लक्षण पूजा</a>
+                <a href="Pages/दीपावली-पूजन -विधि (Depawali Pujan Vidhi).html" class="card-link">दीपावली-पूजन -विधि (Depawali Pujan Vidhi)</a>
+                <a href="Pages/देव शास्त्र गुरु पूजा.html" class="card-link">देव शास्त्र गुरु पूजा</a>
+                <a href="Pages/देवशास्त्र गुरु पूजन(प्रथम अरहंत).html" class="card-link">देवशास्त्र गुरु पूजन(प्रथम अरहंत)</a>
+                <a href="Pages/नन्दीश्वर द्वीप पूजा.html" class="card-link">नन्दीश्वर द्वीप पूजा</a>
+                <a href="Pages/नवदेवता जिनपूजा Nav Devta JinPuja.html" class="card-link">नवदेवता जिनपूजा Nav Devta JinPuja</a>
+                <a href="Pages/नित्य पूजा पीठिका.html" class="card-link">नित्य पूजा पीठिका</a>
+                <a href="Pages/पंच बालयति तीर्थंकर पूजा.html" class="card-link">पंच बालयति तीर्थंकर पूजा</a>
+                <a href="Pages/पंच मेरु पूजा Panch Meru Pooja.html" class="card-link">पंच मेरु पूजा Panch Meru Pooja</a>
+                <a href="Pages/पूजा विधि प्रारम्भ.html" class="card-link">पूजा विधि प्रारम्भ</a>
+                <a href="Pages/बीस तीर्थंकर पूजा (दीप अढ़ाई मेरु) Jinvani जिनवाणी संग्रह.html" class="card-link">बीस तीर्थंकर पूजा (दीप अढ़ाई मेरु) Jinvani जिनवाणी संग्रह</a>
+                <a href="Pages/रत्नत्रय पूजा.html" class="card-link">रत्नत्रय पूजा</a>
+                <a href="Pages/सलूना पूजा.html" class="card-link">सलूना पूजा</a>
+                <a href="Pages/समुच्चय पूजा । Samuchchay Puja.html" class="card-link">समुच्चय पूजा । Samuchchay Puja</a>
+                <a href="Pages/सम्मेदशिखर पूजा.html" class="card-link">सम्मेदशिखर पूजा</a>
+                <a href="Pages/सम्यकचारित्र पूजा.html" class="card-link">सम्यकचारित्र पूजा</a>
+                <a href="Pages/सम्यग्ज्ञान पूजा.html" class="card-link">सम्यग्ज्ञान पूजा</a>
+                <a href="Pages/सम्यग्दर्शन पूजा.html" class="card-link">सम्यग्दर्शन पूजा</a>
+                <a href="Pages/सिद्ध पूजा (भाषा) द्यानतराय Siddha Puja.html" class="card-link">सिद्ध पूजा (भाषा) द्यानतराय Siddha Puja</a>
+                <a href="Pages/सिद्धपूजा (द्रव्याष्टकम्) SiddhaPuja.html" class="card-link">सिद्धपूजा (द्रव्याष्टकम्) SiddhaPuja</a>
+                <a href="Pages/सिद्धपूजा (भावाष्टक) हीराचंद जी.html" class="card-link">सिद्धपूजा (भावाष्टक) हीराचंद जी</a>
+                <a href="Pages/सिद्धपूजा (भावाष्टकम्) SiddhaPuja.html" class="card-link">सिद्धपूजा (भावाष्टकम्) SiddhaPuja</a>
+                <a href="Pages/सोलह कारण पूजा Solah Karan Pooja.html" class="card-link">सोलह कारण पूजा Solah Karan Pooja</a>
+                <a href="Pages/श्री अजितनाथ जिन पूजा 2022 New Shri Ajitnath Jin Pooja.html" class="card-link">श्री अजितनाथ जिन पूजा 2022 New Shri Ajitnath Jin Pooja</a>
+                <a href="Pages/श्री अजितनाथ जिन पूजा.html" class="card-link">श्री अजितनाथ जिन पूजा</a>
+                <a href="Pages/श्री अनंतनाथ जी जिन पूजा.html" class="card-link">श्री अनंतनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री अनन्तनाथ जिन पूजा 2022 New Shri Anantnath Jin Pooja.html" class="card-link">श्री अनन्तनाथ जिन पूजा 2022 New Shri Anantnath Jin Pooja</a>
+                <a href="Pages/श्री अभिनन्दन जिन पूजा 2022 New Shri Abhinandan Jin Pooja.html" class="card-link">श्री अभिनन्दन जिन पूजा 2022 New Shri Abhinandan Jin Pooja</a>
+                <a href="Pages/श्री अभिनन्दननाथ जिन पूजा.html" class="card-link">श्री अभिनन्दननाथ जिन पूजा</a>
+                <a href="Pages/श्री अरनाथ जिन पूजा 2022 New Shri Arnath Jin Pooja.html" class="card-link">श्री अरनाथ जिन पूजा 2022 New Shri Arnath Jin Pooja</a>
+                <a href="Pages/श्री अरहनाथ जी जिन पूजा.html" class="card-link">श्री अरहनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री आदिनाथ जिन पूजा 2022 New Shri Aadinath Jin Pooja.html" class="card-link">श्री आदिनाथ जिन पूजा 2022 New Shri Aadinath Jin Pooja</a>
+                <a href="Pages/श्री आदिनाथ जिन पूजा.html" class="card-link">श्री आदिनाथ जिन पूजा</a>
+                <a href="Pages/श्री ऋषि मण्डल पूजा.html" class="card-link">श्री ऋषि मण्डल पूजा</a>
+                <a href="Pages/श्री कलिकुंड पार्श्वनाथ जिन पूजा.html" class="card-link">श्री कलिकुंड पार्श्वनाथ जिन पूजा</a>
+                <a href="Pages/श्री कुंथुनाथ जी जिन पूजा.html" class="card-link">श्री कुंथुनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री कुन्थुनाथ जिन पूजा 2022.html" class="card-link">श्री कुन्थुनाथ जिन पूजा 2022</a>
+                <a href="Pages/श्री कैलासगिरि पूजा Shri Kailas Giri Pooja.html" class="card-link">श्री कैलासगिरि पूजा Shri Kailas Giri Pooja</a>
+                <a href="Pages/श्री गौतम गणधर पूजा.html" class="card-link">श्री गौतम गणधर पूजा</a>
+                <a href="Pages/श्री चंद्रप्रभु जिन पूजा.html" class="card-link">श्री चंद्रप्रभु जिन पूजा</a>
+                <a href="Pages/श्री चन्द्रप्रभ जिन पूजा 2022 New Shri Chandra Prabha Jin Pooja.html" class="card-link">श्री चन्द्रप्रभ जिन पूजा 2022 New Shri Chandra Prabha Jin Pooja</a>
+                <a href="Pages/श्री देव शास्त्र गुरु पूजा Dev Shastra Guru Pooja.html" class="card-link">श्री देव शास्त्र गुरु पूजा Dev Shastra Guru Pooja</a>
+                <a href="Pages/श्री धर्मनाथ जिन पूजा 2022 New Shri Dharmnath Jin Pooja.html" class="card-link">श्री धर्मनाथ जिन पूजा 2022 New Shri Dharmnath Jin Pooja</a>
+                <a href="Pages/श्री धर्मनाथ जी जिन पूजा.html" class="card-link">श्री धर्मनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री नमिनाथ जिनपूजा 2022 New Shri Naninath Jin Pooja.html" class="card-link">श्री नमिनाथ जिनपूजा 2022 New Shri Naninath Jin Pooja</a>
+                <a href="Pages/श्री नमिनाथ जी जिन पूजा.html" class="card-link">श्री नमिनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री निर्वाण क्षेत्र लड्डू पूजा.html" class="card-link">श्री निर्वाण क्षेत्र लड्डू पूजा</a>
+                <a href="Pages/श्री नेमिनाथ जिन पूजा 2022 New Neminath Jin Pooja.html" class="card-link">श्री नेमिनाथ जिन पूजा 2022 New Neminath Jin Pooja</a>
+                <a href="Pages/श्री नेमिनाथ जी जिन पूजा.html" class="card-link">श्री नेमिनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री पंच परमेष्ठी पूजा.html" class="card-link">श्री पंच परमेष्ठी पूजा</a>
+                <a href="Pages/श्री पद्मप्रभ जिन पूजा (बाड़ा).html" class="card-link">श्री पद्मप्रभ जिन पूजा (बाड़ा)</a>
+                <a href="Pages/श्री पद्मप्रभ जिन पूजा 2022 New Shri Padmaprabh Jin Pooja.html" class="card-link">श्री पद्मप्रभ जिन पूजा 2022 New Shri Padmaprabh Jin Pooja</a>
+                <a href="Pages/श्री पार्श्वनाथ जिन पूजा (बख्तावर सिंह)- SHRI PARSHWANATH JIN POOJA.html" class="card-link">श्री पार्श्वनाथ जिन पूजा (बख्तावर सिंह)- SHRI PARSHWANATH JIN POOJA</a>
+                <a href="Pages/श्री पार्श्वनाथ जिन पूजा 2022 New Parasnath Jin Pooja.html" class="card-link">श्री पार्श्वनाथ जिन पूजा 2022 New Parasnath Jin Pooja</a>
+                <a href="Pages/श्री पार्श्वनाथ-जिन पूजा (पुष्पेंदु).html" class="card-link">श्री पार्श्वनाथ-जिन पूजा (पुष्पेंदु)</a>
+                <a href="Pages/श्री पुष्पदंत जिन पूजा.html" class="card-link">श्री पुष्पदंत जिन पूजा</a>
+                <a href="Pages/श्री पुष्पदन्त जिन पूजा 2022 New Shri Pushpdant Jin Pooja.html" class="card-link">श्री पुष्पदन्त जिन पूजा 2022 New Shri Pushpdant Jin Pooja</a>
+                <a href="Pages/श्री बाहुबली पूजा.html" class="card-link">श्री बाहुबली पूजा</a>
+                <a href="Pages/श्री बड़े बाबा विधान.html" class="card-link">श्री बड़े बाबा विधान</a>
+                <a href="Pages/श्री मल्लिनाथ जिन पूजा 2022 New Shri Mallinath Jin Pooja.html" class="card-link">श्री मल्लिनाथ जिन पूजा 2022 New Shri Mallinath Jin Pooja</a>
+                <a href="Pages/श्री मल्लिनाथ जी जिन पूजा.html" class="card-link">श्री मल्लिनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री महावीर जिन पूजा 2022 New Shri Mahaveer Jin Pooja.html" class="card-link">श्री महावीर जिन पूजा 2022 New Shri Mahaveer Jin Pooja</a>
+                <a href="Pages/श्री महावीर स्वामी जिन पूजा.html" class="card-link">श्री महावीर स्वामी जिन पूजा</a>
+                <a href="Pages/श्री मुनिसुव्रतनाथ जी पूजा.html" class="card-link">श्री मुनिसुव्रतनाथ जी पूजा</a>
+                <a href="Pages/श्री मुनिसुव्रतनाथ पूजा 2022 New Shri Muni Subratnath Jin Pooja.html" class="card-link">श्री मुनिसुव्रतनाथ पूजा 2022 New Shri Muni Subratnath Jin Pooja</a>
+                <a href="Pages/श्री वासुपूज्य जिनपूजा 2022 New Shri Vasupujya Jin Pooja.html" class="card-link">श्री वासुपूज्य जिनपूजा 2022 New Shri Vasupujya Jin Pooja</a>
+                <a href="Pages/श्री वासुपूज्य जी जिन पूजा.html" class="card-link">श्री वासुपूज्य जी जिन पूजा</a>
+                <a href="Pages/श्री विमलनाथ जिन पूजा 2022 New Shri Vimalnath Jin Pooja.html" class="card-link">श्री विमलनाथ जिन पूजा 2022 New Shri Vimalnath Jin Pooja</a>
+                <a href="Pages/श्री विमलनाथ जी जिन पूजा.html" class="card-link">श्री विमलनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री विष्णुकुमार महामुनि पूजा.html" class="card-link">श्री विष्णुकुमार महामुनि पूजा</a>
+                <a href="Pages/श्री शंभवनाथ जिन पूजा 2022 New Shri Sambhavnath Jin Pooja.html" class="card-link">श्री शंभवनाथ जिन पूजा 2022 New Shri Sambhavnath Jin Pooja</a>
+                <a href="Pages/श्री शांतिनाथ जिन पूजा.html" class="card-link">श्री शांतिनाथ जिन पूजा</a>
+                <a href="Pages/श्री शान्तिनाथ जिन पूजा 2022.html" class="card-link">श्री शान्तिनाथ जिन पूजा 2022</a>
+                <a href="Pages/श्री शीतलनाथ जिन पूजा 2022 New Shri SheetalNath Jin Pooja.html" class="card-link">श्री शीतलनाथ जिन पूजा 2022 New Shri SheetalNath Jin Pooja</a>
+                <a href="Pages/श्री शीतलनाथ जी जिन पूजा.html" class="card-link">श्री शीतलनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री श्रेयांसनाथ जिन पूजा 2022 New Shri Shrayanshnath Jin Pooja.html" class="card-link">श्री श्रेयांसनाथ जिन पूजा 2022 New Shri Shrayanshnath Jin Pooja</a>
+                <a href="Pages/श्री श्रेयांसनाथ जी जिन पूजा.html" class="card-link">श्री श्रेयांसनाथ जी जिन पूजा</a>
+                <a href="Pages/श्री संभवनाथ जिन पूजा.html" class="card-link">श्री संभवनाथ जिन पूजा</a>
+                <a href="Pages/श्री सुपार्श्वनाथ जिन पूजा 2022 New Shri Suparshwanath Jin Pooja.html" class="card-link">श्री सुपार्श्वनाथ जिन पूजा 2022 New Shri Suparshwanath Jin Pooja</a>
+                <a href="Pages/श्री सुपार्श्वनाथ जिन पूजा.html" class="card-link">श्री सुपार्श्वनाथ जिन पूजा</a>
+                <a href="Pages/श्री सुमतिनाथ जिन पूजा 2022 New Shri Sumatinath Jin Pooja.html" class="card-link">श्री सुमतिनाथ जिन पूजा 2022 New Shri Sumatinath Jin Pooja</a>
+                <a href="Pages/श्री सुमतिनाथ जिन पूजा.html" class="card-link">श्री सुमतिनाथ जिन पूजा</a>
+            </div>
+        </section>
+
+        <!-- Aarti Section -->
+        <section id="aarti" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-fire category-icon"></i>Aarti (आरती)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Shri Shantinath Bhagwan ki Aarti.html" class="card-link">Shri Shantinath Bhagwan ki Aarti</a>
+                <a href="Pages/आदिनाथ भगवान की आरती.html" class="card-link">आदिनाथ भगवान की आरती</a>
+                <a href="Pages/आरती पंचपरमेष्ठी.html" class="card-link">आरती पंचपरमेष्ठी</a>
+                <a href="Pages/आरती श्री आचार्य विद्यासागर जी- Aarti Shree Vidyasagar Maharaj Ji.html" class="card-link">आरती श्री आचार्य विद्यासागर जी- Aarti Shree Vidyasagar Maharaj Ji</a>
+                <a href="Pages/आरती श्री शांतिनाथ भगवान की.html" class="card-link">आरती श्री शांतिनाथ भगवान की</a>
+                <a href="Pages/चतुर्थकालीन सॉंगानेर वाले बाबा ऋषभदेव की आरती.html" class="card-link">चतुर्थकालीन सॉंगानेर वाले बाबा ऋषभदेव की आरती</a>
+                <a href="Pages/चौबीसों भगवान की आरती.html" class="card-link">चौबीसों भगवान की आरती</a>
+                <a href="Pages/भक्ति बेकरार है आनंद अपार है.html" class="card-link">भक्ति बेकरार है आनंद अपार है</a>
+                <a href="Pages/भगवान आदिनाथ की आरती.html" class="card-link">भगवान आदिनाथ की आरती</a>
+                <a href="Pages/श्री पारसनाथ जी की आरती Parasnath Bhagwan Aarti.html" class="card-link">श्री पारसनाथ जी की आरती Parasnath Bhagwan Aarti</a>
+                <a href="Pages/श्री शांतिनाथ भगवान की आरती.html" class="card-link">श्री शांतिनाथ भगवान की आरती</a>
+                <a href="Pages/श्री शांतिनाथजी भगवान् आरती - Shri Shantinath Ji Bhagwan ki Aarti.html" class="card-link">श्री शांतिनाथजी भगवान् आरती - Shri Shantinath Ji Bhagwan ki Aarti</a>
+            </div>
+        </section>
+
+        <!-- Bhajan Section -->
+        <section id="bhajan" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-music category-icon"></i>Bhajan (भजन)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Bhagwan Mahaveer (Bhajan).html" class="card-link">Bhagwan Mahaveer (Bhajan)</a>
+                <a href="Pages/Jab Koi Nahi Aata Mere Dada Aate Hai Lyrics.html" class="card-link">Jab Koi Nahi Aata Mere Dada Aate Hai Lyrics</a>
+                <a href="Pages/Tumse Lagi Lagan (Bhajan).html" class="card-link">Tumse Lagi Lagan (Bhajan)</a>
+                <a href="Pages/Yeh Sach hai ki Navkar mai.html" class="card-link">Yeh Sach hai ki Navkar mai</a>
+                <a href="Pages/अपना करना हो कल्याण, साँचे गुरुवर को पहिचान... Jain Bhajan.html" class="card-link">अपना करना हो कल्याण, साँचे गुरुवर को पहिचान... Jain Bhajan</a>
+                <a href="Pages/अमृत से गगरी भरो, कि न्हवन प्रभु आज करेंगे.. Bhajan.html" class="card-link">अमृत से गगरी भरो, कि न्हवन प्रभु आज करेंगे.. Bhajan</a>
+                <a href="Pages/आत्मा अनंत गुणों का धनी.html" class="card-link">आत्मा अनंत गुणों का धनी</a>
+                <a href="Pages/एक नाम साँचा, एक नाम प्यारा...Jain Bhajan.html" class="card-link">एक नाम साँचा, एक नाम प्यारा...Jain Bhajan</a>
+                <a href="Pages/ओ जगत के शांति दाता... Jain Bhajan.html" class="card-link">ओ जगत के शांति दाता... Jain Bhajan</a>
+                <a href="Pages/कितना प्यारा तेरा द्वारा.html" class="card-link">कितना प्यारा तेरा द्वारा</a>
+                <a href="Pages/कैसी सुन्दर जिन प्रतिमा.html" class="card-link">कैसी सुन्दर जिन प्रतिमा</a>
+                <a href="Pages/गुरु ने जहां जहां भी ज्योति जलाई है...Jain Bhajan.html" class="card-link">गुरु ने जहां जहां भी ज्योति जलाई है...Jain Bhajan</a>
+                <a href="Pages/चंदन के पलना में झूले मोरे वीरा...(पालना गीत).html" class="card-link">चंदन के पलना में झूले मोरे वीरा...(पालना गीत)</a>
+                <a href="Pages/चैतन्य के दर्पण में, आनंद के आलय में...Jain Bhajan.html" class="card-link">चैतन्य के दर्पण में, आनंद के आलय में...Jain Bhajan</a>
+                <a href="Pages/जहाँ नेमी के चरण पड़े, गिरनार वो धरती है... Jain Bhajan.html" class="card-link">जहाँ नेमी के चरण पड़े, गिरनार वो धरती है... Jain Bhajan</a>
+                <a href="Pages/जीवन के किसी भी पल में वैराग्य उमड सकता है... Jain Bhajan.html" class="card-link">जीवन के किसी भी पल में वैराग्य उमड सकता है... Jain Bhajan</a>
+                <a href="Pages/तुम से लागी लगन (Bhajan).html" class="card-link">तुम से लागी लगन (Bhajan)</a>
+                <a href="Pages/तुम से लागी लगन Tum se Lagi Lagan.html" class="card-link">तुम से लागी लगन Tum se Lagi Lagan</a>
+                <a href="Pages/दुनिया से में हारी, तो आयी तेरे द्वार... Jain Bhajan.html" class="card-link">दुनिया से में हारी, तो आयी तेरे द्वार... Jain Bhajan</a>
+                <a href="Pages/धन्य धन्य वीतराग वाणी... Bhajan.html" class="card-link">धन्य धन्य वीतराग वाणी... Bhajan</a>
+                <a href="Pages/निर्ग्रंथों का मार्ग हमको प्राणों से भी प्यारा है.html" class="card-link">निर्ग्रंथों का मार्ग हमको प्राणों से भी प्यारा है</a>
+                <a href="Pages/प्रथमं मंगलम मंत्र नवकार.html" class="card-link">प्रथमं मंगलम मंत्र नवकार</a>
+                <a href="Pages/भगवान आत्मा आनंद भंडार चेतन उस पर दृष्टि कर...Jain Bhajan.html" class="card-link">भगवान आत्मा आनंद भंडार चेतन उस पर दृष्टि कर...Jain Bhajan</a>
+                <a href="Pages/भगवान मेरी नैया उस पार लगा देना.html" class="card-link">भगवान मेरी नैया उस पार लगा देना</a>
+                <a href="Pages/भगवान मेरी नैया, उस पार लगा देना.html" class="card-link">भगवान मेरी नैया, उस पार लगा देना</a>
+                <a href="Pages/मेरी झोपड़ी के भाग आज खुल जायेंगे... Jain Bhajan.html" class="card-link">मेरी झोपड़ी के भाग आज खुल जायेंगे... Jain Bhajan</a>
+                <a href="Pages/मेरे महावीर झूले पलना... Bhajan.html" class="card-link">मेरे महावीर झूले पलना... Bhajan</a>
+                <a href="Pages/मेरे सर पर रख दो भगवन (भजन).html" class="card-link">मेरे सर पर रख दो भगवन (भजन)</a>
+                <a href="Pages/मैं क्या... मेरा अस्तित्व क्या.html" class="card-link">मैं क्या... मेरा अस्तित्व क्या</a>
+                <a href="Pages/मैं ज्ञानानंद स्वभावी हूं.html" class="card-link">मैं ज्ञानानंद स्वभावी हूं</a>
+                <a href="Pages/मोक्ष के प्रेमी हमने, कर्मों से लड़ते देखें... Jain Bhajan.html" class="card-link">मोक्ष के प्रेमी हमने, कर्मों से लड़ते देखें... Jain Bhajan</a>
+                <a href="Pages/मोह जाल में फंसे हुए हैं, कर्मो ने आ घेरा... Jain Bhajan.html" class="card-link">मोह जाल में फंसे हुए हैं, कर्मो ने आ घेरा... Jain Bhajan</a>
+                <a href="Pages/रोम-रोम पुलकित हो जाय, जब जिनवर के दर्शन पाय...Jain Bhajan.html" class="card-link">रोम-रोम पुलकित हो जाय, जब जिनवर के दर्शन पाय...Jain Bhajan</a>
+                <a href="Pages/व्हाला आदिनाथ मे तो पकडयो तारो हाथ (Jain Bhajan).html" class="card-link">व्हाला आदिनाथ मे तो पकडयो तारो हाथ (Jain Bhajan)</a>
+                <a href="Pages/साधना के रास्ते, आत्मा के वास्ते चल रे राही चल.html" class="card-link">साधना के रास्ते, आत्मा के वास्ते चल रे राही चल</a>
+                <a href="Pages/सुख आते है दुःख आते है... Jain Bhajan.html" class="card-link">सुख आते है दुःख आते है... Jain Bhajan</a>
+                <a href="Pages/स्वर्ग से सुंदर अनुपम है ये जिनवर का दरबार...Jain Bhajan.html" class="card-link">स्वर्ग से सुंदर अनुपम है ये जिनवर का दरबार...Jain Bhajan</a>
+                <a href="Pages/है सीमंधर भगवान शरण ली तेरी... Jain Bhajan.html" class="card-link">है सीमंधर भगवान शरण ली तेरी... Jain Bhajan</a>
+            </div>
+        </section>
+
+        <!-- Stotra Section -->
+        <section id="stotra" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-book-tanakh category-icon"></i>Stotra (स्तोत्र)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Jain Parshvanath Ashtak पार्श्वनाथाष्टकम्.html" class="card-link">Jain Parshvanath Ashtak पार्श्वनाथाष्टकम्</a>
+                <a href="Pages/MAHAVIRASHTAK STOTRA.html" class="card-link">MAHAVIRASHTAK STOTRA</a>
+                <a href="Pages/Padmastakam Stotra (Padamprabhu Bhagwan).html" class="card-link">Padmastakam Stotra (Padamprabhu Bhagwan)</a>
+                <a href="Pages/Shri Vardhman Stotra.html" class="card-link">Shri Vardhman Stotra</a>
+                <a href="Pages/भक्तामर स्तोत्र (संस्कृत) BHAKTAMAR STOTRA.html" class="card-link">भक्तामर स्तोत्र (संस्कृत) BHAKTAMAR STOTRA</a>
+                <a href="Pages/भक्तामर स्तोत्र (हिंदी भाषा) Bhaktamar Stotra Hindi.html" class="card-link">भक्तामर स्तोत्र (हिंदी भाषा) Bhaktamar Stotra Hindi</a>
+                <a href="Pages/भक्तामर स्तोत्र की महिमा BHAKTAMAR MAHIMA.html" class="card-link">भक्तामर स्तोत्र की महिमा BHAKTAMAR MAHIMA</a>
+                <a href="Pages/भक्तामर स्तोत्र संस्कृत Bhaktamar Stotra in Sanskrit.html" class="card-link">भक्तामर स्तोत्र संस्कृत Bhaktamar Stotra in Sanskrit</a>
+                <a href="Pages/मंगलाष्टक मराठी.html" class="card-link">मंगलाष्टक मराठी</a>
+                <a href="Pages/जैन स्तोत्र.html" class="card-link">जैन स्तोत्र</a>
+                <a href="Pages/श्री पारसनाथ स्तोत्रं संस्कृत.html" class="card-link">श्री पारसनाथ स्तोत्रं संस्कृत</a>
+                <a href="Pages/श्री मंगलाष्टक स्तोत्रं Shri Mangalashtak Stotram.html" class="card-link">श्री मंगलाष्टक स्तोत्रं Shri Mangalashtak Stotram</a>
+                <a href="Pages/श्री मज्जिनसहस्रनाम स्तोत्र.html" class="card-link">श्री मज्जिनसहस्रनाम स्तोत्र</a>
+                <a href="Pages/શ્રી ભક્તામર સ્तोત્રમ્.html" class="card-link">શ્રી ભક્તામર સ્तोત્રમ્</a>
+            </div>
+        </section>
+
+        <!-- Stuti Section -->
+        <section id="stuti" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-hands-praying category-icon"></i>Stuti (स्तुति)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Acharya Vandana.html" class="card-link">Acharya Vandana</a>
+                <a href="Pages/Jinvani Stuti जिनवाणी स्तुति.html" class="card-link">Jinvani Stuti जिनवाणी स्तुति</a>
+                <a href="Pages/Shri Parshvanath Stuti श्री पार्श्वनाथ स्तुति.html" class="card-link">Shri Parshvanath Stuti श्री पार्श्वनाथ स्तुति</a>
+                <a href="Pages/जैन स्तुति पाठ.html" class="card-link">जैन स्तुति पाठ</a>
+                <a href="Pages/दर्शन पच्चीसी(तुम निरखत) Darshan Pacchisi.html" class="card-link">दर्शन पच्चीसी(तुम निरखत) Darshan Pacchisi</a>
+                <a href="Pages/दर्शन-स्तुति (प्रभु पतित-पावन) Darshan Stuti.html" class="card-link">दर्शन-स्तुति (प्रभु पतित-पावन) Darshan Stuti</a>
+                <a href="Pages/दर्शन.html" class="card-link">दर्शन</a>
+                <a href="Pages/देव-स्तुति (अहो जगत-गुरु) Dev Stuti.html" class="card-link">देव-स्तुति (अहो जगत-गुरु) Dev Stuti</a>
+                <a href="Pages/प्रातः कालीन स्तुति Prat Kaleen Stuti.html" class="card-link">प्रातः कालीन स्तुति Prat Kaleen Stuti</a>
+            </div>
+        </section>
+
+        <!-- Mantra Section -->
+        <section id="mantra" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-peace category-icon"></i>Mantra (मंत्र)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Shri Namokar Mantra Chalisa णामोकार चालीसा.html" class="card-link">Shri Namokar Mantra Chalisa णामोकार चालीसा</a>
+                <a href="Pages/णमोकार महामन्त्र Namokar Mantra in Hindi Meaning.html" class="card-link">णमोकार महामन्त्र Namokar Mantra in Hindi Meaning</a>
+                <a href="Pages/चौसठ ऋद्धि अर्घ्य.html" class="card-link">चौसठ ऋद्धि अर्घ्य</a>
+                <a href="Pages/श्री सम्मेद शिखर टोंको के अर्घ.html" class="card-link">श्री सम्मेद शिखर टोंको के अर्घ</a>
+                <a href="Pages/प्रत्येक टोंक के अर्घ्य.html" class="card-link">प्रत्येक टोंक के अर्घ्य</a>
+            </div>
+        </section>
+
+        <!-- Bhavna Section -->
+        <section id="bhavna" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-brain category-icon"></i>Bhavna (भावना)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/BARAH BHAVNA.html" class="card-link">BARAH BHAVNA</a>
+                <a href="Pages/VAIRAGYA BHAVNA.html" class="card-link">VAIRAGYA BHAVNA</a>
+                <a href="Pages/भावना गीत.html" class="card-link">भावना गीत</a>
+                <a href="Pages/भावना बत्तीसी.html" class="card-link">भावना बत्तीसी</a>
+                <a href="Pages/मेरी भावना.html" class="card-link">मेरी भावना</a>
+                <a href="Pages/समाधि भावना.html" class="card-link">समाधि भावना</a>
+            </div>
+        </section>
+
+        <!-- Parva (Festivals) Section -->
+        <section id="parva" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-calendar-days category-icon"></i>Parva (पर्व)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Daslakshan Parva दस लक्षण पर्व क्या है.html" class="card-link">Daslakshan Parva दस लक्षण पर्व क्या है</a>
+                <a href="Pages/Dus Lakshan Parva दस लक्षण पर्व क्या है.html" class="card-link">Dus Lakshan Parva दस लक्षण पर्व क्या है</a>
+                <a href="Pages/जैन धर्म में राखी क्यों मनाई जाती है (Jain Raksha Bandhan).html" class="card-link">जैन धर्म में राखी क्यों मनाई जाती है (Jain Raksha Bandhan)</a>
+                <a href="Pages/दसलक्षण पर्व.html" class="card-link">दसलक्षण पर्व</a>
+                <a href="Pages/Uttam Kshama Quotes in Hindi.html" class="card-link">Uttam Kshama Quotes in Hindi</a>
+                <a href="Pages/Michhami Dukkadam Quotes, Wishes.html" class="card-link">Michhami Dukkadam Quotes, Wishes</a>
+            </div>
+        </section>
+
+        <!-- Sacred Texts & Philosophy Section -->
+        <section id="texts" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-scroll category-icon"></i>Sacred Texts & Philosophy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Jinvani Book Poojan Paath Pradeep Jinvani Sangrah.html" class="card-link">Jinvani Book Poojan Paath Pradeep Jinvani Sangrah</a>
+                <a href="Pages/Samadhi Bhakti in Sanskrit.html" class="card-link">Samadhi Bhakti in Sanskrit</a>
+                <a href="Pages/आत्म-कीर्तन.html" class="card-link">आत्म-कीर्तन</a>
+                <a href="Pages/छह ढाला Chah Dhala.html" class="card-link">छह ढाला Chah Dhala</a>
+                <a href="Pages/जलाभिषेक वा प्रक्षाल-पाठ Jalabhishek Path.html" class="card-link">जलाभिषेक वा प्रक्षाल-पाठ Jalabhishek Path</a>
+                <a href="Pages/जिन शान्तिधारा Shantidhara.html" class="card-link">जिन शान्तिधारा Shantidhara</a>
+                <a href="Pages/जैन आलोचना पाठ.html" class="card-link">जैन आलोचना पाठ</a>
+                <a href="Pages/जैन धर्म ग्रंथ.html" class="card-link">जैन धर्म ग्रंथ</a>
+                <a href="Pages/जैन शांतिपाठ.html" class="card-link">जैन शांतिपाठ</a>
+                <a href="Pages/तत्त्वार्थ सूत्र अर्थ.html" class="card-link">तत्त्वार्थ सूत्र अर्थ</a>
+                <a href="Pages/दर्शन पाठ(दर्शनं देवदेवस्य) Darshan Paath Sanskrit.html" class="card-link">दर्शन पाठ(दर्शनं देवदेवस्य) Darshan Paath Sanskrit</a>
+                <a href="Pages/निर्वाण कांड.html" class="card-link">निर्वाण कांड</a>
+                <a href="Pages/परमर्षि स्वस्ति मंगल पाठ.html" class="card-link">परमर्षि स्वस्ति मंगल पाठ</a>
+                <a href="Pages/मंगलाचरण (चौबीस तीर्थंकर).html" class="card-link">मंगलाचरण (चौबीस तीर्थंकर)</a>
+                <a href="Pages/माघनन्दिमुनिकृताभिषेक-पाठ.html" class="card-link">माघनन्दिमुनिकृताभिषेक-पाठ</a>
+                <a href="Pages/लघु चैत्यभक्ति (वर्षेषु वर्षान्तरपर्वतेषु).html" class="card-link">लघु चैत्यभक्ति (वर्षेषु वर्षान्तरपर्वतेषु)</a>
+                <a href="Pages/विनय पाठ Vinay Path.html" class="card-link">विनय पाठ Vinay Path</a>
+                <a href="Pages/विसर्जन पाठ(हिन्दी).html" class="card-link">विसर्जन पाठ(हिन्दी)</a>
+                <a href="Pages/शास्त्र स्वाध्याय का मंगलाचरण.html" class="card-link">शास्त्र स्वाध्याय का मंगलाचरण</a>
+                <a href="Pages/श्रावक प्रतिक्रमण (लघु).html" class="card-link">श्रावक प्रतिक्रमण (लघु)</a>
+                <a href="Pages/श्रावक प्रतिक्रमण.html" class="card-link">श्रावक प्रतिक्रमण</a>
+                <a href="Pages/समाधि भक्ति पाठ (तेरी छत्र छाया).html" class="card-link">समाधि भक्ति पाठ (तेरी छत्र छाया)</a>
+                <a href="Pages/समाधि मरण पाठ- Samadhi Maran Path.html" class="card-link">समाधि मरण पाठ- Samadhi Maran Path</a>
+                <a href="Pages/समाधि-भक्ति (तेरी छत्रच्छाया).html" class="card-link">समाधि-भक्ति (तेरी छत्रच्छाया)</a>
+                <a href="Pages/समाधीमरण पाठ (लघु).html" class="card-link">समाधीमरण पाठ (लघु)</a>
+                <a href="Pages/सामायिक पाठ.html" class="card-link">सामायिक पाठ</a>
+            </div>
+        </section>
+
+        <!-- Symbols & Meanings Section -->
+        <section id="symbols" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-star-and-crescent category-icon"></i>Symbols & Meanings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Jain मंदिर मे चावल या अक्षत क्यों चढ़ाया जाता है.html" class="card-link">Jain मंदिर मे चावल या अक्षत क्यों चढ़ाया जाता है</a>
+                <a href="Pages/Om Aum Meaning.html" class="card-link">Om Aum Meaning</a>
+                <a href="Pages/Symbol Jainism जैन धर्म का प्रतीक.html" class="card-link">Symbol Jainism जैन धर्म का प्रतीक</a>
+            </div>
+        </section>
+
+        <!-- Other Topics Section -->
+        <section id="other" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-circle-info category-icon"></i>Other Topics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 link-container">
+                <a href="Pages/Gift Article Ideas for House Warming.html" class="card-link">Gift Article Ideas for House Warming</a>
+                <a href="Pages/Mutual Fund Advisor म्युचुअल फंड्स में इन्वेस्ट कैसे करे.html" class="card-link">Mutual Fund Advisor म्युचुअल फंड्स में इन्वेस्ट कैसे करे</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-8 mt-12 border-t border-orange-200">
+        <p class="text-gray-600">Jain Docs | A Tapnex Wiki Project | 2025</p>
+    </footer>
+
+    <!-- JavaScript for Search Filter -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const allLinks = document.querySelectorAll('.card-link');
+            const allSections = document.querySelectorAll('section');
+
+            searchInput.addEventListener('input', (e) => {
+                const filterValue = e.target.value.toLowerCase().trim();
+
+                allLinks.forEach(link => {
+                    const text = link.textContent.toLowerCase();
+                    if (text.includes(filterValue)) {
+                        link.style.display = 'block';
+                    } else {
+                        link.style.display = 'none';
+                    }
+                });
+
+                // Optional: Hide entire sections if no links match
+                allSections.forEach(section => {
+                    const visibleLinks = section.querySelectorAll('.card-link[style*="display: block"]');
+                    if (visibleLinks.length > 0) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
