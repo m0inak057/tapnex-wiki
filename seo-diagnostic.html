@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Diagnostic Tool - Tapnex Wiki</title>
+    <meta name="description" content="SEO diagnostic and monitoring tool for Tapnex Wiki">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .status-good { color: #4CAF50; }
+        .status-warning { color: #FF9800; }
+        .status-error { color: #f44336; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .url-test { margin: 10px 0; padding: 10px; background: #f5f5f5; border-radius: 3px; }
+        button { padding: 10px 20px; margin: 5px; background: #007cba; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #005a87; }
+        #results { margin-top: 20px; }
+        .collapsible { cursor: pointer; padding: 10px; background: #f1f1f1; margin: 5px 0; }
+        .content { display: none; padding: 10px; background: white; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Tapnex Wiki SEO Diagnostic Tool</h1>
+    
+    <div class="test-section">
+        <h2>🌐 Site Health Check</h2>
+        <button onclick="runFullDiagnostic()">Run Full SEO Diagnostic</button>
+        <button onclick="checkIndexingStatus()">Check Google Indexing Status</button>
+        <button onclick="validateSitemap()">Validate Sitemap</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+        const SITE_URL = 'https://wiki.tapnex.tech';
+        
+        // Important URLs to test
+        const TEST_URLS = [
+            '/',
+            '/EVENT-MANAGEMENT/volunteer-systems',
+            '/EVENT-MANAGEMENT/ticketing-platform', 
+            '/EVENT-MANAGEMENT/Event-budgeting',
+            '/MARKETING/social-media-strategy',
+            '/MARKETING/content-marketing',
+            '/TECHNOLOGY/Web-Development',
+            '/tools.html'
+        ];
+
+        async function runFullDiagnostic() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<h3>🔄 Running Full SEO Diagnostic...</h3>';
+            
+            let html = '<div class="test-section"><h3>📊 SEO Diagnostic Results</h3>';
+            
+            // Test 1: URL Accessibility
+            html += '<div class="collapsible" onclick="toggleContent(this)">🔗 URL Accessibility Test</div>';
+            html += '<div class="content">';
+            
+            for (const url of TEST_URLS) {
+                const fullUrl = SITE_URL + url;
+                try {
+                    const response = await fetch(fullUrl, { method: 'HEAD' });
+                    const status = response.status;
+                    const statusClass = status === 200 ? 'status-good' : 'status-error';
+                    html += `<div class="url-test">
+                        <span class="${statusClass}">📄 ${fullUrl}</span><br>
+                        Status: <span class="${statusClass}">${status}</span>
+                    </div>`;
+                } catch (error) {
+                    html += `<div class="url-test">
+                        <span class="status-error">📄 ${fullUrl}</span><br>
+                        Error: <span class="status-error">${error.message}</span>
+                    </div>`;
+                }
+            }
+            html += '</div>';
+            
+            // Test 2: Meta Tags Check
+            html += '<div class="collapsible" onclick="toggleContent(this)">🏷️ Meta Tags Analysis</div>';
+            html += '<div class="content">';
+            
+            const currentPage = document;
+            const metaChecks = [
+                { name: 'Title', selector: 'title', required: true },
+                { name: 'Description', selector: 'meta[name="description"]', required: true, attr: 'content' },
+                { name: 'Keywords', selector: 'meta[name="keywords"]', required: false, attr: 'content' },
+                { name: 'Robots', selector: 'meta[name="robots"]', required: false, attr: 'content' },
+                { name: 'Canonical', selector: 'link[rel="canonical"]', required: true, attr: 'href' },
+                { name: 'OG Title', selector: 'meta[property="og:title"]', required: true, attr: 'content' },
+                { name: 'OG Description', selector: 'meta[property="og:description"]', required: true, attr: 'content' }
+            ];
+            
+            metaChecks.forEach(check => {
+                const element = currentPage.querySelector(check.selector);
+                const value = element ? (check.attr ? element.getAttribute(check.attr) : element.textContent) : null;
+                const statusClass = value ? 'status-good' : (check.required ? 'status-error' : 'status-warning');
+                const status = value ? '✅ Found' : (check.required ? '❌ Missing' : '⚠️ Optional');
+                
+                html += `<div class="url-test">
+                    <strong>${check.name}:</strong> <span class="${statusClass}">${status}</span><br>
+                    ${value ? `Value: <em>${value.substring(0, 100)}${value.length > 100 ? '...' : ''}</em>` : ''}
+                </div>`;
+            });
+            html += '</div>';
+            
+            // Test 3: Performance Metrics
+            html += '<div class="collapsible" onclick="toggleContent(this)">⚡ Performance Metrics</div>';
+            html += '<div class="content">';
+            
+            if ('performance' in window) {
+                const navigation = performance.getEntriesByType('navigation')[0];
+                const metrics = [
+                    { name: 'Page Load Time', value: Math.round(navigation.loadEventEnd - navigation.fetchStart), unit: 'ms' },
+                    { name: 'DOM Content Loaded', value: Math.round(navigation.domContentLoadedEventEnd - navigation.fetchStart), unit: 'ms' },
+                    { name: 'First Contentful Paint', value: 'Check Chrome DevTools', unit: '' }
+                ];
+                
+                metrics.forEach(metric => {
+                    const statusClass = typeof metric.value === 'number' && metric.value < 3000 ? 'status-good' : 'status-warning';
+                    html += `<div class="url-test">
+                        <strong>${metric.name}:</strong> <span class="${statusClass}">${metric.value} ${metric.unit}</span>
+                    </div>`;
+                });
+            }
+            html += '</div>';
+            
+            // Test 4: SEO Recommendations
+            html += '<div class="collapsible" onclick="toggleContent(this)">💡 SEO Recommendations</div>';
+            html += '<div class="content">';
+            html += `
+                <div class="url-test">
+                    <strong>Google Search Console:</strong> 
+                    <a href="https://search.google.com/search-console" target="_blank">Verify your site ownership</a>
+                </div>
+                <div class="url-test">
+                    <strong>Sitemap Submission:</strong> 
+                    Submit <code>${SITE_URL}/sitemap.xml</code> to Google Search Console
+                </div>
+                <div class="url-test">
+                    <strong>URL Inspection:</strong> 
+                    Use Google's URL Inspection tool to check individual pages
+                </div>
+                <div class="url-test">
+                    <strong>Mobile-Friendly Test:</strong> 
+                    <a href="https://search.google.com/test/mobile-friendly" target="_blank">Test your pages</a>
+                </div>
+                <div class="url-test">
+                    <strong>Page Speed Insights:</strong> 
+                    <a href="https://pagespeed.web.dev/" target="_blank">Check your site performance</a>
+                </div>
+            `;
+            html += '</div>';
+            
+            html += '</div>';
+            resultsDiv.innerHTML = html;
+        }
+
+        async function checkIndexingStatus() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <div class="test-section">
+                    <h3>🔍 Google Indexing Status Check</h3>
+                    <p>To check if your pages are indexed in Google:</p>
+                    <ol>
+                        <li>Search: <code>site:wiki.tapnex.tech</code> in Google</li>
+                        <li>Check individual pages: <code>site:wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems</code></li>
+                        <li>Use Google Search Console's URL Inspection tool</li>
+                    </ol>
+                    
+                    <h4>Quick Index Check Links:</h4>
+                    ${TEST_URLS.map(url => 
+                        `<div class="url-test">
+                            <a href="https://www.google.com/search?q=site:wiki.tapnex.tech${url}" target="_blank">
+                                Check: site:wiki.tapnex.tech${url}
+                            </a>
+                        </div>`
+                    ).join('')}
+                </div>
+            `;
+        }
+
+        async function validateSitemap() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <div class="test-section">
+                    <h3>🗺️ Sitemap Validation</h3>
+                    <p>Sitemap URL: <a href="${SITE_URL}/sitemap.xml" target="_blank">${SITE_URL}/sitemap.xml</a></p>
+                    
+                    <h4>Validation Tools:</h4>
+                    <div class="url-test">
+                        <a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html" target="_blank">
+                            XML Sitemap Validator
+                        </a>
+                    </div>
+                    <div class="url-test">
+                        <a href="https://search.google.com/search-console" target="_blank">
+                            Submit to Google Search Console
+                        </a>
+                    </div>
+                    
+                    <p><strong>Note:</strong> After fixing the trailing slash issue in vercel.json, 
+                    your sitemap URLs should now match your actual page URLs without trailing slashes.</p>
+                </div>
+            `;
+        }
+
+        function toggleContent(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Auto-run basic checks on page load
+        window.addEventListener('load', () => {
+            console.log('🔍 SEO Diagnostic Tool Loaded');
+            console.log('📊 Run diagnostic tests using the buttons above');
+        });
+    </script>
+</body>
+</html>
