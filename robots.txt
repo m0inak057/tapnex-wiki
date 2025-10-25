@@ -15,9 +15,14 @@ Allow: /images/
 # Crawl delay to be respectful
 Crawl-delay: 1
 
-# Sitemap location
+# Sitemap location - Main index sitemap
 Sitemap: https://wiki.tapnex.tech/sitemap.xml
 
-# Additional sitemaps if you have them
-# Sitemap: https://wiki.tapnex.tech/sitemap-pages.xml
-# Sitemap: https://wiki.tapnex.tech/sitemap-images.xml
+# Topic-specific sitemaps for better organization
+Sitemap: https://wiki.tapnex.tech/sitemap-core.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-technology.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-marketing.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-event-management.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-tools.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-jain-docs.xml
+Sitemap: https://wiki.tapnex.tech/sitemap-bhakti.xml

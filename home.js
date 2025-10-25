@@ -126,6 +126,20 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: ["volunteer", "volunteers", "team coordination", "volunteer management", "vms", "volunteer systems", "event volunteers", "volunteering"]
         },
         {
+            title: "Event Budgeting",
+            description: "Financial planning and budget management for successful events",
+            category: "Event Management",
+            url: "EVENT-MANAGEMENT/Event-budgeting/index.html",
+            keywords: ["budget", "budgeting", "finance", "financial planning", "event budget", "cost management", "expenses", "event finance"]
+        },
+        {
+            title: "Logistic Planning",
+            description: "Comprehensive logistics and operational planning for events",
+            category: "Event Management",
+            url: "EVENT-MANAGEMENT/Logistic-Planning/index.html",
+            keywords: ["logistics", "planning", "operations", "event logistics", "operational planning", "supply chain", "event operations"]
+        },
+        {
             title: "Event Management",
             description: "Overview of event management tools and strategies",
             category: "Event Management",
@@ -135,6 +149,76 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Technology
         {
+            title: "5G Technology",
+            description: "Fifth-generation cellular network technology and its applications",
+            category: "Technology",
+            url: "TECHNOLOGY/5G-Technology/index.html",
+            keywords: ["5g", "5g technology", "network", "cellular", "wireless", "connectivity", "mobile network", "telecommunications"]
+        },
+        {
+            title: "Agentic AI",
+            description: "Autonomous AI agents and intelligent automation systems",
+            category: "Technology",
+            url: "TECHNOLOGY/Agentic-AI/index.html",
+            keywords: ["agentic ai", "ai agents", "autonomous ai", "intelligent agents", "artificial intelligence", "automation", "ai systems"]
+        },
+        {
+            title: "APIs",
+            description: "Application Programming Interfaces and integration solutions",
+            category: "Technology",
+            url: "TECHNOLOGY/APIs/index.html",
+            keywords: ["api", "apis", "rest api", "integration", "web services", "application programming interface", "endpoints", "web api"]
+        },
+        {
+            title: "Biotech & Engineered Living Therapeutics",
+            description: "Biotechnology and advanced living therapeutic solutions",
+            category: "Technology",
+            url: "TECHNOLOGY/Biotech-&-Engineered-Living-Therapeutics/index.html",
+            keywords: ["biotech", "biotechnology", "therapeutics", "living therapeutics", "engineered biology", "bioscience", "medical tech"]
+        },
+        {
+            title: "Collaborative Sensing & Autonomous Biochemical Sensors",
+            description: "Advanced sensor networks and autonomous biochemical detection systems",
+            category: "Technology",
+            url: "TECHNOLOGY/Collaborative-Sensing-&-Autonomous-Biochemical-Sensors/index.html",
+            keywords: ["sensors", "sensing", "biochemical", "autonomous sensors", "sensor networks", "detection systems", "iot sensors"]
+        },
+        {
+            title: "Database Management",
+            description: "Database systems, design, and management best practices",
+            category: "Technology",
+            url: "TECHNOLOGY/Database-Management/index.html",
+            keywords: ["database", "db", "sql", "nosql", "database management", "data storage", "dbms", "data management"]
+        },
+        {
+            title: "DevOps",
+            description: "Development and operations practices for software delivery",
+            category: "Technology",
+            url: "TECHNOLOGY/Devops/index.html",
+            keywords: ["devops", "ci cd", "continuous integration", "deployment", "automation", "infrastructure", "dev ops"]
+        },
+        {
+            title: "Edge Computing",
+            description: "Distributed computing paradigm bringing computation closer to data sources",
+            category: "Technology",
+            url: "TECHNOLOGY/Edge-Computing/index.html",
+            keywords: ["edge computing", "edge", "distributed computing", "fog computing", "iot", "cloud edge"]
+        },
+        {
+            title: "Generative AI",
+            description: "AI systems that generate new content, text, images, and more",
+            category: "Technology",
+            url: "TECHNOLOGY/Generative-AI/index.html",
+            keywords: ["generative ai", "genai", "chatgpt", "ai generation", "llm", "large language models", "image generation", "ai content"]
+        },
+        {
+            title: "Green Nitrogen Fixation & Advanced Clean Energy",
+            description: "Sustainable nitrogen fixation and clean energy technologies",
+            category: "Technology",
+            url: "TECHNOLOGY/Green-Nitrogen-Fixation-&-Advanced-Clean-Energy/index.html",
+            keywords: ["green energy", "nitrogen fixation", "clean energy", "renewable energy", "sustainable energy", "green tech"]
+        },
+        {
             title: "NFC Technology",
             description: "Near Field Communication technology guide for events and ticketing",
             category: "Technology",
@@ -142,11 +226,39 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: ["nfc", "near field communication", "contactless", "technology", "smart cards", "tap", "rfid"]
         },
         {
+            title: "Quantum Computing",
+            description: "Quantum computing principles, applications, and future potential",
+            category: "Technology",
+            url: "TECHNOLOGY/Quantun-Computing/index.html",
+            keywords: ["quantum", "quantum computing", "qubits", "quantum mechanics", "quantum algorithms", "quantum tech"]
+        },
+        {
+            title: "Synthetic Media & Generative Watermarking",
+            description: "AI-generated media and digital watermarking technologies",
+            category: "Technology",
+            url: "TECHNOLOGY/Synthetic-Media-&-Generative-Watermarking/index.html",
+            keywords: ["synthetic media", "deepfake", "watermarking", "digital watermark", "ai media", "generated media"]
+        },
+        {
+            title: "VR Virtual Reality",
+            description: "Virtual reality technology, applications, and immersive experiences",
+            category: "Technology",
+            url: "TECHNOLOGY/VR-Virtual-Reality/index.html",
+            keywords: ["vr", "virtual reality", "immersive", "headset", "metaverse", "3d", "virtual world"]
+        },
+        {
+            title: "Web Development",
+            description: "Modern web development technologies, frameworks, and best practices",
+            category: "Technology",
+            url: "TECHNOLOGY/Web-Development/index.html",
+            keywords: ["web development", "web dev", "frontend", "backend", "html", "css", "javascript", "web design", "programming"]
+        },
+        {
             title: "Technology Solutions",
             description: "Web development, APIs, databases, and technical solutions",
             category: "Technology",
             url: "#technology", 
-            keywords: ["technology", "web development", "api", "database", "devops", "technical", "software"]
+            keywords: ["technology", "tech", "technical", "software", "it solutions"]
         },
         
         // Marketing - Core
@@ -258,6 +370,31 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: ["roi", "measurement", "analytics", "performance", "metrics", "content roi", "marketing measurement", "attribution"]
         },
         
+        // Bhakti
+        {
+            title: "Hanuman Chalisa",
+            description: "Complete Hanuman Chalisa with meaning and significance",
+            category: "Bhakti",
+            url: "bhakti/hanuman-chalisa.html",
+            keywords: ["hanuman", "chalisa", "hanuman chalisa", "bhakti", "devotional", "prayer", "hindu", "lord hanuman"]
+        },
+        {
+            title: "Bhakti",
+            description: "Devotional content and spiritual resources",
+            category: "Bhakti",
+            url: "#bhakti",
+            keywords: ["bhakti", "devotion", "spiritual", "devotional", "religious", "prayer"]
+        },
+        
+        // Jain Docs
+        {
+            title: "Jain Docs",
+            description: "Comprehensive Jain religious texts, prayers, and spiritual documentation",
+            category: "Jain Docs",
+            url: "Jain Docs/index.html",
+            keywords: ["jain", "jainism", "jain docs", "tirthankar", "mahavir", "jain prayers", "jain mantras", "jain bhajan", "jain puja", "jain stuti", "navkar mantra", "bhaktamar stotra", "jain religion", "jain dharma"]
+        },
+        
         // Main Categories
         {
             title: "Marketing Strategies",
@@ -265,6 +402,13 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Marketing",
             url: "#marketing",
             keywords: ["marketing", "strategy", "campaigns", "digital marketing", "marketing strategies"]
+        },
+        {
+            title: "Tools",
+            description: "Useful online tools and utilities",
+            category: "Tools",
+            url: "tools.html",
+            keywords: ["tools", "utilities", "calculator", "converter", "generator", "online tools", "web tools"]
         }
     ];
 
