@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Event-budgeting/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Event-budgeting/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Logistic-Planning/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/Logistic-Planning/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/ticketing-platform/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/ticketing-platform/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems/</loc>
+        <loc>https://wiki.tapnex.tech/EVENT-MANAGEMENT/volunteer-systems/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
