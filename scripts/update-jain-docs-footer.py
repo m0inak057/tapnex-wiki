@@ -1,208 +1,15 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>भगवान मुनिसुव्रतनाथ(Munisubratnath) - Tapnex Wiki - जैन धर्म संग्रह</title>
-    <meta name="description" content="मुनिसुव्रतनाथ(Bhagwan Munisubratnath) या मुनिसुव्रत जैन धर्म के २० वें तीर्थंकर माने गए हैं। उनके पिता का नाम सुमित्र और माता का नाम पद्यावती था। ये भगवान राम">
-    <meta name="keywords" content="मुनिसुव्रतनाथ, पढ, भगवान, by, उनक, पर, नील, वन, स्थान, jainism, my, munisubratnath, swarn, jain, तीर्थंकर, जैन, धर्म, २०, मान, जैन धर्म, जिनवाणी, Tapnex Wiki">
-    <meta name="author" content="Tapnex Wiki Team">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="hi_IN">
-    <meta property="og:title" content="भगवान मुनिसुव्रतनाथ(Munisubratnath) - Tapnex Wiki - जैन धर्म संग्रह">
-    <meta property="og:description" content="मुनिसुव्रतनाथ(Bhagwan Munisubratnath) या मुनिसुव्रत जैन धर्म के २० वें तीर्थंकर माने गए हैं। उनके पिता का नाम सुमित्र और माता का नाम पद्यावती था। ये भगवान राम">
-    <meta property="og:url" content="https://wiki.tapnex.tech/jain-docs/भगवन-मनसवरतनथmunisubratnath">
-    <meta property="og:site_name" content="Tapnex Wiki - जैन धर्म संग्रह">
-    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="भगवान मुनिसुव्रतनाथ(Munisubratnath) - Tapnex Wiki - जैन धर्म संग्रह">
-    <meta name="twitter:description" content="मुनिसुव्रतनाथ(Bhagwan Munisubratnath) या मुनिसुव्रत जैन धर्म के २० वें तीर्थंकर माने गए हैं। उनके पिता का नाम सुमित्र और माता का नाम पद्यावती था। ये भगवान राम">
-    <meta name="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
-    <meta name="twitter:site" content="@tapnex">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://wiki.tapnex.tech/jain-docs/भगवन-मनसवरतनथmunisubratnath">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-    "headline": "भगवान मुनिसुव्रतनाथ(Munisubratnath) - Tapnex Wiki - जैन धर्म संग्रह",
-      "description": "मुनिसुव्रतनाथ(Bhagwan Munisubratnath) या मुनिसुव्रत जैन धर्म के २० वें तीर्थंकर माने गए हैं। उनके पिता का नाम सुमित्र और माता का नाम पद्यावती था। ये भगवान राम",
-      "keywords": "मुनिसुव्रतनाथ, पढ, भगवान, by, उनक, पर, नील, वन, स्थान, jainism, my, munisubratnath, swarn, jain, तीर्थंकर, जैन, धर्म, २०, मान, जैन धर्म, जिनवाणी, Tapnex Wiki",
-            "author": {
-                "@type": "Organization",
-                "name": "Tapnex Wiki Team",
-                "url": "https://wiki.tapnex.tech"
-            },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tapnex Wiki",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://wiki.tapnex.tech/images/TAPNEX_LOGO.png"
-        }
-      },
-      "inLanguage": "hi",
-      "about": {
-        "@type": "Thing",
-        "name": "Jainism",
-        "description": "जैन धर्म"
-      }
-    }
-    </script>
-    
-    <!-- Additional Ad Styles -->
-    <link rel="stylesheet" href="../additional-ad-styles.css">
-    
-    <!-- Article Styles -->
-    <link rel="stylesheet" href="../styles/article-styles.css">
-    
-    <!-- Article Scripts -->
-    <script src="../scripts/article-scripts.js" defer></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-     crossorigin="anonymous"></script>
-</head>
-<body>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
+#!/usr/bin/env python3
+"""
+Script to update footer section in all Jain Docs HTML files
+Replaces existing footer with the one from ticketing platform
+"""
 
-    <div class="page-wrapper">
-        <aside class="sidebar" role="navigation" aria-label="Main navigation">
-            <div class="sidebar-header">
-                <div class="sidebar-logo">
-                    <a href="../../index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;" title="Go to Tapnex Wiki Home">
-                        
-                        <h1>Wiki</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="search-bar">
-                <label for="search-input" class="sr-only">Search Jain Docs</label>
-                <input type="text" id="search-input" placeholder="Search Jain Docs..." aria-label="Search Jain Docs">
-            </div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="../../index.html">← Back to Home</a></li>
-                    <li>
-                        <span class="nav-toggle">Mantras & Prayers</span>
-                        <ul class="submenu">
-                            <li><a href="णमोकार महामन्त्र Namokar Mantra in Hindi Meaning.html">Namokar Mantra</a></li>
-                            <li><a href="णामोकार महामंत्र पूजा Namokar MahaMantra Puja.html">Namokar Mantra Puja</a></li>
-                            <li><a href="भक्तामर स्तोत्र (संस्कृत) BHAKTAMAR STOTRA.html">Bhaktamar Stotra (Sanskrit)</a></li>
-                            <li><a href="भक्तामर स्तोत्र (हिंदी भाषा) Bhaktamar Stotra Hindi.html">Bhaktamar Stotra (Hindi)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="nav-toggle">Tirthankaras</span>
-                        <ul class="submenu">
-                            <li><a href="Bhagwan Aadinath (ऋषभदेव) जैन धर्म के पहले तीर्थंकर.html">Bhagwan Aadinath</a></li>
-                            <li><a href="Bhagwan Mahaveer Swami.html">Bhagwan Mahaveer</a></li>
-                            <li><a href="Bhagwan Parshvanath (पार्श्वनाथ).html">Bhagwan Parshvanath</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="nav-toggle">Pujas & Rituals</span>
-                        <ul class="submenu">
-                            <li><a href="Diwali Poojan.html">Diwali Poojan</a></li>
-                            <li><a href="KSHAMAVANI POOJA.html">Kshamavani Pooja</a></li>
-                            <li><a href="दस लक्षण पूजा.html">Das Lakshan Pooja</a></li>
-                            <li><a href="सिद्धपूजा (भावाष्टक) हीराचंद जी.html">Siddha Puja</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="nav-toggle">Chalisa</span>
-                        <ul class="submenu">
-                            <li><a href="श्री महावीर चालीसा.html">Shri Mahaveer Chalisa</a></li>
-                            <li><a href="श्री पार्श्वनाथ चालीसा.html">Shri Parshvanath Chalisa</a></li>
-                            <li><a href="Shri Shantinath Chalisa.html">Shri Shantinath Chalisa</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="nav-toggle">Aartis & Stutis</span>
-                        <ul class="submenu">
-                            <li><a href="आदिनाथ भगवान की आरती.html">Aadinath Aarti</a></li>
-                            <li><a href="चौबीसों भगवान की आरती.html">Chaubees Tirthankara Aarti</a></li>
-                            <li><a href="Jinvani Stuti जिनवाणी स्तुति.html">Jinvani Stuti</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="nav-toggle">Bhajans</span>
-                        <ul class="submenu">
-                            <li><a href="Bhagwan Mahaveer (Bhajan).html">Mahaveer Bhajan</a></li>
-                            <li><a href="Tumse Lagi Lagan (Bhajan).html">Tumse Lagi Lagan</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="../../index.html">← Back to Home</a>
-            </div>
-        </aside>
+import os
+import re
+from pathlib import Path
 
-        <main class="main-content" role="main">
-            <article><div class="ast-post-format- single-layout-1"><header class="entry-header"><h1 class="entry-title" itemprop="headline"><div style="text-align: center;"><center>भगवान मुनिसुव्रतनाथ(Munisubratnath)</center></div></h1>
-</header><div class="entry-content clear" itemprop="text"><h2><span style="font-family: 'trebuchet ms', geneva, sans-serif;"><strong>तीर्थंकर भगवान मुनिसुव्रतनाथ </strong><strong>का जीवन परिचय</strong></span></h2>
-                    <!-- AdSense - In-Content Ad -->
-                    <div class="ad-container article-mid-ad">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                             crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block; text-align:center;"
-                             data-ad-layout="in-article"
-                             data-ad-format="fluid"
-                             data-ad-client="ca-pub-4315586112110103"
-                             data-ad-slot="9288642827"></ins>
-                        <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-</div></div></div>
-
-                    
-                    <!-- AdSense - Article Bottom Ad -->
-                    <div class="ad-container article-bottom-ad">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                             crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-format="autorelaxed"
-                             data-ad-client="ca-pub-4315586112110103"
-                             data-ad-slot="9288642827"></ins>
-                        <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                    <!-- AdSense - In-Feed Ad -->
-                    <div class="ad-container article-bottom-ad">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                             crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-format="autorelaxed"
-                             data-ad-client="ca-pub-4315586112110103"
-                             data-ad-slot="1056713798"></ins>
-                        <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-
-</article>
-    </main>
-    </div>
-
-        <footer class="site-footer">
+# Define the new footer content (from ticketing platform)
+NEW_FOOTER = '''    <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section footer-brand">
                 <div class="footer-logo">
@@ -416,6 +223,65 @@
                 <p>We may revise these Terms at any time. By continuing to use the Site after changes take effect, you agree to be bound by the updated Terms.</p>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </div>'''
+
+def update_footer_in_file(file_path):
+    """Update footer in a single HTML file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Pattern to match footer section including modals
+        # Match from <footer to end of file (</body></html>)
+        pattern = r'<footer\s+class="site-footer">.*?</html>'
+        
+        # Check if footer exists
+        if not re.search(pattern, content, re.DOTALL):
+            print(f"⚠️  No footer found in: {file_path}")
+            return False
+        
+        # Replace footer with new content
+        new_content = re.sub(
+            pattern,
+            NEW_FOOTER + '\n</body>\n</html>',
+            content,
+            flags=re.DOTALL
+        )
+        
+        # Write back to file
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        
+        return True
+    except Exception as e:
+        print(f"❌ Error processing {file_path}: {e}")
+        return False
+
+def main():
+    # Base directory
+    base_dir = Path(r'c:\Users\MOINAK\OneDrive\PROJECTS\WIKI TAPNEX\Jain Docs')
+    
+    # Find all HTML files
+    html_files = list(base_dir.rglob('*.html'))
+    
+    print(f"Found {len(html_files)} HTML files in Jain Docs")
+    print("=" * 60)
+    
+    success_count = 0
+    failed_count = 0
+    
+    for html_file in html_files:
+        if update_footer_in_file(html_file):
+            print(f"✅ Updated: {html_file.relative_to(base_dir.parent)}")
+            success_count += 1
+        else:
+            failed_count += 1
+    
+    print("=" * 60)
+    print(f"\n📊 Summary:")
+    print(f"   ✅ Successfully updated: {success_count} files")
+    print(f"   ❌ Failed: {failed_count} files")
+    print(f"   📁 Total processed: {len(html_files)} files")
+
+if __name__ == "__main__":
+    main()

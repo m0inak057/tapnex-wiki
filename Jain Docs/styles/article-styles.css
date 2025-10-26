@@ -885,6 +885,11 @@
             border-radius: 16px;
         }
 
+        .article-bottom-ad {
+            margin: 3rem 0 2.5rem 0;
+            border-radius: 16px;
+        }
+
         .sidebar-ad {
             margin: 2rem 0;
             max-width: 320px;
@@ -906,7 +911,8 @@
             }
             
             .article-top-ad,
-            .article-mid-ad {
+            .article-mid-ad,
+            .article-bottom-ad {
                 margin: 2rem 0;
                 padding: 1rem;
             }
@@ -917,6 +923,13 @@
                 margin: 1rem 0;
                 padding: 0.8rem;
                 border-radius: 8px;
+            }
+            
+            .article-top-ad,
+            .article-mid-ad,
+            .article-bottom-ad {
+                margin: 1.5rem 0;
+                padding: 0.8rem;
             }
         }
 
