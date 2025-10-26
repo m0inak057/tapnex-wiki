@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashing Generator - TapNex Wiki</title>
+    <meta name="description" content="Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text input. A free, client-side utility on TapNex Wiki.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Site Styles -->
+    
+    <!-- Tool-specific Styles -->
+    <link rel="stylesheet" href="/TOOLS/Hashing-Generator/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+     crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+                </a>
+            </div>
+            
+            <div class="header-actions">
+                <a href="/index.html" class="nav-link-header">Home</a>
+                <a href="/tools.html" class="nav-link-header">Tools</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown Navigation Bar -->
+    <nav class="dropdown-nav" aria-label="Tools navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tools.html" class="nav-link">All Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Hashing Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article>
+                <h1 style="text-align: center; margin-bottom: 0.5rem;">Hashing Generator</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text input
+                </p>
+                
+                <div class="generator-container">
+                    <div class="input-section">
+                        <label for="text-input">Input Text</label>
+                        <textarea 
+                            id="text-input" 
+                            placeholder="Enter text to hash..." 
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <button id="generate-button" class="generate-button">Generate Hashes</button>
+
+                    <div class="output-section">
+                        <div class="hash-output">
+                            <label for="md5-output">MD5</label>
+                            <div class="output-row">
+                                <input type="text" id="md5-output" readonly placeholder="MD5 hash will appear here">
+                                <button class="copy-button" data-target="md5-output">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="hash-output">
+                            <label for="sha1-output">SHA-1</label>
+                            <div class="output-row">
+                                <input type="text" id="sha1-output" readonly placeholder="SHA-1 hash will appear here">
+                                <button class="copy-button" data-target="sha1-output">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="hash-output">
+                            <label for="sha256-output">SHA-256</label>
+                            <div class="output-row">
+                                <input type="text" id="sha256-output" readonly placeholder="SHA-256 hash will appear here">
+                                <button class="copy-button" data-target="sha256-output">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="hash-output">
+                            <label for="sha512-output">SHA-512</label>
+                            <div class="output-row">
+                                <input type="text" id="sha512-output" readonly placeholder="SHA-512 hash will appear here">
+                                <button class="copy-button" data-target="sha512-output">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense In-Article Ad - After Tool -->
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="9288642827"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="technology-highlight" style="margin-top: 3rem;">
+                    <h4>🔐 Hashing Features</h4>
+                    <ul>
+                        <li><strong>Multiple Algorithms:</strong> Support for MD5, SHA-1, SHA-256, and SHA-512</li>
+                        <li><strong>Client-Side Processing:</strong> All hashing is done locally in your browser</li>
+                        <li><strong>Secure Implementation:</strong> Uses Web Crypto API for SHA hashes</li>
+
+                        <!-- AdSense In-Article Ad - Middle of Features -->
+                        <div class="ad-container" style="margin: 2rem 0;">
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                                 crossorigin="anonymous"></script>
+                            <ins class="adsbygoogle"
+                                 style="display:block; text-align:center;"
+                                 data-ad-layout="in-article"
+                                 data-ad-format="fluid"
+                                 data-ad-client="ca-pub-4315586112110103"
+                                 data-ad-slot="9288642827"></ins>
+                            <script>
+                                 (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                        <li><strong>One-Click Copy:</strong> Copy any hash to clipboard instantly</li>
+                        <li><strong>No Data Storage:</strong> Input text is never saved or transmitted</li>
+                        <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+                    <h4>💡 When to Use Hashing</h4>
+                    <ul>
+                        <li><strong>Password Storage:</strong> Securely store passwords (use SHA-256 or higher)</li>
+                        <li><strong>Data Integrity:</strong> Verify files haven't been tampered with</li>
+                        <li><strong>Digital Signatures:</strong> Create unique identifiers for documents</li>
+                        <li><strong>Blockchain:</strong> Cryptographic proof-of-work and transaction verification</li>
+                        <li><strong>Checksums:</strong> Quick verification of downloaded files</li>
+                    </ul>
+                </div>
+
+                <div class="analytics-showcase" style="margin-top: 2rem;">
+                    <h4>⚠️ Security Considerations</h4>
+                    <ul>
+                        <li><strong>MD5 Deprecation:</strong> MD5 is cryptographically broken - avoid for security</li>
+                        <li><strong>SHA-1 Weaknesses:</strong> SHA-1 has known collision attacks</li>
+                        <li><strong>Recommended:</strong> Use SHA-256 or SHA-512 for new applications</li>
+                        <li><strong>Salting:</strong> Always add random salt when hashing passwords</li>
+                        <li><strong>One-Way Function:</strong> Hashes cannot be reversed to original text</li>
+                    </ul>
+                </div>
+
+                <div class="ad-container" style="margin-top: 3rem;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4315586112110103"
+                         data-ad-slot="1734728076"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- AdSense Bottom Ad - Before Footer -->
+    <div class="ad-container" style="margin: 2rem auto; max-width: 1200px; padding: 0 2rem;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+             crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4315586112110103"
+             data-ad-slot="1734728076"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="/TOOLS/Hashing-Generator/scripts.js" defer></script>
+    <script src="/TOOLS/shared/footer.js"></script>
+    
+    <!-- Main Site Scripts -->
+    <script src="../../home.js" defer></script>
+</body>
+</html>
