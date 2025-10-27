@@ -1,206 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merge Pdf Tool - Free Online Merge Pdf</title>
-    <meta name="description" content="Merge and combine multiple PDF files into one single PDF document for free. Our online PDF combiner is fast, secure, and works right in your browser. No uploads required.">
-    <meta name="keywords" content="merge pdf, combine pdf, pdf merger, free pdf merger, pdf combiner, join pdf, online pdf tool">
-    <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/Merge-PDF/">
-    <meta property="og:title" content="Free PDF Merger - Combine PDF Files Online | TapNex Wiki">
-    <meta property="og:description" content="Merge and combine multiple PDF files into one single PDF document for free. Our online PDF combiner is fast, secure, and works right in your browser.">
-    <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/Merge-PDF/">
-    <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Merge Pdf Tool - Free Online Merge Pdf</title>
+ <meta name="description" content="Merge and combine multiple PDF files into one single PDF document for free. Our online PDF combiner is fast, secure, and works right in your browser. No uploads required.">
+ <meta name="keywords" content="merge pdf, combine pdf, pdf merger, free pdf merger, pdf combiner, join pdf, online pdf tool">
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/Merge-PDF/">
+ <meta property="og:title" content="Free PDF Merger - Combine PDF Files Online | TapNex Wiki">
+ <meta property="og:description" content="Merge and combine multiple PDF files into one single PDF document for free. Our online PDF combiner is fast, secure, and works right in your browser.">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/Merge-PDF/">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- PDF-lib Library -->
-    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+ <!-- PDF-lib Library -->
+ <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
 
-    <!-- Tool-specific Styles -->
-    <link rel="stylesheet" href="/TOOLS/Merge-PDF/styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-     crossorigin="anonymous"></script>
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Merge-PDF/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
 </head>
 <body data-theme="dark">
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
-                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
-                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
-                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
-                </a>
-            </div>
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
 
-            <div class="header-actions">
-                <a href="/index.html" class="nav-link-header">Home</a>
-                <a href="/tools.html" class="nav-link-header">Tools</a>
-                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
-            </div>
-        </div>
-    </header>
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
 
-    <!-- Dropdown Navigation Bar -->
-    <nav class="dropdown-nav" aria-label="Tools navigation">
-        <div class="container">
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/tools.html" class="nav-link">All Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">PDF Merger</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">PDF Merger</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-    </button>
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
 
-    <main class="main-content">
-        <div class="content-wrapper">
-            <article>
-                <h1 style="text-align: center; margin-bottom: 0.5rem;">Free PDF Merger</h1>
-                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
-                    Combine multiple PDFs into one. Fast, free, and secure.
-                </p>
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Free PDF Merger</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Combine multiple PDFs into one. Fast, free, and secure.
+ </p>
 
-                <div class="generator-container">
-                    <div class="upload-section">
-                        <div class="upload-area" id="upload-area">
-                            <div class="upload-content">
-                                <div class="upload-icon">📄</div>
-                                <h3>Drop PDF files here or click to browse</h3>
-                                <p>Upload multiple PDF files to merge them into one document</p>
-                                <input type="file" id="pdf-upload" multiple accept="application/pdf" style="display: none;">
-                                <button class="upload-button" onclick="document.getElementById('pdf-upload').click()">Choose Files</button>
-                            </div>
-                        </div>
-                    </div>
+ <div class="generator-container">
+ <div class="upload-section">
+ <div class="upload-area" id="upload-area">
+ <div class="upload-content">
+ <div class="upload-icon">📄</div>
+ <h3>Drop PDF files here or click to browse</h3>
+ <p>Upload multiple PDF files to merge them into one document</p>
+ <input type="file" id="pdf-upload" multiple accept="application/pdf" style="display: none;">
+ <button class="upload-button" onclick="document.getElementById('pdf-upload').click()">Choose Files</button>
+ </div>
+ </div>
+ </div>
 
-                    <div class="file-list-section" id="file-list-section" style="display: none;">
-                        <h4>Files to Merge (drag to reorder)</h4>
-                        <div id="file-list" class="file-list"></div>
-                    </div>
+ <div class="file-list-section" id="file-list-section" style="display: none;">
+ <h4>Files to Merge (drag to reorder)</h4>
+ <div id="file-list" class="file-list"></div>
+ </div>
 
-                    <div class="action-section">
-                        <button id="merge-btn" class="tool-button" disabled>Merge PDFs</button>
-                        <div id="status" class="status-message" style="display: none;"></div>
-                        <div id="download-section" class="download-section" style="display: none;">
-                            <a id="download-link" class="download-button" download="merged.pdf">Download Merged PDF</a>
-                        </div>
-                    </div>
-                </div>
+ <div class="action-section">
+ <button id="merge-btn" class="tool-button" disabled>Merge PDFs</button>
+ <div id="status" class="status-message" style="display: none;"></div>
+ <div id="download-section" class="download-section" style="display: none;">
+ <a id="download-link" class="download-button" download="merged.pdf">Download Merged PDF</a>
+ </div>
+ </div>
+ </div>
 
-                <!-- AdSense In-Article Ad - After Tool -->
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block; text-align:center;"
-                         data-ad-layout="in-article"
-                         data-ad-format="fluid"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="9288642827"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
-                <div class="seo-content">
-                    <h2>How to Merge PDF Files for Free</h2>
-                    <ol>
-                        <li><strong>Upload Files:</strong> Click the "Choose Files" button or drag and drop your PDF files into the upload area.</li>
-                        <li><strong>Order Files:</strong> The files will appear in a list below. Drag and drop the files to set the correct order for merging.</li>
-                        <li><strong>Merge PDFs:</strong> Once your files are in order, click the "Merge PDFs" button.</li>
-                        <li><strong>Download:</strong> Your merged PDF will be created in seconds. Click the "Download" button to save it.</li>
-                    </ol>
+ <div class="seo-content">
+ <h2>How to Merge PDF Files for Free</h2>
+ <ol>
+ <li><strong>Upload Files:</strong> Click the "Choose Files" button or drag and drop your PDF files into the upload area.</li>
+ <li><strong>Order Files:</strong> The files will appear in a list below. Drag and drop the files to set the correct order for merging.</li>
+ <li><strong>Merge PDFs:</strong> Once your files are in order, click the "Merge PDFs" button.</li>
+ <li><strong>Download:</strong> Your merged PDF will be created in seconds. Click the "Download" button to save it.</li>
+ </ol>
 
-                    <h2>Frequently Asked Questions (FAQ)</h2>
+ <h2>Frequently Asked Questions (FAQ)</h2>
 
-                    <h3>Is this PDF merger secure?</h3>
-                    <p>Yes! This tool is 100% secure. All processing is done in your browser using JavaScript. Your files are never uploaded to a server, so your data remains private.</p>
+ <h3>Is this PDF merger secure?</h3>
+ <p>Yes! This tool is 100% secure. All processing is done in your browser using JavaScript. Your files are never uploaded to a server, so your data remains private.</p>
 
-                    <h3>Is this tool really free?</h3>
-                    <p>Yes, our PDF merger is completely free to use.</p>
+ <h3>Is this tool really free?</h3>
+ <p>Yes, our PDF merger is completely free to use.</p>
 
-                    <!-- AdSense In-Article Ad - Middle of FAQ -->
-                    <div class="ad-container" style="margin: 2rem 0;">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                             crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block; text-align:center;"
-                             data-ad-layout="in-article"
-                             data-ad-format="fluid"
-                             data-ad-client="ca-pub-4315586112110103"
-                             data-ad-slot="9288642827"></ins>
-                        <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
+ <!-- AdSense In-Article Ad - Middle of FAQ -->
+ <div class="ad-container" style="margin: 2rem 0;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
-                    <h3>How many PDF files can I combine at once?</h3>
-                    <p>You can upload and merge multiple files at once. The limit is based on your browser's memory, but it can handle most common tasks.</p>
+ <h3>How many PDF files can I combine at once?</h3>
+ <p>You can upload and merge multiple files at once. The limit is based on your browser's memory, but it can handle most common tasks.</p>
 
-                    <h3>Will my merged PDF lose quality?</h3>
-                    <p>No, the tool combines your PDFs without re-compressing them, ensuring the original quality is maintained.</p>
-                </div>
+ <h3>Will my merged PDF lose quality?</h3>
+ <p>No, the tool combines your PDFs without re-compressing them, ensuring the original quality is maintained.</p>
+ </div>
 
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="1734728076"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </article>
-        </div>
-    </main>
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
 
-    <!-- AdSense Bottom Ad - Before Footer -->
-    <div class="ad-container" style="margin: 2rem auto; max-width: 1200px; padding: 0 2rem;">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-             crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4315586112110103"
-             data-ad-slot="1734728076"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+ <!-- AdSense Bottom Ad - Before Footer -->
+ <div class="ad-container" style="margin: 2rem auto; max-width: 1200px; padding: 0 2rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
-    <!-- Footer will be loaded dynamically -->
-    <div id="footer-placeholder"></div>
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
 
-    <script src="/TOOLS/Merge-PDF/scripts.js" defer></script>
-    <script src="/TOOLS/shared/footer.js"></script>
+ <script src="/TOOLS/Merge-PDF/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
 
-    <!-- Main Site Scripts -->
-    <script src="../../home.js" defer></script>
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
 </body>
 </html>

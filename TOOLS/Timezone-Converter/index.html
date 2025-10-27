@@ -1,259 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timezone Converter Tool - Free Online Timezone Converter</title>
-    <meta name="description" content="Free online timezone converter. Convert time between different timezones instantly.">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Main Site Styles -->
-    
-    <!-- Tool-specific Styles -->
-    <link rel="stylesheet" href="/TOOLS/Timezone-Converter/styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-     crossorigin="anonymous"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Timezone Converter Tool - Free Online Timezone Converter</title>
+ <meta name="description" content="Free online timezone converter. Convert time between different timezones instantly.">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Timezone-Converter/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
 </head>
 <body data-theme="dark">
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
-                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
-                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
-                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
-                </a>
-            </div>
-            
-            <div class="header-actions">
-                <a href="/index.html" class="nav-link-header">Home</a>
-                <a href="/tools.html" class="nav-link-header">Tools</a>
-                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
-            </div>
-        </div>
-    </header>
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
 
-    <!-- Dropdown Navigation Bar -->
-    <nav class="dropdown-nav" aria-label="Tools navigation">
-        <div class="container">
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/tools.html" class="nav-link">All Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Timezone Converter</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Timezone Converter</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
 
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-    </button>
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
 
-    <main class="main-content">
-        <div class="content-wrapper">
-            <article>
-                <h1 style="text-align: center; margin-bottom: 0.5rem;">Timezone Converter</h1>
-                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
-                    Convert time between different cities and timezones around the world
-                </p>
-                
-                <div class="timezone-container">
-                    <!-- Current Time Display -->
-                    <div class="current-time-section">
-                        <div class="current-time-label">Current Time</div>
-                        <div class="current-time-display" id="current-time"></div>
-                        <div class="current-date-display" id="current-date"></div>
-                    </div>
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Timezone Converter</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Convert time between different cities and timezones around the world
+ </p>
+ 
+ <div class="timezone-container">
+ <!-- Current Time Display -->
+ <div class="current-time-section">
+ <div class="current-time-label">Current Time</div>
+ <div class="current-time-display" id="current-time"></div>
+ <div class="current-date-display" id="current-date"></div>
+ </div>
 
-                    <!-- Source Timezone -->
-                    <div class="timezone-section">
-                        <label for="source-timezone">From Timezone</label>
-                        <select id="source-timezone" class="timezone-select">
-                            <option value="UTC">UTC - Coordinated Universal Time</option>
-                            <option value="America/New_York">New York (EST/EDT)</option>
-                            <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
-                            <option value="America/Chicago">Chicago (CST/CDT)</option>
-                            <option value="America/Denver">Denver (MST/MDT)</option>
-                            <option value="Europe/London">London (GMT/BST)</option>
-                            <option value="Europe/Paris">Paris (CET/CEST)</option>
-                            <option value="Europe/Berlin">Berlin (CET/CEST)</option>
-                            <option value="Europe/Moscow">Moscow (MSK)</option>
-                            <option value="Asia/Dubai">Dubai (GST)</option>
-                            <option value="Asia/Kolkata">Mumbai/Delhi (IST)</option>
-                            <option value="Asia/Shanghai">Shanghai (CST)</option>
-                            <option value="Asia/Tokyo">Tokyo (JST)</option>
-                            <option value="Asia/Singapore">Singapore (SGT)</option>
-                            <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
-                            <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
-                            <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
-                        </select>
+ <!-- Source Timezone -->
+ <div class="timezone-section">
+ <label for="source-timezone">From Timezone</label>
+ <select id="source-timezone" class="timezone-select">
+ <option value="UTC">UTC - Coordinated Universal Time</option>
+ <option value="America/New_York">New York (EST/EDT)</option>
+ <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+ <option value="America/Chicago">Chicago (CST/CDT)</option>
+ <option value="America/Denver">Denver (MST/MDT)</option>
+ <option value="Europe/London">London (GMT/BST)</option>
+ <option value="Europe/Paris">Paris (CET/CEST)</option>
+ <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+ <option value="Europe/Moscow">Moscow (MSK)</option>
+ <option value="Asia/Dubai">Dubai (GST)</option>
+ <option value="Asia/Kolkata">Mumbai/Delhi (IST)</option>
+ <option value="Asia/Shanghai">Shanghai (CST)</option>
+ <option value="Asia/Tokyo">Tokyo (JST)</option>
+ <option value="Asia/Singapore">Singapore (SGT)</option>
+ <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+ <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+ <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+ </select>
 
-                        <div class="time-input-group">
-                            <label for="source-time">Time</label>
-                            <input type="time" id="source-time" class="time-input">
-                        </div>
+ <div class="time-input-group">
+ <label for="source-time">Time</label>
+ <input type="time" id="source-time" class="time-input">
+ </div>
 
-                        <div class="date-input-group">
-                            <label for="source-date">Date</label>
-                            <input type="date" id="source-date" class="date-input">
-                        </div>
-                    </div>
+ <div class="date-input-group">
+ <label for="source-date">Date</label>
+ <input type="date" id="source-date" class="date-input">
+ </div>
+ </div>
 
-                    <!-- Convert Button -->
-                    <div class="convert-button-container">
-                        <button id="convert-btn" class="btn btn-convert">
-                            <span>🌍</span> Convert Time
-                        </button>
-                    </div>
+ <!-- Convert Button -->
+ <div class="convert-button-container">
+ <button id="convert-btn" class="btn btn-convert">
+ <span>🌍</span> Convert Time
+ </button>
+ </div>
 
-                    <!-- Target Timezone -->
-                    <div class="timezone-section">
-                        <label for="target-timezone">To Timezone</label>
-                        <select id="target-timezone" class="timezone-select">
-                            <option value="UTC">UTC - Coordinated Universal Time</option>
-                            <option value="America/New_York">New York (EST/EDT)</option>
-                            <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
-                            <option value="America/Chicago">Chicago (CST/CDT)</option>
-                            <option value="America/Denver">Denver (MST/MDT)</option>
-                            <option value="Europe/London">London (GMT/BST)</option>
-                            <option value="Europe/Paris">Paris (CET/CEST)</option>
-                            <option value="Europe/Berlin">Berlin (CET/CEST)</option>
-                            <option value="Europe/Moscow">Moscow (MSK)</option>
-                            <option value="Asia/Dubai">Dubai (GST)</option>
-                            <option value="Asia/Kolkata">Mumbai/Delhi (IST)</option>
-                            <option value="Asia/Shanghai">Shanghai (CST)</option>
-                            <option value="Asia/Tokyo">Tokyo (JST)</option>
-                            <option value="Asia/Singapore">Singapore (SGT)</option>
-                            <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
-                            <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
-                            <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
-                        </select>
+ <!-- Target Timezone -->
+ <div class="timezone-section">
+ <label for="target-timezone">To Timezone</label>
+ <select id="target-timezone" class="timezone-select">
+ <option value="UTC">UTC - Coordinated Universal Time</option>
+ <option value="America/New_York">New York (EST/EDT)</option>
+ <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+ <option value="America/Chicago">Chicago (CST/CDT)</option>
+ <option value="America/Denver">Denver (MST/MDT)</option>
+ <option value="Europe/London">London (GMT/BST)</option>
+ <option value="Europe/Paris">Paris (CET/CEST)</option>
+ <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+ <option value="Europe/Moscow">Moscow (MSK)</option>
+ <option value="Asia/Dubai">Dubai (GST)</option>
+ <option value="Asia/Kolkata">Mumbai/Delhi (IST)</option>
+ <option value="Asia/Shanghai">Shanghai (CST)</option>
+ <option value="Asia/Tokyo">Tokyo (JST)</option>
+ <option value="Asia/Singapore">Singapore (SGT)</option>
+ <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+ <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+ <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+ </select>
 
-                        <div class="result-display" id="result-display">
-                            <div class="result-time">--:--</div>
-                            <div class="result-date">Select time and convert</div>
-                        </div>
-                    </div>
+ <div class="result-display" id="result-display">
+ <div class="result-time">--:--</div>
+ <div class="result-date">Select time and convert</div>
+ </div>
+ </div>
 
-                    <!-- Quick Actions -->
-                    <div class="controls secondary-controls">
-                        <button id="use-current-btn" class="btn btn-secondary">
-                            <span>⏰</span> Use Current Time
-                        </button>
-                        <button id="swap-btn" class="btn btn-secondary">
-                            <span>🔄</span> Swap Timezones
-                        </button>
-                    </div>
-                </div>
+ <!-- Quick Actions -->
+ <div class="controls secondary-controls">
+ <button id="use-current-btn" class="btn btn-secondary">
+ <span>⏰</span> Use Current Time
+ </button>
+ <button id="swap-btn" class="btn btn-secondary">
+ <span>🔄</span> Swap Timezones
+ </button>
+ </div>
+ </div>
 
-                <!-- AdSense In-Article Ad - After Tool -->
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block; text-align:center;"
-                         data-ad-layout="in-article"
-                         data-ad-format="fluid"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="9288642827"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
-                <div class="technology-highlight" style="margin-top: 3rem;">
-                    <h4>✨ Features</h4>
-                    <ul>
-                        <li><strong>Real-Time Clock:</strong> Live display of current time in your timezone</li>
-                        <li><strong>Multiple Timezones:</strong> Support for major cities and timezones worldwide</li>
-                        <li><strong>Date Conversion:</strong> Handles date changes across timezones automatically</li>
-                        <li><strong>Quick Actions:</strong> Use current time or swap timezones instantly</li>
-                        <li><strong>DST Aware:</strong> Automatically handles Daylight Saving Time changes</li>
-                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
-                    </ul>
-                </div>
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Real-Time Clock:</strong> Live display of current time in your timezone</li>
+ <li><strong>Multiple Timezones:</strong> Support for major cities and timezones worldwide</li>
+ <li><strong>Date Conversion:</strong> Handles date changes across timezones automatically</li>
+ <li><strong>Quick Actions:</strong> Use current time or swap timezones instantly</li>
+ <li><strong>DST Aware:</strong> Automatically handles Daylight Saving Time changes</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
 
-                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
-                    <h4>🌍 How to Use</h4>
-                    <ul>
-                        <li><strong>Select Source Timezone:</strong> Choose the timezone you're converting from</li>
-                        <li><strong>Enter Time & Date:</strong> Input the time and date you want to convert</li>
-                        <li><strong>Select Target Timezone:</strong> Choose the timezone you want to convert to</li>
-                        <li><strong>Click Convert:</strong> Press "Convert Time" to see the result</li>
-                        <li><strong>Quick Convert:</strong> Click "Use Current Time" to convert the current time</li>
-                        <li><strong>Swap Zones:</strong> Click "Swap Timezones" to reverse the conversion</li>
-                    </ul>
-                </div>
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🌍 How to Use</h4>
+ <ul>
+ <li><strong>Select Source Timezone:</strong> Choose the timezone you're converting from</li>
+ <li><strong>Enter Time & Date:</strong> Input the time and date you want to convert</li>
+ <li><strong>Select Target Timezone:</strong> Choose the timezone you want to convert to</li>
+ <li><strong>Click Convert:</strong> Press "Convert Time" to see the result</li>
+ <li><strong>Quick Convert:</strong> Click "Use Current Time" to convert the current time</li>
+ <li><strong>Swap Zones:</strong> Click "Swap Timezones" to reverse the conversion</li>
+ </ul>
+ </div>
 
-                <div class="technology-highlight" style="margin-top: 2rem;">
-                    <h4>🕐 Popular Timezone Conversions</h4>
-                    <ul>
-                        <li><strong>EST to GMT:</strong> New York to London (-5 hours)</li>
-                        <li><strong>PST to IST:</strong> Los Angeles to India (+13.5 hours)</li>
-                        <li><strong>UTC to JST:</strong> Coordinated Time to Tokyo (+9 hours)</li>
-                        <li><strong>CET to EST:</strong> Paris to New York (-6 hours)</li>
-                        <li><strong>AEST to PST:</strong> Sydney to Los Angeles (-18 hours)</li>
-                    </ul>
-                    <p><strong>Note:</strong> Time differences may vary during Daylight Saving Time transitions.</p>
-                </div>
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🕐 Popular Timezone Conversions</h4>
+ <ul>
+ <li><strong>EST to GMT:</strong> New York to London (-5 hours)</li>
+ <li><strong>PST to IST:</strong> Los Angeles to India (+13.5 hours)</li>
+ <li><strong>UTC to JST:</strong> Coordinated Time to Tokyo (+9 hours)</li>
+ <li><strong>CET to EST:</strong> Paris to New York (-6 hours)</li>
+ <li><strong>AEST to PST:</strong> Sydney to Los Angeles (-18 hours)</li>
+ </ul>
+ <p><strong>Note:</strong> Time differences may vary during Daylight Saving Time transitions.</p>
+ </div>
 
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="1734728076"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </article>
-        </div>
-    </main>
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
 
-    <!-- Tools Navigation Footer -->
-    <!-- Footer will be loaded dynamically -->
-    <div id="footer-placeholder"></div>
-    
-    <script src="/TOOLS/Timezone-Converter/scripts.js" defer></script>
-    <script src="/TOOLS/shared/footer.js"></script>
-    
-    <!-- Main Site Scripts -->
-    <script src="../../home.js" defer></script>
-    <!-- AdSense - In-Feed Ad -->
-    <div class="ad-container" style="margin-top: 3rem;">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-             crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="autorelaxed"
-             data-ad-client="ca-pub-4315586112110103"
-             data-ad-slot="1056713798"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Timezone-Converter/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ <!-- AdSense - In-Feed Ad -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1056713798"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
 </body>
 </html>
