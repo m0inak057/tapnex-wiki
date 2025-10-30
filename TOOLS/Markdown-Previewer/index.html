@@ -1,221 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Previewer - TapNex Tools</title>
-    <meta name="description" content="Real-time Markdown previewer with live rendering. Write Markdown and see instant HTML preview.">
-    <!-- Marked.js Library for Markdown Parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Main Site Styles -->
-    
-    <!-- Tool-specific Styles -->
-    <link rel="stylesheet" href="/TOOLS/Markdown-Previewer/styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-     crossorigin="anonymous"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Markdown Previewer Tool - Free Online Markdown Previewer</title>
+ <meta name="description" content="Free online Markdown previewer. Preview and convert Markdown to HTML instantly.">
+ <!-- Marked.js Library for Markdown Parsing -->
+ <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Markdown-Previewer/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
 </head>
 <body data-theme="dark">
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
-                <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
-                    <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
-                    <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
-                </a>
-            </div>
-            
-            <div class="header-actions">
-                <a href="/index.html" class="nav-link-header">Home</a>
-                <a href="/tools.html" class="nav-link-header">Tools</a>
-                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
-            </div>
-        </div>
-    </header>
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
 
-    <!-- Dropdown Navigation Bar -->
-    <nav class="dropdown-nav" aria-label="Tools navigation">
-        <div class="container">
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/tools.html" class="nav-link">All Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Markdown Previewer</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Markdown Previewer</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
 
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-    </button>
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
 
-    <main class="main-content">
-        <div class="content-wrapper">
-            <article>
-                <h1 style="text-align: center; margin-bottom: 0.5rem;">Markdown Previewer</h1>
-                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
-                    Write Markdown and see live HTML preview in real-time
-                </p>
-                
-                <div class="previewer-container">
-                    <!-- Editor Panel -->
-                    <div class="editor-panel">
-                        <div class="panel-header">
-                            <h3>✍️ Markdown Editor</h3>
-                            <div class="panel-actions">
-                                <button id="copy-markdown-btn" class="small-btn" title="Copy Markdown">
-                                    📋 Copy
-                                </button>
-                                <button id="clear-btn" class="small-btn" title="Clear Editor">
-                                    🗑️ Clear
-                                </button>
-                            </div>
-                        </div>
-                        <textarea 
-                            id="markdown-input" 
-                            placeholder="Type your Markdown here..."
-                            spellcheck="false"
-                        ></textarea>
-                    </div>
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Markdown Previewer</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Write Markdown and see live HTML preview in real-time
+ </p>
+ 
+ <div class="previewer-container">
+ <!-- Editor Panel -->
+ <div class="editor-panel">
+ <div class="panel-header">
+ <h3>✍️ Markdown Editor</h3>
+ <div class="panel-actions">
+ <button id="copy-markdown-btn" class="small-btn" title="Copy Markdown">
+ 📋 Copy
+ </button>
+ <button id="clear-btn" class="small-btn" title="Clear Editor">
+ 🗑️ Clear
+ </button>
+ </div>
+ </div>
+ <textarea 
+ id="markdown-input" 
+ placeholder="Type your Markdown here..."
+ spellcheck="false"
+ ></textarea>
+ </div>
 
-                    <!-- Preview Panel -->
-                    <div class="preview-panel">
-                        <div class="panel-header">
-                            <h3>👁️ Live Preview</h3>
-                            <div class="panel-actions">
-                                <button id="copy-html-btn" class="small-btn" title="Copy HTML">
-                                    📄 Copy HTML
-                                </button>
-                            </div>
-                        </div>
-                        <div id="html-output" class="preview-content"></div>
-                    </div>
-                </div>
+ <!-- Preview Panel -->
+ <div class="preview-panel">
+ <div class="panel-header">
+ <h3>👁️ Live Preview</h3>
+ <div class="panel-actions">
+ <button id="copy-html-btn" class="small-btn" title="Copy HTML">
+ 📄 Copy HTML
+ </button>
+ </div>
+ </div>
+ <div id="html-output" class="preview-content"></div>
+ </div>
+ </div>
 
-                <!-- AdSense In-Article Ad - After Tool -->
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block; text-align:center;"
-                         data-ad-layout="in-article"
-                         data-ad-format="fluid"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="9288642827"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
-                <div class="technology-highlight" style="margin-top: 3rem;">
-                    <h4>✨ Features</h4>
-                    <ul>
-                        <li><strong>Real-Time Preview:</strong> See your Markdown rendered as HTML instantly</li>
-                        <li><strong>Two-Panel Layout:</strong> Editor on left, preview on right (stacks on mobile)</li>
-                        <li><strong>Full Markdown Support:</strong> Headers, lists, links, images, code blocks, and more</li>
-                        <li><strong>Syntax Highlighting:</strong> Code blocks with proper formatting</li>
-                        <li><strong>Copy Markdown:</strong> Copy your Markdown text to clipboard</li>
-                        <li><strong>Copy HTML:</strong> Get the rendered HTML code</li>
-                        <li><strong>Clear Editor:</strong> Quick reset with one click</li>
-                        <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
-                    </ul>
-                </div>
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Real-Time Preview:</strong> See your Markdown rendered as HTML instantly</li>
+ <li><strong>Two-Panel Layout:</strong> Editor on left, preview on right (stacks on mobile)</li>
+ <li><strong>Full Markdown Support:</strong> Headers, lists, links, images, code blocks, and more</li>
+ <li><strong>Syntax Highlighting:</strong> Code blocks with proper formatting</li>
+ <li><strong>Copy Markdown:</strong> Copy your Markdown text to clipboard</li>
+ <li><strong>Copy HTML:</strong> Get the rendered HTML code</li>
+ <li><strong>Clear Editor:</strong> Quick reset with one click</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
 
-                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
-                    <h4>📚 Markdown Syntax Guide</h4>
-                    <p><strong>Headers:</strong></p>
-                    <ul>
-                        <li><code># H1 Heading</code> → Largest heading</li>
-                        <li><code>## H2 Heading</code> → Second level heading</li>
-                        <li><code>### H3 Heading</code> → Third level heading</li>
-                    </ul>
-                    <p><strong>Text Formatting:</strong></p>
-                    <ul>
-                        <li><code>**bold text**</code> → <strong>bold text</strong></li>
-                        <li><code>*italic text*</code> → <em>italic text</em></li>
-                        <li><code>~~strikethrough~~</code> → <del>strikethrough</del></li>
-                        <li><code>`inline code`</code> → inline code</li>
-                    </ul>
-                    <p><strong>Lists:</strong></p>
-                    <ul>
-                        <li><code>- Item 1</code> → Unordered list</li>
-                        <li><code>1. Item 1</code> → Ordered list</li>
-                    </ul>
-                    <p><strong>Links & Images:</strong></p>
-                    <ul>
-                        <li><code>[Link text](URL)</code> → Hyperlink</li>
-                        <li><code>![Alt text](image-url)</code> → Image</li>
-                    </ul>
-                    <p><strong>Code Blocks:</strong></p>
-                    <ul>
-                        <li><code>```language</code> → Code block with syntax highlighting</li>
-                    </ul>
-                    <p><strong>Blockquotes:</strong></p>
-                    <ul>
-                        <li><code>&gt; Quote text</code> → Blockquote</li>
-                    </ul>
-                </div>
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>📚 Markdown Syntax Guide</h4>
+ <p><strong>Headers:</strong></p>
+ <ul>
+ <li><code># H1 Heading</code> → Largest heading</li>
+ <li><code>## H2 Heading</code> → Second level heading</li>
+ <li><code>### H3 Heading</code> → Third level heading</li>
+ </ul>
+ <p><strong>Text Formatting:</strong></p>
+ <ul>
+ <li><code>**bold text**</code> → <strong>bold text</strong></li>
+ <li><code>*italic text*</code> → <em>italic text</em></li>
+ <li><code>~~strikethrough~~</code> → <del>strikethrough</del></li>
+ <li><code>`inline code`</code> → inline code</li>
+ </ul>
+ <p><strong>Lists:</strong></p>
+ <ul>
+ <li><code>- Item 1</code> → Unordered list</li>
+ <li><code>1. Item 1</code> → Ordered list</li>
+ </ul>
+ <p><strong>Links & Images:</strong></p>
+ <ul>
+ <li><code>[Link text](URL)</code> → Hyperlink</li>
+ <li><code>![Alt text](image-url)</code> → Image</li>
+ </ul>
+ <p><strong>Code Blocks:</strong></p>
+ <ul>
+ <li><code>```language</code> → Code block with syntax highlighting</li>
+ </ul>
+ <p><strong>Blockquotes:</strong></p>
+ <ul>
+ <li><code>&gt; Quote text</code> → Blockquote</li>
+ </ul>
+ </div>
 
-                <div class="technology-highlight" style="margin-top: 2rem;">
-                    <h4>🎯 Common Use Cases</h4>
-                    <ul>
-                        <li><strong>Documentation:</strong> Write and preview README files for GitHub</li>
-                        <li><strong>Blog Posts:</strong> Draft blog content in Markdown format</li>
-                        <li><strong>Notes:</strong> Take formatted notes with headers and lists</li>
-                        <li><strong>Learning:</strong> Practice Markdown syntax and see results instantly</li>
-                        <li><strong>Content Creation:</strong> Write articles with proper formatting</li>
-                        <li><strong>Technical Writing:</strong> Document code with syntax-highlighted examples</li>
-                        <li><strong>Quick Formatting:</strong> Convert plain text to formatted HTML</li>
-                    </ul>
-                </div>
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🎯 Common Use Cases</h4>
+ <ul>
+ <li><strong>Documentation:</strong> Write and preview README files for GitHub</li>
+ <li><strong>Blog Posts:</strong> Draft blog content in Markdown format</li>
+ <li><strong>Notes:</strong> Take formatted notes with headers and lists</li>
+ <li><strong>Learning:</strong> Practice Markdown syntax and see results instantly</li>
+ <li><strong>Content Creation:</strong> Write articles with proper formatting</li>
+ <li><strong>Technical Writing:</strong> Document code with syntax-highlighted examples</li>
+ <li><strong>Quick Formatting:</strong> Convert plain text to formatted HTML</li>
+ </ul>
+ </div>
 
-                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
-                    <h4>💡 Markdown Tips</h4>
-                    <ul>
-                        <li><strong>Line Breaks:</strong> Add two spaces at the end of a line for a line break</li>
-                        <li><strong>Horizontal Rule:</strong> Use <code>---</code> or <code>***</code> for a horizontal line</li>
-                        <li><strong>Nested Lists:</strong> Indent with 2-4 spaces to create nested lists</li>
-                        <li><strong>Tables:</strong> Use pipes (<code>|</code>) and hyphens (<code>-</code>) to create tables</li>
-                        <li><strong>Task Lists:</strong> Use <code>- [ ]</code> for unchecked and <code>- [x]</code> for checked items</li>
-                        <li><strong>Escape Characters:</strong> Use backslash (<code>\</code>) to escape Markdown syntax</li>
-                    </ul>
-                </div>
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>💡 Markdown Tips</h4>
+ <ul>
+ <li><strong>Line Breaks:</strong> Add two spaces at the end of a line for a line break</li>
+ <li><strong>Horizontal Rule:</strong> Use <code>---</code> or <code>***</code> for a horizontal line</li>
+ <li><strong>Nested Lists:</strong> Indent with 2-4 spaces to create nested lists</li>
+ <li><strong>Tables:</strong> Use pipes (<code>|</code>) and hyphens (<code>-</code>) to create tables</li>
+ <li><strong>Task Lists:</strong> Use <code>- [ ]</code> for unchecked and <code>- [x]</code> for checked items</li>
+ <li><strong>Escape Characters:</strong> Use backslash (<code>\</code>) to escape Markdown syntax</li>
+ </ul>
+ </div>
 
-                <div class="technology-highlight" style="margin-top: 2rem;">
-                    <h4>🔧 Powered By</h4>
-                    <p>This Markdown previewer uses the <strong>Marked.js</strong> library, a fast and lightweight Markdown parser and compiler. It supports GitHub Flavored Markdown (GFM) and provides reliable, secure Markdown to HTML conversion.</p>
-                    <ul>
-                        <li><strong>Library:</strong> Marked.js v11.0+</li>
-                        <li><strong>Specification:</strong> CommonMark compliant</li>
-                        <li><strong>Performance:</strong> Real-time parsing with no lag</li>
-                        <li><strong>Security:</strong> XSS protection built-in</li>
-                    </ul>
-                </div>
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🔧 Powered By</h4>
+ <p>This Markdown previewer uses the <strong>Marked.js</strong> library, a fast and lightweight Markdown parser and compiler. It supports GitHub Flavored Markdown (GFM) and provides reliable, secure Markdown to HTML conversion.</p>
+ <ul>
+ <li><strong>Library:</strong> Marked.js v11.0+</li>
+ <li><strong>Specification:</strong> CommonMark compliant</li>
+ <li><strong>Performance:</strong> Real-time parsing with no lag</li>
+ <li><strong>Security:</strong> XSS protection built-in</li>
+ </ul>
+ </div>
 
-                <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
-                    <h4>🚀 Quick Start Example</h4>
-                    <p>Try copying this Markdown into the editor:</p>
-                    <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🚀 Quick Start Example</h4>
+ <p>Try copying this Markdown into the editor:</p>
+ <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
 # My Awesome Project
 
 ## Features
@@ -238,48 +238,48 @@ myPackage.doSomething();
 > This is a great tool for developers!
 
 [Visit our website](https://example.com)
-                    </pre>
-                </div>
+ </pre>
+ </div>
 
-                <div class="ad-container" style="margin-top: 3rem;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-4315586112110103"
-                         data-ad-slot="1734728076"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </article>
-        </div>
-    </main>
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
 
-    <!-- Tools Navigation Footer -->
-    <!-- Footer will be loaded dynamically -->
-    <div id="footer-placeholder"></div>
-    
-    <script src="/TOOLS/Markdown-Previewer/scripts.js" defer></script>
-    <script src="/TOOLS/shared/footer.js"></script>
-    
-    <!-- Main Site Scripts -->
-    <script src="../../home.js" defer></script>
-    <!-- AdSense - In-Feed Ad -->
-    <div class="ad-container" style="margin-top: 3rem;">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
-             crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="autorelaxed"
-             data-ad-client="ca-pub-4315586112110103"
-             data-ad-slot="1056713798"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Markdown-Previewer/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ <!-- AdSense - In-Feed Ad -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1056713798"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
 
 </body>
 </html>
