@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Container Demo - Jain Docs</title>
+    <link rel="stylesheet" href="styles/ad-container-styles.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #047857;
+            border-bottom: 3px solid #a7f3d0;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .demo-section h2 {
+            color: #059669;
+            margin-top: 0;
+        }
+        
+        .demo-ad {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        code {
+            background: #f1f5f9;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #0f172a;
+        }
+        
+        .info-box {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Ad Container Styling Demo - Jain Docs</h1>
+    
+    <div class="info-box">
+        <strong>Note:</strong> This is a demonstration of how ad containers will appear on your Jain Docs pages. 
+        The green boxes represent where actual AdSense ads will appear.
+    </div>
+    
+    <!-- Top Ad Demo -->
+    <div class="demo-section">
+        <h2>1. Top Ad Container</h2>
+        <p>This appears at the top of pages. Class: <code>.ad-container.ad-top</code></p>
+        
+        <div class="ad-container ad-top">
+            <div class="demo-ad">
+                🌟 AdSense Top Ad<br>
+                (Hover over me!)
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mid Content Ad Demo -->
+    <div class="demo-section">
+        <h2>2. Mid-Content Ad Container</h2>
+        <p>These appear between content sections. Class: <code>.ad-container.article-mid-ad</code></p>
+        
+        <div class="ad-container article-mid-ad">
+            <div class="demo-ad">
+                📰 AdSense In-Content Ad<br>
+                (Most common placement)
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Ad Demo -->
+    <div class="demo-section">
+        <h2>3. Bottom Ad Container</h2>
+        <p>Appears at the end of content. Class: <code>.ad-container.ad-bottom</code></p>
+        
+        <div class="ad-container ad-bottom">
+            <div class="demo-ad">
+                🎯 AdSense Bottom Ad<br>
+                (End of page)
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar Ad Demo -->
+    <div class="demo-section">
+        <h2>4. Sidebar Ad Container (Sticky)</h2>
+        <p>Sidebar ads that stick while scrolling. Class: <code>.ad-container.ad-sidebar</code></p>
+        
+        <div style="display: flex; gap: 2rem;">
+            <div style="flex: 1;">
+                <p>Main content goes here. The sidebar ad stays visible while you scroll down the page.</p>
+                <p>This is especially useful for long-form content pages.</p>
+            </div>
+            <div style="width: 320px;">
+                <div class="ad-container ad-sidebar">
+                    <div class="demo-ad" style="padding: 2rem;">
+                        📌 Sticky Sidebar Ad<br>
+                        (Stays visible)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Size Variants -->
+    <div class="demo-section">
+        <h2>5. Size Variants</h2>
+        
+        <h3>Large Container</h3>
+        <p>For banner ads. Class: <code>.ad-container.ad-large</code></p>
+        <div class="ad-container ad-large">
+            <div class="demo-ad" style="padding: 2rem;">
+                📏 Large Banner Ad (970x90 or 728x90)
+            </div>
+        </div>
+        
+        <h3>Medium Container</h3>
+        <p>For rectangle ads. Class: <code>.ad-container.ad-medium</code></p>
+        <div class="ad-container ad-medium">
+            <div class="demo-ad" style="padding: 3rem;">
+                📐 Medium Rectangle<br>(336x280 or 300x250)
+            </div>
+        </div>
+        
+        <h3>Small Container</h3>
+        <p>For mobile banners. Class: <code>.ad-container.ad-small</code></p>
+        <div class="ad-container ad-small">
+            <div class="demo-ad" style="padding: 1rem;">
+                📱 Mobile Banner (320x50)
+            </div>
+        </div>
+    </div>
+    
+    <!-- Special Layouts -->
+    <div class="demo-section">
+        <h2>6. Special Layouts</h2>
+        
+        <h3>In-Feed Ad (Blends with content)</h3>
+        <p>Class: <code>.ad-container.ad-in-feed</code></p>
+        <div class="ad-container ad-in-feed">
+            <div class="demo-ad">
+                🌊 In-Feed Ad (Seamless integration)
+            </div>
+        </div>
+        
+        <h3>Compact Spacing</h3>
+        <p>Class: <code>.ad-container.ad-compact</code></p>
+        <div class="ad-container ad-compact">
+            <div class="demo-ad">
+                📦 Compact Ad (Less padding)
+            </div>
+        </div>
+        
+        <h3>Spacious Layout</h3>
+        <p>Class: <code>.ad-container.ad-spacious</code></p>
+        <div class="ad-container ad-spacious">
+            <div class="demo-ad">
+                🏖️ Spacious Ad (More breathing room)
+            </div>
+        </div>
+    </div>
+    
+    <!-- Features -->
+    <div class="demo-section">
+        <h2>✨ Container Features</h2>
+        <ul>
+            <li>✅ <strong>Glassmorphism Effect:</strong> Semi-transparent background with blur</li>
+            <li>✅ <strong>Smooth Hover:</strong> Subtle lift and glow on hover</li>
+            <li>✅ <strong>Responsive:</strong> Adapts to all screen sizes</li>
+            <li>✅ <strong>Dark Mode:</strong> Automatic theme switching</li>
+            <li>✅ <strong>Accessibility:</strong> Respects user preferences</li>
+            <li>✅ <strong>Performance:</strong> GPU-accelerated animations</li>
+            <li>✅ <strong>Print-Friendly:</strong> Ads hidden when printing</li>
+        </ul>
+    </div>
+    
+    <!-- Theme Demo -->
+    <div class="demo-section">
+        <h2>🌓 Dark Mode Preview</h2>
+        <p>The containers automatically adapt to dark mode preferences.</p>
+        <div style="background: #1e293b; padding: 2rem; border-radius: 12px;">
+            <div class="ad-container" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%); border-color: rgba(255, 255, 255, 0.1);">
+                <div class="demo-ad">
+                    🌙 Dark Mode Ad Container
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Instructions -->
+    <div class="demo-section">
+        <h2>📝 How to Use</h2>
+        <ol>
+            <li>The CSS file is already linked in all your Jain Docs pages</li>
+            <li>All ads are wrapped in <code>&lt;div class="ad-container"&gt;</code></li>
+            <li>Hover over any ad container to see the effect</li>
+            <li>No additional configuration needed - it just works!</li>
+        </ol>
+    </div>
+    
+    <div class="info-box">
+        <strong>✅ Implementation Complete:</strong> All 276 Jain Docs files have been updated with these beautiful ad containers!
+    </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+/**
+ * Jain Docs - Ad Container Styles
+ * Professional ad placement styling for optimal user experience
+ * Ensures all ads are properly contained and visually integrated
+ */
+
+/* ============================================
+   BASE AD CONTAINER STYLES
+   ============================================ */
+
+.ad-container {
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    
+    /* Visual Styling */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.15); /* Emerald border */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Effects */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Accessibility */
+    min-height: 90px; /* Minimum height to prevent layout shift */
+    overflow: hidden;
+}
+
+.ad-container:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border-color: rgba(16, 185, 129, 0.25);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Ad Label (Optional - if you want to show "Advertisement" text) */
+.ad-container::before {
+    content: "Advertisement";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(100, 116, 139, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    opacity: 0.7;
+}
+
+/* ============================================
+   POSITION-SPECIFIC CONTAINERS
+   ============================================ */
+
+/* Top of Page Ad */
+.ad-container.ad-top {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(5, 150, 105, 0.02) 100%);
+}
+
+/* Middle/In-Content Ads */
+.ad-container.ad-mid,
+.ad-container.article-mid-ad {
+    margin: 3.5rem auto;
+    padding: 2rem 1.5rem;
+    border-left: 3px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Bottom of Page Ad */
+.ad-container.ad-bottom {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, rgba(234, 88, 12, 0.02) 100%);
+    border-color: rgba(249, 115, 22, 0.15);
+}
+
+/* Sidebar Ad */
+.ad-container.ad-sidebar {
+    max-width: 320px;
+    margin: 2rem auto;
+    padding: 1.25rem;
+    position: sticky;
+    top: 100px;
+}
+
+/* ============================================
+   ARTICLE-SPECIFIC AD STYLES
+   ============================================ */
+
+.article-top-ad {
+    margin: 2.5rem auto 3.5rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.article-mid-ad {
+    margin: 4rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+}
+
+.article-bottom-ad {
+    margin: 3.5rem auto 2rem;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+/* ============================================
+   RESPONSIVE AD CONTAINER
+   ============================================ */
+
+/* Ensure AdSense responsive ads work properly */
+.ad-container .adsbygoogle {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* ============================================
+   SIZE VARIANTS
+   ============================================ */
+
+/* Large Container (for 970x90, 728x90 banners) */
+.ad-container.ad-large {
+    max-width: 1000px;
+    min-height: 120px;
+}
+
+/* Medium Container (for 336x280, 300x250) */
+.ad-container.ad-medium {
+    max-width: 350px;
+    min-height: 300px;
+}
+
+/* Small Container (for 320x50, 300x50) */
+.ad-container.ad-small {
+    max-width: 340px;
+    min-height: 70px;
+    padding: 1rem;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .ad-container {
+        margin: 1.5rem auto;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .ad-container::before {
+        font-size: 9px;
+        top: 6px;
+        left: 10px;
+    }
+    
+    .article-mid-ad,
+    .ad-container.ad-mid {
+        margin: 2.5rem auto;
+        padding: 1.25rem;
+    }
+    
+    .ad-container.ad-sidebar {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+    }
+    
+    .article-top-ad,
+    .article-bottom-ad {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ad-container {
+        margin: 1rem auto;
+        padding: 0.75rem;
+        border-radius: 8px;
+        min-height: 70px;
+    }
+    
+    .article-mid-ad,
+    .ad-container.ad-mid {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+    
+    /* Ensure ads don't overflow on small screens */
+    .ad-container .adsbygoogle {
+        max-width: calc(100vw - 2rem);
+    }
+}
+
+/* ============================================
+   LOADING STATE
+   ============================================ */
+
+.ad-container.ad-loading {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+    background-size: 200% 100%;
+    animation: ad-loading-shimmer 2s infinite;
+}
+
+@keyframes ad-loading-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* ============================================
+   EMPTY AD STATE (No Fill)
+   ============================================ */
+
+.ad-container:empty {
+    display: none; /* Hide container if no ad loads */
+}
+
+/* Alternative: Show a subtle placeholder */
+.ad-container.ad-no-fill {
+    min-height: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* ============================================
+   SPECIAL LAYOUTS
+   ============================================ */
+
+/* In-Feed Ad (blends with content) */
+.ad-container.ad-in-feed {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.ad-container.ad-in-feed::before {
+    content: "Sponsored";
+    font-size: 11px;
+    color: rgba(100, 116, 139, 0.5);
+}
+
+/* Sticky Bottom Ad (Mobile) */
+@media (max-width: 768px) {
+    .ad-container.ad-sticky-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        margin: 0;
+        border-radius: 0;
+        border-top: 2px solid rgba(16, 185, 129, 0.3);
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+        max-width: 100%;
+    }
+    
+    /* Add padding to body to prevent content from being hidden */
+    body.has-sticky-ad {
+        padding-bottom: 100px;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    .ad-container {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .ad-container:hover {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-color: rgba(16, 185, 129, 0.3);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    
+    .ad-container::before {
+        color: rgba(203, 213, 225, 0.5);
+    }
+}
+
+/* Manual dark theme class */
+[data-theme="dark"] .ad-container,
+.dark-theme .ad-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .ad-container:hover,
+.dark-theme .ad-container:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .ad-container {
+        display: none !important;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .ad-container {
+        border: 2px solid currentColor;
+        background: transparent;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .ad-container {
+        transition: none;
+        animation: none;
+    }
+    
+    .ad-container:hover {
+        transform: none;
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Hide ad label */
+.ad-container.no-label::before {
+    display: none;
+}
+
+/* Center ad content */
+.ad-container.ad-centered {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Full width ad */
+.ad-container.ad-full-width {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Compact padding */
+.ad-container.ad-compact {
+    padding: 0.75rem;
+    margin: 1.5rem auto;
+}
+
+/* Spacious padding */
+.ad-container.ad-spacious {
+    padding: 3rem 2rem;
+    margin: 4rem auto;
+}
+
+/* ============================================
+   ANIMATION ON SCROLL (Optional)
+   ============================================ */
+
+.ad-container.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ad-container.fade-in-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

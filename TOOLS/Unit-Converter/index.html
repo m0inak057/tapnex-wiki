@@ -13,209 +13,17 @@
  <!-- Tool-specific Styles -->
  <link rel="stylesheet" href="/TOOLS/Unit-Converter/styles.css">
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
- crossorigin="anonymous"></script>
-</head>
-<body data-theme="dark">
- <!-- Header -->
- <header class="site-header">
- <div class="container header-inner">
- <div class="brand">
- <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
- <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
- <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
- </a>
- </div>
- 
- <div class="header-actions">
- <a href="/index.html" class="nav-link-header">Home</a>
- <a href="/tools.html" class="nav-link-header">Tools</a>
- <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
- </div>
- </div>
- </header>
-
- <!-- Dropdown Navigation Bar -->
- <nav class="dropdown-nav" aria-label="Tools navigation">
- <div class="container">
- <ul class="nav-menu" id="nav-menu">
- <li class="nav-item">
- <a href="/index.html" class="nav-link">Home</a>
- </li>
- <li class="nav-item">
- <a href="/tools.html" class="nav-link">All Tools</a>
- </li>
- <li class="nav-item">
- <a href="#" class="nav-link active">Unit Converter</a>
- </li>
- </ul>
- </div>
- </nav>
-
-
- <!-- Theme Toggle Button -->
- <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
- <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
- <circle cx="12" cy="12" r="5"/>
- <line x1="12" y1="1" x2="12" y2="3"/>
- <line x1="12" y1="21" x2="12" y2="23"/>
- <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
- <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
- <line x1="1" y1="12" x2="3" y2="12"/>
- <line x1="21" y1="12" x2="23" y2="12"/>
- <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
- <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
- </svg>
- </button>
-
- <main class="main-content">
- <div class="content-wrapper">
- <article>
- <h1 style="text-align: center; margin-bottom: 0.5rem;">Unit Converters</h1>
- <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
- Convert between different units of measurement instantly
- </p>
- 
- <div class="converters-container">
- <!-- Length Converter -->
- <div class="converter-section">
- <h2>📏 Length / Distance</h2>
- <div class="converter-row">
- <div class="input-group">
- <input 
- type="number" 
- id="lengthFrom" 
- placeholder="Enter value"
- step="any"
- >
- <select id="lengthFromUnit" class="unit-select">
- <option value="millimeters">Millimeters (mm)</option>
- <option value="centimeters">Centimeters (cm)</option>
- <option value="meters" selected>Meters (m)</option>
- <option value="kilometers">Kilometers (km)</option>
- <option value="inches">Inches (in)</option>
- <option value="feet">Feet (ft)</option>
- <option value="yards">Yards (yd)</option>
- <option value="miles">Miles (mi)</option>
- </select>
- </div>
- <div class="converter-arrow">→</div>
- <div class="input-group">
- <input 
- type="number" 
- id="lengthTo" 
- placeholder="Result"
- step="any"
- readonly
- >
- <select id="lengthToUnit" class="unit-select">
- <option value="millimeters">Millimeters (mm)</option>
- <option value="centimeters">Centimeters (cm)</option>
- <option value="meters">Meters (m)</option>
- <option value="kilometers">Kilometers (km)</option>
- <option value="inches">Inches (in)</option>
- <option value="feet" selected>Feet (ft)</option>
- <option value="yards">Yards (yd)</option>
- <option value="miles">Miles (mi)</option>
- </select>
- </div>
- </div>
- <button class="swap-btn" onclick="swapLength()">🔄 Swap Units</button>
- </div>
-
- <!-- Weight Converter -->
- <div class="converter-section">
- <h2>⚖️ Weight / Mass</h2>
- <div class="converter-row">
- <div class="input-group">
- <input 
- type="number" 
- id="weightFrom" 
- placeholder="Enter value"
- step="any"
- >
- <select id="weightFromUnit" class="unit-select">
- <option value="milligrams">Milligrams (mg)</option>
- <option value="grams">Grams (g)</option>
- <option value="kilograms" selected>Kilograms (kg)</option>
- <option value="metric-tons">Metric Tons (t)</option>
- <option value="ounces">Ounces (oz)</option>
- <option value="pounds">Pounds (lb)</option>
- <option value="tons">Tons (US)</option>
- </select>
- </div>
- <div class="converter-arrow">→</div>
- <div class="input-group">
- <input 
- type="number" 
- id="weightTo" 
- placeholder="Result"
- step="any"
- readonly
- >
- <select id="weightToUnit" class="unit-select">
- <option value="milligrams">Milligrams (mg)</option>
- <option value="grams">Grams (g)</option>
- <option value="kilograms">Kilograms (kg)</option>
- <option value="metric-tons">Metric Tons (t)</option>
- <option value="ounces">Ounces (oz)</option>
- <option value="pounds" selected>Pounds (lb)</option>
- <option value="tons">Tons (US)</option>
- </select>
- </div>
- </div>
- <button class="swap-btn" onclick="swapWeight()">🔄 Swap Units</button>
- </div>
-
- <!-- Temperature Converter -->
- <div class="converter-section">
- <h2>🌡️ Temperature</h2>
- <div class="converter-row">
- <div class="input-group">
- <input 
- type="number" 
- id="tempFrom" 
- placeholder="Enter value"
- step="any"
- >
- <select id="tempFromUnit" class="unit-select">
- <option value="celsius" selected>Celsius (°C)</option>
- <option value="fahrenheit">Fahrenheit (°F)</option>
- <option value="kelvin">Kelvin (K)</option>
- </select>
- </div>
- <div class="converter-arrow">→</div>
- <div class="input-group">
- <input 
- type="number" 
- id="tempTo" 
- placeholder="Result"
- step="any"
- readonly
- >
- <select id="tempToUnit" class="unit-select">
- <option value="celsius">Celsius (°C)</option>
- <option value="fahrenheit" selected>Fahrenheit (°F)</option>
- <option value="kelvin">Kelvin (K)</option>
- </select>
- </div>
- </div>
- <button class="swap-btn" onclick="swapTemperature()">🔄 Swap Units</button>
- </div>
- </div>
-
- <!-- AdSense In-Article Ad - After Tool -->
- <div class="ad-container" style="margin-top: 3rem;">
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
- crossorigin="anonymous"></script>
- <ins class="adsbygoogle"
- style="display:block; text-align:center;"
- data-ad-layout="in-article"
- data-ad-format="fluid"
- data-ad-client="ca-pub-4315586112110103"
- data-ad-slot="9288642827"></ins>
- <script>
- (adsbygoogle = window.adsbygoogle || []).push({});
- </script>
+     crossorigin="anonymous"></script>
+<!-- jain docs -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4315586112110103"
+     data-ad-slot="6328898375"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
  </div>
 
  <div class="technology-highlight" style="margin-top: 0.5rem;">
@@ -287,16 +95,17 @@
 
  <div class="ad-container" style="margin-top: 3rem;">
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
- crossorigin="anonymous"></script>
- <ins class="adsbygoogle"
- style="display:block"
- data-ad-client="ca-pub-4315586112110103"
- data-ad-slot="1734728076"
- data-ad-format="auto"
- data-full-width-responsive="true"></ins>
- <script>
- (adsbygoogle = window.adsbygoogle || []).push({});
- </script>
+     crossorigin="anonymous"></script>
+<!-- jain docs -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4315586112110103"
+     data-ad-slot="6328898375"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
  </div>
  </article>
  </div>
@@ -314,15 +123,17 @@
  <!-- AdSense - In-Feed Ad -->
  <div class="ad-container" style="margin-top: 3rem;">
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
- crossorigin="anonymous"></script>
- <ins class="adsbygoogle"
- style="display:block"
- data-ad-format="autorelaxed"
- data-ad-client="ca-pub-4315586112110103"
- data-ad-slot="1056713798"></ins>
- <script>
- (adsbygoogle = window.adsbygoogle || []).push({});
- </script>
+     crossorigin="anonymous"></script>
+<!-- jain docs -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4315586112110103"
+     data-ad-slot="6328898375"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
  </div>
 
 </body>
