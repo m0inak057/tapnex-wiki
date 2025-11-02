@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Strong Password Generator 2025 | Free Secure Password Creator</title>
+ <meta name="description" content="Generate strong, secure passwords instantly! Free password generator with custom length, symbols, numbers & uppercase options. Create unhackable passwords now!">
+ <meta name="keywords" content="password generator, strong password, secure password generator, random password, password creator, password maker, generate password online">
+ <meta name="author" content="TapNex">
+ <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+ 
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/Password-Generator/">
+ <meta property="og:title" content="Strong Password Generator 2025 | Free & Secure">
+ <meta property="og:description" content="Create unbreakable passwords instantly. Customize length & characters. 100% free & secure!">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Twitter Card -->
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="Strong Password Generator 2025">
+ <meta name="twitter:description" content="Generate secure passwords with custom options">
+ <meta name="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Canonical -->
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/Password-Generator/">
+ 
+ <!-- Breadcrumb Schema -->
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [{
+     "@type": "ListItem",
+     "position": 1,
+     "name": "TapNex Wiki",
+     "item": "https://wiki.tapnex.tech/"
+   },{
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Tools",
+     "item": "https://wiki.tapnex.tech/TOOLS/"
+   },{
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Password Generator",
+     "item": "https://wiki.tapnex.tech/TOOLS/Password-Generator/"
+   }]
+ }
+ </script>
+ 
+ <!-- WebApplication Schema -->
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "Strong Password Generator",
+   "url": "https://wiki.tapnex.tech/TOOLS/Password-Generator/",
+   "applicationCategory": "SecurityApplication",
+   "operatingSystem": "Web Browser",
+   "offers": {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD"
+   },
+   "description": "Generate strong, secure passwords with customizable length and character types. Includes uppercase, lowercase, numbers, and special symbols.",
+   "featureList": "Custom password length, Uppercase letters, Lowercase letters, Numbers, Special symbols, Copy to clipboard, Password strength indicator",
+   "browserRequirements": "Requires JavaScript. Requires HTML5."
+ }
+ </script>
+ 
+ <!-- FAQ Schema -->
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [{
+     "@type": "Question",
+     "name": "Is the password generator secure?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, this password generator is completely secure. All passwords are generated locally in your browser using cryptographically secure random number generation. No passwords are sent to our servers or stored anywhere."
+     }
+   },{
+     "@type": "Question",
+     "name": "What makes a strong password?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A strong password should be at least 12-16 characters long and include a mix of uppercase letters, lowercase letters, numbers, and special symbols. Avoid using dictionary words, personal information, or common patterns."
+     }
+   },{
+     "@type": "Question",
+     "name": "Can I customize the password requirements?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, you can customize password length (4-128 characters) and choose which character types to include: uppercase letters, lowercase letters, numbers, and special symbols."
+     }
+   },{
+     "@type": "Question",
+     "name": "Are the generated passwords stored anywhere?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No, generated passwords are never stored, logged, or transmitted. All password generation happens entirely in your browser, ensuring complete privacy and security."
+     }
+   }]
+ }
+ </script>
+ 
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Password-Generator/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Password Generator</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Password Generator</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Create strong, secure passwords with customizable options
+ </p>
+ 
+ <div class="generator-container">
+ <div class="password-display">
+ <input 
+ type="text" 
+ id="password-output" 
+ placeholder="Your new password will appear here" 
+ readonly
+ >
+ <button id="copy-button" class="copy-button">Copy</button>
+ </div>
+
+ <div class="settings">
+ <div class="setting-length">
+ <label for="length-slider">Password Length: <span id="length-value">16</span></label>
+ <input 
+ type="range" 
+ id="length-slider" 
+ min="8" 
+ max="32" 
+ value="16"
+ class="slider"
+ >
+ </div>
+
+ <div class="setting">
+ <input type="checkbox" id="uppercase" checked>
+ <label for="uppercase">Include Uppercase (A-Z)</label>
+ </div>
+
+ <div class="setting">
+ <input type="checkbox" id="lowercase" checked>
+ <label for="lowercase">Include Lowercase (a-z)</label>
+ </div>
+
+ <div class="setting">
+ <input type="checkbox" id="numbers" checked>
+ <label for="numbers">Include Numbers (0-9)</label>
+ </div>
+
+ <div class="setting">
+ <input type="checkbox" id="symbols">
+ <label for="symbols">Include Symbols (!@#$%^&*)</label>
+ </div>
+ </div>
+
+ <button id="generate-button" class="generate-button">Generate Password</button>
+ </div>
+
+ 
+
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Customizable Length:</strong> Generate passwords from 8 to 32 characters</li>
+ <li><strong>Character Options:</strong> Choose uppercase, lowercase, numbers, and symbols</li>
+ <li><strong>Cryptographically Secure:</strong> Uses secure random number generation</li>
+ <li><strong>One-Click Copy:</strong> Copy generated passwords to clipboard instantly</li>
+ <li><strong>No Storage:</strong> Passwords are never saved or transmitted</li>
+ <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🔐 Password Security Tips</h4>
+ <ul>
+ <li><strong>Use Long Passwords:</strong> Aim for at least 16 characters for better security</li>
+ <li><strong>Mix Character Types:</strong> Include uppercase, lowercase, numbers, and symbols</li>
+ <li><strong>Unique Passwords:</strong> Use different passwords for different accounts</li>
+ <li><strong>Password Manager:</strong> Store passwords in a secure password manager</li>
+ <li><strong>Regular Updates:</strong> Change passwords periodically, especially for critical accounts</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase" style="margin-top: 2rem;">
+ <h4>💡 Best Practices</h4>
+ <ul>
+ <li><strong>Never Reuse Passwords:</strong> Each account should have a unique password</li>
+ <li><strong>Enable 2FA:</strong> Use two-factor authentication whenever possible</li>
+ <li><strong>Avoid Personal Info:</strong> Don't use birthdays, names, or common words</li>
+ <li><strong>Check for Breaches:</strong> Regularly check if your passwords have been compromised</li>
+ <li><strong>Secure Storage:</strong> Never store passwords in plain text files</li>
+ </ul>
+ </div>
+
+ <div style="margin-top: 3rem;">
+ <h2>❓ Frequently Asked Questions</h2>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>Is this password generator secure?</h3>
+ <p>Yes! Our password generator uses cryptographically secure random number generation (crypto.getRandomValues()) to create truly random passwords. All processing happens entirely in your browser, meaning passwords are never sent to our servers or stored anywhere. Your generated passwords are completely private and secure.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>What makes a strong password?</h3>
+ <p>A strong password should be at least 12-16 characters long and include a mix of uppercase letters, lowercase letters, numbers, and special symbols. It should not contain dictionary words, personal information, or predictable patterns. Our generator creates passwords that meet all these criteria, making them highly resistant to brute-force attacks.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>Can I customize the password options?</h3>
+ <p>Absolutely! You have full control over your password generation. You can adjust the length (8-32 characters) and choose which character types to include: uppercase letters, lowercase letters, numbers, and special symbols. This flexibility allows you to meet specific password requirements for different websites or applications.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>Are my generated passwords stored anywhere?</h3>
+ <p>No, we never store, save, or transmit your generated passwords. Everything happens locally in your browser. Once you close the page or generate a new password, the previous password is gone forever unless you've saved it yourself. This ensures complete privacy and security for your password generation.</p>
+ </div>
+ </div>
+
+ <div style="margin-top: 3rem;">
+ <h2>📖 How to Create Strong Passwords</h2>
+ <p>Follow these steps to create the strongest possible passwords:</p>
+ <ol style="margin-top: 1rem;">
+ <li><strong>Choose Maximum Length:</strong> Set the password length to at least 16 characters for optimal security</li>
+ <li><strong>Enable All Character Types:</strong> Check all boxes (uppercase, lowercase, numbers, symbols) to maximize complexity</li>
+ <li><strong>Generate Multiple Options:</strong> Click generate several times to see different options and pick one you like</li>
+ <li><strong>Use Unique Passwords:</strong> Generate a completely different password for each account or service</li>
+ <li><strong>Store Securely:</strong> Save your passwords in a reputable password manager like Bitwarden, 1Password, or LastPass</li>
+ <li><strong>Test Strength:</strong> Most password managers have built-in strength meters - aim for "Strong" or "Very Strong"</li>
+ </ol>
+ </div>
+
+ <div style="margin-top: 3rem;">
+ <h2>✨ Why Use Our Password Generator?</h2>
+ <ul style="margin-top: 1rem;">
+ <li><strong>Military-Grade Security:</strong> Uses cryptographically secure random number generation</li>
+ <li><strong>100% Private:</strong> All generation happens in your browser - we never see your passwords</li>
+ <li><strong>No Registration Required:</strong> Generate unlimited passwords without creating an account</li>
+ <li><strong>Fully Customizable:</strong> Control length and character types to meet any requirement</li>
+ <li><strong>One-Click Copy:</strong> Instantly copy passwords to clipboard for easy pasting</li>
+ <li><strong>Open Source Algorithms:</strong> Uses industry-standard Web Crypto API</li>
+ <li><strong>Works Offline:</strong> After initial page load, generate passwords without internet</li>
+ <li><strong>No Ads Interference:</strong> Clean, distraction-free password generation experience</li>
+ </ul>
+ </div>
+
+ <div style="margin-top: 3rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+ <h2>🔗 Related Tools</h2>
+ <p style="margin-bottom: 1rem;">Enhance your security with these related tools:</p>
+ <ul>
+ <li><a href="/TOOLS/Hash-Generator/" style="color: var(--link-color); text-decoration: none;">Hash Generator</a> - Generate MD5, SHA-1, SHA-256 hashes</li>
+ <li><a href="/TOOLS/Base64-Encoder-Decoder/" style="color: var(--link-color); text-decoration: none;">Base64 Encoder/Decoder</a> - Encode and decode Base64 strings</li>
+ <li><a href="/TOOLS/QR-Generator/" style="color: var(--link-color); text-decoration: none;">QR Code Generator</a> - Create secure QR codes</li>
+ <li><a href="/tools.html" style="color: var(--link-color); text-decoration: none;">All Tools</a> - Browse our complete tool collection</li>
+ </ul>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Password-Generator/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ 
+
+</body>
+</html>

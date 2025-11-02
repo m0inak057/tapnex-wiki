@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Text Reverser Tool - Free Online Text Reverser</title>
+ <meta name="description" content="Free online text reverser. Reverse text, words, or sentences instantly.">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Text-Reverser/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Text Reverser</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Text Reverser</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Reverse any text, string, or sentence instantly with a single click
+ </p>
+ 
+ <div class="reverser-container">
+ <!-- Input Section -->
+ <div class="input-section">
+ <label for="text-input">📝 Input Text</label>
+ <textarea 
+ id="text-input" 
+ placeholder="Enter text to reverse..."
+ rows="8"
+ autofocus
+ ></textarea>
+ <div class="char-count">
+ <span id="input-count">0</span> characters
+ </div>
+ </div>
+
+ <!-- Action Button -->
+ <div class="action-section">
+ <button id="reverse-btn">
+ 🔄 Reverse Text
+ </button>
+ </div>
+
+ <!-- Output Section -->
+ <div class="output-section">
+ <label for="text-output">✨ Reversed Text</label>
+ <textarea 
+ id="text-output" 
+ placeholder="Reversed text will appear here..."
+ rows="8"
+ readonly
+ ></textarea>
+ <div class="char-count">
+ <span id="output-count">0</span> characters
+ </div>
+ </div>
+
+ <!-- Secondary Controls -->
+ <div class="controls">
+ <button id="copy-btn">
+ 📋 Copy Output
+ </button>
+ <button id="clear-btn">
+ 🗑️ Clear
+ </button>
+ </div>
+
+ <!-- Reverse Options -->
+ <div class="options-section">
+ <h3>⚙️ Reverse Options</h3>
+ <div class="options-grid">
+ <label class="option-label">
+ <input type="radio" name="reverse-type" value="characters" checked>
+ <span>Reverse Characters</span>
+ <small>Reverses every character in the text</small>
+ </label>
+ <label class="option-label">
+ <input type="radio" name="reverse-type" value="words">
+ <span>Reverse Words</span>
+ <small>Reverses the order of words</small>
+ </label>
+ <label class="option-label">
+ <input type="radio" name="reverse-type" value="lines">
+ <span>Reverse Lines</span>
+ <small>Reverses the order of lines</small>
+ </label>
+ </div>
+ </div>
+ </div>
+
+ 
+
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Instant Reversal:</strong> Reverse text with a single click</li>
+ <li><strong>Multiple Modes:</strong> Reverse characters, words, or lines</li>
+ <li><strong>Character Counter:</strong> Real-time character count for input and output</li>
+ <li><strong>One-Click Copy:</strong> Copy reversed text to clipboard instantly</li>
+ <li><strong>Auto-Focus:</strong> Input field is ready when the page loads</li>
+ <li><strong>Keyboard Shortcuts:</strong> Press Enter to reverse, Escape to clear</li>
+ <li><strong>Clean Interface:</strong> Simple and intuitive design</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🎯 Use Cases</h4>
+ <ul>
+ <li><strong>Fun & Games:</strong> Create backwards messages for social media</li>
+ <li><strong>Coding:</strong> Test palindrome checkers and string manipulation functions</li>
+ <li><strong>Learning:</strong> Understand string reversal algorithms</li>
+ <li><strong>Puzzles:</strong> Create text-based puzzles and challenges</li>
+ <li><strong>Privacy:</strong> Obfuscate text for simple encoding (not secure encryption)</li>
+ <li><strong>Typography:</strong> Create mirror text effects</li>
+ <li><strong>Data Processing:</strong> Reverse data strings for specific formats</li>
+ <li><strong>SEO Testing:</strong> Reverse URLs or slugs for testing</li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>📋 How to Use</h4>
+ <ol style="padding-left: 2rem;">
+ <li><strong>Enter Text:</strong> Type or paste your text into the input box</li>
+ <li><strong>Choose Mode:</strong> Select whether to reverse characters, words, or lines</li>
+ <li><strong>Click Reverse:</strong> Press the "Reverse Text" button or hit Enter</li>
+ <li><strong>Copy Output:</strong> Click "Copy Output" to copy the reversed text</li>
+ <li><strong>Clear:</strong> Use the "Clear" button to reset both fields</li>
+ </ol>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>💡 Reverse Modes Explained</h4>
+ <p><strong>1. Reverse Characters (Default):</strong></p>
+ <ul>
+ <li>Input: <code>Hello World</code></li>
+ <li>Output: <code>dlroW olleH</code></li>
+ <li>Every character is flipped, including spaces</li>
+ </ul>
+ <p><strong>2. Reverse Words:</strong></p>
+ <ul>
+ <li>Input: <code>Hello World</code></li>
+ <li>Output: <code>World Hello</code></li>
+ <li>Word order is reversed, characters within words stay the same</li>
+ </ul>
+ <p><strong>3. Reverse Lines:</strong></p>
+ <ul>
+ <li>Input: <code>Line 1<br>Line 2<br>Line 3</code></li>
+ <li>Output: <code>Line 3<br>Line 2<br>Line 1</code></li>
+ <li>Line order is reversed, content within lines stays the same</li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>⚡ Keyboard Shortcuts</h4>
+ <ul>
+ <li><strong>Enter:</strong> Reverse the text (when input is focused)</li>
+ <li><strong>Ctrl/Cmd + Enter:</strong> Reverse text from anywhere</li>
+ <li><strong>Escape:</strong> Clear both input and output</li>
+ <li><strong>Ctrl/Cmd + C:</strong> Copy output (when output is focused)</li>
+ <li><strong>Tab:</strong> Navigate between input and output fields</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🔤 Palindrome Examples</h4>
+ <p>Try reversing these palindromes - they read the same forwards and backwards!</p>
+ <ul>
+ <li><code>racecar</code> → <code>racecar</code></li>
+ <li><code>madam</code> → <code>madam</code></li>
+ <li><code>A man a plan a canal Panama</code> (ignoring spaces and case)</li>
+ <li><code>Was it a car or a cat I saw</code> (ignoring spaces and case)</li>
+ <li><code>12321</code> → <code>12321</code></li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>💻 How Text Reversal Works</h4>
+ <p><strong>Character Reversal Algorithm:</strong></p>
+ <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+// Simple JavaScript implementation
+function reverseText(text) {
+ return text.split('').reverse().join('');
+}
+
+// Example:
+reverseText("Hello"); // Returns: "olleH"
+ </pre>
+ <p><strong>Word Reversal Algorithm:</strong></p>
+ <pre style="background: rgba(51, 65, 85, 0.5); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+// Reverse word order
+function reverseWords(text) {
+ return text.split(' ').reverse().join(' ');
+}
+
+// Example:
+reverseWords("Hello World"); // Returns: "World Hello"
+ </pre>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>🌍 Unicode Support</h4>
+ <ul>
+ <li><strong>Emoji Support:</strong> Reverses emojis correctly (🎉👋🔥 → 🔥👋🎉)</li>
+ <li><strong>Multi-Language:</strong> Works with all Unicode characters</li>
+ <li><strong>Special Characters:</strong> Handles symbols, punctuation, and numbers</li>
+ <li><strong>Right-to-Left Text:</strong> Reverses RTL languages like Arabic and Hebrew</li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🎨 Fun Examples to Try</h4>
+ <ul>
+ <li><strong>Your Name:</strong> See what your name looks like backwards</li>
+ <li><strong>Famous Quotes:</strong> "To be or not to be" → "eb ot ton ro eb oT"</li>
+ <li><strong>Sentences:</strong> Create backwards messages for fun</li>
+ <li><strong>Numbers:</strong> Reverse phone numbers or codes</li>
+ <li><strong>Emojis:</strong> 😀😃😄😁 → 😁😄😃😀</li>
+ </ul>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Text-Reverser/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ 
+
+</body>
+</html>

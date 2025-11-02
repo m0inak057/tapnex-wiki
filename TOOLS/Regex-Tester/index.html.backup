@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Regex Tester Tool - Free Online Regex Tester</title>
+ <meta name="description" content="Free online regex tester. Test and validate regular expressions with our interactive tool.">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Regex-Tester/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Regex Tester</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Regular Expression Tester</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Test and debug your regular expressions with live pattern matching
+ </p>
+ 
+ <div class="regex-container">
+ <!-- RegEx Pattern Input -->
+ <div class="input-section">
+ <label for="regex-pattern">Regular Expression Pattern</label>
+ <div class="regex-input-group">
+ <span class="regex-delimiter">/</span>
+ <input 
+ type="text" 
+ id="regex-pattern" 
+ placeholder="Enter your pattern"
+ spellcheck="false"
+ >
+ <span class="regex-delimiter">/</span>
+ <input 
+ type="text" 
+ id="regex-flags" 
+ placeholder="flags"
+ maxlength="6"
+ spellcheck="false"
+ title="g = global, i = case-insensitive, m = multiline, s = dotAll, u = unicode, y = sticky"
+ >
+ </div>
+ <div id="regex-error" class="error-message"></div>
+ <div class="flags-help">
+ <small>
+ <strong>Flags:</strong> 
+ <span class="flag-info">g</span> global, 
+ <span class="flag-info">i</span> case-insensitive, 
+ <span class="flag-info">m</span> multiline, 
+ <span class="flag-info">s</span> dotAll, 
+ <span class="flag-info">u</span> unicode, 
+ <span class="flag-info">y</span> sticky
+ </small>
+ </div>
+ </div>
+
+ <!-- Test String Input -->
+ <div class="input-section">
+ <label for="test-string-input">Test String</label>
+ <textarea 
+ id="test-string-input" 
+ placeholder="Enter or paste the text you want to test against your RegEx pattern..."
+ rows="8"
+ spellcheck="false"
+ ></textarea>
+ </div>
+
+ <!-- Results Container -->
+ <div id="results-container">
+ <div class="results-header">
+ <h3>🎯 Results</h3>
+ <div class="match-stats">
+ <span id="match-count">0 matches</span>
+ </div>
+ </div>
+ <div id="results-output" class="results-content"></div>
+ </div>
+
+ <!-- Quick Actions -->
+ <div class="action-buttons">
+ <button id="copy-regex-btn" class="action-btn primary-btn">
+ 📋 Copy RegEx
+ </button>
+ <button id="clear-all-btn" class="action-btn secondary-btn">
+ 🗑️ Clear All
+ </button>
+ </div>
+ </div>
+
+ 
+
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Real-Time Testing:</strong> See matches highlighted as you type</li>
+ <li><strong>All Flags Supported:</strong> g, i, m, s, u, y flags available</li>
+ <li><strong>Syntax Validation:</strong> Instant error detection for invalid patterns</li>
+ <li><strong>Match Highlighting:</strong> Visual highlighting of matched text</li>
+ <li><strong>Match Counter:</strong> Shows total number of matches found</li>
+ <li><strong>Multi-line Support:</strong> Test patterns across multiple lines</li>
+ <li><strong>Copy RegEx:</strong> Copy your pattern with flags to clipboard</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>📚 Common RegEx Patterns</h4>
+ <p><strong>Email Validation:</strong></p>
+ <ul>
+ <li><code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$</code></li>
+ </ul>
+ <p><strong>URL Matching:</strong></p>
+ <ul>
+ <li><code>https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b</code></li>
+ </ul>
+ <p><strong>Phone Numbers (US):</strong></p>
+ <ul>
+ <li><code>^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$</code></li>
+ </ul>
+ <p><strong>IP Address:</strong></p>
+ <ul>
+ <li><code>^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$</code></li>
+ </ul>
+ <p><strong>Hexadecimal Color:</strong></p>
+ <ul>
+ <li><code>^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$</code></li>
+ </ul>
+ <p><strong>Date (YYYY-MM-DD):</strong></p>
+ <ul>
+ <li><code>^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$</code></li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🎯 RegEx Flags Explained</h4>
+ <ul>
+ <li><strong>g (global):</strong> Find all matches rather than stopping after the first match</li>
+ <li><strong>i (case-insensitive):</strong> Make the pattern case-insensitive (A = a)</li>
+ <li><strong>m (multiline):</strong> ^ and $ match start/end of each line, not just string</li>
+ <li><strong>s (dotAll):</strong> Makes . match newline characters as well</li>
+ <li><strong>u (unicode):</strong> Treat pattern and string as Unicode</li>
+ <li><strong>y (sticky):</strong> Match only from the index indicated by lastIndex property</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>📖 RegEx Syntax Guide</h4>
+ <p><strong>Character Classes:</strong></p>
+ <ul>
+ <li><code>\d</code> - Any digit (0-9)</li>
+ <li><code>\w</code> - Any word character (a-z, A-Z, 0-9, _)</li>
+ <li><code>\s</code> - Any whitespace character</li>
+ <li><code>.</code> - Any character except newline</li>
+ <li><code>[abc]</code> - Any character in the set</li>
+ <li><code>[^abc]</code> - Any character NOT in the set</li>
+ </ul>
+ <p><strong>Quantifiers:</strong></p>
+ <ul>
+ <li><code>*</code> - 0 or more times</li>
+ <li><code>+</code> - 1 or more times</li>
+ <li><code>?</code> - 0 or 1 time (optional)</li>
+ <li><code>{n}</code> - Exactly n times</li>
+ <li><code>{n,}</code> - n or more times</li>
+ <li><code>{n,m}</code> - Between n and m times</li>
+ </ul>
+ <p><strong>Anchors:</strong></p>
+ <ul>
+ <li><code>^</code> - Start of string/line</li>
+ <li><code>$</code> - End of string/line</li>
+ <li><code>\b</code> - Word boundary</li>
+ </ul>
+ <p><strong>Groups:</strong></p>
+ <ul>
+ <li><code>(abc)</code> - Capturing group</li>
+ <li><code>(?:abc)</code> - Non-capturing group</li>
+ <li><code>a|b</code> - Match a OR b</li>
+ </ul>
+ </div>
+
+ <div class="technology-highlight" style="margin-top: 2rem;">
+ <h4>🎯 Common Use Cases</h4>
+ <ul>
+ <li><strong>Form Validation:</strong> Validate email, phone, password formats</li>
+ <li><strong>Text Processing:</strong> Find and replace patterns in text</li>
+ <li><strong>Data Extraction:</strong> Extract specific data from logs or documents</li>
+ <li><strong>URL Routing:</strong> Match and parse URL patterns</li>
+ <li><strong>Syntax Highlighting:</strong> Identify code patterns for highlighting</li>
+ <li><strong>Search & Replace:</strong> Find and modify text patterns in editors</li>
+ <li><strong>Input Sanitization:</strong> Remove or validate user input</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>💡 RegEx Tips & Best Practices</h4>
+ <ul>
+ <li><strong>Start Simple:</strong> Build complex patterns incrementally</li>
+ <li><strong>Test Thoroughly:</strong> Test edge cases and unexpected inputs</li>
+ <li><strong>Use Comments:</strong> In some languages, use (?#comment) for clarity</li>
+ <li><strong>Avoid Greediness:</strong> Use ? after quantifiers for lazy matching</li>
+ <li><strong>Escape Special Characters:</strong> Use \ before . * + ? ^ $ { } [ ] ( ) | \</li>
+ <li><strong>Performance:</strong> Avoid nested quantifiers and excessive backtracking</li>
+ <li><strong>Non-Capturing Groups:</strong> Use (?:) when you don't need to capture</li>
+ </ul>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Regex-Tester/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ 
+
+</body>
+</html>
