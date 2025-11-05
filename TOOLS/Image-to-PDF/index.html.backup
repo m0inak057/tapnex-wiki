@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Image To Pdf Tool - Free Online Image To Pdf</title>
+ <meta name="description" content="Convert your images (JPG, PNG, WebP) into a single PDF file for free. Our online Image to PDF converter is fast, secure, and works in your browser. No uploads required.">
+ <meta name="keywords" content="image to pdf, jpg to pdf, png to pdf, convert image to pdf, free image to pdf converter, online pdf tool">
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/Image-to-PDF/">
+ <meta property="og:title" content="Free Image to PDF Converter - JPG, PNG to PDF | TapNex Wiki">
+ <meta property="og:description" content="Easily convert your JPG, PNG, and other images into a single PDF document. Fast, free, and completely secure—all processing happens in your browser.">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/Image-to-PDF/">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+ <!-- PDF-lib Library -->
+ <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/Image-to-PDF/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Image to PDF</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Image to PDF Converter</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Convert JPG, PNG, and WebP images into one PDF. Fast, free, and secure.
+ </p>
+
+ <div class="generator-container">
+ <div class="upload-section">
+ <div class="upload-area" id="upload-area">
+ <div class="upload-content">
+ <div class="upload-icon">🖼️</div>
+ <h3>Drop images here or click to browse</h3>
+ <p>Upload JPG, PNG, or WebP images to convert them into a single PDF</p>
+ <input type="file" id="image-upload" multiple accept="image/jpeg, image/png, image/webp" style="display: none;">
+ <button class="upload-button" onclick="document.getElementById('image-upload').click()">Choose Images</button>
+ </div>
+ </div>
+ </div>
+
+ <div class="image-list-section" id="image-list-section" style="display: none;">
+ <h4>Images to Convert (drag to reorder)</h4>
+ <div id="image-list" class="image-list"></div>
+ </div>
+
+ <div class="action-section">
+ <button id="convert-btn" class="tool-button" disabled>Convert to PDF</button>
+ <div id="status" class="status-message" style="display: none;"></div>
+ <div id="download-section" class="download-section" style="display: none;">
+ <a id="download-link" class="download-button" download="converted.pdf">Download PDF</a>
+ </div>
+ </div>
+ </div>
+
+ 
+
+ <div class="seo-content">
+ <h2>How to Convert Images to PDF for Free</h2>
+ <ol>
+ <li><strong>Upload Images:</strong> Click the "Choose Images" button or drag and drop your JPG, PNG, or other images into the upload area.</li>
+ <li><strong>Order Images:</strong> The images will appear in a list below. Drag and drop the images to set the correct order for the pages in your PDF.</li>
+ <li><strong>Convert to PDF:</strong> Once your images are in order, click the "Convert to PDF" button.</li>
+ <li><strong>Download:</strong> Your new PDF document will be created in seconds. Click the "Download" button to save it.</li>
+ </ol>
+
+ <h2>Frequently Asked Questions (FAQ)</h2>
+
+ <h3>Is this Image to PDF converter secure?</h3>
+ <p>Yes! This tool is 100% secure. All processing is done in your browser using JavaScript. Your image files are never uploaded to a server, so your data remains private.</p>
+
+ <h3>What image formats can I convert?</h3>
+ <p>Our tool supports the most popular web formats, including JPG/JPEG, PNG, and WebP.</p>
+
+ 
+
+ <h3>Will my images lose quality during conversion?</h3>
+ <p>No, the tool embeds the images into the PDF at their original quality.</p>
+
+ <h3>Can I combine multiple images into one PDF?</h3>
+ <p>Yes! You can upload as many images as you want. They will all be combined into a single PDF document, with each image on its own page, in the order you selected.</p>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ 
+
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+
+ <script src="/TOOLS/Image-to-PDF/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Free QR Code Generator 2025 | Create QR Codes Online - TapNex</title>
+ <meta name="description" content="Generate QR codes instantly for URLs, text, WiFi, contacts & more. Free QR code generator with download. No registration. Create custom QR codes now!">
+ <meta name="keywords" content="QR code generator, create QR code, free QR code, QR generator online, make QR code, custom QR code, barcode generator">
+ <meta name="author" content="TapNex">
+ <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+ 
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/QR-Generator/">
+ <meta property="og:title" content="Free QR Code Generator 2025 | Create QR Codes Online">
+ <meta property="og:description" content="Generate QR codes instantly. Free, fast & easy to use!">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Canonical -->
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/QR-Generator/">
+ 
+ <!-- Breadcrumb Schema -->
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [{
+     "@type": "ListItem",
+     "position": 1,
+     "name": "TapNex Wiki",
+     "item": "https://wiki.tapnex.tech/"
+   },{
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Tools",
+     "item": "https://wiki.tapnex.tech/TOOLS/"
+   },{
+     "@type": "ListItem",
+     "position": 3,
+     "name": "QR Code Generator",
+     "item": "https://wiki.tapnex.tech/TOOLS/QR-Generator/"
+   }]
+ }
+ </script>
+ 
+ <!-- WebApplication Schema -->
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "QR Code Generator",
+   "url": "https://wiki.tapnex.tech/TOOLS/QR-Generator/",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web Browser",
+   "offers": {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD"
+   },
+   "description": "Free online QR code generator. Create QR codes for URLs, text, WiFi credentials, contacts, and more.",
+   "featureList": "URL to QR code, Text to QR code, Custom size, Download as PNG, Instant generation"
+ }
+ </script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/QR-Generator/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">Qr Generator</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">QR Code Generator</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Create QR codes instantly from any URL or text
+ </p>
+ 
+ <div class="qr-container">
+ <div class="input-section">
+ <label for="qr-text-input">Enter URL or Text</label>
+ <input 
+ type="text" 
+ id="qr-text-input" 
+ placeholder="Enter URL or text to encode"
+ autocomplete="off"
+ >
+ <button id="generate-btn" class="generate-button">Generate QR Code</button>
+ </div>
+
+ <div class="output-section">
+ <div id="qrcode-display" class="qrcode-display"></div>
+ <a id="download-btn" class="download-button button-style" download="qrcode.png" style="display: none;">
+ Download QR Code
+ </a>
+ </div>
+ </div>
+
+ 
+
+ <div class="technology-highlight" style="margin-top: 3rem;">
+ <h4>✨ Features</h4>
+ <ul>
+ <li><strong>Instant Generation:</strong> Create QR codes in seconds</li>
+ <li><strong>Universal Compatibility:</strong> Works with URLs, text, phone numbers, and more</li>
+ <li><strong>High Quality:</strong> Generate crisp, scannable QR codes</li>
+ <li><strong>Easy Download:</strong> Save your QR code as a PNG image</li>
+ <li><strong>No Registration:</strong> Free to use, no account needed</li>
+ <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+ <li><strong>Dark/Light Mode:</strong> Toggle between themes using the button in the top-right corner</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase-lightblue" style="margin-top: 2rem;">
+ <h4>💡 Common Uses</h4>
+ <ul>
+ <li><strong>Website Links:</strong> Share URLs quickly and easily</li>
+ <li><strong>Contact Information:</strong> Create vCards for business cards</li>
+ <li><strong>Wi-Fi Access:</strong> Share Wi-Fi credentials securely</li>
+ <li><strong>Event Tickets:</strong> Generate tickets and passes</li>
+ <li><strong>Product Information:</strong> Link to product details and manuals</li>
+ <li><strong>Social Media:</strong> Direct people to your social profiles</li>
+ </ul>
+ </div>
+
+ <div class="analytics-showcase" style="margin-top: 2rem;">
+ <h4>📱 How to Use</h4>
+ <ol>
+ <li><strong>Enter Your Content:</strong> Type or paste the URL or text you want to encode</li>
+ <li><strong>Generate:</strong> Click the "Generate QR Code" button</li>
+ <li><strong>Download:</strong> Click "Download QR Code" to save it as an image</li>
+ <li><strong>Share:</strong> Use the QR code in your marketing materials, business cards, or websites</li>
+ </ol>
+ </div>
+
+ <div style="margin-top: 3rem;">
+ <h2>❓ Frequently Asked Questions</h2>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>What is a QR code?</h3>
+ <p>A QR (Quick Response) code is a two-dimensional barcode that can store various types of information such as URLs, text, contact information, WiFi credentials, and more. QR codes can be scanned using smartphone cameras or dedicated QR code readers, making them perfect for quick information sharing.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>How do I use the generated QR code?</h3>
+ <p>After generating your QR code, simply download it as a PNG image. You can then print it on business cards, flyers, posters, or product packaging. You can also use it digitally on websites, social media, or email signatures. Anyone with a smartphone can scan it to access your content instantly.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>Can I customize the size of my QR code?</h3>
+ <p>Yes! Our QR code generator allows you to create QR codes in different sizes to suit your needs. Whether you need a small code for a business card or a large one for a billboard, you can adjust the size before downloading. The code remains scannable at any size as long as it's clear and properly printed.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>Are the QR codes permanent?</h3>
+ <p>The QR codes generated by our tool are static, meaning the content is permanently encoded into the code itself. Once generated, the QR code will always point to the same URL or contain the same text. This makes them reliable for long-term use on printed materials. However, if the URL destination changes or goes offline, the QR code will no longer work.</p>
+ </div>
+ 
+ <div style="margin-top: 1.5rem;">
+ <h3>What file format are the QR codes?</h3>
+ <p>Our generator creates QR codes in PNG format, which is a high-quality, lossless image format. PNG files work great for both digital and print use, maintaining clarity at any size. The transparent background makes it easy to overlay on different colored backgrounds.</p>
+ </div>
+ </div>
+
+ <div style="margin-top: 3rem;">
+ <h2>✨ Why Use Our QR Code Generator?</h2>
+ <ul style="margin-top: 1rem;">
+ <li><strong>100% Free:</strong> Generate unlimited QR codes without any cost or registration</li>
+ <li><strong>Instant Generation:</strong> Create QR codes in seconds with a single click</li>
+ <li><strong>No Storage:</strong> All processing happens in your browser - we don't store your data</li>
+ <li><strong>High Quality:</strong> Download crisp, scannable PNG images perfect for print and digital use</li>
+ <li><strong>Easy to Use:</strong> Simple interface - just paste your URL or text and generate</li>
+ <li><strong>No Watermarks:</strong> Clean QR codes without any branding or watermarks</li>
+ <li><strong>Mobile Friendly:</strong> Works perfectly on smartphones, tablets, and desktop computers</li>
+ <li><strong>Privacy First:</strong> Browser-based processing means your content stays private</li>
+ </ul>
+ </div>
+
+ <div style="margin-top: 3rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+ <h2>🔗 Related Tools</h2>
+ <p style="margin-bottom: 1rem;">Explore more useful tools:</p>
+ <ul>
+ <li><a href="/TOOLS/URL-Shortener/" style="color: var(--link-color); text-decoration: none;">URL Shortener</a> - Create short, shareable links</li>
+ <li><a href="/TOOLS/Password-Generator/" style="color: var(--link-color); text-decoration: none;">Password Generator</a> - Generate strong, secure passwords</li>
+ <li><a href="/TOOLS/Lorem-Ipsum-Generator/" style="color: var(--link-color); text-decoration: none;">Lorem Ipsum Generator</a> - Generate placeholder text</li>
+ <li><a href="/tools.html" style="color: var(--link-color); text-decoration: none;">All Tools</a> - Browse our complete tool collection</li>
+ </ul>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/QR-Generator/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ 
+
+</body>
+</html>
