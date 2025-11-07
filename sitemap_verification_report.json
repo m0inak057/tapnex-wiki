@@ -1,0 +1,1120 @@
+{
+  "not_found": [
+    "https://wiki.tapnex.tech/MARKETING/Co-Marketing-%26-brand-partnership/index.html"
+  ],
+  "trailing_slash": [
+    {
+      "url": "https://wiki.tapnex.tech/Jain%20Docs/",
+      "correct": "https://wiki.tapnex.tech/Jain%20Docs"
+    }
+  ],
+  "case_mismatch": [],
+  "missing_extension": [
+    {
+      "url": "https://wiki.tapnex.tech/MARKETING/Co-Marketing-%26-brand-partnership",
+      "reason": "Missing .html extension or /index.html"
+    }
+  ],
+  "wrong_path": [
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A4%BE-%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE-%E0%A4%B9%E0%A5%8B-%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A3%2C-%E0%A4%B8%E0%A4%BE%E0%A4%81%E0%A4%9A%E0%A5%87-%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%B5%E0%A4%B0-%E0%A4%95%E0%A5%8B-%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%9A%E0%A4%BE%E0%A4%A8...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%85%E0%A4%AE%E0%A5%83%E0%A4%A4-%E0%A4%B8%E0%A5%87-%E0%A4%97%E0%A4%97%E0%A4%B0%E0%A5%80-%E0%A4%AD%E0%A4%B0%E0%A5%8B%2C-%E0%A4%95%E0%A4%BF-%E0%A4%A8%E0%A5%8D%E0%A4%B9%E0%A4%B5%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A5%81-%E0%A4%86%E0%A4%9C-%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82%E0%A4%97%E0%A5%87..-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%BE-%E0%A4%85%E0%A4%A8%E0%A4%82%E0%A4%A4-%E0%A4%97%E0%A5%81%E0%A4%A3%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A4%BE-%E0%A4%A7%E0%A4%A8%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE-%E0%A4%95%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%A8",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80-%E0%A4%AA%E0%A4%82%E0%A4%9A%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A5%87%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%86%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF-%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0-%E0%A4%9C%E0%A5%80--aarti-shree-vidyasagar-maharaj-ji",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%95%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%8F%E0%A4%95-%E0%A4%A8%E0%A4%BE%E0%A4%AE-%E0%A4%B8%E0%A4%BE%E0%A4%81%E0%A4%9A%E0%A4%BE%2C-%E0%A4%8F%E0%A4%95-%E0%A4%A8%E0%A4%BE%E0%A4%AE-%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0%E0%A4%BE...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%93-%E0%A4%9C%E0%A4%97%E0%A4%A4-%E0%A4%95%E0%A5%87-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF-%E0%A4%A6%E0%A4%BE%E0%A4%A4%E0%A4%BE...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0%E0%A4%BE-%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A4%BE-%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%80-%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%B0-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%AE%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81-%E0%A4%A8%E0%A5%87-%E0%A4%9C%E0%A4%B9%E0%A4%BE%E0%A4%82-%E0%A4%9C%E0%A4%B9%E0%A4%BE%E0%A4%82-%E0%A4%AD%E0%A5%80-%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%A4%E0%A4%BF-%E0%A4%9C%E0%A4%B2%E0%A4%BE%E0%A4%88-%E0%A4%B9%E0%A5%88...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A4%A8-%E0%A4%95%E0%A5%87-%E0%A4%AA%E0%A4%B2%E0%A4%A8%E0%A4%BE-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%9D%E0%A5%82%E0%A4%B2%E0%A5%87-%E0%A4%AE%E0%A5%8B%E0%A4%B0%E0%A5%87-%E0%A4%B5%E0%A5%80%E0%A4%B0%E0%A4%BE...%28%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%A8%E0%A4%BE-%E0%A4%97%E0%A5%80%E0%A4%A4%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9A%E0%A4%A4%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8-%E0%A4%B8%E0%A5%89%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%A8%E0%A5%87%E0%A4%B0-%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%87-%E0%A4%AC%E0%A4%BE%E0%A4%AC%E0%A4%BE-%E0%A4%8B%E0%A4%B7%E0%A4%AD%E0%A4%A6%E0%A5%87%E0%A4%B5-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9A%E0%A5%88%E0%A4%A4%E0%A4%A8%E0%A5%8D%E0%A4%AF-%E0%A4%95%E0%A5%87-%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%AA%E0%A4%A3-%E0%A4%AE%E0%A5%87%E0%A4%82%2C-%E0%A4%86%E0%A4%A8%E0%A4%82%E0%A4%A6-%E0%A4%95%E0%A5%87-%E0%A4%86%E0%A4%B2%E0%A4%AF-%E0%A4%AE%E0%A5%87%E0%A4%82...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9A%E0%A5%8C%E0%A4%AC%E0%A5%80%E0%A4%B8%E0%A5%8B%E0%A4%82-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9A%E0%A5%8C%E0%A4%B8%E0%A4%A0-%E0%A4%8B%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%98%E0%A5%8D%E0%A4%AF",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9B%E0%A4%B9-%E0%A4%A2%E0%A4%BE%E0%A4%B2%E0%A4%BE-chah-dhala",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A4%B2%E0%A4%BE%E0%A4%AD%E0%A4%BF%E0%A4%B7%E0%A5%87%E0%A4%95-%E0%A4%B5%E0%A4%BE-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%B2-%E0%A4%AA%E0%A4%BE%E0%A4%A0-jalabhishek-path",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A4%B9%E0%A4%BE%E0%A4%81-%E0%A4%A8%E0%A5%87%E0%A4%AE%E0%A5%80-%E0%A4%95%E0%A5%87-%E0%A4%9A%E0%A4%B0%E0%A4%A3-%E0%A4%AA%E0%A4%A1%E0%A4%BC%E0%A5%87%2C-%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%B0-%E0%A4%B5%E0%A5%8B-%E0%A4%A7%E0%A4%B0%E0%A4%A4%E0%A5%80-%E0%A4%B9%E0%A5%88...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%B6%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A4%BE-shantidhara",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%80%E0%A4%B5%E0%A4%A8-%E0%A4%95%E0%A5%87-%E0%A4%95%E0%A4%BF%E0%A4%B8%E0%A5%80-%E0%A4%AD%E0%A5%80-%E0%A4%AA%E0%A4%B2-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%B5%E0%A5%88%E0%A4%B0%E0%A4%BE%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%89%E0%A4%AE%E0%A4%A1-%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A4%BE-%E0%A4%B9%E0%A5%88...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%86%E0%A4%B2%E0%A5%8B%E0%A4%9A%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%B6%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%BF-%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-charitra-shuddhi-vrat-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE%E0%A4%8F%E0%A4%81-tirthankar-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%B0%E0%A4%BE%E0%A4%96%E0%A5%80-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%82-%E0%A4%AE%E0%A4%A8%E0%A4%BE%E0%A4%88-%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A5%80-%E0%A4%B9%E0%A5%88-%28jain-raksha-bandhan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A5%87-%E0%A4%95%E0%A5%87-%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%AD%E0%A5%82%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%AD-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%9F%E0%A4%BF%E0%A4%A4-%E0%A4%85%E0%A4%A4%E0%A4%BF%E0%A4%B6%E0%A4%AF%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%A4%E0%A4%AA%E0%A4%9E%E0%A5%8D%E0%A4%9A%E0%A4%AE%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-shrutpanchami-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A4%AA%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A5%81%E0%A4%97%E0%A4%A8%E0%A5%8D%E0%A4%A7-%E0%A4%A6%E0%A4%B6%E0%A4%AE%E0%A5%80-%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-sugandha-dashami-vrat-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF-%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%95-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A4%BE-%E0%A4%B9%E0%A5%8B-%E0%A4%97%E0%A4%AF%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A3%E0%A4%AE%E0%A5%8B%E0%A4%95%E0%A4%BE%E0%A4%B0-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%AE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0-namokar-mantra-in-hindi-meaning",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A3%E0%A4%BE%E0%A4%AE%E0%A5%8B%E0%A4%95%E0%A4%BE%E0%A4%B0-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-namokar-mahamantra-puja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A4%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A5-%E0%A4%B8%E0%A5%82%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%A8%E0%A5%87%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%28neminath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A4%E0%A5%81%E0%A4%AE-%E0%A4%B8%E0%A5%87-%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A5%80-%E0%A4%B2%E0%A4%97%E0%A4%A8-%28bhajan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A4%E0%A5%81%E0%A4%AE-%E0%A4%B8%E0%A5%87-%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A5%80-%E0%A4%B2%E0%A4%97%E0%A4%A8-tum-se-lagi-lagan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8-%E0%A4%AA%E0%A4%9A%E0%A5%8D%E0%A4%9A%E0%A5%80%E0%A4%B8%E0%A5%80%28%E0%A4%A4%E0%A5%81%E0%A4%AE-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A4%96%E0%A4%A4%29-darshan-pacchisi",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8-%E0%A4%AA%E0%A4%BE%E0%A4%A0%28%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8%E0%A4%82-%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%AF%29-darshan-paath-sanskrit",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF-%28%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A5%81-%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%A4-%E0%A4%AA%E0%A4%BE%E0%A4%B5%E0%A4%A8%29-darshan-stuti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B8%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3-%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%B5",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A4%B8-%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A5%80%E0%A4%AA%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8--%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF-%28depawali-pujan-vidhi%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%BE-%E0%A4%B8%E0%A5%87-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%80%2C-%E0%A4%A4%E0%A5%8B-%E0%A4%86%E0%A4%AF%E0%A5%80-%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A5%87-%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8%28%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE-%E0%A4%85%E0%A4%B0%E0%A4%B9%E0%A4%82%E0%A4%A4%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A5%87%E0%A4%B5-%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A6%E0%A5%87%E0%A4%B5-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF-%28%E0%A4%85%E0%A4%B9%E0%A5%8B-%E0%A4%9C%E0%A4%97%E0%A4%A4-%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81%29-dev-stuti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A7%E0%A4%A8%E0%A5%8D%E0%A4%AF-%E0%A4%A7%E0%A4%A8%E0%A5%8D%E0%A4%AF-%E0%A4%B5%E0%A5%80%E0%A4%A4%E0%A4%B0%E0%A4%BE%E0%A4%97-%E0%A4%B5%E0%A4%BE%E0%A4%A3%E0%A5%80...-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0-%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A5%80%E0%A4%AA-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A8%E0%A4%B5%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A4%E0%A4%BE-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-nav-devta-jinpuja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A8%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%AF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%E0%A4%AA%E0%A5%80%E0%A4%A0%E0%A4%BF%E0%A4%95%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A4%BE-%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%97-%E0%A4%B9%E0%A4%AE%E0%A4%95%E0%A5%8B-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A5%8B%E0%A4%82-%E0%A4%B8%E0%A5%87-%E0%A4%AD%E0%A5%80-%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0%E0%A4%BE-%E0%A4%B9%E0%A5%88",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A3-%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%A1",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A4%82%E0%A4%9A-%E0%A4%AC%E0%A4%BE%E0%A4%B2%E0%A4%AF%E0%A4%A4%E0%A4%BF-%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A4%82%E0%A4%9A-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%81-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-panch-meru-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF-%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BF-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2-%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B0%E0%A4%AE%E0%A5%8D%E0%A4%AD",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A5%87%E0%A4%95-%E0%A4%9F%E0%A5%8B%E0%A4%82%E0%A4%95-%E0%A4%95%E0%A5%87-%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%98%E0%A5%8D%E0%A4%AF",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE%E0%A4%82-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A4%AE-%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%A8%E0%A4%B5%E0%A4%95%E0%A4%BE%E0%A4%B0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A4%83-%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF-prat-kaleen-stuti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AC%E0%A5%80%E0%A4%B8-%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%A6%E0%A5%80%E0%A4%AA-%E0%A4%85%E0%A4%A2%E0%A4%BC%E0%A4%BE%E0%A4%88-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%81%29-jinvani-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%BE%E0%A4%A3%E0%A5%80-%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B9",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0-%28%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%83%E0%A4%A4%29-bhaktamar-stotra",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0-%28%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%29-bhaktamar-stotra-hindi",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%95%E0%A5%80-%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE-bhaktamar-mahima",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%83%E0%A4%A4-bhaktamar-stotra-in-sanskrit",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF-%E0%A4%AC%E0%A5%87%E0%A4%95%E0%A4%B0%E0%A4%BE%E0%A4%B0-%E0%A4%B9%E0%A5%88-%E0%A4%86%E0%A4%A8%E0%A4%82%E0%A4%A6-%E0%A4%85%E0%A4%AA%E0%A4%BE%E0%A4%B0-%E0%A4%B9%E0%A5%88",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%85%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5%28anantnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%A8%E0%A4%A8%E0%A4%BE%E0%A4%A5%28abhinandannath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%85%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%A5%28arnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%85%E0%A4%B0%E0%A4%B9%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE-shri-arahnath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%BE-%E0%A4%86%E0%A4%A8%E0%A4%82%E0%A4%A6-%E0%A4%AD%E0%A4%82%E0%A4%A1%E0%A4%BE%E0%A4%B0-%E0%A4%9A%E0%A5%87%E0%A4%A4%E0%A4%A8-%E0%A4%89%E0%A4%B8-%E0%A4%AA%E0%A4%B0-%E0%A4%A6%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%BF-%E0%A4%95%E0%A4%B0...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%95%E0%A5%81%E0%A4%82%E0%A4%A5%E0%A5%81%E0%A4%A8%E0%A4%BE%E0%A4%A5%28kunthunath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%9A%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A5%81%28chandrapabhu%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%A8%E0%A4%BE%E0%A4%A5%28dharmnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%A8%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%28naminath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%AE%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%28padamprabh%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AA%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%A6%E0%A4%82%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5%28puphpdant%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%28mallinath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5%28munisubratnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A5%88%E0%A4%AF%E0%A4%BE%2C-%E0%A4%89%E0%A4%B8-%E0%A4%AA%E0%A4%BE%E0%A4%B0-%E0%A4%B2%E0%A4%97%E0%A4%BE-%E0%A4%A6%E0%A5%87%E0%A4%A8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A5%88%E0%A4%AF%E0%A4%BE-%E0%A4%89%E0%A4%B8-%E0%A4%AA%E0%A4%BE%E0%A4%B0-%E0%A4%B2%E0%A4%97%E0%A4%BE-%E0%A4%A6%E0%A5%87%E0%A4%A8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A5%8D%E0%A4%AF%28vasupujya%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B5%E0%A4%BF%E0%A4%AE%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5%28vimalnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B6%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%28shantinath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B6%E0%A5%80%E0%A4%A4%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5%28sheetalnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5%28shreyanshnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5%28suparshvnath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B8%E0%A5%81%E0%A4%AE%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%28sumatinath%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%A8%E0%A4%BE-%E0%A4%97%E0%A5%80%E0%A4%A4",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%A8%E0%A4%BE-%E0%A4%AC%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%E0%A4%B8%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A4%BE%E0%A4%9A%E0%A4%B0%E0%A4%A3-%28%E0%A4%9A%E0%A5%8C%E0%A4%AC%E0%A5%80%E0%A4%B8-%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95-%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A4%BE%E0%A4%98%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%83%E0%A4%A4%E0%A4%BE%E0%A4%AD%E0%A4%BF%E0%A4%B7%E0%A5%87%E0%A4%95-%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%9D%E0%A5%8B%E0%A4%AA%E0%A4%A1%E0%A4%BC%E0%A5%80-%E0%A4%95%E0%A5%87-%E0%A4%AD%E0%A4%BE%E0%A4%97-%E0%A4%86%E0%A4%9C-%E0%A4%96%E0%A5%81%E0%A4%B2-%E0%A4%9C%E0%A4%BE%E0%A4%AF%E0%A5%87%E0%A4%82%E0%A4%97%E0%A5%87...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%A8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%87-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B5%E0%A5%80%E0%A4%B0-%E0%A4%9D%E0%A5%82%E0%A4%B2%E0%A5%87-%E0%A4%AA%E0%A4%B2%E0%A4%A8%E0%A4%BE...-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%87-%E0%A4%B8%E0%A4%B0-%E0%A4%AA%E0%A4%B0-%E0%A4%B0%E0%A4%96-%E0%A4%A6%E0%A5%8B-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%A8-%28%E0%A4%AD%E0%A4%9C%E0%A4%A8%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%88%E0%A4%82-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE...-%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A4%BE-%E0%A4%85%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B5-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%88%E0%A4%82-%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BE%E0%A4%A8%E0%A4%82%E0%A4%A6-%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A5%80-%E0%A4%B9%E0%A5%82%E0%A4%82",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%8B%E0%A4%95%E0%A5%8D%E0%A4%B7-%E0%A4%95%E0%A5%87-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%AE%E0%A5%80-%E0%A4%B9%E0%A4%AE%E0%A4%A8%E0%A5%87%2C-%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%8B%E0%A4%82-%E0%A4%B8%E0%A5%87-%E0%A4%B2%E0%A4%A1%E0%A4%BC%E0%A4%A4%E0%A5%87-%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A5%87%E0%A4%82...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%AE%E0%A5%8B%E0%A4%B9-%E0%A4%9C%E0%A4%BE%E0%A4%B2-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%AB%E0%A4%82%E0%A4%B8%E0%A5%87-%E0%A4%B9%E0%A5%81%E0%A4%8F-%E0%A4%B9%E0%A5%88%E0%A4%82%2C-%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%8B-%E0%A4%A8%E0%A5%87-%E0%A4%86-%E0%A4%98%E0%A5%87%E0%A4%B0%E0%A4%BE...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B0%E0%A4%A4%E0%A5%8D%E0%A4%A8%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B0%E0%A5%8B%E0%A4%AE-%E0%A4%B0%E0%A5%8B%E0%A4%AE-%E0%A4%AA%E0%A5%81%E0%A4%B2%E0%A4%95%E0%A4%BF%E0%A4%A4-%E0%A4%B9%E0%A5%8B-%E0%A4%9C%E0%A4%BE%E0%A4%AF%2C-%E0%A4%9C%E0%A4%AC-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%B0-%E0%A4%95%E0%A5%87-%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8-%E0%A4%AA%E0%A4%BE%E0%A4%AF...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B2%E0%A4%98%E0%A5%81-%E0%A4%9A%E0%A5%88%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF-%28%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%B7%E0%A5%81-%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%87%E0%A4%B7%E0%A5%81%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B5%E0%A4%BF%E0%A4%A8%E0%A4%AF-%E0%A4%AA%E0%A4%BE%E0%A4%A0-vinay-path",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B5%E0%A4%BF%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%9C%E0%A4%A8-%E0%A4%AA%E0%A4%BE%E0%A4%A0%28%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A4%BE%E0%A4%B2%E0%A4%BE-%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AE%E0%A5%87-%E0%A4%A4%E0%A5%8B-%E0%A4%AA%E0%A4%95%E0%A4%A1%E0%A4%AF%E0%A5%8B-%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A5%8B-%E0%A4%B9%E0%A4%BE%E0%A4%A5-%28jain-bhajan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF-%E0%A4%95%E0%A4%BE-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A4%BE%E0%A4%9A%E0%A4%B0%E0%A4%A3",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%95-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%A3",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%95-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%A3-%28%E0%A4%B2%E0%A4%98%E0%A5%81%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%9C%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%9C%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-ajitnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%A8%E0%A4%82%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-anantnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%A8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%A8-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-abhinandan-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-arnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%B0%E0%A4%B9%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%86%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-aadinath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%8B%E0%A4%B7%E0%A4%BF-%E0%A4%AE%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%B2-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%95%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A5%81%E0%A4%82%E0%A4%A1-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%95%E0%A5%81%E0%A4%82%E0%A4%A5%E0%A5%81%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%95%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%95%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A5%E0%A5%81%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%95%E0%A5%88%E0%A4%B2%E0%A4%BE%E0%A4%B8%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A4%BF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-shri-kailas-giri-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%97%E0%A5%8C%E0%A4%A4%E0%A4%AE-%E0%A4%97%E0%A4%A3%E0%A4%A7%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A5%81-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%9A%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-chandra-prabha-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A6%E0%A5%87%E0%A4%B5-%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-dev-shastra-guru-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-dharmnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-naninath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%BE%E0%A4%95%E0%A5%8B%E0%A4%A1%E0%A4%BC%E0%A4%BE-%E0%A4%AD%E0%A5%88%E0%A4%B0%E0%A4%B5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A3-%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%B2%E0%A4%A1%E0%A5%8D%E0%A4%A1%E0%A5%82-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A5%87%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A5%87%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-neminath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A5%87%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%82%E0%A4%9A-%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A5%87%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%AE%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A5%81-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%AE%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AC%E0%A4%BE%E0%A4%A1%E0%A4%BC%E0%A4%BE%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%AE%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-padmaprabh-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%AE%E0%A4%BE%E0%A4%B5%E0%A4%A4%E0%A5%80-%E0%A4%AE%E0%A4%BE%E0%A4%A4%E0%A4%BE-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE-padmavati-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80-parasnath-bhagwan-aarti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%82-%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%83%E0%A4%A4",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AA%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A5%87%E0%A4%82%E0%A4%A6%E0%A5%81%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AC%E0%A4%96%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%B5%E0%A4%B0-%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%29--shri-parshwanath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-parasnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%A6%E0%A4%82%E0%A4%A4-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%A6%E0%A4%A8%E0%A5%8D%E0%A4%A4-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-pushpdant-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AC%E0%A4%A1%E0%A4%BC%E0%A5%87-%E0%A4%AC%E0%A4%BE%E0%A4%AC%E0%A4%BE-%E0%A4%95%E0%A5%81%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%B2%E0%A4%AA%E0%A5%81%E0%A4%B0-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AC%E0%A4%BE%E0%A4%B9%E0%A5%81%E0%A4%AC%E0%A4%B2%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AC%E0%A5%9C%E0%A5%87-%E0%A4%AC%E0%A4%BE%E0%A4%AC%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BE%E0%A4%A8",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%82-shri-mangalashtak-stotram",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%9C%E0%A5%8D%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%B8%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%AE-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-mallinath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B5%E0%A5%80%E0%A4%B0-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B5%E0%A5%80%E0%A4%B0-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-mahaveer-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B5%E0%A5%80%E0%A4%B0-%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-muni-subratnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-vasupujya-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BF%E0%A4%AE%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BF%E0%A4%AE%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-vimalnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BF%E0%A4%AE%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A5%81%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%A8%E0%A4%BF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%82%E0%A4%AD%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-sambhavnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5%E0%A4%9C%E0%A5%80-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A5%8D-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80---shri-shantinath-ji-bhagwan-ki-aarti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%95%E0%A5%80-%E0%A4%86%E0%A4%B0%E0%A4%A4%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%80%E0%A4%A4%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%80%E0%A4%A4%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-sheetalnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%80%E0%A4%A4%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-shrayanshnath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A5%80-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%AF%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%A6-%E0%A4%B6%E0%A4%BF%E0%A4%96%E0%A4%B0-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE-shri-sammed-shikhar-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%A6-%E0%A4%B6%E0%A4%BF%E0%A4%96%E0%A4%B0-%E0%A4%9F%E0%A5%8B%E0%A4%82%E0%A4%95%E0%A5%8B-%E0%A4%95%E0%A5%87-%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%98",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-suparshwanath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A5%81%E0%A4%AE%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B8%E0%A5%81%E0%A4%AE%E0%A4%A4%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%9C%E0%A4%BF%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-2022-new-shri-sumatinath-jin-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%BF-%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF-%28%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%E0%A4%AF%E0%A4%BE%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%BF-%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF-%E0%A4%AA%E0%A4%BE%E0%A4%A0-%28%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A5%80-%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%9B%E0%A4%BE%E0%A4%AF%E0%A4%BE%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%BF-%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%A8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%BF-%E0%A4%AE%E0%A4%B0%E0%A4%A3-%E0%A4%AA%E0%A4%BE%E0%A4%A0--samadhi-maran-path",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A5%80%E0%A4%AE%E0%A4%B0%E0%A4%A3-%E0%A4%AA%E0%A4%BE%E0%A4%A0-%28%E0%A4%B2%E0%A4%98%E0%A5%81%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%9A%E0%A5%8D%E0%A4%9A%E0%A4%AF-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%E0%A5%A4-samuchchay-puja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%A6%E0%A4%B6%E0%A4%BF%E0%A4%96%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%95%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%97%E0%A5%8D%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%97%E0%A5%8D%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%B2%E0%A5%82%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8%E0%A4%BE-%E0%A4%95%E0%A5%87-%E0%A4%B0%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C-%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%BE-%E0%A4%95%E0%A5%87-%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87-%E0%A4%9A%E0%A4%B2-%E0%A4%B0%E0%A5%87-%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%80-%E0%A4%9A%E0%A4%B2",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%BF%E0%A4%95-%E0%A4%AA%E0%A4%BE%E0%A4%A0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95%E0%A4%AE%E0%A5%8D%29-siddhapuja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95%29-%E0%A4%B9%E0%A5%80%E0%A4%B0%E0%A4%BE%E0%A4%9A%E0%A4%82%E0%A4%A6-%E0%A4%9C%E0%A5%80",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95%E0%A4%AE%E0%A5%8D%29-siddhapuja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-%28%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%29-%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A8%E0%A4%A4%E0%A4%B0%E0%A4%BE%E0%A4%AF-siddha-puja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A5%81%E0%A4%96-%E0%A4%86%E0%A4%A4%E0%A5%87-%E0%A4%B9%E0%A5%88-%E0%A4%A6%E0%A5%81%E0%A4%83%E0%A4%96-%E0%A4%86%E0%A4%A4%E0%A5%87-%E0%A4%B9%E0%A5%88...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A5%8B%E0%A4%B2%E0%A4%B9-%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A4%A3-%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE-solah-karan-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97-%E0%A4%B8%E0%A5%87-%E0%A4%B8%E0%A5%81%E0%A4%82%E0%A4%A6%E0%A4%B0-%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%AA%E0%A4%AE-%E0%A4%B9%E0%A5%88-%E0%A4%AF%E0%A5%87-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%B0-%E0%A4%95%E0%A4%BE-%E0%A4%A6%E0%A4%B0%E0%A4%AC%E0%A4%BE%E0%A4%B0...jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%A4%B9%E0%A5%88-%E0%A4%B8%E0%A5%80%E0%A4%AE%E0%A4%82%E0%A4%A7%E0%A4%B0-%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%B6%E0%A4%B0%E0%A4%A3-%E0%A4%B2%E0%A5%80-%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A5%80...-jain-bhajan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/%E0%AA%B6%E0%AB%8D%E0%AA%B0%E0%AB%80-%E0%AA%AD%E0%AA%95%E0%AB%8D%E0%AA%A4%E0%AA%BE%E0%AA%AE%E0%AA%B0-%E0%AA%B8%E0%AB%8D%E0%AA%A4%E0%AB%8B%E0%AA%A4%E0%AB%8D%E0%AA%B0%E0%AA%AE%E0%AB%8D",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/acharya-shri-108-samay-sagar-ji-maharaj",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/acharya-shri-vidya-sagar-ji-maharaj",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/acharya-vandana",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/barah-bhavna",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-aadinath-%28%E0%A4%8B%E0%A4%B7%E0%A4%AD%E0%A4%A6%E0%A5%87%E0%A4%B5%29-%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%95%E0%A5%87-%E0%A4%AA%E0%A4%B9%E0%A4%B2%E0%A5%87-%E0%A4%A4%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%82%E0%A4%95%E0%A4%B0",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-ajitnath%28%E0%A4%85%E0%A4%9C%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%A5%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-mahaveer-%28bhajan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-mahaveer-swami",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-parshvanath-%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/bhagwan-sambhavnath%28%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AD%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/daslakshan-parva-%E0%A4%A6%E0%A4%B8-%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3-%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%B5-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%B9%E0%A5%88",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/diwali-poojan",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/dus-lakshan-parva-%E0%A4%A6%E0%A4%B8-%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3-%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%B5-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%B9%E0%A5%88",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/gift-article-ideas-for-house-warming",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/jab-koi-nahi-aata-mere-dada-aate-hai-lyrics",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/jain-%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0-%E0%A4%AE%E0%A5%87-%E0%A4%9A%E0%A4%BE%E0%A4%B5%E0%A4%B2-%E0%A4%AF%E0%A4%BE-%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4-%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%82-%E0%A4%9A%E0%A5%9D%E0%A4%BE%E0%A4%AF%E0%A4%BE-%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A4%BE-%E0%A4%B9%E0%A5%88",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/jain-parshvanath-ashtak-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A4%95%E0%A4%AE%E0%A5%8D",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/jinvani-book-poojan-paath-pradeep-jinvani-sangrah",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/jinvani-stuti-%E0%A4%9C%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%BE%E0%A4%A3%E0%A5%80-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/kshamavani-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/mahavirashtak-stotra",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/mangal-gaan-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B2-%E0%A4%97%E0%A4%BE%E0%A4%A8%28%E0%A4%86%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0-%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A4%BE-%E0%A4%B0%E0%A4%9A%E0%A4%BF%E0%A4%A4%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/michhami-dukkadam-quotes%2C-wishes",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/muni-tarun-sagar-ji-maharaj",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/mutual-fund-advisor-%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%9A%E0%A5%81%E0%A4%85%E0%A4%B2-%E0%A4%AB%E0%A4%82%E0%A4%A1%E0%A5%8D%E0%A4%B8-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%B8%E0%A5%8D%E0%A4%9F-%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87-%E0%A4%95%E0%A4%B0%E0%A5%87",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/nirvan-kshetra-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/om-aum-meaning",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/padmastakam-stotra-%28padamprabhu-bhagwan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/saluna-parv-pooja",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/samadhi-bhakti-in-sanskrit",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-abhinandan-nath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-ajitnath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-chandraprabhu-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-dharamnath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-namokar-mantra-chalisa-%E0%A4%A3%E0%A4%BE%E0%A4%AE%E0%A5%8B%E0%A4%95%E0%A4%BE%E0%A4%B0-%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%B8%E0%A4%BE",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-parshvanath-stuti-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%A5-%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-pushpdant-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-sambhavnath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-shantinath-bhagwan-ki-aarti",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-shantinath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-sudha-sagar-ji-maharaj-ka-jivan-parichay",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-sumatinath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-suparshvanath-chalisa",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/shri-vardhman-stotra",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/symbol-jainism-%E0%A4%9C%E0%A5%88%E0%A4%A8-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%95%E0%A4%BE-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%95",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/tumse-lagi-lagan-%28bhajan%29",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/uttam-kshama-quotes-in-hindi",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/vairagya-bhavna",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    },
+    {
+      "url": "https://wiki.tapnex.tech/jain-docs/yeh-sach-hai-ki-navkar-mai",
+      "reason": "Should use /Jain%20Docs/Pages/ instead of /jain-docs/"
+    }
+  ]
+}
