@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Free JWT Debugger - Decode JWT Tokens Online | TapNex Wiki</title>
+ <meta name="description" content="Decode and debug JSON Web Tokens (JWT) for free. Our online tool is fast, secure, and works 100% in your browser. Paste your token to see the header and payload.">
+ <meta name="keywords" content="jwt debugger, jwt decode, json web token, jwt verifier, decode jwt, online jwt tool, base64 decode, tapnex tools">
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/JWT-Debugger/">
+ <meta property="og:title" content="Free JWT Debugger - Decode Tokens Online | TapNex Wiki">
+ <meta property="og:description" content="Instantly decode and inspect JWT headers and payloads. 100% free and secure client-side tool.">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/JWT-Debugger/">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Main Site Styles -->
+ 
+ <!-- Tool-specific Styles -->
+ <link rel="stylesheet" href="/TOOLS/JWT-Debugger/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <div class="brand">
+ <a href="/index.html" class="logo" title="Go to Tapnex Wiki Home">
+ <img src="/images/TAPNEX_LOGO.png" alt="Tapnex Logo" class="header-logo">
+ <span class="logo-text">Tapnex <span class="logo-small">Wiki</span></span>
+ </a>
+ </div>
+ 
+ <div class="header-actions">
+ <a href="/index.html" class="nav-link-header">Home</a>
+ <a href="/tools.html" class="nav-link-header">Tools</a>
+ <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+ </div>
+ </div>
+ </header>
+
+ <!-- Dropdown Navigation Bar -->
+ <nav class="dropdown-nav" aria-label="Tools navigation">
+ <div class="container">
+ <ul class="nav-menu" id="nav-menu">
+ <li class="nav-item">
+ <a href="/index.html" class="nav-link">Home</a>
+ </li>
+ <li class="nav-item">
+ <a href="/tools.html" class="nav-link">All Tools</a>
+ </li>
+ <li class="nav-item">
+ <a href="#" class="nav-link active">JWT Debugger</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">JWT Debugger</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Paste your JSON Web Token to decode it.
+ </p>
+ 
+ <div class="tool-card">
+ <div class="tool-input">
+ <label for="jwt-input">Encoded JWT:</label>
+ <textarea id="jwt-input" rows="8" placeholder="Paste your JWT here (e.g., eyJhbGciOiJ...)"></textarea>
+ </div>
+ 
+ <div class="tool-output">
+ <div class="output-column">
+ <label for="header-output">Header (Decoded):</label>
+ <pre id="header-output" class="code-box"></pre>
+ </div>
+ 
+ <div class="output-column">
+ <label for="payload-output">Payload (Decoded):</label>
+ <pre id="payload-output" class="code-box"></pre>
+ </div>
+ </div>
+ 
+ <div id="status-box" class="status-error" style="display:none;"></div>
+ </div>
+
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+ <div class="seo-content">
+ <h2>How to Use the JWT Debugger</h2>
+ <ol>
+ <li><strong>Paste Token:</strong> Paste your full JWT string into the "Encoded JWT" text box.</li>
+ <li><strong>View Decoded Data:</strong> The tool will automatically decode the token as you type.</li>
+ <li><strong>Inspect:</strong> The token's Header and Payload will appear in the "Decoded" boxes below, formatted as readable JSON.</li>
+ </ol>
+ 
+ <h2>What is a JWT?</h2>
+ <p>A JSON Web Token (JWT) is a standard used to securely transmit information between parties as a JSON object. It consists of three parts separated by dots: the Header, the Payload, and the Signature. This tool decodes the Header and Payload, which are Base64URL-encoded JSON objects.</p>
+ 
+ <h2>Frequently Asked Questions (FAQ)</h2>
+ <h3>Is this JWT Debugger secure?</h3>
+ <p>Yes! This tool is 100% secure. All decoding happens in your browser using JavaScript. Your token is never sent to a server, so your sensitive information remains private.</p>
+ 
+ <h3>Does this tool verify the signature?</h3>
+ <p>No, this tool decodes the token to make it readable. It does not verify the signature, as that would require your private key or secret, which you should never paste into an online tool.</p>
+ </div>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/JWT-Debugger/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ 
+ <!-- Main Site Scripts -->
+ <script src="../../home.js" defer></script>
+ <!-- AdSense - In-Feed Ad -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1056713798"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+</body>
+</html>

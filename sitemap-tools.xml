@@ -31,6 +31,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/CSV-to-JSON/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://wiki.tapnex.tech/TOOLS/Color-Code-Converter/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
@@ -67,6 +73,18 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/JSON-Formatter/index.html</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/XML-Formatter/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://wiki.tapnex.tech/TOOLS/Lorem-Ipsum-Generator/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
@@ -93,6 +111,18 @@
     <url>
         <loc>https://wiki.tapnex.tech/TOOLS/QR-Generator/index.html</loc>
         <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/QR-Generator/index.html</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/JWT-Debugger/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -177,6 +207,42 @@
     <url>
         <loc>https://wiki.tapnex.tech/TOOLS/Split-PDF/index.html</loc>
         <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Loan-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Tip-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/GST-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/BMR-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Calorie-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wiki.tapnex.tech/TOOLS/Age-Calculator/index.html</loc>
+        <lastmod>2025-10-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

@@ -28,4 +28,12 @@
         <loc>https://wiki.tapnex.tech/sitemap-bhakti.xml</loc>
         <lastmod>2025-10-25</lastmod>
     </sitemap>
+    <sitemap>
+        <loc>https://wiki.tapnex.tech/sitemap-hindi-articles.xml</loc>
+        <lastmod>2025-11-07</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://wiki.tapnex.tech/sitemap-articles.xml</loc>
+        <lastmod>2025-11-07</lastmod>
+    </sitemap>
 </sitemapindex>

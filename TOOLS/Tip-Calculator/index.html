@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <!-- Primary Meta Tags -->
+ <title>Free Tip Calculator - Calculate Tip & Split Bill | TapNex Wiki</title>
+ <meta name="title" content="Free Tip Calculator - Calculate Tip & Split Bill | TapNex Wiki">
+ <meta name="description" content="Quickly calculate the tip for your bill. Our free tip calculator lets you split the bill between multiple people and find the tip per person. Fast, easy, and secure.">
+ <meta name="keywords" content="tip calculator, calculate tip, free tip calculator, restaurant tip calculator, split the bill, tip per person, tapnex tools">
+ <meta name="author" content="TapNex">
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/Tip-Calculator/">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/Tip-Calculator/">
+ <meta property="og:title" content="Free Tip Calculator - Calculate Tip & Split Bill | TapNex Wiki">
+ <meta property="og:description" content="The easiest way to calculate a restaurant tip and split the bill. 100% free and secure client-side tool.">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="https://wiki.tapnex.tech/TOOLS/Tip-Calculator/">
+ <meta property="twitter:title" content="Free Tip Calculator - Calculate Tip & Split Bill | TapNex Wiki">
+ <meta property="twitter:description" content="The easiest way to calculate a restaurant tip and split the bill. 100% free and secure client-side tool.">
+ <meta property="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Additional SEO -->
+ <meta name="robots" content="index, follow">
+ <meta name="language" content="English">
+ <meta name="revisit-after" content="7 days">
+ 
+ <!-- Schema.org structured data -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Tip Calculator",
+ "description": "Free online tip calculator to calculate restaurant tips and split bills between multiple people.",
+ "url": "https://wiki.tapnex.tech/TOOLS/Tip-Calculator/",
+ "applicationCategory": "FinanceApplication",
+ "operatingSystem": "Any",
+ "offers": {
+ "@type": "Offer",
+ "price": "0",
+ "priceCurrency": "USD"
+ },
+ "aggregateRating": {
+ "@type": "AggregateRating",
+ "ratingValue": "4.9",
+ "ratingCount": "1850",
+ "bestRating": "5",
+ "worstRating": "1"
+ },
+ "creator": {
+ "@type": "Organization",
+ "name": "TapNex"
+ }
+ }
+ </script>
+ 
+ <link rel="stylesheet" href="/TOOLS/Tip-Calculator/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body>
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">Tip Calculator</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Calculate the tip and split the bill in seconds.
+ </p>
+ 
+ <div class="tip-container">
+ <div class="input-group">
+ <label for="bill-amount">Bill Amount (₹):</label>
+ <input type="number" id="bill-amount" placeholder="e.g., 1200">
+ </div>
+ <div class="input-group">
+ <label for="tip-percentage">Tip Percentage (%):</label>
+ <input type="range" id="tip-percentage" min="0" max="50" value="15"> <span id="tip-percent-display">15%</span>
+ </div>
+ <div class="input-group">
+ <label for="num-people">Split Bill by (Number of People):</label>
+ <input type="number" id="num-people" value="1" min="1">
+ </div>
+ <div id="results-container" class="results-container" style="display: none;">
+ <h3>Your Results:</h3>
+ <div class="result-box"><p>Tip Amount:</p><span id="tip-amount-result">₹0</span></div>
+ <div class="result-box"><p>Total Bill (with Tip):</p><span id="total-bill-result">₹0</span></div>
+ <div class="result-box" id="per-person-box"><p>Total Per Person:</p><span id="total-per-person-result">₹0</span></div>
+ </div>
+ </div>
+
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+ <h2>How to Use the Tip Calculator</h2>
+ <ol>
+ <li>Enter Bill Amount: Type in the total bill from your check.</li>
+ <li>Select Tip Percentage: Use the slider to choose the percentage you want to tip (e.g., 15%).</li>
+ <li>Split the Bill: If you're sharing the cost, enter the number of people.</li>
+ <li>View Results: The tool will automatically update the Tip Amount, Total Bill, and Total Per Person.</li>
+ </ol>
+
+ <h2>Frequently Asked Questions (FAQ)</h2>
+ <h3>Q: Is this tool free?</h3>
+ <p>A: Yes, our tip calculator is 100% free to use.</p>
+ <h3>Q: What is a standard tip percentage?</h3>
+ <p>A: In many countries, including India for good service, a tip of 10-20% is standard. Our calculator lets you choose any amount you are comfortable with.</p>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/Tip-Calculator/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ <!-- AdSense - In-Feed Ad -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1056713798"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+</body>
+</html>

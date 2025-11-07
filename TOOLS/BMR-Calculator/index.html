@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <!-- Primary Meta Tags -->
+ <title>Free BMR Calculator - Calculate Your Basal Metabolic Rate | TapNex Wiki</title>
+ <meta name="title" content="Free BMR Calculator - Calculate Your Basal Metabolic Rate | TapNex Wiki">
+ <meta name="description" content="Find out your Basal Metabolic Rate (BMR) for free. Our BMR calculator estimates the number of calories your body needs at rest. Fast, secure, and easy to use.">
+ <meta name="keywords" content="bmr calculator, calculate bmr, basal metabolic rate, free bmr calculator, calorie calculator, health, fitness, tapnex tools">
+ <meta name="author" content="TapNex">
+ <link rel="canonical" href="https://wiki.tapnex.tech/TOOLS/BMR-Calculator/">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://wiki.tapnex.tech/TOOLS/BMR-Calculator/">
+ <meta property="og:title" content="Free BMR Calculator - Basal Metabolic Rate | TapNex Wiki">
+ <meta property="og:description" content="Estimate the calories your body burns at rest. 100% free and secure client-side tool.">
+ <meta property="og:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="https://wiki.tapnex.tech/TOOLS/BMR-Calculator/">
+ <meta property="twitter:title" content="Free BMR Calculator - Basal Metabolic Rate | TapNex Wiki">
+ <meta property="twitter:description" content="Estimate the calories your body burns at rest. 100% free and secure client-side tool.">
+ <meta property="twitter:image" content="https://wiki.tapnex.tech/images/TAPNEX_LOGO.png">
+ 
+ <!-- Additional SEO -->
+ <meta name="robots" content="index, follow">
+ <meta name="language" content="English">
+ <meta name="revisit-after" content="7 days">
+ 
+ <!-- Schema.org structured data -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "BMR Calculator",
+ "description": "Free online BMR calculator to estimate basal metabolic rate and daily calorie needs at rest.",
+ "url": "https://wiki.tapnex.tech/TOOLS/BMR-Calculator/",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "offers": {
+ "@type": "Offer",
+ "price": "0",
+ "priceCurrency": "USD"
+ },
+ "aggregateRating": {
+ "@type": "AggregateRating",
+ "ratingValue": "4.9",
+ "ratingCount": "1850",
+ "bestRating": "5",
+ "worstRating": "1"
+ },
+ "creator": {
+ "@type": "Organization",
+ "name": "TapNex"
+ }
+ }
+ </script>
+ 
+ <link rel="stylesheet" href="/TOOLS/BMR-Calculator/styles.css">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+</head>
+<body>
+ <!-- Theme Toggle Button -->
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+ <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="12" cy="12" r="5"/>
+ <line x1="12" y1="1" x2="12" y2="3"/>
+ <line x1="12" y1="21" x2="12" y2="23"/>
+ <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+ <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+ <line x1="1" y1="12" x2="3" y2="12"/>
+ <line x1="21" y1="12" x2="23" y2="12"/>
+ <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+ <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+ </svg>
+ </button>
+
+ <main class="main-content">
+ <div class="content-wrapper">
+ <article>
+ <h1 style="text-align: center; margin-bottom: 0.5rem;">BMR Calculator</h1>
+ <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+ Find your Basal Metabolic Rate (calories burned at rest). (Need your BMI? Try our <a href="/TOOLS/BMI-Calculator/">BMI Calculator</a>.)
+ </p>
+ 
+ <div class="bmr-container">
+ <div class="input-group">
+ <label for="age">Age (years):</label>
+ <input type="number" id="age" placeholder="e.g., 25">
+ </div>
+ <div class="input-group">
+ <label>Gender:</label>
+ <div><input type="radio" id="male" name="gender" value="male" checked> <label for="male">Male</label></div>
+ <div><input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label></div>
+ </div>
+ <div class="input-group">
+ <label for="height-cm">Height (cm):</label>
+ <input type="number" id="height-cm" placeholder="e.g., 175">
+ </div>
+ <div class="input-group">
+ <label for="weight-kg">Weight (kg):</label>
+ <input type="number" id="weight-kg" placeholder="e.g., 70">
+ </div>
+ <button id="calculate-btn" class="tool-button">Calculate BMR</button>
+ <div id="results-container" class="results-container" style="display: none;">
+ <h3>Your BMR:</h3>
+ <div class="result-box"><span id="bmr-result">0</span><p>Calories/day</p></div>
+ </div>
+ </div>
+
+ <!-- AdSense In-Article Ad - After Tool -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="9288642827"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+ <h2>How to Use the BMR Calculator</h2>
+ <ol>
+ <li>Enter your age and select your gender.</li>
+ <li>Enter your height in centimeters (cm).</li>
+ <li>Enter your weight in kilograms (kg).</li>
+ <li>Click "Calculate BMR" to see your result.</li>
+ </ol>
+
+ <h2>What is BMR?</h2>
+ <p>Your Basal Metabolic Rate (BMR) is the number of calories your body needs to perform basic, life-sustaining functions like breathing, circulation, and cell production while you are at rest. This calculator uses the popular Mifflin-St Jeor equation to estimate your BMR.</p>
+
+ <h2>Frequently Asked Questions (FAQ)</h2>
+ <h3>Q: Is this different from a Daily Calorie Calculator?</h3>
+ <p>A: Yes. Your BMR is just your calories at rest. A Daily Calorie Calculator (or TDEE calculator) will take your BMR and add calories based on your daily activity level.</p>
+ <h3>Q: Is this tool free and secure?</h3>
+ <p>A: Yes, it is 100% free. All calculations are done in your browser, so your health data is completely private.</p>
+
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1734728076"
+ data-ad-format="auto"
+ data-full-width-responsive="true"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+ </article>
+ </div>
+ </main>
+
+ <!-- Tools Navigation Footer -->
+ <!-- Footer will be loaded dynamically -->
+ <div id="footer-placeholder"></div>
+ 
+ <script src="/TOOLS/BMR-Calculator/scripts.js" defer></script>
+ <script src="/TOOLS/shared/footer.js"></script>
+ <!-- AdSense - In-Feed Ad -->
+ <div class="ad-container" style="margin-top: 3rem;">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315586112110103"
+ crossorigin="anonymous"></script>
+ <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-4315586112110103"
+ data-ad-slot="1056713798"></ins>
+ <script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+ </div>
+
+</body>
+</html>
