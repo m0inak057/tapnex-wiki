@@ -158,12 +158,26 @@ body {
 
 .quick-access > p {
     font-size: 1.1rem;
-    color: var(--text-secondary);
+    color: #cbd5e1;
     margin-bottom: 2rem;
     line-height: 1.6;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.quick-access > p a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+    padding-bottom: 2px;
+}
+
+.quick-access > p a:hover {
+    color: #93c5fd;
+    border-bottom-color: #60a5fa;
 }
 
 .topics-grid {
@@ -175,11 +189,11 @@ body {
 
 .topic-card {
     position: relative;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
     padding: 2.5rem 2rem 2rem;
     border-radius: 24px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(226, 232, 240, 0.8);
     backdrop-filter: blur(20px);
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -231,8 +245,8 @@ body {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3), 
                 0 0 40px rgba(59, 130, 246, 0.1);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
-    border-color: rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 0.95) 100%);
+    border-color: rgba(59, 130, 246, 0.5);
 }
 
 .topic-card:hover::before {
@@ -251,39 +265,38 @@ body {
 
 .topic-card h3 a {
     text-decoration: none;
-    color: inherit;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #3b82f6;
+    font-weight: 700;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .topic-card:hover h3 a {
-    background: linear-gradient(135deg, #60a5fa, #a78bfa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2563eb;
+    transform: translateX(4px);
 }
 
 .topic-card p {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: #475569;
     line-height: 1.7;
     margin: 0;
     transition: color 0.3s ease;
+    font-weight: 400;
 }
 
 .topic-card:hover p {
-    color: var(--text-primary);
+    color: #1e293b;
 }
 
 .topic-card p a {
-    color: #3b82f6;
+    color: #2563eb;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
     position: relative;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1px;
 }
 
 .topic-card p a::after {
@@ -298,7 +311,8 @@ body {
 }
 
 .topic-card p a:hover {
-    color: #2563eb;
+    color: #1d4ed8;
+    border-bottom-color: #3b82f6;
 }
 
 .topic-card p a:hover::after {
